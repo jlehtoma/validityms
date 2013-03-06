@@ -4,7 +4,7 @@
 
 * lib-scripts `zonation.R` and `utilities.R` are symlinked to 
 `Dropbox/Code/Recoderepository`
-* `data/extenal`
+* `data/extenal` is symlinked to 
 
 ## 1. Data
 
