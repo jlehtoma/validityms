@@ -1,0 +1,1 @@
+* Zproject should build the projects based on .bat-files

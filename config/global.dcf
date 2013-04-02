@@ -3,7 +3,7 @@ cache_loading: on
 munging: on
 logging: on
 load_libraries: on
-libraries: reshape2, plyr, ggplot2, stringr, lubridate, raster, rgdal
+libraries: reshape2, plyr, ggplot2, stringr, lubridate, raster, rgdal, zonator
 as_factors: on
 data_tables: off
 recursive_loading: off

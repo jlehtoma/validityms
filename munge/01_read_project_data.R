@@ -1,4 +1,14 @@
 # Latest project, basically the runs done by Antti in septemeber re-run in
 # Viikki
-project.130301 <- new("Zproject", 
-  root="/media/DataVault/Data/Metsakeskukset/Etela-Savo/Zonation/Results/130301/analyysi/")
+
+# Set the data source
+if (.Platform$OS.type == "unix") {
+  root <- "/var/run/media/jlehtoma/DataVault/Data/Metsakeskukset/Etela-Savo/Zonation/Results/130315/analyysi/"
+  tutorial.root <- "/home/jlehtoma/temp/zonation-tutorial"  
+} else {e
+  root <- "C:\\Data\\ESMK\\analyysi"
+}
+
+project.tutorial <- new("Zproject", root=tutorial.root)
+
+project.130315 <- new("Zproject", root=root)
