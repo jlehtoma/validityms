@@ -13,11 +13,11 @@
    height="1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.2 r9819"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="Fig1.svg"
-   inkscape:export-filename="C:\Users\admin_jlehtoma\Dropbox\Documents\Manuscripts\Saija\revision3\Figs\Fig2.png"
-   inkscape:export-xdpi="600.02155"
-   inkscape:export-ydpi="600.02155">
+   inkscape:export-filename="/home/jlehtoma/Dropbox/Documents/Manuscripts/validity_ms/figs/Fig1.png"
+   inkscape:export-xdpi="300.01474"
+   inkscape:export-ydpi="300.01474">
   <defs
      id="defs4">
     <marker
@@ -377,15 +377,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="118.9106"
-     inkscape:cy="637.48625"
+     inkscape:cx="305.17424"
+     inkscape:cy="527.22672"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="716"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1680"
+     inkscape:window-height="1036"
+     inkscape:window-x="1679"
+     inkscape:window-y="-4"
      inkscape:window-maximized="1"
      showguides="false"
      inkscape:guide-bbox="true"
@@ -835,7 +835,7 @@
            style="font-size:12px;text-align:end;text-anchor:end;fill:#000000"
            y="307.18942"
            x="634.04315"
-           sodipodi:role="line">See XXX</tspan></text>
+           sodipodi:role="line">See Table S1</tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -1011,11 +1011,11 @@
          x="264.66052"
          style="font-size:12.95519257px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
-           id="tspan6012-1-4-13-8-1"
            style="font-size:12px;text-align:end;text-anchor:end;fill:#000000"
            y="444.32288"
            x="264.66052"
-           sodipodi:role="line">See Appendix I</tspan></text>
+           sodipodi:role="line"
+           id="tspan3269">See Table S2</tspan></text>
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#marker4412)"
@@ -1588,7 +1588,7 @@
     <text
        xml:space="preserve"
        style="font-size:12.95519257px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="471.33136"
+       x="460.08527"
        y="489.03894"
        id="text3757-7-8-7-2-5-2-0"
        sodipodi:linespacing="125%"
@@ -1596,7 +1596,7 @@
        inkscape:export-xdpi="399.98032"
        inkscape:export-ydpi="399.98032"><tspan
          sodipodi:role="line"
-         x="471.33136"
+         x="460.08527"
          y="489.03894"
          style="font-size:12px;text-align:end;text-anchor:end;fill:#000000"
          id="tspan6012-1-6-07-8">To WKH</tspan></text>
@@ -1618,7 +1618,7 @@
     <text
        xml:space="preserve"
        style="font-size:12.95519257px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="537.4837"
+       x="541.4837"
        y="462.66168"
        id="text3757-7-8-7-2-57-5"
        sodipodi:linespacing="125%"
@@ -1626,7 +1626,7 @@
        inkscape:export-xdpi="399.98032"
        inkscape:export-ydpi="399.98032"><tspan
          sodipodi:role="line"
-         x="537.4837"
+         x="541.4837"
          y="462.66168"
          style="font-size:12px;text-align:end;text-anchor:end"
          id="tspan6012-1-4-1">Between forest types</tspan></text>
@@ -1648,7 +1648,7 @@
     <text
        xml:space="preserve"
        style="font-size:12.95519257px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="526.76105"
+       x="526.23761"
        y="515.41614"
        id="text3757-7-8-7-2-5-2-0-5"
        sodipodi:linespacing="125%"
@@ -1656,7 +1656,7 @@
        inkscape:export-xdpi="399.98032"
        inkscape:export-ydpi="399.98032"><tspan
          sodipodi:role="line"
-         x="526.76105"
+         x="526.23761"
          y="515.41614"
          style="font-size:12px;text-align:end;text-anchor:end;fill:#000000"
          id="tspan6012-1-6-07-8-6">To protected areas</tspan></text>

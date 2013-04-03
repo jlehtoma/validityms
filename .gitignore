@@ -3,3 +3,5 @@
 .RData
 .Rprofile
 .directory
+cache/*
+*.html

@@ -9,6 +9,7 @@
 * **NOTE** that git doesn't track symlinks (or does it?)
 * Folder `doc` includes file commit_msg.md that is used as a scratchpad for 
 commit messages
+
 ## 1. Data
 
 ### Munging
