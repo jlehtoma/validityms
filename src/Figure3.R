@@ -17,8 +17,3 @@ p2 <- plot(variant.11, monochrome=TRUE, groups=TRUE, labels=fert.labels,
 p2  <- p2 + theme(legend.position=c(.35, .3))
 
 grid.arrange(p1, p2, nrow=1, ncol=2)
-
-a <- c("Mörkö", "Vilppu", "Esko")
-b <- c("Mörkö", "kissakuningatar", "Rakuuni", "esko", "vilppu")
-
-a[tolower(a) %in% tolower(b)]
