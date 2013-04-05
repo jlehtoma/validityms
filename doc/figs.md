@@ -43,3 +43,5 @@ fertility) for frx and others
 
 **Figure 4**: Distributions of priority ranks (histograms) in different, 
 independent data sets.
+
+**Figure 5**: somthing from the LSM analysis
