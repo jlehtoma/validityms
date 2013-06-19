@@ -1,12 +1,13 @@
+library(zonator)
 library(gridExtra)
 
 # Set the plot labels
 spp.labels <- c("Birch", "Spruce", "Pine", "OtherDec")
-fert.labels <- c("Lehto", "Lehtomainen", "Tuore", "Kuivahko", "Kuiva")
+fert.labels <- c("Lehto", "Lehtomainen", "Tuore", "Kuivahko", "Kuiva", "x")
 
 # Get variant 4: 17_60_5kp_abf_pe_w_cmat
 variant.4 <- getVariant(project.130315, 4)
-p1 <- plot(variant.4, monochrome=TRUE, group=TRUE, labels=spp.labels, 
+p1 <- plot(variant.4, monochrome=TRUE, group=FALSE, labels=spp.labels, 
            statistic="mean", invert.x=FALSE, main="Tree species group")
 p1  <- p1 + theme(legend.position=c(.35, .3))
 

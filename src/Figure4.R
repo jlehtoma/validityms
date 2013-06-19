@@ -1,5 +1,6 @@
 library(raster)
-result.folder <- "G:\\Data\\Metsakeskukset\\Etela-Savo\\Zonation\\Results\\130315\\analyysi"
+library(zonator)
+result.folder <- "H:\\Data\\Metsakeskukset\\Etela-Savo\\Zonation\\Results\\130315\\analyysi"
 
 # Results -----------------------------------------------------------------
 
@@ -12,18 +13,18 @@ variants <- c("14_60_5kp_abf",
 
 # Read in the rasters and create a RasterStack - FOR IMG
 results <- read.result.rasters(variants, result.folder, 
-                               format="_rank.img")
+                               format=".rank.compressed.img")
 
 # Read in the mask rasters for the whole ESMK
 
-mask.folder <- "G:/Data/Metsakeskukset/Etela-Savo/Zonation/ESMK/data/maski"
+mask.folder <- "H:/Data/Metsakeskukset/Etela-Savo/Zonation/ESMK/data/maski"
 
 sa.mask <-  raster(file.path(mask.folder, "ESMK_slalue_avosuoton_60.img"))
 mete.mask <- raster(file.path(mask.folder, "ESMK_mete_60.img"))
 ysa.mask <- raster(file.path(mask.folder, "ELY_ysat_2011_2012.img"))
 engo.mask <- raster(file.path(mask.folder, "ESMK_engo_A_2012_60_bin_avosuoton.img"))
 
-img.folder <- "G:/Data/Metsakeskukset/Etela-Savo/Zonation/Results/130315/images"
+img.folder <- "H:/Data/Metsakeskukset/Etela-Savo/Zonation/Results/130315/images"
 
 # 14_60_5kp_abf
 h1.sa <- histPlot(results[[1]], mask=sa.mask, add.median=F, add.mean=T, 
@@ -139,12 +140,18 @@ for (i in 1:nrow(similarity.mtrx)){
   }
 }
 
-# Performance curves ------------------------------------------------------
+# Main type (päätyyppi) ------------------------------------------------------
 
-curves.dir <- "C:/Data/suoajot25_34"
-#curves.dir <- "C:/Program Files/zonation 3.1.6/zonation-tutorial/tutorial_output"
-curves.file <- file.path(result.folder, 
-                         "17_60_5kp_abf_pe_w_cmat", "output",
-                         "result_17_60_5kp_abf_pe_w_cmat.grp_curves.txt")
-curves <- read.grp.curves(curves.file)
-plot(curves, monochrome=T, invert.x=TRUE)
+# 1=kangas, 2=korpi, 3=räme, 4=avosuo
+main.types <-  raster(file.path(mask.folder, "MLVMI_paatyyppi_60.img"))
+kangas.mask <- main.types == 1
+kangas.mask[kangas.mask != 1] <- NA
+peat.mask <- main.types > 1
+peat.mask[peat.mask != 1] <- NA
+
+h1.kangas <- histPlot(results[[1]], mask=kangas.mask, add.median=F, add.mean=T, 
+                      save.dir="", binwidth=0.02, title="Variant 1 by kangas")
+h1.kangas
+h1.peat <- histPlot(results[[1]], mask=peat.mask, add.median=F, add.mean=T, 
+                      save.dir="", binwidth=0.02, title="Variant 1 by turve")
+h1.peat
