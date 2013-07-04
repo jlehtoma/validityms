@@ -1,4 +1,4 @@
-## Large-scale conservation prioritization in boreal forest landscapes: generating and validating priority maps
+# Large-scale conservation prioritization in boreal forest landscapes: generating and validating priority maps
 
 Joona Lehtomäki^1,2*^ Sakari Tuominen^3^ and Antti Leinonen^4^
 
@@ -13,25 +13,33 @@ joona.lehtomaki@helsinki.fi, tel. +358-9-191-57714
 sakari.tuominen@metla.fi  
 antti.leinonen@metsakeskus.fi  
 
-*Journal:*   
-Scandinavian Journal of Forest Research
+*Journal:*
+Scandinavian Journal of Forest Research  
 
-*Type of paper*:  
+*Type of paper:*
 Original research paper
 
-Running title:  Validation of spatial conservation prioritization
+*Running title:*
+Validation of spatial conservation prioritization
 
-Manuscript statistics: 
-word count (total) = xxx
-figures = xxx of which xxx in color 
-tables = xxx
-references = xxx
-Abstract: Scandinavian boreal forest landscapes are managed primarily for forestry purposes, but multi-objective planning including conservation of biodiversity is becoming a more common. Most often no primary biodiversity data, such as detailed distribution data for many species, is available for defining conservation priorities over large areas. In contrast, data are frequently available about forest characteristics such as standing tree volume, species composition and soil fertility. To be of value, data has to be 1) relevant for the conservation planning need (ecological model), 2) spatially extensive enough, 3) at the right resolution, and 4) available for the planning process. Here, we demonstrate how to define conservation priorities in Finnish boreal forest landscapes using Zonation – a method and software for spatial conservation prioritization. Conservation priorities are often generated without explicit considerations on how well the results capture the distribution of conservation value. Here, we assess the validity of Zonation results by a comparison to a number of independent data sets that describe the distributions of features relevant for conservation, such as existing protected areas and woodland key-habitats. Furthermore, we investigate what effect the quality of the input forest inventory data has on the results. We found that prioritization based on data on forest structure can indeed produce results that are informative for conservation. Occurrences of independently surveyed features occurred on average in areas that Zonation had identified as high priority based on nationally available forest data alone.  The process described here and the results produced by these analyses feed directly into operational  forest management by the Finnish Forestry Center (Metsäkeskus). The analyses described here  could plausibly be implemented also in other regions of the boreal zone.
+*Manuscript statistics:*
+
+* word count (total) = xxx
+* figures = xxx of which xxx in color
+* tables = xxx
+* references = xxx
+
+## Abstract:
+Scandinavian boreal forest landscapes are managed primarily for forestry purposes, but multi-objective planning including conservation of biodiversity is becoming a more common. Most often no primary biodiversity data, such as detailed distribution data for many species, is available for defining conservation priorities over large areas. In contrast, data are frequently available about forest characteristics such as standing tree volume, species composition and soil fertility. To be of value, data has to be 1) relevant for the conservation planning need (ecological model), 2) spatially extensive enough, 3) at the right resolution, and 4) available for the planning process. Here, we demonstrate how to define conservation priorities in Finnish boreal forest landscapes using Zonation – a method and software for spatial conservation prioritization. Conservation priorities are often generated without explicit considerations on how well the results capture the distribution of conservation value. Here, we assess the validity of Zonation results by a comparison to a number of independent data sets that describe the distributions of features relevant for conservation, such as existing protected areas and woodland key-habitats. Furthermore, we investigate what effect the quality of the input forest inventory data has on the results. We found that prioritization based on data on forest structure can indeed produce results that are informative for conservation. Occurrences of independently surveyed features occurred on average in areas that Zonation had identified as high priority based on nationally available forest data alone.  The process described here and the results produced by these analyses feed directly into operational  forest management by the Finnish Forestry Center (Metsäkeskus). The analyses described here  could plausibly be implemented also in other regions of the boreal zone.
+
+
 
 Keywords: adaptive management; conservation planning; forest conservation management; spatial conservation prioritization; Zonation software
 Introduction
 
-1.1 Operational conservation planning in the forest context (REF)
+## 1. Introduction
+
+### 1.1 Operational conservation planning in the forest context (REF)
 Conservation planning as a part of forestry management: MCDM (Kangas et al., 2005), TRIAD (Côté et al., 2010), guidelines and policies (Hanski, 2011), new management regimes [@Kuuluvainen2012]
 Forest conservation planning needs to integrate closely with the existing planning context and operations (Ferrier and Wintle, 2009)
 Successful integration largely depends on whether existing data that are already part of forestry planning can be utilized in conservation planning (REF) and on whether the results of conservation prioritization can be used in tools already existing in different administrative institutions (REF)
@@ -39,16 +47,16 @@ In Finland, the decision-making context is a mixture of top-down and bottom-up a
 Introduction to METSO-programme in Finland: aims, schedule, used tools with emphasis in ESMK (REF)
 [Not sure if needed: then there must be many different approaches to forest conservation / management: do these need to be discussed? Perhaps in the discussion - just a note.]
 
-1.2 Spatial conservation prioritization
+### 1.2 Spatial conservation prioritization
 Get relevant bits from the workflow MS
 Has been done in also in the botreal forest context (Lehtomäki et al., 2009; Mikusiński et al., 2007; Sirkiä et al., 2012)⁠
 Associated uncertainties often high , performance and efficiency unknown (Langford et al., 2011), need for (on-the-ground) validation
 
-1.3 Validation of spatial conservation prioritization results
+### 1.3 Validation of spatial conservation prioritization results
 Visually appealing priority maps may influence our perception (as defined by the ecological model) of the distribution of conservation value → how to gauge whether the results indeed are useful?
-The usefulness of the results also depends on the sensitivity of the results. Particularly, if the informative part of the results (i.e. the best fraction of the landscape for e.g. conservation) is small relative to the overall size of the landscape then the results may very sensitive to various factors 
+The usefulness of the results also depends on the sensitivity of the results. Particularly, if the informative part of the results (i.e. the best fraction of the landscape for e.g. conservation) is small relative to the overall size of the landscape then the results may very sensitive to various factors
 
-1.4 Aims and scope of the paper
+### 1.4 Aims and scope of the paper
 1. Investigate whether commonly available forestry data sets are a useful basis for spatial conservation prioritization
 The nature of the data (MSNFI vs. more detailed data)
 Technical usability of the data
@@ -61,33 +69,37 @@ Importance of monitoring which can also be done as a part of standard forestry o
 How to improve data? How to improve analyses?
 Material and Methods
 
-2.1 Data for spatial conservation prioritization and its validation
+## 2. Material and methods
+
+### 2.1 Data for spatial conservation prioritization and its validation
 Data used for this purpose must be available across the entire study area, not from individual locations only. Source of the data matters as different data sets have different levels of uncertainty etc.
 Prioritization data sets (ESMK + LTI inventories + segmented MSNFI)
 Brief description of the data used
 Table 1: Data sets used for the construction of the ecologically based model and index of conservation value (see 2.3 for explanation).
-Validation data 
+Validation data
 Table 2: Additional data used for the independent validation of results
-2.2 The ecological model
+
+### 2.2 The ecological model
 Short description here, more detailed in the supplement
-What is: a conceptual model for conservation prioritization 
+What is: a conceptual model for conservation prioritization
 In this context, “ecological model” means a conceptual model that converts whatever data we have into something meaningful from the perspective of conservation
 The reasoning for translating the information on forest structural features to something important for conservation (REF)
 Data selection by experts (supl.)
 Benefit functions (supl.)
 
-Justification behind using the benefit functions 
+Justification behind using the benefit functions
 Weighting of features and connectivity (supl.)
 Based on discussions with the experts + web questionnaire
 Figure 1: The ecological model. Data sets, the structure of the index + the selected connectivity distances and connectivity interaction types. (similar to (Sirkiä et al., 2012)⁠)
 
-2.4 Analysis variants
-We selected five analysis variants XXX in order to examine a suite of scenarios directly relevant for the planning need. 
-Table 3: Analysis variants. (link to Fig 1) 
-2.5 Interpretation of results (prioritity rank maps)
+### 2.4 Analysis variants
+We selected five analysis variants XXX in order to examine a suite of scenarios directly relevant for the planning need.
+Table 3: Analysis variants. (link to Fig 1)
+
+### 2.5 Interpretation of results (prioritity rank maps)
 Spatial prioritization
 Priority rank maps for the five variants of Table (3)
-Representation levels for particular feature groups (by tree spp or fertility?) for particular top fraction(s) of the landscape → this particular top fraction could correspond to the overall area objective for ESMK (will have to check what it is) 
+Representation levels for particular feature groups (by tree spp or fertility?) for particular top fraction(s) of the landscape → this particular top fraction could correspond to the overall area objective for ESMK (will have to check what it is)
 = frx
 Comparison of variants
 Operationally, how “robust” are the results? i.e. depending on which variant is used, where are highest priorities? Also, what's the effect of the “top fraction of the landscape” selected (frx + others)?
@@ -99,30 +111,37 @@ Comparison to the data (indexes) that the prioritization is based on (Supl?)
 2.6 Comparison between the actual analyses and the MSNFI-only analyses
 The selected analysis variants (3, 4, 5, and 7) were run also using just the MSNFI data
 Results analyzed like in 2.5
-    
-Results
 
-3.1 Spatial priorities
+## 3.Results
+
+### 3.1 Spatial priorities
 Figure 2: Priority rank maps for analysis variants (all 4).
 Figure 3: representation levels of feature groups (grouped by spp or fertility) for frx and others
 Priorities tend to be lower on areas with data source XXX...
 General patterns are – naturally – strongly affected by the connectivity components included, but this is scale dependent
-3.2 Comparison of variants
+
+### 3.2 Comparison of variants
+
 Table 4: Summary statistics on the differences between the variants at given levels of the top fraction of the landscape: overlap.
 The results show that the absolute highest fraction (frx) of the landscape [is / is not] relatively dependent to which variant is used. The result is - of course – very dependent on the analysis variant used
 Incorporating connectivity components will result in tradeoffs: accounting for the connectivity to existing protected areas aggregate priorities near conservation areas and draw them away from locations further away
-3.3 Comparison to independent data sets
+
+### 3.3 Comparison to independent data sets
+
 Figure 4: Distributions of priority ranks (histograms) in different, independent data sets.
 Characteristics of individual data sets (unsurprisingly) determine which variant should be compared to which data. E.g. the inventory data collected by the conservation NGOs should be compared to the variant that accounts for the connectivity to existing protected areas - because this was a specific objective in data collection.
-3.4 Comparison to MSNFI-only analysis
-Figure 5: Average priorities in the independent comparison data sets (barplot). 
-Discussion
+
+### 3.4 Comparison to MSNFI-only analysis
+
+Figure 5: Average priorities in the independent comparison data sets (barplot).
+
+## 4. Discussion
 
 Comparison to independent data sets relevant for biodiversity conservation indicate that known valuable locations indeed emerge from the analysis with high priorities
 Data from conventional forestry planning coupled with a spatial conservation prioritization tool like Zonation can be used to identify areas of high conservation priorities
 Characterize how the validation worked or not with different data sets
 Note that results should not be extrapolated beyond the current problem definition
-Depending on the prioritization tool used, the analysis and the results often are static → if and when dynamics are not considered it is hard to say much about persistence and hence effectiveness. 
+Depending on the prioritization tool used, the analysis and the results often are static → if and when dynamics are not considered it is hard to say much about persistence and hence effectiveness.
 Formulation of the objectives is thus important and the results should not extrapolated beyond the scope of the analysis at hand
 Aligning planning needs, spatial scale, resolution and the (planning) decision-making context need careful consideration
 There is no single best solution: the most suitable solution will have to be carefully planned
@@ -141,40 +160,16 @@ Known planning needs that this analysis does not answer.
 Enabling input to decision-making
 Mainstreaming the methods
 The road forward
-Côté, P., Tittler, R., Messier, C., Kneeshaw, D.D., Fall, A., Fortin, M.-J., 2010. Comparing different forest zoning options for landscape-scale management of the boreal forest: Possible benefits of the TRIAD. Forest Ecology and Management 259, 418–427.
-Ferrier, S., Wintle, B.A., 2009. Quantitative Approaches to Spatial Conservation Prioritization: Matching the Solution to the Need, in: Moilanen, A., Wilson, K.A., Possingham, H.P. (Eds.), Spatial Conservation Prioritization: Quantitative Methods & Computational Tools. Oxford University Press, Oxford, p. 304.
-Hanski, I., 2011. Habitat Loss, the Dynamics of Biodiversity, and a Perspective on Conservation. Ambio 40, 248–255.
-Kangas, J., Store, R., Kangas, A., 2005. Socioecological landscape planning approach and multicriteria acceptability analysis in multiple-purpose forest management. Forest Policy and Economics 7, 603–614.
-Kuuluvainen, T., Grenfell, R., 2012. Natural disturbance emulation in boreal forest ecosystem management — theories, strategies , and a comparison with conventional even-aged management. Canadian Journal of Forest Research 1203, 1185–1203.
-Langford, W.T., Gordon, A., Bastin, L., Bekessy, S., White, M.D., Newell, G., 2011. Raising the bar for systematic conservation planning. Trends in Ecology and Evolution 26, 634–640.
-Lehtomäki, J., Tomppo, E., Kuokkanen, P., Hanski, I., Moilanen, A., 2009. Applying spatial conservation prioritization software and high-resolution GIS data to a national-scale study in forest conservation. Forest Ecology and Management 258, 2439–2449.
-Mikusiński, G., Pressey, R.L., Edenius, L., Kujala, H., Moilanen, A., Niemelä, J., Ranius, T., 2007. Conservation Planning in Forest Landscapes of Fennoscandia and an Approach to the Challenge of Countdown 2010. Conservation Biology 21, 1445–1454.
-Paloniemi, R., Tikka, P.M., 2008. Ecological and social aspects of biodiversity conservation on private lands. Environmental Science & Policy 11, 336–346.
-Sirkiä, S., Lehtomäki, J., Lindén, H., Tomppo, E., Moilanen, A., 2012. Defining spatial priorities for capercaillie Tetrao urogallus lekking landscape conservation in south-central Finland. Wildlife Biology 18, 337–353.
+
+# Tables
+
+# Figures
+
+Figure 1. Schematics of the analysis setup. Different parts of the analysis were done in different software environments (see text). Analysis feature layers (index layers) were constructed from 3 different data sources (Table 1 and a condition layer (see text) was applied on all of them. Different Zonation analysis variants are indicated by arrows 1-4 (see Table 3) with closed circles indicating the analysis features used. Each analysis variant resulted in a priority maps (Figure 2) and feature-specific performance curves (Figure 3). For validation purposes, each rank priority map was compared to a set of independent validation data to determine the mean and the distribution of ranks (Figure 4).
 
 
 
-
-
-
-
-
-
-
-
-
-
-Tables
-
-
-Figures
-
-
-Figure 1. Schematics of the analysis setup. Different parts of the analysis were done in different software environments (see text). Analysis feature layers (index layers) were constructed from 3 different data sources (Table 1 and a condition layer (see text) was applied on all of them. Different Zonation analysis variants are indicated by arrows 1-4 (see Table 3) with closed circles indicating the analysis features used. Each analysis variant resulted in a priority maps (Figure 2) and feature-specific performance curves (Figure 3). For validation purposes, each rank priority map was compared to a set of independent validation data to determine the mean and the distribution of ranks (Figure 4). 
-
-
-
-Supplementary material
+# Supplementary material
 
 Building the ecological model
 Expert elicitation
