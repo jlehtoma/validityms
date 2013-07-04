@@ -70,7 +70,7 @@ bibtex:
 	@echo $(info Copying BibTex file...)
 	@cp /home/jlehtoma/Dropbox/Documents/Mendeley/BibTex/validity_ms.bib $(BUILDDIR) 
 
-pdf: latex bibtex
+pdf: latex
 	@echo $(info Converting to pdf...)
 	@$(PANDOC) -H $(BUILDDIR)/margins.sty --template $(BUILDDIR)/templates/default.tex \
 	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(BUILDDIR)/$(FILENAME).tex \
@@ -89,16 +89,21 @@ latex: bibtex
 	--include-after-body=$(BUILDDIR)/$(FILENAME)_figures.tex \
 	--include-after-body=$(BUILDDIR)/$(FILENAME)_suppl.tex
 
-odt: bibtex
+odt: latex
 	@echo $(info Converting to odt...)
-	@$(PANDOC) -H $(BUILDDIR)/margins.sty --template $(BUILDDIR)/templates/default.tex --bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(FILENAME).md -o $(BUILDDIR)/$(FILENAME).odt --latex-engine=xelatex
+	@$(PANDOC) -H $(BUILDDIR)/margins.sty --template $(BUILDDIR)/templates/default.tex \
+	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(BUILDDIR)/$(FILENAME).tex -o \
+	$(BUILDDIR)/$(FILENAME).odt --latex-engine=xelatex
 
-docx: bibtex
+docx: latex
 	@echo $(info Converting to docx...)
-	@$(PANDOC) -H $(BUILDDIR)/margins.sty --template $(BUILDDIR)/templates/default.tex --bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(FILENAME).md -o $(BUILDDIR)/$(FILENAME).docx --latex-engine=xelatex
+	@$(PANDOC) -H $(BUILDDIR)/margins.sty --template $(BUILDDIR)/templates/default.tex \
+	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(BUILDDIR)/$(FILENAME).tex \
+	-o $(BUILDDIR)/$(FILENAME).docx --latex-engine=xelatex
 
-html: bibtex
-	@$(PANDOC) $(FILENAME).md -o $(BUILDDIR)/$(FILENAME).html --template $(HTML_TEMPLATE) --css $(HTML_CSS) --smart $(BIBARGS) -t html5
+html: latex
+	@$(PANDOC) $(BUILDDIR)/$(FILENAME).tex -o $(BUILDDIR)/$(FILENAME).html \
+	--template $(HTML_TEMPLATE) --css $(HTML_CSS) --smart $(BIBARGS) -t html5
 
 clean:
 	@cd $(BUILDDIR); rm -f *.tex *.aux *.log *.out *.bbl *.blg *.bcf *.run.xml *.bak tmp.* *.tmp *.docx *.odt *.pdf
