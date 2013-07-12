@@ -12,3 +12,4 @@ cache/*
 *.doc
 *tmp*
 data/130315
+*.sublime-*

@@ -7,7 +7,7 @@ SOURCE = README.md
 BUILDDIR = $(CURDIR)/pandoc
 BIBLIOGRAPHY = $(BUILDDIR)/validity_ms.bib
 # CSL style for HTML
-CSL=$(BUILDDIR)/plos.csl
+CSL=$(BUILDDIR)/conservation-biology.csl
 # biblatex style for LaTeX
 BIBSTYLE=authoryear
 
