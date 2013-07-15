@@ -1,5 +1,7 @@
 library(zonator)
 library(gridExtra)
+library(ProjectTemplate)
+load.project()
 
 # Set the plot labels
 spp.labels <- c("Birch", "Spruce", "Pine", "OtherDec")
