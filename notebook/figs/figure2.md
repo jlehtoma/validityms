@@ -44,8 +44,8 @@ output folders.
 
 Changes proposed to the figure:
 * Without condition layer ([~~issue #1~~](https://github.com/jlehtoma/validityms/issues/1))
-* 3 panels with contrast ([issue #2](https://github.com/jlehtoma/validityms/issues/2))
-* Maybe an insert of close-up ([issue #3](https://github.com/jlehtoma/validityms/issues/3))
+* 3 panels with contrast ([~~issue #2~~](https://github.com/jlehtoma/validityms/issues/2))
+* Maybe an insert of close-up ([~~issue #3~~](https://github.com/jlehtoma/validityms/issues/3))
 
 1. Included variants changed, variant 1 (14) introduced, selected variants for figure 2 are: **14, 18, and 20**
 
