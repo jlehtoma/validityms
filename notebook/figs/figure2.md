@@ -65,8 +65,8 @@ Changes proposed to the figure:
 ----
 ### Latest version:
 
-![fig2](../figs/Fig2_w600.png)
+![fig2](../../figs/Fig2_w600.png)
 
 **Alternative column layout**
 
-![fig2_alt](../figs/Fig2_column_layout_w600.png)
+![fig2_alt](../../figs/Fig2_column_layout_w600.png)

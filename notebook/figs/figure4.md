@@ -18,4 +18,4 @@ engo-sites.
 ----
 ### Latest version:
 
-![fig4](../figs/Fig4_w600.png)
+![fig4](../../figs/Fig4_w600.png)

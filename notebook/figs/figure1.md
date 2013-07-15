@@ -8,4 +8,4 @@ tags: figs
 ----
 ### Latest version:
 
-![fig1](../figs/Fig1_w600.png)
+![fig1](../../figs/Fig1_w600.png)
