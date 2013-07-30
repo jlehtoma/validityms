@@ -25,4 +25,4 @@ interaction connectivity to PAs?
 ----
 ### Latest version:
 
-![fig3](../figs/Fig3_w600.png)
+![fig3](../../figs/Fig3_w600.png)

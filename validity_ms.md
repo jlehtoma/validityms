@@ -39,12 +39,15 @@ Introduction
 ## 1. Introduction
 
 ### 1.1 Operational conservation planning in the forest context (REF)
-* Conservation planning as a part of forestry management: MCDM [@Kangas2005], TRIAD [@Cote2010], guidelines and policies [@Hanski2011], new management regimes [@Kuuluvainen2012]
+* Conservation planning as a part of forestry management: 
+  - MCDM [@Kangas2005] 
+  - TRIAD [@Cote2010] 
+  - Guidelines and policies [@Hanski2011]
+  - New management regimes [@Kuuluvainen2012]
 * Forest conservation planning needs to integrate closely with the existing planning context and operations [@Ferrier2009]
 * Successful integration largely depends on whether existing data that are already part of forestry planning can be utilized in conservation planning (REF) and on whether the results of conservation prioritization can be used in tools already existing in different administrative institutions (REF)
 * In Finland, the decision-making context is a mixture of top-down and bottom-up action and different governance processes [@Paloniemi2008]
 * Introduction to METSO-programme in Finland: aims, schedule, used tools with emphasis in ESMK (REF)
-* [Not sure if needed: then there must be many different approaches to forest conservation / management: do these need to be discussed? Perhaps in the discussion - just a note.]
 
 ### 1.2 Spatial conservation prioritization
 * Get relevant bits from the workflow MS
