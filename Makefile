@@ -72,13 +72,13 @@ bibtex:
 
 pdf: latex
 	@echo $(info Converting to pdf...)	
-	@$(PANDOC) -H $(BUILDDIR)/margins.sty  \
+	@$(PANDOC) -H $(BUILDDIR)/margins.sty \
 	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(BUILDDIR)/$(FILENAME).tex \
 	-o $(BUILDDIR)/$(FILENAME).pdf --latex-engine=xelatex
 
 latex: bibtex
 	@echo $(info Converting to latex...)
-	@$(PANDOC) $(FILENAME)_tables.md -o $(BUILDDIR)/$(FILENAME)_tables.tex --latex-engine=xelatex
+	@$(PANDOC) $(FILENAME)_tables.md -t latex+pipe_tables -o $(BUILDDIR)/$(FILENAME)_tables.tex 
 	@$(PANDOC) $(FILENAME)_figures.md -o $(BUILDDIR)/$(FILENAME)_figures.tex --latex-engine=xelatex
 	@$(PANDOC) $(FILENAME)_suppl.md -o $(BUILDDIR)/$(FILENAME)_suppl.tex --latex-engine=xelatex
 

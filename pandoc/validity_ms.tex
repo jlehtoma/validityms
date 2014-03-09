@@ -47,8 +47,8 @@
 
 \begin{document}
 
-\section{Regional-scale conservation prioritization in boreal forest
-landscapes: generating and validating priority maps}
+\section{Assessing the suitability of forest inventories for basis of
+spatial conservation prioritization}
 
 Joona Lehtomäki\textsuperscript{1,2*} Sakari Tuominen\textsuperscript{3}
 and Antti Leinonen\textsuperscript{4}
@@ -75,34 +75,35 @@ xxx of which xxx in color\\* tables = xxx\\* references = xxx
 
 \subsection{Abstract:}
 
-Fennoscandian boreal forest landscapes are managed primarily for
-forestry purposes, but multi-objective planning including biodiversity
-conservation is becoming more common. Often primary biodiversity data,
-such as detailed distribution data for species, is not available for
-defining conservation priorities over large areas. In sharp contrast,
-data collected for forestry planning are frequently available on various
-structural forest characteristics such as standing tree volume, species
-composition and soil fertility. For conservation planning purposes, data
-has to be 1) relevant for the planning at hand, 2) spatially extensive
-enough, 3) detailed enough, and 4) generally available. Here, we
-demonstrate how to define conservation priorities in a Finnish boreal
-forest landscape using Zonation -- a method and software for spatial
+In most parts of Fennoscandia, Boreal forest landscapes are primarily
+managed for forestry purposes, but multi-objective planning including
+biodiversity conservation is becoming more common. Often primary
+biodiversity data, such as detailed distribution data for species, is
+not available for defining conservation priorities over large areas. In
+sharp contrast, data collected for forestry planning are frequently
+available on various structural forest characteristics such as standing
+tree volume, species composition and soil fertility. For conservation
+planning purposes, data has to be 1) relevant for the planning at hand,
+2) spatially extensive enough, 3) detailed enough, and 4) generally
+available. Here, we demonstrate how to define conservation priorities in
+a Finnish boreal forest landscape using national forest inventory data
+sets. Inventoried data on forest characteristics such as tree volume,
+average diameter, species composition, and soil fertility were used to
+create proxy indexes for conservation value. These indexes were then
+used as input for Zonation -- a method and software for spatial
 conservation prioritization. Conservation priorities are often generated
 without explicit considerations on how well the results capture the
 distribution of conservation value. Here, we assess the validity of
 Zonation results by a comparison to a number of independent data sets
 that describe the distributions of features relevant for conservation,
-such as existing protected areas and woodland key-habitats. Furthermore,
-we investigate what effect the quality of the input forest inventory
-data has on the results. We found that prioritization based on data on
-forest structure can indeed produce results that are informative for
-conservation. Occurrences of independently surveyed features occurred on
-average in areas that Zonation had identified as high priority based on
-nationally available forest data alone. The process described here and
-the results produced by these analyses feed directly into operational
-forest management by the Finnish Forestry Center (Suomen Metsäkeskus).
-Similar analyses could be implemented also in other regions of the
-boreal zone.
+such as existing protected areas and woodland key-habitats. We found
+that prioritization based on forest inventory data can indeed produce
+results that are informative for conservation. Regions on known high
+conservation value were consistently identified by Zonation as high
+priority areas. The process described here and the results produced by
+these analyses feed directly into operational forest management by the
+Finnish Forestry Center (Suomen Metsäkeskus). Similar analyses could be
+implemented also in other regions of the boreal zone.
 
 Keywords: adaptive management; conservation planning; forest
 conservation management; spatial conservation prioritization; Zonation
@@ -114,64 +115,114 @@ software
 context (REF)}
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Boreal zone: Major ecoregion with very large geographic extent
+  (Elbakidze et al. 2013)
+\item
+  Although among the least threatened of ecoregions (REF, IUCN?)
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    Species have become threatened locally (Rassi et al. 2010)
+  \item
+    There is opportunity to set aside and/or manage relatively large
+    areas of forest (Elbakidze et al. 2013)
+  \item
+    Significant role in carbon sequestration (Bradshaw et al. 2009)
+  \end{itemize}
 \item
   Conservation planning as a part of forestry management:
-\item
-  MCDM (Kangas et al. 2005)
-\item
-  TRIAD (Côté et al. 2010)
-\item
-  Guidelines and policies (Hanski 2011)
-\item
-  New management regimes (Kuuluvainen \& Grenfell 2012)
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    Multi-citeria decision making (MCDM) (Kangas et al. 2005):
+    Technically forest management planning, but can include components
+    for biodiversity conservation as well.
+  \item
+    TRIAD (Côté et al. 2010): Functional zoning in forest management
+    planning, different ``zones'' produces different outcomes
+    (e.g.~conservation and timber)
+  \item
+    New management regimes (Kuuluvainen \& Grenfell 2012): Natural
+    disturbance emulation (or ``continuous-cover forestry'') another way
+    of bringing ``soft values'' to operative forestry management.
+  \item
+    Spatiotemporal dynamics (Leroux \& Rayfield 2013; Mönkkönen et al.
+    2014): Important, but demanding to take into account. Many of the
+    actual optimization methods cannot handle very large data.
+  \item
+    Need for change of how forest conservation is planned and
+    implemented (Hanski 2011): A core network of protected areas
+    surrounded by areas managed less intensively (``management
+    landscapes'').
+  \end{itemize}
 \item
   Forest conservation planning needs to integrate closely with the
-  existing planning context and operations (Ferrier \& Wintle 2009)
+  existing land use planning and resource use planning (Ferrier \&
+  Wintle 2009)
 \item
   Successful integration largely depends on whether existing data that
   are already part of forestry planning can be utilized in conservation
   planning (REF) and on whether the results of conservation
   prioritization can be used in tools already existing in different
-  administrative institutions (REF)
-\item
-  In Finland, the decision-making context is a mixture of top-down and
-  bottom-up action and different governance processes (Paloniemi \&
-  Tikka 2008)
-\item
-  Introduction to METSO-programme in Finland: aims, schedule, used tools
-  with emphasis in ESMK (REF)
+  administrative and management institutions (REF)
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    In Finland, the decision-making context is a mixture of top-down and
+    bottom-up action and different governance processes (Paloniemi \&
+    Tikka 2008)
+  \item
+    Introduction to METSO-programme in Finland: aims, schedule, used
+    tools with emphasis in ESMK (REF)
+  \end{itemize}
 \end{itemize}
 
 \subsubsection{1.2 Spatial conservation prioritization}
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
 \item
-  Get relevant bits from the workflow MS
+  General description of background, methods, and worflows from
+  (Lehtomäki \& Moilanen 2013)
 \item
   Has been done in also in the boreal forest context (Mikusiński et al.
   2007; Lehtomäki et al. 2009; Sirkiä et al. 2012)⁠
 \item
   Associated uncertainties often high , performance and efficiency
   unknown (Langford et al. 2011), need for (on-the-ground) validation
-\end{itemize}
-
-\subsubsection{1.3 Validation of spatial conservation prioritization
-results}
-
-\begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
 \item
-  Visually appealing priority maps may influence our perception (as
-  defined by the ecological model) of the distribution of conservation
-  value → how to asses whether the results indeed are useful?
+  Objective of a spatial prioritization analysis can (and indeed often
+  should) be not the \emph{highest} conservation priorities, but the
+  \emph{lowest}. These are areas most suitable for e.g.~intensive
+  forestry without being too harmful for biodiversity.
 \item
   Usefulness of the results also depends on the sensitivity of the
   results. Particularly, if the informative part of the results
   (i.e.~the best fraction of the landscape for e.g.~conservation) is
   small relative to the overall size of the landscape then the results
   may very sensitive to various factors
+\end{itemize}
+
+\subsubsection{1.3 Data issues}
+
+\begin{itemize}
+\item
+  Reliable and extensive data on species occurrence is rarely available,
+  but not in the case of Finnish forest (REFS, check the flying squirrel
+  / polypore papers): What to use as a surrogate?
+\item
+  Using forest inventory data as a basis for conservation prioritization
+  is effectively using surrogates for the primary forest biodiversity
+  data (species and habitats occurrence data)
+\item
+  Building the ecological model through expert elicitation is a widely
+  used technique (REFS)
+\item
+  Habitat Suitability Indexes (HSI) another widely adopted approach
+  (something by Kouki et al.)
 \end{itemize}
 
 \subsubsection{1.4 Aims and scope of the paper}
@@ -186,27 +237,67 @@ results}
   \begin{itemize}
   \itemsep1pt\parskip0pt\parsep0pt
   \item
-    The nature of the data (MSNFI vs.~more detailed data)
+    The nature of the data (MSNFI vs.~more detailed data).
+
+    \begin{itemize}
+    \itemsep1pt\parskip0pt\parsep0pt
+    \item
+      MSNFI is a continuous estimate that is more accurate and unbiased
+      over larger extents (Tomppo 2006)
+    \item
+      Stand-based inventory data more accurate, but this will depend on
+      the age of the data. Additionally there is an unknown quantity of
+      variation caused by differences between practitioners.
+    \end{itemize}
   \item
     Technical usability of the data
+
+    \begin{itemize}
+    \itemsep1pt\parskip0pt\parsep0pt
+    \item
+      Usually well managed and relatively easy to work with
+    \item
+      MSNFI expandable beyond the standard products (i.e.~segmentation
+      provided by Sakari)
+    \item
+      Legal issues may restrict usability
+    \end{itemize}
   \item
     Adequacy of data in the construction of the ecological model
+
+    \begin{itemize}
+    \itemsep1pt\parskip0pt\parsep0pt
+    \item
+      What attributes of fores inventory data can be used for defining
+      conservation value (largely based on expert views)?
+    \end{itemize}
   \end{itemize}
 \item
-  Investigate how well spatial conservation prioritization (using the
-  previous data and Zonation) can inform conservation decision-making in
-  operational forestry planning in Finland
+  Investigate how well spatial conservation prioritization (using forest
+  inventory data and Zonation) can inform conservation decision-making
+  in operational forestry planning in Finland
 
   \begin{itemize}
   \itemsep1pt\parskip0pt\parsep0pt
   \item
     Comparison of the results to a set of independent data sets
   \item
-    Matching of planning scales
+    What are the advantages/disadvantages of different scales?
+
+    \begin{itemize}
+    \itemsep1pt\parskip0pt\parsep0pt
+    \item
+      Being part of operational planning implies very fine-scale (maybe
+      Kangas et al. 2014?)
+    \item
+      On the other hand, large scale will even out the potential errors
+      (Tomppo 2006)
+    \end{itemize}
   \end{itemize}
 \item
   Suggest ways to improve use of spatial conservation prioritization
-  methods in operational forestry planning
+  methods in operational forestry planning (Not necessarily an aim in
+  itself, will be part of the discussion anyway)
 
   \begin{itemize}
   \itemsep1pt\parskip0pt\parsep0pt
@@ -215,8 +306,6 @@ results}
     standard forestry operations
   \item
     How to improve data? How to improve analyses?
-  \item
-    Material and Methods
   \end{itemize}
 \end{enumerate}
 
@@ -226,7 +315,6 @@ results}
 validation}
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
 \item
   Data used for this purpose must be available across the entire study
   area, not from individual locations only. Source of the data matters
@@ -239,25 +327,25 @@ validation}
   \item
     Brief description of the data used
   \item
-    Table 1: Data sets used for the construction of the ecologically
-    based model and index of conservation value (see 2.3 for
-    explanation).
+    \textbf{Table 1:} Data sets used for the construction of the
+    ecologically based model and index of conservation value (see 2.3
+    for explanation).
   \end{itemize}
 \item
-  Validation data
+  Validation data (PAs + woodland key-habitats + METSO-deals + ENGO
+  sites (?))
 
   \begin{itemize}
   \itemsep1pt\parskip0pt\parsep0pt
   \item
-    Table 2: Additional data used for the independent validation of
-    results
+    \textbf{Table 2:} Additional data used for the independent
+    validation of results
   \end{itemize}
 \end{itemize}
 
 \subsubsection{2.2 The ecological model}
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
 \item
   Short description here, more detailed in the supplement
 \item
@@ -291,21 +379,20 @@ validation}
   \item
     Based on discussions with the experts + web questionnaire
   \item
-    Figure 1: The ecological model. Data sets, the structure of the
-    index + the selected connectivity distances and connectivity
-    interaction types. (similar to (Sirkiä et al., 2012)⁠)
+    \textbf{Figure 1:} The ecological model. Data sets, the structure of
+    the index + the selected connectivity distances and connectivity
+    interaction types. (similar to (Sirkiä et al. 2012)⁠)
   \end{itemize}
 \end{itemize}
 
 \subsubsection{2.4 Analysis variants}
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
 \item
-  We selected five analysis variants XXX in order to examine a suite of
+  We selected four analysis variants XXX in order to examine a suite of
   scenarios directly relevant for the planning need.
 \item
-  Table 3: Analysis variants. (link to Fig 1)
+  \textbf{Table 3:} Analysis variants. (link to Fig 1)
 \end{itemize}
 
 \subsubsection{2.5 Interpretation of results (prioritity rank maps)}
@@ -318,11 +405,11 @@ validation}
   \begin{itemize}
   \itemsep1pt\parskip0pt\parsep0pt
   \item
-    Priority rank maps for the five variants of Table (3)
+    Priority rank maps for the four variants of Table (3)
   \item
     Representation level boxplots for particular feature groups (by tree
-    spp or fertility?) for particular top fraction of the landscape →
-    this particular top fraction could correspond to the overall area
+    spp or fertility?) for particular top fraction of the landscape;
+    This particular top fraction could correspond to the overall area
     objective for ESMK (will have to check what it is)
   \end{itemize}
 \item
@@ -331,11 +418,12 @@ validation}
   \begin{itemize}
   \itemsep1pt\parskip0pt\parsep0pt
   \item
-    Operationally, how ``robust'' are the results? i.e.~depending on
-    which variant is used, where are highest priorities? Also, what's
-    the effect of the ``top fraction of the landscape'' selected?
+    Operationally, how robust are the results? i.e.~depending on which
+    variant is used, where are highest priorities? Also, what's the
+    effect of the ``top fraction of the landscape'' selected?
   \item
-    Overlap and correlations
+    Overlap and correlations using Kendall Tau and Jaccard index (needs
+    an extra Figure?)
   \end{itemize}
 \item
   Validation with independent data sets
@@ -357,30 +445,29 @@ validation}
 \subsubsection{3.1 Spatial priorities}
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
 \item
-  Figure 2: Priority rank maps for analysis variants (all 4).
+  \textbf{Figure 2:} Priority rank maps for analysis variants (all 4).
 \item
-  Figure 3: representation levels of feature groups (grouped by spp or
-  fertility) for frx and others
+  \textbf{Figure 3:} representation levels of feature groups (grouped by
+  spp or fertility) for top fraction of the landscape
 \item
   Priorities tend to be lower on areas with data source XXX\ldots{}
+  (probably MSNFI)
 \item
-  General patterns are -- naturally -- strongly affected by the
-  connectivity components included, but this is scale dependent
+  General patterns are strongly affected by the connectivity components
+  included, but this is scale dependent
 \end{itemize}
 
 \subsubsection{3.2 Comparison of variants}
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
 \item
-  Table 4: Summary statistics on the differences between the variants at
-  given levels of the top fraction of the landscape: overlap.
+  \textbf{Table 4:} Summary statistics on the differences between the
+  variants at given levels of the top fraction of the landscape:
+  overlap.
 \item
   The results show that the absolute highest fraction of the landscape
-  {[}is / is not{]} relatively dependent to which variant is used. The
-  result is very dependent on the analysis variant used
+  relatively independent to which variant is used.
 \item
   Incorporating connectivity components will result in tradeoffs:
   accounting for the connectivity to existing protected areas aggregate
@@ -391,10 +478,9 @@ validation}
 \subsubsection{3.3 Comparison to independent data sets}
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
 \item
-  Figure 4: Distributions of priority ranks (histograms) in different,
-  independent data sets.
+  \textbf{Figure 4:} Distributions of priority ranks (histograms) in
+  different, independent data sets.
 \item
   Characteristics of individual data sets determine which variant should
   be compared to which data. E.g. the inventory data collected by the
@@ -410,14 +496,12 @@ validation}
 \item
   Comparison to independent data sets relevant for biodiversity
   conservation indicate that known valuable locations indeed emerge from
-  the analysis with high priorities
+  the analysis with high priorities +Data from conventional forestry
+  planning coupled with a spatial conservation prioritization tool like
+  Zonation can be used to identify areas of high conservation priorities
 
   \begin{itemize}
   \itemsep1pt\parskip0pt\parsep0pt
-  \item
-    Data from conventional forestry planning coupled with a spatial
-    conservation prioritization tool like Zonation can be used to
-    identify areas of high conservation priorities
   \item
     Characterize how the validation worked or not with different data
     sets
@@ -500,12 +584,23 @@ validation}
 
 \section{References}
 
+Bradshaw, C. J. a, I. G. Warkentin, and N. S. Sodhi. 2009. Urgent
+preservation of boreal carbon stocks and biodiversity.. Trends in
+Ecology and Evolution \textbf{24}:541--8. Retrieved from
+\url{http://dx.doi.org/10.1016/j.tree.2009.03.019}.
+
 Côté, P., R. Tittler, C. Messier, D. D. Kneeshaw, A. Fall, and M.-J.
 Fortin. 2010. Comparing different forest zoning options for
 landscape-scale management of the boreal forest: Possible benefits of
 the TRIAD. Forest Ecology and Management \textbf{259}:418--427.
 Retrieved from
 \url{http://linkinghub.elsevier.com/retrieve/pii/S0378112709007804}.
+
+Elbakidze, M., P. Angelstam, N. Sobolev, E. Degerman, K. Andersson, R.
+Axelsson, O. Höjer, and S. Wennberg. 2013. Protected area as an
+indicator of ecological sustainability? A century of development in
+Europe's boreal forest. Ambio \textbf{42}:201--14. Retrieved from
+\url{http://dx.doi.org/10.1007/s13280-012-0375-1}.
 
 Ferrier, S., and B. A. Wintle. 2009. Quantitative Approaches to Spatial
 Conservation Prioritization: Matching the Solution to the Need. Page 304
@@ -540,20 +635,44 @@ conservation. Forest Ecology and Management \textbf{258}:2439--2449.
 Retrieved from
 \url{http://linkinghub.elsevier.com/retrieve/pii/S0378112709005969}.
 
+Lehtomäki, J., and A. Moilanen. 2013. Methods and workflow for spatial
+conservation prioritization using Zonation. Environmental Modelling \&
+Software \textbf{47}:128--137. Retrieved from
+\url{http://linkinghub.elsevier.com/retrieve/pii/S1364815213001072}.
+
+Leroux, S. J., and B. Rayfield. 2013. Methods and tools for addressing
+natural disturbance dynamics in conservation planning for wilderness
+areas. Diversity and Distributions \textbf{20}:1--14. Retrieved from
+\url{http://doi.wiley.com/10.1111/ddi.12155}.
+
 Mikusiński, G., R. L. Pressey, L. Edenius, H. Kujala, A. Moilanen, J.
 Niemelä, and T. Ranius. 2007. Conservation planning in forest landscapes
 of fennoscandia and an approach to the challenge of countdown 2010.
 Conservation Biology \textbf{21}:1445--1454.
+
+Mönkkönen, M., A. Juutinen, A. Mazziotta, K. Miettinen, D. Podkopaev, P.
+Reunanen, H. Salminen, and O.-P. Tikkanen. 2014. Spatially dynamic
+forest management to sustain biodiversity and economic returns. Journal
+of environmental management \textbf{134C}:80--89. Retrieved from
+\url{http://www.ncbi.nlm.nih.gov/pubmed/24463852}.
 
 Paloniemi, R., and P. M. Tikka. 2008. Ecological and social aspects of
 biodiversity conservation on private lands. Environmental Science \&
 Policy \textbf{11}:336--346. Retrieved from
 \url{http://linkinghub.elsevier.com/retrieve/pii/S1462901107001256}.
 
+Rassi, P., E. Hyvärinen, A. Juslén, and I. Mannerkoski. 2010. The 2010
+Red List of Finnish species. Helsinki.
+
 Sirkiä, S., J. Lehtomäki, H. Lindén, E. Tomppo, and A. Moilanen. 2012.
 Defining spatial priorities for capercaillie Tetrao urogallus lekking
 landscape conservation in south-central Finland. Wildlife Biology
 \textbf{18}:337--353.
+
+Tomppo, E. O. 2006. The Finnish multi-source National Forest Inventory -
+small area estimation and map production. Pages 195--224 in A. Kangas
+and M. Maltamo, editors. Forest inventory. Methodology and Applications.
+Dordrecht, Germany. Retrieved from \url{Springer}.
 
 \section{Tables}
 
@@ -572,6 +691,12 @@ validation data to determine the mean and the distribution of ranks
 (Figure 4).
 
 \textbf{Figure 2.} Conservation rank priority maps.
+
+\textbf{Figure 3.} Performance curves for variant XXX (REPLACE
+``PERFORMANCE CURVES'')
+
+\textbf{Figure 4.} Distribution of rank priorities in comparison data
+sets.
 
 \includegraphics{figs/Fig1_w500.png}\\\textbf{Figure 1:} Schematics of
 the analysis setup.

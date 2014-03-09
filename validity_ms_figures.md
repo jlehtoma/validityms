@@ -4,6 +4,10 @@ __Figure 1.__ Schematics of the analysis setup. Different parts of the analysis 
 
 __Figure 2.__ Conservation rank priority maps. 
 
+__Figure 3.__ Performance curves for variant XXX (REPLACE "PERFORMANCE CURVES")
+
+__Figure 4.__ Distribution of rank priorities in comparison data sets.
+
 ![Figure 1](figs/Fig1_w500.png)  
 __Figure 1:__ Schematics of the analysis setup. 
 
