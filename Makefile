@@ -72,7 +72,7 @@ bibtex:
 
 pdf: latex
 	@echo $(info Converting to pdf...)
-	@$(PANDOC) -H $(BUILDDIR)/margins.sty --template $(BUILDDIR)/templates/default.tex \
+	@$(PANDOC) -H $(BUILDDIR)/margins.sty  \
 	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(BUILDDIR)/$(FILENAME).tex \
 	-o $(BUILDDIR)/$(FILENAME).pdf --latex-engine=xelatex
 
