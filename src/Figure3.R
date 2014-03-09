@@ -4,35 +4,42 @@ library(ProjectTemplate)
 load.project()
 
 # Set the plot labels
-spp.labels <- c("Birch", "Spruce", "Pine", "OtherDec")
-fert.labels <- c("Lehto", "Lehtomainen", "Tuore", "Kuivahko", "Kuiva", "x")
+spp.labels <- c("1"="Birch", "2"="Spruce", "3"="OtherDec", "4"="Pine")
+fert.labels <- c("1"="Lehto", "2"="Lehtomainen", "3"="Tuore", "4"="Kuivahko", 
+                 "5"="Kuiva")
 
 # Get variant 4: 17_60_5kp_abf_pe_w_cmat
-variant.4 <- getVariant(project.130315, 4)
-p1 <- plot(variant.4, monochrome=TRUE, group=FALSE, labels=spp.labels, 
-           statistic="mean", invert.x=FALSE, main="Tree species group")
-p1  <- p1 + theme(legend.position=c(.35, .3))
+variant.4 <- get_variant(project.esmk, 4)
+groupnames(variant.4) <- spp.labels
+curves.4 <- curves(variant.4)
+grp.curves.4 <- curves(variant.4, groups=TRUE)
+p1 <- plot(grp.curves.4, monochrome=FALSE, 
+            invert.x=FALSE, main="Tree species group")
 
 # Get variant 11: 24_60_5kp_abf_pe_w_cmat_altg
-variant.11 <- getVariant(project.130315, 11)
-p2 <- plot(variant.11, monochrome=TRUE, group=TRUE, labels=fert.labels, 
-           statistic="mean", invert.x=TRUE, main="Soil fertility")
-p2  <- p2 + theme(legend.position=c(.35, .3))
+variant.11 <- get_variant(project.esmk, 11)
+groupnames(variant.11) <- fert.labels
+curves.11 <- curves(variant.11)
+grp.curves.11 <- curves(variant.11, groups=TRUE)
+p2 <- plot(grp.curves.11, monochrome=FALSE, invert.x=TRUE, 
+           main="Soil fertility")
 
 # Get variant 7: 20_60_5kp_abf_pe_w_cmat_cmete_cres_mask
-variant.7 <- getVariant(project.130315, 7)
-p3 <- plot(variant.7, monochrome=TRUE, group=TRUE, groups=1:4, labels=spp.labels, 
-           statistic="mean", invert.x=FALSE, main="Tree species group")
+variant.7 <- getvariant(project.130315, 7)
+p3 <- plot(variant.7, monochrome=FALSE, group=TRUE, groups=1:4, 
+           labels=spp.labels, statistic="mean", invert.x=FALSE, 
+           main="Tree species group")
 p3  <- p3 + theme(legend.position=c(.35, .3))
 
 # Get variant 14: 27_60_5kp_abf_pe_w_cmat_cmete_cres_mask_altg
-variant.14 <- getVariant(project.130315, 14)
-p4 <- plot(variant.14, monochrome=TRUE, group=TRUE, groups=1:5, labels=fert.labels, 
-           statistic="mean", invert.x=TRUE, main="Soil fertility")
+variant.14 <- getvariant(project.130315, 14)
+p4 <- plot(variant.14, monochrome=FALSE, group=TRUE, groups=1:5, 
+           labels=fert.labels, statistic="mean", invert.x=TRUE, 
+           main="Soil fertility")
 p4  <- p4 + theme(legend.position=c(.35, .3))
 
-
 grid.arrange(p1, p2, p3, p4, nrow=2, ncol=2)
+
 
 # Plot just variants 7 and 14
 grid.arrange(p3, p4, nrow=1, ncol=2)
