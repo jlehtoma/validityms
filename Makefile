@@ -71,7 +71,7 @@ bibtex:
 	@cp /home/jlehtoma/Dropbox/Documents/Mendeley/BibTex/validity_ms.bib $(BUILDDIR) 
 
 pdf: latex
-	@echo $(info Converting to pdf...)
+	@echo $(info Converting to pdf...)	
 	@$(PANDOC) -H $(BUILDDIR)/margins.sty  \
 	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(BUILDDIR)/$(FILENAME).tex \
 	-o $(BUILDDIR)/$(FILENAME).pdf --latex-engine=xelatex
