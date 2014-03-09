@@ -1,3 +1,5 @@
+\clearpage
+
 # Supplementary material
 
 Building the ecological model

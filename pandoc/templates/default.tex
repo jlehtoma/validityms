@@ -2,6 +2,8 @@
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
+\usepackage{float} % provides the H option for float placement
+\usepackage{graphicx}
 \ifxetex
   \usepackage{fontspec,xltxtra,xunicode}
   \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
@@ -78,7 +80,7 @@ $if(fancy-enums)$
 $endif$
 $if(tables)$
 \usepackage{ctable}
-\usepackage{float} % provides the H option for float placement
+
 $endif$
 $if(url)$
 \usepackage{url}
