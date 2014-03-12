@@ -13,3 +13,4 @@ cache/*
 *tmp*
 data/130315
 *.sublime-*
+*.~lock*
