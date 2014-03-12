@@ -21,7 +21,7 @@ variant.11 <- get_variant(project.esmk, 11)
 groupnames(variant.11) <- fert.labels
 curves.11 <- curves(variant.11)
 grp.curves.11 <- curves(variant.11, groups=TRUE)
-p2 <- plot(grp.curves.11, monochrome=FALSE, invert.x=TRUE, 
+p2 <- plot(grp.curves.11, monochrome=FALSE, invert.x=TRUE, mean=TRUE, min=TRUE,
            main="Soil fertility")
 
 # Get variant 7: 20_60_5kp_abf_pe_w_cmat_cmete_cres_mask
