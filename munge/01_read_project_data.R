@@ -2,29 +2,42 @@
 # Viikki
 
 library(zonator)
+library(raster)
 
-# Set the data source
-if (.Platform$OS.type == "unix") {
-  root <- "/home/jlehtoma/Dropbox/Collaborations/validity_ms/"
-} else {
-  root <- "C:\\Data\\ESMK\\analyysi"
-}
 
+# Data setup --------------------------------------------------------------
+
+# Set data sources. This will depend on where repository zsetup-esmk is 
+# located, but the default assumption is that they share the same root
+# folder
+
+zproject.dir <- "../zsetup-esmk"
+zsetup.dir <- file.path(zproject.dir, "zsetup")
+root.data.dir <- file.path(zproject.dir, "data")
+common.data.dir <- file.path(root.data.dir, "common/60")
 
 # Project and variants ----------------------------------------------------
 
-project.esmk <- create_zproject(root=root)
+project.esmk <- create_zproject(root=zproject.folder, debug=TRUE)
 
-# Since the only difference in variants 14-20 and 21-27 is the groups used,
-# use 14-20 and do the regrouping manually. Variants are:
+# Variants are:
 #
-# 1 = 14_60_5kp_abf
-# 2 = 15_60_5kp_abf_pe
-# 3 = 16_60_5kp_abf_pe_w
-# 4 = 17_60_5kp_abf_pe_w_cmat
-# 5 = 18_60_5kp_abf_pe_w_cmat_cmete
-# 6 = 19_60_5kp_abf_pe_w_cmat_cmete_cres
-# 7 = 20_60_5kp_abf_pe_w_cmat_cmete_cres_mask
+# ALL DATA
+#
+# 1 = 01_abf
+# 2 = 02_abf_pe
+# 3 = 03_abf_pe_w
+# 4 = 04_abf_pe_w_cmat
+# 5 = 05_abf_pe_w_cmat_cmete
+# 6 = 06_abf_pe_w_cmat_cmete_cres
+# 7 = 07_abf_pe_w_cmat_cmete_cres_mask
+# 
+# MSNFI DATA ONLY
+# 
+# 8 = 08_msnfi_abf
+# 9 = 09_msnfi_abf_pe
+# 10 = 10_msnfi_abf_pe_w
+# 11 = 11_msnfi_abf_pe_w_cmat
 #
 variant.1 = get_variant(project.esmk, 1)
 variant.2 = get_variant(project.esmk, 2)
@@ -33,7 +46,26 @@ variant.4 = get_variant(project.esmk, 4)
 variant.5 = get_variant(project.esmk, 5)
 variant.6 = get_variant(project.esmk, 6)
 variant.7 = get_variant(project.esmk, 7)
+variant.8 = get_variant(project.esmk, 8)
+variant.9 = get_variant(project.esmk, 9)
+variant.10 = get_variant(project.esmk, 10)
+variant.11 = get_variant(project.esmk, 11)
 
 # Re-grouping -------------------------------------------------------------
 
 
+# Auxillary data ----------------------------------------------------------
+
+# These data sets are part of Zonation analyses or then they are used in
+# analyzing the results.
+
+# Protected areas raster is a hierarchical one where 
+# 1 = PA, 0 = everything else
+pa.mask.file <- file.path(common.data.dir, "esmk_hier_pas.img")
+pa.mask <- raster(pa.mask.file)
+
+# METSO mask contains location acquired to METSO 2011-2012. In practice,
+# they are private protected areas. Each location has a unique ID-number
+# which range [1, 75].
+metso.mask.file <- file.path(common.data.dir, "esmk_metso.img")
+metso.mask <- raster(metso.mask.file)
