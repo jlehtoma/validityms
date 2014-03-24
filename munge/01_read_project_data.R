@@ -1,6 +1,5 @@
 # Latest project, basically the runs done by Antti in septemeber re-run in
 # Viikki
-
 library(zonator)
 library(raster)
 
@@ -17,7 +16,8 @@ common.data.dir <- file.path(root.data.dir, "common/60")
 
 # Project and variants ----------------------------------------------------
 
-project.esmk <- create_zproject(root=zproject.dir, debug=TRUE)
+message("  Reading in Zproject...")
+project.esmk <- create_zproject(root=zproject.dir, debug=FALSE)
 
 # Variants are:
 #
@@ -58,9 +58,11 @@ msnfi.abf.pe.w.cmat <- get_variant(project.esmk, 11)
 # These data sets are part of Zonation analyses or then they are used in
 # analyzing the results.
 
-# Protected areas raster is a hierarchical one where 
-# 1 = PA, 0 = everything else
-pa.mask.file <- file.path(common.data.dir, "esmk_hier_pas.img")
+# Protected areas raster that has open peatlands ("avosuo", as defined in 
+# MSNFI raster "päätyyppi") removed from it. Raster has 1 if pixel belongs to a 
+# PA, otherwise NoData. NOTE: if you need all PAs (including open peatlands) use
+# raster "esmk_hier_pas.img"
+pa.mask.file <- file.path(common.data.dir, "esmk_pas_nopeat.img")
 pa.mask <- raster(pa.mask.file)
 
 # METSO mask contains location acquired to METSO 2011-2012. In practice,
@@ -74,3 +76,19 @@ metso.mask <- raster(metso.mask.file)
 # WKH, otherwise NoData.
 wkh.mask.file <- file.path(common.data.dir, "esmk_wkh.img")
 wkh.mask <- raster(wkh.mask.file)
+
+# Soil fertility class (SFC) raster has 5 classes in it:
+# 1 = Herb-rich (lehto)
+# 2 = Herb-rich-like (lehtomainen)
+# 3 = Moist/fresh (tuore)
+# 4 = Semi-xeric (Kuivahko)
+# 5 = Xeric (includes rocky outcrops) (kuiva, karukkokankaat, kalliot)
+sfc.mask.file <- file.path(common.data.dir, "esmk_soil_fertility.img")
+sfc.mask <- raster(sfc.mask.file)
+
+# Data source raster defined from which data source data is derived:
+# 1 = Finnish Forest and Park Service Natural Heritage (FFP, MHLP)
+# 2 = Finnish Forest Center (FFC, MKMV)
+# 3 = Finnish Forest Research Institute (FFR, MLVMI)
+ds.mask.file <- file.path(common.data.dir, "esmk_data_source.img")
+ds.mask <- raster(ds.mask.file)
