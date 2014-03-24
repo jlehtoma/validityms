@@ -4,7 +4,6 @@
 library(zonator)
 library(raster)
 
-
 # Data setup --------------------------------------------------------------
 
 # Set data sources. This will depend on where repository zsetup-esmk is 
@@ -18,7 +17,7 @@ common.data.dir <- file.path(root.data.dir, "common/60")
 
 # Project and variants ----------------------------------------------------
 
-project.esmk <- create_zproject(root=zproject.folder, debug=TRUE)
+project.esmk <- create_zproject(root=zproject.dir, debug=TRUE)
 
 # Variants are:
 #
@@ -39,17 +38,18 @@ project.esmk <- create_zproject(root=zproject.folder, debug=TRUE)
 # 10 = 10_msnfi_abf_pe_w
 # 11 = 11_msnfi_abf_pe_w_cmat
 #
-variant.1 = get_variant(project.esmk, 1)
-variant.2 = get_variant(project.esmk, 2)
-variant.3 = get_variant(project.esmk, 3)
-variant.4 = get_variant(project.esmk, 4)
-variant.5 = get_variant(project.esmk, 5)
-variant.6 = get_variant(project.esmk, 6)
-variant.7 = get_variant(project.esmk, 7)
-variant.8 = get_variant(project.esmk, 8)
-variant.9 = get_variant(project.esmk, 9)
-variant.10 = get_variant(project.esmk, 10)
-variant.11 = get_variant(project.esmk, 11)
+abf <- get_variant(project.esmk, 1)
+abf.pe <- get_variant(project.esmk, 2)
+abf.pe.w <- get_variant(project.esmk, 3)
+abf.pe.w.cmat <- get_variant(project.esmk, 4)
+abf.pe.w.cmat.cmete <- get_variant(project.esmk, 5)
+abf.pe.w.cmat.cmete.cres <- get_variant(project.esmk, 6)
+abf.pe.w.cmat.cmete.cres.mask <- get_variant(project.esmk, 7)
+
+msnfi.abf <- get_variant(project.esmk, 8)
+msnfi.abf.pe <- get_variant(project.esmk, 9)
+msnfi.abf.pe.w <- get_variant(project.esmk, 10)
+msnfi.abf.pe.w.cmat <- get_variant(project.esmk, 11)
 
 # Re-grouping -------------------------------------------------------------
 
