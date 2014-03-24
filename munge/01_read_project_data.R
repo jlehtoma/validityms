@@ -53,7 +53,6 @@ msnfi.abf.pe.w.cmat <- get_variant(project.esmk, 11)
 
 # Re-grouping -------------------------------------------------------------
 
-
 # Auxillary data ----------------------------------------------------------
 
 # These data sets are part of Zonation analyses or then they are used in
@@ -69,3 +68,9 @@ pa.mask <- raster(pa.mask.file)
 # which range [1, 75].
 metso.mask.file <- file.path(common.data.dir, "esmk_metso.img")
 metso.mask <- raster(metso.mask.file)
+
+# Woodland key habitats (WKH) are small set-asides and a conservation instrument
+# provided by general forest management. Raster has 1 if pixel belongs to a 
+# WKH, otherwise NoData.
+wkh.mask.file <- file.path(common.data.dir, "esmk_wkh.img")
+wkh.mask <- raster(wkh.mask.file)
