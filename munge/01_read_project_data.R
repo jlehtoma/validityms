@@ -21,7 +21,10 @@ project.esmk <- create_zproject(root=zproject.dir, debug=FALSE)
 
 # Variants are:
 #
-# ALL DATA
+# ALL DATA - Using MSNFI data + more detailed data from stand-based inventory
+# databases. Also using division into separate feature layers based on 
+# soil fertility classification derived from more detailed databases and 
+# (pixel-base) MSNFI.
 #
 # 1 = 01_abf
 # 2 = 02_abf_pe
@@ -31,13 +34,21 @@ project.esmk <- create_zproject(root=zproject.dir, debug=FALSE)
 # 6 = 06_abf_pe_w_cmat_cmete_cres
 # 7 = 07_abf_pe_w_cmat_cmete_cres_mask
 # 
-# MSNFI DATA ONLY
+# MSNFI DATA ONLY - Using division into separate feature layers based on 
+# soil fertility classification derived from (segmented) MSNFI.
 # 
 # 8 = 08_msnfi_abf
 # 9 = 09_msnfi_abf_pe
 # 10 = 10_msnfi_abf_pe_w
 # 11 = 11_msnfi_abf_pe_w_cmat
 #
+# MSNFI DATA ONLY - No division into separate feature layers based on 
+# soil fertility classification.
+#
+# 15 = 15_msnfi_abf_pe_nosfc
+# 16 = 16_msnfi_abf_pe_w_nosfc
+# 17 = 17_msnfi_abf_pe_w_cmat_nosfc
+
 abf <- get_variant(project.esmk, 1)
 abf.pe <- get_variant(project.esmk, 2)
 abf.pe.w <- get_variant(project.esmk, 3)
@@ -50,6 +61,10 @@ msnfi.abf <- get_variant(project.esmk, 8)
 msnfi.abf.pe <- get_variant(project.esmk, 9)
 msnfi.abf.pe.w <- get_variant(project.esmk, 10)
 msnfi.abf.pe.w.cmat <- get_variant(project.esmk, 11)
+
+nosfc.msnfi.abf.pe <- get_variant(project.esmk, 15)
+nosfc.msnfi.abf.pe.w <- get_variant(project.esmk, 16)
+nosfc.msnfi.abf.pe.w.cmat <- get_variant(project.esmk, 17)
 
 # Re-grouping -------------------------------------------------------------
 
