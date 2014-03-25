@@ -20,11 +20,6 @@ rankr.msnfi.abf.pe.w <- rank_raster(msnfi.abf.pe.w)
 # Variant 16
 rankr.nosfc.msnfi.abf.pe.w <- rank_raster(nosfc.msnfi.abf.pe.w)
 
-# For a reason or another, extents of MSNFI-only results have shifted 20 meters
-# to the east. Manually fix this.
-extent(rankr.msnfi.abf.pe.w) <- extent(rankr.abf.pe.w)
-extent(rankr.nosfc.msnfi.abf.pe.w) <- extent(rankr.abf.pe.w)
-
 # ylimit is hard coded to ease the comparison of priority distributions.
 # Max-values from pairwise comparisons (manually from plots) are:
 p1.p3.ylim <- 12500
@@ -76,10 +71,6 @@ rankr.abf.pe.w.cmat <- rank_raster(abf.pe.w.cmat)
 rankr.msnfi.abf.pe.w.cmat <- rank_raster(msnfi.abf.pe.w.cmat)
 # Variant 17
 rankr.nosfc.msnfi.abf.pe.w.cmat <- rank_raster(nosfc.msnfi.abf.pe.w.cmat)
-# For a reason or another, extents of MSNFI-only results have shifted 20 meters
-# to the east. Manually fix this.
-extent(rankr.msnfi.abf.pe.w.cmat) <- extent(rankr.abf.pe.w.cmat)
-extent(rankr.nosfc.msnfi.abf.pe.w.cmat) <- extent(rankr.abf.pe.w.cmat)
 
 p10 <- plot_hist(rankr.nosfc.msnfi.abf.pe.w.cmat, pa.mask, add.median=TRUE, 
                 add.mean=FALSE, binwidth=0.02, 

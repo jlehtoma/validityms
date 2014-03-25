@@ -49,6 +49,8 @@ project.esmk <- create_zproject(root=zproject.dir, debug=FALSE)
 # 16 = 16_msnfi_abf_pe_w_nosfc
 # 17 = 17_msnfi_abf_pe_w_cmat_nosfc
 
+# Actual variants ---------------------------------------------------------
+
 abf <- get_variant(project.esmk, 1)
 abf.pe <- get_variant(project.esmk, 2)
 abf.pe.w <- get_variant(project.esmk, 3)
@@ -56,6 +58,21 @@ abf.pe.w.cmat <- get_variant(project.esmk, 4)
 abf.pe.w.cmat.cmete <- get_variant(project.esmk, 5)
 abf.pe.w.cmat.cmete.cres <- get_variant(project.esmk, 6)
 abf.pe.w.cmat.cmete.cres.mask <- get_variant(project.esmk, 7)
+
+# Fix raster extents ------------------------------------------------------
+
+# For a reason or another, extents of MSNFI-only results have shifted 20 meters
+# to the south. Manually fix this for variants 8-11 and 15-17. Use 01_abf as a 
+# reference point.
+
+extent(project.esmk@variants[[8]]@results@rank) <- extent(abf@results@rank)
+extent(project.esmk@variants[[9]]@results@rank) <- extent(abf@results@rank)
+extent(project.esmk@variants[[10]]@results@rank) <- extent(abf@results@rank)
+extent(project.esmk@variants[[11]]@results@rank) <- extent(abf@results@rank)
+
+extent(project.esmk@variants[[15]]@results@rank) <- extent(abf@results@rank)
+extent(project.esmk@variants[[16]]@results@rank) <- extent(abf@results@rank)
+extent(project.esmk@variants[[17]]@results@rank) <- extent(abf@results@rank)
 
 msnfi.abf <- get_variant(project.esmk, 8)
 msnfi.abf.pe <- get_variant(project.esmk, 9)
