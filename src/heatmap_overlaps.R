@@ -18,10 +18,10 @@ cross_range_jaccard <- function(raster1, raster2, thresholds, ...) {
         message(paste0("Calculating Jaccard index between ", 
                        names(raster1), "[", i.min, ", ", i.max, "] and ", 
                        names(raster2), "[", j.min, ", ", j.max, "]"))
-        #jaccards[i, j] <- jaccard(stack[[i]], stack[[j]], 
-        #                          x.min=threshold, x.max=1.0,
-        #                          y.min=threshold, y.max=1.0, ...)
-        jaccards[i, j] <- rnorm(1)
+        jaccards[i, j] <- jaccard(raster1, raster2, 
+                                  x.min=i.min, x.max=i.max,
+                                  y.min=j.min, y.max=j.max, ...)
+        #jaccards[i, j] <- rnorm(1)
       } else {
         jaccards[i, j]  <- jaccards[j, i]
       }
