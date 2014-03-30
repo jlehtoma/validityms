@@ -21,6 +21,3 @@ union <- combination >= 1
 
 jaccard.index <- (cellStats(intersection, "sum") / cellStats(union, "sum"))
 
-# Correlations ------------------------------------------------------------
-
-pairs(ranks.abf.pe.w, method="kendall")
