@@ -31,6 +31,9 @@ cross_range_jaccard <- function(raster1, raster2, thresholds, ...) {
   }
   return(jaccards)
 }
+
+m_cross_range_jaccard <- addMemoization(cross_range_jaccard)
+
 thresholds <- seq(0.1, 1, 0.1)
 ranks.abf.pe <- rank_rasters(project.esmk, variants=c(2, 9))
 j <- cross_range_jaccard(ranks.abf.pe[[1]], ranks.abf.pe[[2]], thresholds)
