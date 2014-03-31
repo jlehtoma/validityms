@@ -24,12 +24,12 @@ rankr.nosfc.msnfi.abf.pe.w <- rank_raster(nosfc.msnfi.abf.pe.w)
 # Max-values from pairwise comparisons (manually from plots) are:
 p1.p3.ylim <- 12500
 p4.p6.ylim <- 3000
-p7.p9.ylim <- 250
+p7.p9.ylim <- 400
 
 
 p1 <- plot_hist(rankr.nosfc.msnfi.abf.pe.w, pa.mask, add.median=TRUE, 
                 add.mean=FALSE, binwidth=0.02, 
-                title="nosfc_msnfi_abf_pe_w for PAs") + ylim(0, p1p2.ylim)
+                title="nosfc_msnfi_abf_pe_w for PAs") + ylim(0, p1.p3.ylim)
 p2 <- plot_hist(rankr.msnfi.abf.pe.w, pa.mask, add.median=TRUE, add.mean=FALSE,
                 binwidth=0.02, title="msnfi_abf_pe_w for PAs") + 
   ylim(0, p1.p3.ylim)

@@ -1,0 +1,42 @@
+---
+output:
+  knitrBootstrap::bootstrap_document:
+    title: "Test file"
+    theme: amelia
+    highlight: sunburst
+    theme.chooser: TRUE
+    highlight.chooser: TRUE
+---
+```{r setup, echo=FALSE, message=FALSE}
+options(width=120)
+
+library(plyr)
+library(rgdal)
+library(xtable)
+
+# Read in the data
+ds <- file.path("../../zsetup-esmk/",
+                "data/common/vector/esmk_metso_location_2008_2014.shp")
+sp.esmk.metso <- readOGR(ds, layer=ogrListLayers(ds))
+data.esmk.metso <- sp.esmk.metso@data
+```
+
+### METSO location grouped by implementation class
+
+Categories explained:  
+
+| Implementation class | Explanation |
+|----------------------|-------------|
+|`kauppa`| Site permanently bought to become a public PA |
+|`MRA`| Temporary (10 years) set-aside |
+|`Vaihto`| Land-exchange contract |
+|`Valtionperintö`| Site testamented for the government |
+|`YSA`| Private (permanent) protected area |
+
+```{r test, echo=FALSE, results='asis'}
+per.impl <- ddply(data.esmk.metso, .(Suoj_tapa), summarise,
+                  area_ha=round(sum(Hectares), 2))
+colnames(per.impl) <- c("Implementation class", "Area_ha")
+per.impl <- arrange(per.impl, -Area_ha)
+print(xtable(per.impl), type='html')
+```
