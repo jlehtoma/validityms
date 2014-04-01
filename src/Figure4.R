@@ -1,157 +1,158 @@
-library(raster)
-library(zonator)
-result.folder <- "H:\\Data\\Metsakeskukset\\Etela-Savo\\Zonation\\Results\\130315\\analyysi"
-
-# Results -----------------------------------------------------------------
-
-# Build a list with variant names, 1-13 with 6 fertility classes in the data
-# 14-20 with 5 feritility classes
-variants <- c("14_60_5kp_abf",
-              "16_60_5kp_abf_pe_w",
-              "18_60_5kp_abf_pe_w_cmat_cmete",
-              "20_60_5kp_abf_pe_w_cmat_cmete_cres_mask")
-
-# Read in the rasters and create a RasterStack - FOR IMG
-results <- read.result.rasters(variants, result.folder, 
-                               format=".rank.compressed.img")
-
-# Read in the mask rasters for the whole ESMK
-
-mask.folder <- "H:/Data/Metsakeskukset/Etela-Savo/Zonation/ESMK/data/maski"
-
-sa.mask <-  raster(file.path(mask.folder, "ESMK_slalue_avosuoton_60.img"))
-mete.mask <- raster(file.path(mask.folder, "ESMK_mete_60.img"))
-ysa.mask <- raster(file.path(mask.folder, "ELY_ysat_2011_2012.img"))
-engo.mask <- raster(file.path(mask.folder, "ESMK_engo_A_2012_60_bin_avosuoton.img"))
-
-img.folder <- "H:/Data/Metsakeskukset/Etela-Savo/Zonation/Results/130315/images"
-
-# 14_60_5kp_abf
-h1.sa <- histPlot(results[[1]], mask=sa.mask, add.median=F, add.mean=T, 
-                  save.dir="", binwidth=0.02, title="Variant 1 by PA")
-h1.mete <- histPlot(results[[1]], mask=mete.mask, add.median=F, add.mean=T, 
-                    save.dir="", binwidth=0.02,title="Variant 1 by WKH")
-h1.ysa <- histPlot(results[[1]], mask=ysa.mask, add.median=F, add.mean=T, 
-                   save.dir="", binwidth=0.02,title="Variant 1 by METSO-deals")
-h1.engo <- histPlot(results[[1]], mask=engo.mask, add.median=F, add.mean=T, 
-                   save.dir="", binwidth=0.02,title="Variant 1 by ENGO sites")
-
-# 16_60_5kp_abf_pe_w
-h2.sa <- histPlot(results[[2]], mask=sa.mask, add.median=F, add.mean=T, 
-                  save.dir="", binwidth=0.02, title="Variant 2 by PA")
-h2.mete <- histPlot(results[[2]], mask=mete.mask, add.median=F, add.mean=T, 
-                    save.dir="", binwidth=0.02,title="Variant 2 by WKH")
-h2.ysa <- histPlot(results[[2]], mask=ysa.mask, add.median=F, add.mean=T, 
-                   save.dir="", binwidth=0.02,title="Variant 2 by METSO-deals")
-h2.engo <- histPlot(results[[2]], mask=engo.mask, add.median=F, add.mean=T, 
-                    save.dir="", binwidth=0.02,title="Variant 2 by ENGO sites")
-
-# 18_60_5kp_abf_pe_w_cmat_cmete
-h3.sa <- histPlot(results[[3]], mask=sa.mask, add.median=F, add.mean=T, 
-                  save.dir="", binwidth=0.02, title="Variant 3 by PA")
-h3.mete <- histPlot(results[[3]], mask=mete.mask, add.median=F, add.mean=T, 
-                    save.dir="", binwidth=0.02,title="Variant 3 by WKH")
-h3.ysa <- histPlot(results[[3]], mask=ysa.mask, add.median=F, add.mean=T, 
-                   save.dir="", binwidth=0.02,title="Variant 3 by METSO-deals")
-h3.engo <- histPlot(results[[3]], mask=engo.mask, add.median=F, add.mean=T, 
-                    save.dir="", binwidth=0.02,title="Variant 3 by ENGO sites")
-
-# 20_60_5kp_abf_pe_w_cmat_cmete_cres_mask
-h4.sa <- histPlot(results[[4]], mask=sa.mask, add.median=F, add.mean=T, 
-                  save.dir="", binwidth=0.02, title="Variant 4 by PA")
-h4.mete <- histPlot(results[[4]], mask=mete.mask, add.median=F, add.mean=T, 
-                    save.dir="", binwidth=0.02,title="Variant 4 by WKH")
-h4.ysa <- histPlot(results[[4]], mask=ysa.mask, add.median=F, add.mean=T, 
-                   save.dir="", binwidth=0.02,title="Variant 4 by METSO-deals")
-h4.engo <- histPlot(results[[4]], mask=engo.mask, add.median=F, add.mean=T, 
-                    save.dir="", binwidth=0.02,title="Variant 4 by ENGO sites")
-
 library(gridExtra)
+library(ProjectTemplate)
+load.project()
 
-grid.arrange(h1.sa, h1.mete, h1.ysa, h1.engo, 
-             h2.sa, h2.mete, h2.ysa, h2.engo,
-             h3.sa, h3.mete, h3.ysa, h3.engo,
-             h4.sa, h4.mete, h4.ysa, h4.engo,
-             nrow=4, ncol=4)
+# Compare the overlaps between different variants
 
-for (i in 1:nlayers(results)) {
-  #histPlot(result, show=F, save.dir="C:/z/ESMK/results/images")
-  histPlot(results[[i]], mask=sa.mask, add.median=T, add.mean=F, show=T, 
-           save.dir=img.folder.september, binwidth=0.02)
-  histPlot(results[[i]], mask=mete.mask, add.median=T, add.mean=F, show=T, 
-           save.dir=img.folder.september, binwidth=0.02)
-  histPlot(results[[i]], mask=ysa.mask, add.median=T, add.mean=F, show=T,
-           save.dir=img.folder.september, binwidth=0.02)
-}
-
-## READ IN THE DATA ############################################################
-
-# Input index files
-
-setwd("G:/Data/Metsakeskukset/Etela-Savo/Zonation/ESMK/Setup")
-
-# Get the input index files from 1_60_abf
-input.files <- read.csv("1_60_abf/1_60_abf.spp", sep=" ", header=F, as.is=T)[6]
-names(input.files) <- c("path")
-
-indices.koivu <- stack(sapply(input.files$path[1:6], 
-                              function(x){ named.raster(filepath=file.path(x),
-                                                        name=str_replace(basename(x), 
-                                                                         ".img", "")) 
-                              }, 
-                              USE.NAMES=F))
-
-indices.kuusi <- stack(sapply(input.files$path[7:12], 
-                              function(x){ named.raster(filepath=file.path(x),
-                                                        name=str_replace(basename(x), 
-                                                                         ".img", "")) 
-                              }, 
-                              USE.NAMES=F))
-
-indices.mlp <- stack(sapply(input.files$path[13:18], 
-                            function(x){ named.raster(filepath=file.path(x),
-                                                      name=str_replace(basename(x), 
-                                                                       ".img", "")) 
-                            }, 
-                            USE.NAMES=F))
-
-indices.manty <- stack(sapply(input.files$path[19:24], 
-                              function(x){ named.raster(filepath=file.path(x),
-                                                        name=str_replace(basename(x), 
-                                                                         ".img", "")) 
-                              }, 
-                              USE.NAMES=F))
-
-boxplot(results.masked, notch=T)
-
-boxplot(log(indices.koivu), ylim=c(-20, 10), main="Index koivu", ylab="log(index)")
-boxplot(log(indices.kuusi), ylim=c(-20, 10), main="Index kuusi", ylab="log(index)")
-boxplot(log(indices.mlp), ylim=c(-20, 10), main="Index mlp", ylab="log(index)")
-boxplot(log(indices.manty), ylim=c(-20, 10), main="Index manty", ylab="log(index)")
-
-# More stats --------------------------------------------------------------
-
-# Calculate a similarity matrix 
-# Calculate a similarity matrix based on Jaccard coefficient
-similarity.mtrx <- matrix(nrow=nlayer(results), ncol=nlayer(results))
-for (i in 1:nrow(similarity.mtrx)){
-  for (j in 1:ncol(similarity.mtrx)) {
-    similarity.mtrx[i, j] <- jaccard(results[[i]], results[[j]], 0.9)
+# Helper function that breaks the rown names into separate columns in a data
+# frame
+rowname2cols <- function(x) {
+  
+  thresholds <- c()
+  cols <- c()
+  tokens <- strsplit(x, "\\.")
+  for (token in tokens) {
+    thresholds <- c(thresholds, paste0(token[1], ".", token[2]))
+    cols <- c(cols, gsub("X", "", token[3]))
   }
+  df <- data.frame(threshold=thresholds, variant=cols)
+  return(df)
 }
 
-# Main type (päätyyppi) ------------------------------------------------------
+# Helper function the restructure the jaccard data
+list2df <- function(x) {
+  # Transform lists of data frames into data frames.
+  
+  x <- do.call("rbind", x)
+  x <- cbind(rowname2cols(row.names(x)), x)
+  row.names(x) <- 1:nrow(x)
+  m.x <- melt(x, id.vars=c("threshold", "variant"))
+  # Get rid of the "X" in the former column headers
+  colnames(m.x) <- c("threshold", "variant1", "variant2", "value")
+  m.x$variant2 <- gsub("X", "", m.x$variant2)
+  return(m.x)
+}
 
-# 1=kangas, 2=korpi, 3=räme, 4=avosuo
-main.types <-  raster(file.path(mask.folder, "MLVMI_paatyyppi_60.img"))
-kangas.mask <- main.types == 1
-kangas.mask[kangas.mask != 1] <- NA
-peat.mask <- main.types > 1
-peat.mask[peat.mask != 1] <- NA
+# Set the top-fractions used
+thresholds <- c(0.98, 0.95, 0.90, 0.80, 0.50)
 
-h1.kangas <- histPlot(results[[1]], mask=kangas.mask, add.median=F, add.mean=T, 
-                      save.dir="", binwidth=0.02, title="Variant 1 by kangas")
-h1.kangas
-h1.peat <- histPlot(results[[1]], mask=peat.mask, add.median=F, add.mean=T, 
-                      save.dir="", binwidth=0.02, title="Variant 1 by turve")
-h1.peat
+# jaccard() can take time, so use a memoized version of cross_jaccards provided
+# by R.cache.
+m_cross_jaccard <- addMemoization(cross_jaccard)
+
+# Between datasets - variants 2, 9, 15 ------------------------------------
+
+# Create a raster stack to hold selected variants
+# 2 = 02_abf_pe
+# 9 = 09_msnfi_abf_pe
+# 15 = 15_msnfi_abf_pe_nosfc
+ranks.abf.pe <- rank_rasters(project.esmk, variants=c(2, 9, 15))
+j.abf.pe <- m_cross_jaccard(ranks.abf.pe, thresholds, disable.checks=TRUE)
+j.abf.pe <- list2df(j.abf.pe)
+sub.j.abf.pe <- subset(j.abf.pe, value != 1.0) 
+sub.j.abf.pe <- sub.j.abf.pe[1:20,]
+sub.j.abf.pe <- sub.j.abf.pe[c(1:10, seq(12, 20, 2)),]
+sub.j.abf.pe$comparison <- paste(sub.j.abf.pe$variant2, "to", 
+                                   sub.j.abf.pe$variant1)
+sub.j.abf.pe$comparison <- gsub("02_abf_pe", "Full data", 
+                                  sub.j.abf.pe$comparison)
+sub.j.abf.pe$comparison <- gsub("09_msnfi_abf_pe", "MSNFI with categories", 
+                                  sub.j.abf.pe$comparison)
+sub.j.abf.pe$comparison <- gsub("15_msnfi_abf_pe_nosfc", "MSNFI without categories", 
+                                  sub.j.abf.pe$comparison)
+
+
+# Between datasets - variants 3, 10, 16 -----------------------------------
+
+# 3 = 03_abf_pe_w
+# 10 = 10_msnfi_abf_pe_w
+# 16 = 16_msnfi_abf_pe_w_nosfc
+ranks.abf.pe.w <- rank_rasters(project.esmk, variants=c(3, 10, 16))
+j.abf.pe.w <- m_cross_jaccard(ranks.abf.pe.w, thresholds, disable.checks=TRUE)
+j.abf.pe.w <- list2df(j.abf.pe.w)
+sub.j.abf.pe.w <- subset(j.abf.pe.w, value != 1.0) 
+sub.j.abf.pe.w <- sub.j.abf.pe.w[1:20,]
+sub.j.abf.pe.w <- sub.j.abf.pe.w[c(1:10, seq(12, 20, 2)),]
+sub.j.abf.pe.w$comparison <- paste(sub.j.abf.pe.w$variant2, "to", 
+                                   sub.j.abf.pe.w$variant1)
+sub.j.abf.pe.w$comparison <- gsub("03_abf_pe_w", "Full data", 
+                                  sub.j.abf.pe.w$comparison)
+sub.j.abf.pe.w$comparison <- gsub("10_msnfi_abf_pe_w", "MSNFI with categories", 
+                                  sub.j.abf.pe.w$comparison)
+sub.j.abf.pe.w$comparison <- gsub("16_msnfi_abf_pe_w_nosfc", "MSNFI without categories", 
+                                  sub.j.abf.pe.w$comparison)
+
+
+# Between datasets - variants 4, 11, 17 -----------------------------------
+
+# 4 = 04_abf_pe_w_cmat
+# 11 = 11_msnfi_abf_pe_w_cmat
+# 17 = 17_msnfi_abf_pe_w_cmat_nosfc
+ranks.abf.pe.w.cmat <- rank_rasters(project.esmk, variants=c(4, 11, 17))
+j.abf.pe.w.cmat <- cross_jaccard(ranks.abf.pe.w.cmat, thresholds, 
+                                 disable.checks=TRUE)
+j.abf.pe.w.cmat <- list2df(j.abf.pe.w.cmat)
+sub.j.abf.pe.w.cmat <- subset(j.abf.pe.w.cmat, value != 1.0) 
+sub.j.abf.pe.w.cmat <- sub.j.abf.pe.w.cmat[1:20,]
+sub.j.abf.pe.w.cmat <- sub.j.abf.pe.w.cmat[c(1:10, seq(12, 20, 2)),]
+sub.j.abf.pe.w.cmat$comparison <- paste(sub.j.abf.pe.w.cmat$variant2, "to", 
+                                   sub.j.abf.pe.w.cmat$variant1)
+sub.j.abf.pe.w.cmat$comparison <- gsub("04_abf_pe_w_cmat", "Full data", 
+                                  sub.j.abf.pe.w.cmat$comparison)
+sub.j.abf.pe.w.cmat$comparison <- gsub("11_msnfi_abf_pe_w_cmat", "MSNFI with categories", 
+                                  sub.j.abf.pe.w.cmat$comparison)
+sub.j.abf.pe.w.cmat$comparison <- gsub("17_msnfi_abf_pe_w_cmat_nosfc", "MSNFI without categories", 
+                                  sub.j.abf.pe.w.cmat$comparison)
+
+# Within the same data, between variants ----------------------------------
+
+ranks.abf.v2.v4 <- rank_rasters(project.esmk, variants=c(2, 3, 4))
+j.abf.v2tov4 <- m_cross_jaccard(ranks.abf.v2.v4, thresholds, disable.checks=TRUE)
+j.abf.v2tov4 <- list2df(j.abf.v2tov4)
+j.abf.v2tov4 <- subset(j.abf.v2tov4, value != 1.0) 
+j.abf.v2tov4 <- j.abf.v2tov4[1:20,]
+j.abf.v2tov4 <- j.abf.v2tov4[c(1:10, seq(12, 20, 2)),]
+j.abf.v2tov4$comparison <- paste(j.abf.v2tov4$variant2, "to", 
+                                 j.abf.v2tov4$variant1)
+
+# Plot the results --------------------------------------------------------
+
+# Between the data sets
+p1 <- ggplot(sub.j.abf.pe, aes(x=threshold, y=value, group=comparison,
+                                color=comparison))
+p1 <- p1 + geom_line(size=1.0) + geom_point(size=3.0) + 
+        xlab("\nTop fraction of the landscape") +
+        ylab("Jaccard index\n") + ylim(0, 1) + 
+        scale_x_discrete(labels=c("50%", "20%", "10%", "5%", "2%")) + 
+        theme_bw() +
+        ggtitle("Spatial overlap between datasets for variants abf_pe")
+
+p2 <- ggplot(sub.j.abf.pe.w, aes(x=threshold, y=value, group=comparison,
+                               color=comparison))
+p2 <- p2 + geom_line(size=1.0) + geom_point(size=3.0) + 
+        xlab("\nTop fraction of the landscape") +
+        ylab("Jaccard index\n") + ylim(0, 1) + 
+        scale_x_discrete(labels=c("50%", "20%", "10%", "5%", "2%")) + 
+        theme_bw() +
+        ggtitle("Spatial overlap between datasets for variants abf_pe_w")
+
+p3 <- ggplot(sub.j.abf.pe.w.cmat, aes(x=threshold, y=value, group=comparison,
+                                color=comparison))
+p3 <- p3 + geom_line(size=1.0) + geom_point(size=3.0) + 
+        xlab("\nTop fraction of the landscape") +
+        ylab("Jaccard index\n") + ylim(0, 1) + 
+        scale_x_discrete(labels=c("50%", "20%", "10%", "5%", "2%")) + 
+        theme_bw() +
+        ggtitle("Spatial overlap between datasets for variants abf_pe_w_cmat")
+
+grid.arrange(p1, p2, p3, ncol=1)
+
+# Between variants
+p4 <- ggplot(j.abf.v2tov4, aes(x=threshold, y=value, group=comparison,
+                                  color=comparison))
+p4 <- p4 + geom_line(size=1.0) + geom_point(size=3.0) + 
+        xlab("\nTop fraction of the landscape") +
+        ylab("Jaccard index\n") + ylim(0, 1) + 
+        scale_x_discrete(labels=c("50%", "20%", "10%", "5%", "2%")) + 
+        theme_bw() +
+        ggtitle("Spatial overlap between variants 2-4")
