@@ -1,27 +1,43 @@
-library(zonator)
 library(gridExtra)
 library(ProjectTemplate)
 load.project()
 
 # Set the plot labels
 spp.labels <- c("1"="Birch", "2"="Spruce", "3"="OtherDec", "4"="Pine")
-fert.labels <- c("1"="Lehto", "2"="Lehtomainen", "3"="Tuore", "4"="Kuivahko", 
-                 "5"="Kuiva")
+fert.labels <- c("1"="Herb-rich", "2"="Herb-rich-like", "3"="Mesic", 
+                 "4"="Semi-xeric", "5"="Xeric")
 
 low.limit <- 0.98
 
-# Variant1 ----------------------------------------------------------------
+groups(abf.pe.w) <- rep(1:4, 5)
+groupnames(abf.pe.w) <- spp.labels
+groupnames(msnfi.abf.pe.w) <- spp.labels
 
-# Get variant 1 (3): 16_60_5kp_abf_pe_w
-variant.1 <- get_variant(project.esmk, 3)
-featurenames(variant.1) <- fix_feature_names(featurenames(variant.1))
-groupnames(variant.1) <- spp.labels
+# Performance curves by tree spp ------------------------------------------
 
-## Performance curves by tree species
+grpcur.abf.pe.w <- curves(abf.pe.w, groups=TRUE)
+p1 <- plot(grpcur.abf.pe.w, monochrome=FALSE, min=TRUE, mean=TRUE, max=TRUE,
+           invert.x=FALSE, main="Tree species group")
+p1 + ylim(0, 1) + ggtitle("All data abf_pe_w by tree spp")
 
-#grp.curves.1 <- curves(variant.1, groups=TRUE)
-#p1 <- plot(grp.curves.1, monochrome=FALSE, 
-#           invert.x=FALSE, main="Tree species group")
+grpcur.msnfi.abf.pe.w <- curves(msnfi.abf.pe.w, groups=TRUE)
+p2 <- plot(grpcur.msnfi.abf.pe.w, monochrome=FALSE, min=TRUE, mean=TRUE, max=TRUE,
+           invert.x=FALSE, main="Tree species group")
+p2 + ylim(0, 1) + ggtitle("MSNFI-only abf_pe_w by tree spp")
+
+
+# Calculate new grouping
+groups(abf.pe.w) <- rep(1:5, 4)
+groupnames(abf.pe.w) <- fert.labels
+
+grpcur.abf.pe.w <- curves(abf.pe.w, groups=TRUE)
+p3 <- plot(grpcur.abf.pe.w, monochrome=FALSE, min=FALSE, mean=FALSE, max=FALSE,
+           invert.x=FALSE, main="Tree species group")
+p3 + ylim(0, 1) + ggtitle("All data abf_pe_w by soil fertility class")
+
+# Boxplots ----------------------------------------------------------------
+
+
 
 ## Boxplots by fertility class 
 # Take values [0.8, 1.0], leave everything else but pr_lost out
