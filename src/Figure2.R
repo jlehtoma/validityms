@@ -8,45 +8,36 @@ z_colors_spectral <- zlegend('spectral')
 
 # MSNFI without sfc classes -----------------------------------------------
 
-rankr.nosfc.msnfi.abf.pe <- rank_raster(nosfc.msnfi.abf.pe)
 rankr.nosfc.msnfi.abf.pe.w <- rank_raster(nosfc.msnfi.abf.pe.w)
 rankr.nosfc.msnfi.abf.pe.w.cmat <- rank_raster(nosfc.msnfi.abf.pe.w.cmat)
 #plot(rankr.abf, useRaster=TRUE, interpolate=TRUE, 
 #     breaks=z_colors_spectral$values, col=z_colors_spectral$colors)
 
-p1 <- levelplot(rankr.nosfc.msnfi.abf.pe, FUN.margin=median, 
+p1 <- levelplot(rankr.nosfc.msnfi.abf.pe.w, FUN.margin=median, 
                 par.settings=rasterTheme(region=z_colors_spectral$colors))
-p2 <- levelplot(rankr.nosfc.msnfi.abf.pe.w, FUN.margin=median, 
-                par.settings=rasterTheme(region=z_colors_spectral$colors))
-p3 <- levelplot(rankr.nosfc.msnfi.abf.pe.w.cmat, FUN.margin=median, 
+p2 <- levelplot(rankr.nosfc.msnfi.abf.pe.w.cmat, FUN.margin=median, 
                 par.settings=rasterTheme(region=z_colors_spectral$colors))
 
 # MSNFI with sfc classes --------------------------------------------------
 
-rankr.msnfi.abf.pe <- rank_raster(msnfi.abf.pe)
 rankr.msnfi.abf.pe.w <- rank_raster(msnfi.abf.pe)
 rankr.msnfi.abf.pe.w.cmat <- rank_raster(msnfi.abf.pe.w.cmat)
 #plot(rankr.abf, useRaster=TRUE, interpolate=TRUE, 
 #     breaks=z_colors_spectral$values, col=z_colors_spectral$colors)
 
-p4 <- levelplot(rankr.msnfi.abf.pe, FUN.margin=median, 
+p3 <- levelplot(rankr.msnfi.abf.pe.w, FUN.margin=median, 
                 par.settings=rasterTheme(region=z_colors_spectral$colors))
-p5 <- levelplot(rankr.msnfi.abf.pe.w, FUN.margin=median, 
-                par.settings=rasterTheme(region=z_colors_spectral$colors))
-p6 <- levelplot(rankr.msnfi.abf.pe.w.cmat, FUN.margin=median, 
+p4 <- levelplot(rankr.msnfi.abf.pe.w.cmat, FUN.margin=median, 
                 par.settings=rasterTheme(region=z_colors_spectral$colors))
 
 # All data ----------------------------------------------------------------
   
-rankr.abf.pe <- rank_raster(abf.pe)
 rankr.abf.pe.w <- rank_raster(abf.pe.w)
 rankr.abf.pe.w.cmat <- rank_raster(abf.pe.w.cmat)
 #plot(rankr.abf, useRaster=TRUE, interpolate=TRUE, 
 #     breaks=z_colors_spectral$values, col=z_colors_spectral$colors)
 
-p7 <- levelplot(rankr.abf.pe, FUN.margin=median, 
+p5 <- levelplot(rankr.abf.pe.w, FUN.margin=median, 
                 par.settings=rasterTheme(region=z_colors_spectral$colors))
-p8 <- levelplot(rankr.abf.pe.w, FUN.margin=median, 
-                par.settings=rasterTheme(region=z_colors_spectral$colors))
-p9 <- levelplot(rankr.abf.pe.w.cmat, FUN.margin=median, 
+p6 <- levelplot(rankr.abf.pe.w.cmat, FUN.margin=median, 
                 par.settings=rasterTheme(region=z_colors_spectral$colors))
