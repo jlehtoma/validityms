@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="Fig1.svg"
-   inkscape:export-filename="/home/jlehtoma/Dropbox/Documents/Manuscripts/validity_ms/figs/Fig1.png"
+   inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Fig1.png"
    inkscape:export-xdpi="300.01474"
    inkscape:export-ydpi="300.01474">
   <defs
@@ -376,15 +376,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="57.960916"
-     inkscape:cy="527.79163"
+     inkscape:zoom="1"
+     inkscape:cx="391.94218"
+     inkscape:cy="624.36017"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1680"
      inkscape:window-height="1036"
-     inkscape:window-x="-1"
+     inkscape:window-x="1679"
      inkscape:window-y="-4"
      inkscape:window-maximized="1"
      showguides="false"
@@ -418,7 +418,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -432,7 +432,9 @@
        width="746.70477"
        height="1050.7606"
        x="-1.4142135"
-       y="0.18729249" />
+       y="0.18729249"
+       inkscape:export-xdpi="149.94823"
+       inkscape:export-ydpi="149.94823" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.81942368px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 299.71429,308.62607 0,31.02183 128.53571,0 0,-37.85715"
