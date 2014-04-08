@@ -49,7 +49,7 @@ rankr.abf.pe.w.cmat <- rank_raster(abf.pe.w.cmat)
 #plot(rankr.abf, useRaster=TRUE, interpolate=TRUE, 
 #     breaks=z_colors_spectral$values, col=z_colors_spectral$colors)
 
-p5 <- levelplot(rankr.abf.pe.w, FUN.margin=median, 
+p5 <- levelplot(rankr.abf.pe.w.top20, FUN.margin=median, 
                 maxpixels=1e6,
                 par.settings=rasterTheme(region=z_colors_spectral$colors),
                 at=z_colors_spectral$values, colorkey=z_color_key)
