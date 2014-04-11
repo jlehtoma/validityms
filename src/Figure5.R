@@ -22,9 +22,9 @@ rankr.nosfc.msnfi.abf.pe.w <- rank_raster(nosfc.msnfi.abf.pe.w)
 
 # ylimit is hard coded to ease the comparison of priority distributions.
 # Max-values from pairwise comparisons (manually from plots) are:
-p1.p3.ylim <- 12500
-p4.p6.ylim <- 3000
-p7.p9.ylim <- 400
+p1.p3.ylim <- 20000
+p4.p6.ylim <- 3500
+p7.p9.ylim <- 750
 
 
 p1 <- plot_hist(rankr.nosfc.msnfi.abf.pe.w, pa.mask, add.median=TRUE, 
@@ -34,7 +34,7 @@ p2 <- plot_hist(rankr.msnfi.abf.pe.w, pa.mask, add.median=TRUE, add.mean=FALSE,
                 binwidth=0.02, title="msnfi_abf_pe_w for PAs") + 
   ylim(0, p1.p3.ylim)
 p3 <- plot_hist(rankr.abf.pe.w, pa.mask, add.median=TRUE, add.mean=FALSE,
-                binwidth=0.02, title="abf_pe_w for PAs") + ylim(0, p1.p3.ylim )
+                binwidth=0.02, title="abf_pe_w for PAs") #+ ylim(0, p1.p3.ylim )
 
 p4 <- plot_hist(rankr.nosfc.msnfi.abf.pe.w, wkh.mask, add.median=TRUE, 
                 add.mean=FALSE, binwidth=0.02, 
@@ -43,7 +43,7 @@ p5 <- plot_hist(rankr.msnfi.abf.pe.w, wkh.mask, add.median=TRUE, add.mean=FALSE,
                 binwidth=0.02, title="msnfi_abf_pe_w for WKHs") +
   ylim(0, p4.p6.ylim)
 p6 <- plot_hist(rankr.abf.pe.w, wkh.mask, add.median=TRUE, add.mean=FALSE,
-                binwidth=0.02, title="abf_pe_w for WKHs") + ylim(0, p4.p6.ylim)
+                binwidth=0.02, title="abf_pe_w for WKHs") #+ ylim(0, p4.p6.ylim)
 
 p7 <- plot_hist(rankr.nosfc.msnfi.abf.pe.w, metso.mask, add.median=TRUE, 
                 add.mean=FALSE, binwidth=0.02, 
