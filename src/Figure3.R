@@ -18,6 +18,9 @@ groupnames(abf.pe.w) <- fert.labels
 groups(msnfi.abf.pe.w) <- rep(1:5, 4)
 groupnames(msnfi.abf.pe.w) <- fert.labels
 
+groups(loaded.abf.pe.w) <- rep(1:5, 4)
+groupnames(loaded.abf.pe.w) <- fert.labels
+
 # When assigning new groups to the connectivity transformed variant, remember
 # that the feature stack is duplicated: 1st for connectivity transformations, 
 # 2nd time for local quality. Labels need to be reconstructed as well.
@@ -58,11 +61,19 @@ nocon.grpcur.msnfi.abf.pe.w.cmat <- new("ZGroupCurvesDataFrame",
 cur.nosfc.msnfi.abf.pe.w <- curves(nosfc.msnfi.abf.pe.w)
 cur.nosfc.msnfi.abf.pe.w.cmat <- curves(nosfc.msnfi.abf.pe.w.cmat)
 
+# Pre-loaded
+
+grpcur.loaded.abf.pe.w <- curves(loaded.abf.pe.w, groups=TRUE)
+
 # Plotting ----------------------------------------------------------------
 
 p1 <- plot(grpcur.abf.pe.w, monochrome=FALSE, min=FALSE, mean=FALSE, max=FALSE,
            invert.x=TRUE) + ylim(0, 1)
 p1 <- p1 + ggtitle("Detailed data abf_pe_w by soil fertility class")
+
+p1B <- plot(grpcur.loaded.abf.pe.w, monochrome=FALSE, min=FALSE, mean=FALSE, max=FALSE,
+           invert.x=TRUE) + ylim(0, 1)
+p1B <- p1B + ggtitle("Pre-loaded data abf_pe_w by soil fertility class")
 
 p2 <- plot(nocon.grpcur.abf.pe.w.cmat, monochrome=FALSE, min=FALSE, mean=FALSE, 
            max=FALSE, invert.x=TRUE)
