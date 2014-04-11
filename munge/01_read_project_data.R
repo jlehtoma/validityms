@@ -59,21 +59,6 @@ abf.pe.w.cmat.cmete <- get_variant(project.esmk, 5)
 abf.pe.w.cmat.cmete.cres <- get_variant(project.esmk, 6)
 abf.pe.w.cmat.cmete.cres.mask <- get_variant(project.esmk, 7)
 
-# Fix raster extents ------------------------------------------------------
-
-# For a reason or another, extents of MSNFI-only results have shifted 20 meters
-# to the south. Manually fix this for variants 8-11 and 15-17. Use 01_abf as a 
-# reference point.
-
-extent(project.esmk@variants[[8]]@results@rank) <- extent(abf@results@rank)
-extent(project.esmk@variants[[9]]@results@rank) <- extent(abf@results@rank)
-extent(project.esmk@variants[[10]]@results@rank) <- extent(abf@results@rank)
-extent(project.esmk@variants[[11]]@results@rank) <- extent(abf@results@rank)
-
-extent(project.esmk@variants[[15]]@results@rank) <- extent(abf@results@rank)
-extent(project.esmk@variants[[16]]@results@rank) <- extent(abf@results@rank)
-extent(project.esmk@variants[[17]]@results@rank) <- extent(abf@results@rank)
-
 msnfi.abf <- get_variant(project.esmk, 8)
 msnfi.abf.pe <- get_variant(project.esmk, 9)
 msnfi.abf.pe.w <- get_variant(project.esmk, 10)
@@ -82,6 +67,9 @@ msnfi.abf.pe.w.cmat <- get_variant(project.esmk, 11)
 nosfc.msnfi.abf.pe <- get_variant(project.esmk, 15)
 nosfc.msnfi.abf.pe.w <- get_variant(project.esmk, 16)
 nosfc.msnfi.abf.pe.w.cmat <- get_variant(project.esmk, 17)
+
+loaded.abf.pe.w <- get_variant(project.esmk, 18)
+loaded.abf.pe.w.cmat <- get_variant(project.esmk, 19)
 
 # Re-grouping -------------------------------------------------------------
 
@@ -96,18 +84,21 @@ nosfc.msnfi.abf.pe.w.cmat <- get_variant(project.esmk, 17)
 # raster "esmk_hier_pas.img"
 pa.mask.file <- file.path(common.data.dir, "esmk_pas_nopeat.img")
 pa.mask <- raster(pa.mask.file)
+extent(pa.mask) <- extent(rank_raster(abf.pe.w))
 
 # METSO mask contains location acquired to METSO 2011-2012. In practice,
 # they are private protected areas. Each location has a unique ID-number
 # which range [1, 75].
 metso.mask.file <- file.path(common.data.dir, "esmk_metso.img")
 metso.mask <- raster(metso.mask.file)
+extent(metso.mask) <- extent(rank_raster(abf.pe.w))
 
 # Woodland key habitats (WKH) are small set-asides and a conservation instrument
 # provided by general forest management. Raster has 1 if pixel belongs to a 
 # WKH, otherwise NoData.
 wkh.mask.file <- file.path(common.data.dir, "esmk_wkh.img")
 wkh.mask <- raster(wkh.mask.file)
+extent(wkh.mask) <- extent(rank_raster(abf.pe.w))
 
 # Soil fertility class (SFC) raster has 5 classes in it:
 # 1 = Herb-rich (lehto)
