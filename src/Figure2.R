@@ -10,50 +10,69 @@ z_color_key <- list(at=c(z_colors_spectral$values),
                     labels=list(labels=z_colors_spectral$labels,
                                 at=z_colors_spectral$values))
 
+# Custom function for calculating to row and col stats for levelplots
+top.fraction <- function(x, fraction=0.9) {
+  return(sum(x[x >= fraction]))
+}
+
+# Limits for x and y marginal plot, through trial and error
+x.lim <- c(0, 150)
+y.lim <- c(0, 150)
+
 # MSNFI without sfc classes -----------------------------------------------
+
+png(file="figs/Figure2/levelplots/p%d.png", width=820, height=820)
 
 rankr.nosfc.msnfi.abf.pe.w <- rank_raster(nosfc.msnfi.abf.pe.w)
 rankr.nosfc.msnfi.abf.pe.w.cmat <- rank_raster(nosfc.msnfi.abf.pe.w.cmat)
-#plot(rankr.abf, useRaster=TRUE, interpolate=TRUE, 
-#     breaks=z_colors_spectral$values, col=z_colors_spectral$colors)
 
-p1 <- levelplot(rankr.nosfc.msnfi.abf.pe.w, FUN.margin=median,
-                maxpixels=1e6,
-                par.settings=rasterTheme(region=z_colors_spectral$colors), 
-                at=z_colors_spectral$values, colorkey=z_color_key)
-p2 <- levelplot(rankr.nosfc.msnfi.abf.pe.w.cmat, FUN.margin=median,
-                maxpixels=1e6,
-                par.settings=rasterTheme(region=z_colors_spectral$colors),
-                at=z_colors_spectral$values, colorkey=z_color_key)
+levelplot(rankr.nosfc.msnfi.abf.pe.w, FUN.margin=top.fraction, 
+          maxpixels=1e6, 
+          par.settings=rasterTheme(region=z_colors_spectral$colors), 
+          at=z_colors_spectral$values, colorkey=z_color_key,
+          scales=list(draw=FALSE))
+          #scales.margin=list(x=x.lim, y=y.lim))
+levelplot(rankr.nosfc.msnfi.abf.pe.w.cmat, FUN.margin=top.fraction, 
+          maxpixels=1e6,
+          par.settings=rasterTheme(region=z_colors_spectral$colors), 
+          at=z_colors_spectral$values, colorkey=z_color_key,
+          scales=list(draw=FALSE))
+          #scales.margin=list(x=x.lim, y=y.lim))
 
 # MSNFI with sfc classes --------------------------------------------------
 
-rankr.msnfi.abf.pe.w <- rank_raster(msnfi.abf.pe)
+rankr.msnfi.abf.pe.w <- rank_raster(msnfi.abf.pe.w)
 rankr.msnfi.abf.pe.w.cmat <- rank_raster(msnfi.abf.pe.w.cmat)
-#plot(rankr.abf, useRaster=TRUE, interpolate=TRUE, 
-#     breaks=z_colors_spectral$values, col=z_colors_spectral$colors)
 
-p3 <- levelplot(rankr.msnfi.abf.pe.w, FUN.margin=median, 
-                maxpixels=1e6,
-                par.settings=rasterTheme(region=z_colors_spectral$colors),
-                at=z_colors_spectral$values, colorkey=z_color_key)
-p4 <- levelplot(rankr.msnfi.abf.pe.w.cmat, FUN.margin=median, 
-                maxpixels=1e6,
-                par.settings=rasterTheme(region=z_colors_spectral$colors),
-                at=z_colors_spectral$values, colorkey=z_color_key)
+levelplot(rankr.msnfi.abf.pe.w, FUN.margin=top.fraction, 
+          maxpixels=1e6, 
+          par.settings=rasterTheme(region=z_colors_spectral$colors), 
+          at=z_colors_spectral$values, colorkey=z_color_key,
+          scales=list(draw=FALSE))
+          #scales.margin=list(x=x.lim, y=y.lim))
+levelplot(rankr.msnfi.abf.pe.w.cmat, FUN.margin=top.fraction, 
+          maxpixels=1e6,
+          par.settings=rasterTheme(region=z_colors_spectral$colors), 
+          at=z_colors_spectral$values, colorkey=z_color_key,
+          scales=list(draw=FALSE),
+          scales.margin=list(x=x.lim, y=y.lim))
 
 # All data ----------------------------------------------------------------
   
 rankr.abf.pe.w <- rank_raster(abf.pe.w)
 rankr.abf.pe.w.cmat <- rank_raster(abf.pe.w.cmat)
-#plot(rankr.abf, useRaster=TRUE, interpolate=TRUE, 
-#     breaks=z_colors_spectral$values, col=z_colors_spectral$colors)
 
-p5 <- levelplot(rankr.abf.pe.w.top20, FUN.margin=median, 
-                maxpixels=1e6,
-                par.settings=rasterTheme(region=z_colors_spectral$colors),
-                at=z_colors_spectral$values, colorkey=z_color_key)
-p6 <- levelplot(rankr.abf.pe.w.cmat, FUN.margin=median, 
-                maxpixels=1e6,
-                par.settings=rasterTheme(region=z_colors_spectral$colors),
-                at=z_colors_spectral$values, colorkey=z_color_key)
+levelplot(rankr.abf.pe.w, FUN.margin=top.fraction, 
+          maxpixels=1e6,
+          par.settings=rasterTheme(region=z_colors_spectral$colors), 
+          at=z_colors_spectral$values, colorkey=z_color_key,
+          scales=list(draw=FALSE))
+          #scales.margin=list(x=x.lim, y=y.lim))
+levelplot(rankr.abf.pe.w.cmat, FUN.margin=top.fraction, 
+          maxpixels=1e6,
+          par.settings=rasterTheme(region=z_colors_spectral$colors), 
+          at=z_colors_spectral$values, colorkey=z_color_key,
+          scales=list(draw=FALSE))
+          #scales.margin=list(x=x.lim, y=y.lim))
+
+dev.off()
