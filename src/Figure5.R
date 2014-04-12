@@ -26,7 +26,6 @@ p1.p3.ylim <- 20000
 p4.p6.ylim <- 3500
 p7.p9.ylim <- 750
 
-
 p1 <- plot_hist(rankr.nosfc.msnfi.abf.pe.w, pa.mask, add.median=TRUE, 
                 add.mean=FALSE, binwidth=0.02, 
                 title="nosfc_msnfi_abf_pe_w for PAs") + ylim(0, p1.p3.ylim)
@@ -57,8 +56,11 @@ p9 <- plot_hist(rankr.abf.pe.w, metso.mask, add.median=TRUE, add.mean=FALSE,
                 binwidth=0.02, title="abf_pe_w for METSO-deals") +
   ylim(0, p7.p9.ylim)
 
+png(file="figs/Figure5/Fig5.png", width=1500, height=1200)
+
 grid.arrange(p1, p2, p3, p4, p5, p6, p7, p8, p9, nrow=3, ncol=3)
 
+dev.off()
 
 # With matrix connectivity ------------------------------------------------
 
