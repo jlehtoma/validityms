@@ -2,157 +2,98 @@ library(gridExtra)
 library(ProjectTemplate)
 load.project()
 
-# Compare the overlaps between different variants
+# Set the plot labels
+spp.labels <- c("1"="Birch", "2"="Spruce", "3"="OtherDec", "4"="Pine")
+fert.labels <- c("1"="Herb-rich", "2"="Herb-rich-like", "3"="Mesic", 
+                 "4"="Semi-xeric", "5"="Xeric")
+con.fert.labels <- c("1"="Herb-rich-con", "2"="Herb-rich-like-con", 
+                     "3"="Mesic-con", "4"="Semi-xeric-con", "5"="Xeric-con",
+                     "6"="Herb-rich", "7"="Herb-rich-like", "8"="Mesic", 
+                     "9"="Semi-xeric", "10"="Xeric")
 
-# Helper function that breaks the rown names into separate columns in a data
-# frame
-rowname2cols <- function(x) {
-  
-  thresholds <- c()
-  cols <- c()
-  tokens <- strsplit(x, "\\.")
-  for (token in tokens) {
-    thresholds <- c(thresholds, paste0(token[1], ".", token[2]))
-    cols <- c(cols, gsub("X", "", token[3]))
-  }
-  df <- data.frame(threshold=thresholds, variant=cols)
-  return(df)
-}
+# Calculate new grouping based on soil fertility
+groups(abf.pe.w) <- rep(1:5, 4)
+groupnames(abf.pe.w) <- fert.labels
 
-# Helper function the restructure the jaccard data
-list2df <- function(x) {
-  # Transform lists of data frames into data frames.
-  
-  x <- do.call("rbind", x)
-  x <- cbind(rowname2cols(row.names(x)), x)
-  row.names(x) <- 1:nrow(x)
-  m.x <- melt(x, id.vars=c("threshold", "variant"))
-  # Get rid of the "X" in the former column headers
-  colnames(m.x) <- c("threshold", "variant1", "variant2", "value")
-  m.x$variant2 <- gsub("X", "", m.x$variant2)
-  return(m.x)
-}
+groups(msnfi.abf.pe.w) <- rep(1:5, 4)
+groupnames(msnfi.abf.pe.w) <- fert.labels
 
-# Set the top-fractions used
-thresholds <- c(0.98, 0.95, 0.90, 0.80, 0.50)
+groups(loaded.abf.pe.w) <- rep(1:5, 4)
+groupnames(loaded.abf.pe.w) <- fert.labels
 
-# jaccard() can take time, so use a memoized version of cross_jaccards provided
-# by R.cache.
-m_cross_jaccard <- addMemoization(cross_jaccard)
+# When assigning new groups to the connectivity transformed variant, remember
+# that the feature stack is duplicated: 1st for connectivity transformations, 
+# 2nd time for local quality. Labels need to be reconstructed as well.
+groups(abf.pe.w.cmat) <- c(rep(1:5, 4), rep(6:10, 4))
+groupnames(abf.pe.w.cmat) <- con.fert.labels
 
-# Between datasets - variants 2, 9, 15 ------------------------------------
+# Performance curves by soil fertility --------------------------------------
 
-# Create a raster stack to hold selected variants
-# 2 = 02_abf_pe
-# 9 = 09_msnfi_abf_pe
-# 15 = 15_msnfi_abf_pe_nosfc
-ranks.abf.pe <- rank_rasters(project.esmk, variants=c(2, 9, 15))
-j.abf.pe <- m_cross_jaccard(ranks.abf.pe, thresholds, disable.checks=TRUE)
-j.abf.pe <- list2df(j.abf.pe)
-sub.j.abf.pe <- subset(j.abf.pe, value != 1.0) 
-sub.j.abf.pe <- sub.j.abf.pe[1:20,]
-sub.j.abf.pe <- sub.j.abf.pe[c(1:10, seq(12, 20, 2)),]
-sub.j.abf.pe$comparison <- paste(sub.j.abf.pe$variant2, "to", 
-                                   sub.j.abf.pe$variant1)
-sub.j.abf.pe$comparison <- gsub("02_abf_pe", "Full data", 
-                                  sub.j.abf.pe$comparison)
-sub.j.abf.pe$comparison <- gsub("09_msnfi_abf_pe", "MSNFI with categories", 
-                                  sub.j.abf.pe$comparison)
-sub.j.abf.pe$comparison <- gsub("15_msnfi_abf_pe_nosfc", "MSNFI without categories", 
-                                  sub.j.abf.pe$comparison)
+# Detailed data
 
+grpcur.abf.pe.w <- curves(abf.pe.w, groups=TRUE)
+# Get columns 21:40 -> these are NOT transformed by matrix connectivity so 
+# they describe local quality. cols can't be used in curves() when groups=TRUE,
+# so the group curves data frame has to be manually divided.
+grpcur.abf.pe.w.cmat <- curves(abf.pe.w.cmat, groups=TRUE)
+# Get only columns that don't end with "-con" (for connectivity)
+nocon.grpcur.abf.pe.w.cmat <- grpcur.abf.pe.w.cmat[,-grep("-con$", names(grpcur.abf.pe.w.cmat))]
+# We'll have to manually transform this back ZGroupCurvesDataFrame
+nocon.grpcur.abf.pe.w.cmat <- new("ZGroupCurvesDataFrame", 
+                                  nocon.grpcur.abf.pe.w.cmat)
 
-# Between datasets - variants 3, 10, 16 -----------------------------------
+# MSNFI-classes data
 
-# 3 = 03_abf_pe_w
-# 10 = 10_msnfi_abf_pe_w
-# 16 = 16_msnfi_abf_pe_w_nosfc
-ranks.abf.pe.w <- rank_rasters(project.esmk, variants=c(3, 10, 16))
-j.abf.pe.w <- m_cross_jaccard(ranks.abf.pe.w, thresholds, disable.checks=TRUE)
-j.abf.pe.w <- list2df(j.abf.pe.w)
-sub.j.abf.pe.w <- subset(j.abf.pe.w, value != 1.0) 
-sub.j.abf.pe.w <- sub.j.abf.pe.w[1:20,]
-sub.j.abf.pe.w <- sub.j.abf.pe.w[c(1:10, seq(12, 20, 2)),]
-sub.j.abf.pe.w$comparison <- paste(sub.j.abf.pe.w$variant2, "to", 
-                                   sub.j.abf.pe.w$variant1)
-sub.j.abf.pe.w$comparison <- gsub("03_abf_pe_w", "Full data", 
-                                  sub.j.abf.pe.w$comparison)
-sub.j.abf.pe.w$comparison <- gsub("10_msnfi_abf_pe_w", "MSNFI with categories", 
-                                  sub.j.abf.pe.w$comparison)
-sub.j.abf.pe.w$comparison <- gsub("16_msnfi_abf_pe_w_nosfc", "MSNFI without categories", 
-                                  sub.j.abf.pe.w$comparison)
+grpcur.msnfi.abf.pe.w <- curves(msnfi.abf.pe.w, groups=TRUE)
+# Get columns 21:40 -> these are NOT transformed by matrix connectivity so 
+# they describe local quality. cols can't be used in curves() when groups=TRUE,
+# so the group curves data frame has to be manually divided.
+grpcur.msnfi.abf.pe.w.cmat <- curves(msnfi.abf.pe.w.cmat, groups=TRUE)
+# Get only columns that don't end with "-con" (for connectivity)
+nocon.grpcur.msnfi.abf.pe.w.cmat <- grpcur.msnfi.abf.pe.w.cmat[,-grep("-con$", names(grpcur.msnfi.abf.pe.w.cmat))]
+# We'll have to manually transform this back ZGroupCurvesDataFrame
+nocon.grpcur.msnfi.abf.pe.w.cmat <- new("ZGroupCurvesDataFrame", 
+                                        nocon.grpcur.msnfi.abf.pe.w.cmat)
 
+# MSNFI data
 
-# Between datasets - variants 4, 11, 17 -----------------------------------
+# No groups used/available
+cur.nosfc.msnfi.abf.pe.w <- curves(nosfc.msnfi.abf.pe.w)
+cur.nosfc.msnfi.abf.pe.w.cmat <- curves(nosfc.msnfi.abf.pe.w.cmat)
 
-# 4 = 04_abf_pe_w_cmat
-# 11 = 11_msnfi_abf_pe_w_cmat
-# 17 = 17_msnfi_abf_pe_w_cmat_nosfc
-ranks.abf.pe.w.cmat <- rank_rasters(project.esmk, variants=c(4, 11, 17))
-j.abf.pe.w.cmat <- cross_jaccard(ranks.abf.pe.w.cmat, thresholds, 
-                                 disable.checks=TRUE)
-j.abf.pe.w.cmat <- list2df(j.abf.pe.w.cmat)
-sub.j.abf.pe.w.cmat <- subset(j.abf.pe.w.cmat, value != 1.0) 
-sub.j.abf.pe.w.cmat <- sub.j.abf.pe.w.cmat[1:20,]
-sub.j.abf.pe.w.cmat <- sub.j.abf.pe.w.cmat[c(1:10, seq(12, 20, 2)),]
-sub.j.abf.pe.w.cmat$comparison <- paste(sub.j.abf.pe.w.cmat$variant2, "to", 
-                                   sub.j.abf.pe.w.cmat$variant1)
-sub.j.abf.pe.w.cmat$comparison <- gsub("04_abf_pe_w_cmat", "Full data", 
-                                  sub.j.abf.pe.w.cmat$comparison)
-sub.j.abf.pe.w.cmat$comparison <- gsub("11_msnfi_abf_pe_w_cmat", "MSNFI with categories", 
-                                  sub.j.abf.pe.w.cmat$comparison)
-sub.j.abf.pe.w.cmat$comparison <- gsub("17_msnfi_abf_pe_w_cmat_nosfc", "MSNFI without categories", 
-                                  sub.j.abf.pe.w.cmat$comparison)
+# Pre-loaded
 
-# Within the same data, between variants ----------------------------------
+grpcur.loaded.abf.pe.w <- curves(loaded.abf.pe.w, groups=TRUE)
 
-ranks.abf.v2.v4 <- rank_rasters(project.esmk, variants=c(2, 3, 4))
-j.abf.v2tov4 <- m_cross_jaccard(ranks.abf.v2.v4, thresholds, disable.checks=TRUE)
-j.abf.v2tov4 <- list2df(j.abf.v2tov4)
-j.abf.v2tov4 <- subset(j.abf.v2tov4, value != 1.0) 
-j.abf.v2tov4 <- j.abf.v2tov4[1:20,]
-j.abf.v2tov4 <- j.abf.v2tov4[c(1:10, seq(12, 20, 2)),]
-j.abf.v2tov4$comparison <- paste(j.abf.v2tov4$variant2, "to", 
-                                 j.abf.v2tov4$variant1)
+# Plotting ----------------------------------------------------------------
 
-# Plot the results --------------------------------------------------------
+p1 <- plot(grpcur.abf.pe.w, monochrome=FALSE, min=FALSE, mean=FALSE, max=FALSE,
+           invert.x=TRUE) + ylim(0, 1)
+p1 <- p1 + ggtitle("Detailed data abf_pe_w by soil fertility class")
 
-# Between the data sets
-p1 <- ggplot(sub.j.abf.pe, aes(x=threshold, y=value, group=comparison,
-                                color=comparison))
-p1 <- p1 + geom_line(size=1.0) + geom_point(size=3.0) + 
-        xlab("\nTop fraction of the landscape") +
-        ylab("Jaccard index\n") + ylim(0, 1) + 
-        scale_x_discrete(labels=c("50%", "20%", "10%", "5%", "2%")) + 
-        theme_bw() +
-        ggtitle("Spatial overlap between datasets for variants abf_pe")
+p1B <- plot(grpcur.loaded.abf.pe.w, monochrome=FALSE, min=FALSE, mean=FALSE, max=FALSE,
+           invert.x=TRUE) + ylim(0, 1)
+p1B <- p1B + ggtitle("Pre-loaded data abf_pe_w by soil fertility class")
 
-p2 <- ggplot(sub.j.abf.pe.w, aes(x=threshold, y=value, group=comparison,
-                               color=comparison))
-p2 <- p2 + geom_line(size=1.0) + geom_point(size=3.0) + 
-        xlab("\nTop fraction of the landscape") +
-        ylab("Jaccard index\n") + ylim(0, 1) + 
-        scale_x_discrete(labels=c("50%", "20%", "10%", "5%", "2%")) + 
-        theme_bw() +
-        ggtitle("Spatial overlap between datasets for variants abf_pe_w")
+p2 <- plot(nocon.grpcur.abf.pe.w.cmat, monochrome=FALSE, min=FALSE, mean=FALSE, 
+           max=FALSE, invert.x=TRUE)
+p2 <- p2 + ylim(0, 1) + 
+  ggtitle("Detailed data abf_pe_w_cmat by soil fertility class (local quality)")
 
-p3 <- ggplot(sub.j.abf.pe.w.cmat, aes(x=threshold, y=value, group=comparison,
-                                color=comparison))
-p3 <- p3 + geom_line(size=1.0) + geom_point(size=3.0) + 
-        xlab("\nTop fraction of the landscape") +
-        ylab("Jaccard index\n") + ylim(0, 1) + 
-        scale_x_discrete(labels=c("50%", "20%", "10%", "5%", "2%")) + 
-        theme_bw() +
-        ggtitle("Spatial overlap between datasets for variants abf_pe_w_cmat")
+p3 <- plot(grpcur.abf.pe.w, monochrome=FALSE, min=FALSE, mean=FALSE, max=FALSE,
+           invert.x=TRUE) + ylim(0, 1)
+p3 <- p3 + ggtitle("MSNFI-classes data abf_pe_w by soil fertility class")
 
-grid.arrange(p1, p2, p3, ncol=1)
+p4 <- plot(nocon.grpcur.abf.pe.w.cmat, monochrome=FALSE, min=FALSE, mean=FALSE, 
+           max=FALSE, invert.x=TRUE)
+p4 <- p4 + ylim(0, 1) + 
+  ggtitle("MSNFI-classes data abf_pe_w_cmat by soil fertility class (local quality)")
 
-# Between variants
-p4 <- ggplot(j.abf.v2tov4, aes(x=threshold, y=value, group=comparison,
-                                  color=comparison))
-p4 <- p4 + geom_line(size=1.0) + geom_point(size=3.0) + 
-        xlab("\nTop fraction of the landscape") +
-        ylab("Jaccard index\n") + ylim(0, 1) + 
-        scale_x_discrete(labels=c("50%", "20%", "10%", "5%", "2%")) + 
-        theme_bw() +
-        ggtitle("Spatial overlap between variants 2-4")
+p5 <- plot(cur.nosfc.msnfi.abf.pe.w, monochrome=FALSE, min=FALSE, mean=FALSE, 
+           invert.x=TRUE) + ylim(0, 1)
+p5 <- p5  + ggtitle("MSNFI data abf_pe_w by soil fertility class")
+p6 <- plot(cur.nosfc.msnfi.abf.pe.w.cmat, monochrome=FALSE, min=FALSE, 
+           mean=FALSE, invert.x=TRUE) + ylim(0, 1)
+p6 <- p6  + ggtitle("MSNFI data abf_pe_w by soil fertility class")
+
+grid.arrange(p1, p2, p3, p4, p5, p6, nrow=3)
