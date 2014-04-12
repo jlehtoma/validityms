@@ -40,28 +40,6 @@ thresholds <- c(0.98, 0.95, 0.90, 0.80, 0.50)
 # by R.cache.
 m_cross_jaccard <- addMemoization(cross_jaccard)
 
-# Between datasets - variants 2, 9, 15 ------------------------------------
-
-# Create a raster stack to hold selected variants
-# 2 = 02_abf_pe
-# 9 = 09_msnfi_abf_pe
-# 15 = 15_msnfi_abf_pe_nosfc
-ranks.abf.pe <- rank_rasters(project.esmk, variants=c(2, 9, 15))
-j.abf.pe <- m_cross_jaccard(ranks.abf.pe, thresholds, disable.checks=TRUE)
-j.abf.pe <- list2df(j.abf.pe)
-sub.j.abf.pe <- subset(j.abf.pe, value != 1.0) 
-sub.j.abf.pe <- sub.j.abf.pe[1:20,]
-sub.j.abf.pe <- sub.j.abf.pe[c(1:10, seq(12, 20, 2)),]
-sub.j.abf.pe$comparison <- paste(sub.j.abf.pe$variant2, "to", 
-                                   sub.j.abf.pe$variant1)
-sub.j.abf.pe$comparison <- gsub("02_abf_pe", "Full data", 
-                                  sub.j.abf.pe$comparison)
-sub.j.abf.pe$comparison <- gsub("09_msnfi_abf_pe", "MSNFI with categories", 
-                                  sub.j.abf.pe$comparison)
-sub.j.abf.pe$comparison <- gsub("15_msnfi_abf_pe_nosfc", "MSNFI without categories", 
-                                  sub.j.abf.pe$comparison)
-
-
 # Between datasets - variants 3, 10, 16 -----------------------------------
 
 # 3 = 03_abf_pe_w
