@@ -84,53 +84,71 @@ sub.j.abf.pe.w.cmat$comparison <- gsub("17_msnfi_abf_pe_w_cmat_nosfc", "MSNFI wi
 
 # Within the same data, between variants ----------------------------------
 
-ranks.abf.v2.v4 <- rank_rasters(project.esmk, variants=c(2, 3, 4))
-j.abf.v2tov4 <- m_cross_jaccard(ranks.abf.v2.v4, thresholds, disable.checks=TRUE)
-j.abf.v2tov4 <- list2df(j.abf.v2tov4)
-j.abf.v2tov4 <- subset(j.abf.v2tov4, value != 1.0) 
-j.abf.v2tov4 <- j.abf.v2tov4[1:20,]
-j.abf.v2tov4 <- j.abf.v2tov4[c(1:10, seq(12, 20, 2)),]
-j.abf.v2tov4$comparison <- paste(j.abf.v2tov4$variant2, "to", 
-                                 j.abf.v2tov4$variant1)
+ranks.abf.v2.v4 <- rank_rasters(project.esmk, variants=c(3, 4))
+ranks.msnfi.abf.v2.v4 <- rank_rasters(project.esmk, variants=c(10, 11))
+ranks.msnfi.nosfc.abf.v2.v4 <- rank_rasters(project.esmk, variants=c(16, 17))
+
+j.abf.v2tov4 <- m_cross_jaccard(ranks.abf.v2.v4, thresholds, 
+                                disable.checks=TRUE)
+j.msnfi.abf.v2tov4 <- m_cross_jaccard(ranks.msnfi.abf.v2.v4, thresholds, 
+                                      disable.checks=TRUE)
+j.msnfi.nosfc.abf.v2tov4 <- m_cross_jaccard(ranks.msnfi.nosfc.abf.v2.v4, thresholds, 
+                                            disable.checks=TRUE)
+
+between.variants <- function(x, name) {
+  x <- list2df(x)
+  x <- subset(x, value != 1.0) 
+  x <- x[1:5,]
+  x$comparison <- name
+  return(x)
+}
+
+j.abf.v2tov4 <- between.variants(j.abf.v2tov4, "Detailed data")
+
+j.msnfi.abf.v2tov4 <- between.variants(j.msnfi.abf.v2tov4, "MSNFI with SFC")
+j.msnfi.nosfc.abf.v2tov4  <- between.variants(j.msnfi.nosfc.abf.v2tov4,
+                                              "MSNFI without SFC")
+
+j.v2tov4 <- do.call("rbind", list("all"=j.abf.v2tov4,
+                                  "msnfi"=j.msnfi.abf.v2tov4,
+                                  "msnfi-nosfc"=j.msnfi.nosfc.abf.v2tov4))
 
 # Plot the results --------------------------------------------------------
 
-# Between the data sets
-p1 <- ggplot(sub.j.abf.pe, aes(x=threshold, y=value, group=comparison,
-                                color=comparison))
-p1 <- p1 + geom_line(size=1.0) + geom_point(size=3.0) + 
-        xlab("\nTop fraction of the landscape") +
-        ylab("Jaccard index\n") + ylim(0, 1) + 
-        scale_x_discrete(labels=c("50%", "20%", "10%", "5%", "2%")) + 
-        theme_bw() +
-        ggtitle("Spatial overlap between datasets for variants abf_pe")
+png(file="figs/Figure3/Fig3A.png", width=800, height=900)
 
-p2 <- ggplot(sub.j.abf.pe.w, aes(x=threshold, y=value, group=comparison,
+# Between the data sets
+p1 <- ggplot(sub.j.abf.pe.w, aes(x=threshold, y=value, group=comparison,
                                color=comparison))
-p2 <- p2 + geom_line(size=1.0) + geom_point(size=3.0) + 
+p1 <- p1 + geom_line(size=1.0) + geom_point(size=3.0) + 
         xlab("\nTop fraction of the landscape") +
         ylab("Jaccard index\n") + ylim(0, 1) + 
         scale_x_discrete(labels=c("50%", "20%", "10%", "5%", "2%")) + 
         theme_bw() +
         ggtitle("Spatial overlap between datasets for variants abf_pe_w")
 
-p3 <- ggplot(sub.j.abf.pe.w.cmat, aes(x=threshold, y=value, group=comparison,
+p2 <- ggplot(sub.j.abf.pe.w.cmat, aes(x=threshold, y=value, group=comparison,
                                 color=comparison))
-p3 <- p3 + geom_line(size=1.0) + geom_point(size=3.0) + 
+p2 <- p2 + geom_line(size=1.0) + geom_point(size=3.0) + 
         xlab("\nTop fraction of the landscape") +
         ylab("Jaccard index\n") + ylim(0, 1) + 
         scale_x_discrete(labels=c("50%", "20%", "10%", "5%", "2%")) + 
         theme_bw() +
         ggtitle("Spatial overlap between datasets for variants abf_pe_w_cmat")
 
-grid.arrange(p1, p2, p3, ncol=1)
+grid.arrange(p1, p2, ncol=1)
+
+dev.off()
+
+png(file="figs/Figure3/Fig3B.png", width=800, height=600)
 
 # Between variants
-p4 <- ggplot(j.abf.v2tov4, aes(x=threshold, y=value, group=comparison,
+p3 <- ggplot(j.v2tov4, aes(x=threshold, y=value, group=comparison,
                                   color=comparison))
-p4 <- p4 + geom_line(size=1.0) + geom_point(size=3.0) + 
+p3 + geom_line(size=1.0) + geom_point(size=3.0) + 
         xlab("\nTop fraction of the landscape") +
         ylab("Jaccard index\n") + ylim(0, 1) + 
         scale_x_discrete(labels=c("50%", "20%", "10%", "5%", "2%")) + 
         theme_bw() +
         ggtitle("Spatial overlap between variants 2-4")
+dev.off()
