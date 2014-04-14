@@ -68,8 +68,11 @@ nosfc.msnfi.abf.pe <- get_variant(project.esmk, 15)
 nosfc.msnfi.abf.pe.w <- get_variant(project.esmk, 16)
 nosfc.msnfi.abf.pe.w.cmat <- get_variant(project.esmk, 17)
 
-loaded.abf.pe.w <- get_variant(project.esmk, 18)
-loaded.abf.pe.w.cmat <- get_variant(project.esmk, 19)
+msnfi.loaded.abf.pe.w <- get_variant(project.esmk, 18)
+msnfi.loaded.abf.pe.w.cmat <- get_variant(project.esmk, 19)
+
+nosfc.msnfi.loaded.abf.pe.w <- get_variant(project.esmk, 20)
+nosfc.msnfi.loaded.abf.pe.w.cmat <- get_variant(project.esmk, 21)
 
 # Re-grouping -------------------------------------------------------------
 
