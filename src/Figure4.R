@@ -18,8 +18,11 @@ groupnames(abf.pe.w) <- fert.labels
 groups(msnfi.abf.pe.w) <- rep(1:5, 4)
 groupnames(msnfi.abf.pe.w) <- fert.labels
 
-groups(loaded.abf.pe.w) <- rep(1:5, 4)
-groupnames(loaded.abf.pe.w) <- fert.labels
+groups(msnfi.loaded.abf.pe.w) <- rep(1:5, 4)
+groupnames(msnfi.loaded.abf.pe.w) <- fert.labels
+
+groups(nosfc.msnfi.loaded.abf.pe.w) <- rep(1:5, 4)
+groupnames(nosfc.msnfi.loaded.abf.pe.w) <- fert.labels
 
 # When assigning new groups to the connectivity transformed variant, remember
 # that the feature stack is duplicated: 1st for connectivity transformations, 
@@ -61,10 +64,15 @@ nocon.grpcur.msnfi.abf.pe.w.cmat <- new("ZGroupCurvesDataFrame",
 cur.nosfc.msnfi.abf.pe.w <- curves(nosfc.msnfi.abf.pe.w)
 cur.nosfc.msnfi.abf.pe.w.cmat <- curves(nosfc.msnfi.abf.pe.w.cmat)
 
-# Pre-loaded
+# Pre-load MSNFI / MSNFI-nosfc ranking
 
-grpcur.loaded.abf.pe.w <- curves(loaded.abf.pe.w, groups=TRUE)
-grpcur.loaded.abf.pe.w.cmat <- curves(loaded.abf.pe.w.cmat, groups=TRUE)
+grpcur.msnfi.loaded.abf.pe.w <- curves(msnfi.loaded.abf.pe.w, groups=TRUE)
+grpcur.msnfi.loaded.abf.pe.w.cmat <- curves(msnfi.loaded.abf.pe.w.cmat, 
+                                            groups=TRUE)
+
+grpcur.nosfc.msnfi.loaded.abf.pe.w <- curves(nosfc.msnfi.loaded.abf.pe.w, groups=TRUE)
+grpcur.nosfc.msnfi.loaded.abf.pe.w.cmat <- curves(nosfc.msnfi.loaded.abf.pe.w.cmat, 
+                                            groups=TRUE)
 
 # Plotting ----------------------------------------------------------------
 
@@ -112,7 +120,7 @@ dd <- grpcur.abf.pe.w[,c(1, seq(4, ncol(grpcur.abf.pe.w), 5))]
 m.dd <- melt(dd, id.vars=c("pr_lost"))
 m.dd$type <- "Full"
 
-loaded <- grpcur.loaded.abf.pe.w[,c(1, seq(4, ncol(grpcur.loaded.abf.pe.w), 5))]
+loaded.msnfi <- grpcur.msnfi.loaded.abf.pe.w[,c(1, seq(4, ncol(grpcur.loaded.abf.pe.w), 5))]
 m.loaded <- melt(loaded, id.vars=c("pr_lost"))
 m.loaded$type <- "Loaded"
 
