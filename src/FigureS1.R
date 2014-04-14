@@ -39,55 +39,50 @@ classes <- c("0-10", "10-20", "20_30", "30-40", "40-50", "50-60", "60-70",
              "70-80", "80-90", "90-100")
 thresholds <- seq(0.1, 1, 0.1)
 
-# abf_pe
-ranks.abf.pe.w <- rank_rasters(project.esmk, variants=c(3, 10))
-j.classes.ranks.abf.pe.w <- m_cross_range_jaccard(ranks.abf.pe.w[[1]], 
-                                                  ranks.abf.pe.w[[2]], 
-                                                  thresholds)
-colnames(j.classes.ranks.abf.pe.w) <- classes
-j.classes.ranks.abf.pe.w$classes <- classes
+# Variants 1 and 3
+ranks.V1.V3 <- rank_rasters(project.esmk, variants=c(3, 10))
+j.ranks.V1.V3 <- m_cross_range_jaccard(ranks.V1.V3[[1]], ranks.V1.V3[[2]], 
+                                       thresholds)
+colnames(j.ranks.V1.V3) <- classes
+j.ranks.V1.V3$classes <- classes
 
-# abf_pe_w_cmat
-ranks.abf.pe.w.cmat <- rank_rasters(project.esmk, variants=c(4, 11))
-j.classes.ranks.abf.pe.w.cmat <- m_cross_range_jaccard(ranks.abf.pe.w.cmat[[1]], 
-                                                       ranks.abf.pe.w.cmat[[2]], 
-                                                       thresholds)
-colnames(j.classes.ranks.abf.pe.w.cmat) <- classes
-j.classes.ranks.abf.pe.w.cmat$classes <- classes
+# Variants 2 and 4
+ranks.V2.V4 <- rank_rasters(project.esmk, variants=c(4, 11))
+j.ranks.V2.V4 <- m_cross_range_jaccard(ranks.V2.V4[[1]], ranks.V2.V4[[2]], 
+                                       thresholds)
+colnames(j.ranks.V2.V4) <- classes
+j.ranks.V2.V4$classes <- classes
 
-# abf_pe_w vs abf_pe_w_cmat within same dataset (all data)
-ranks.local.vs.cmat <- rank_rasters(project.esmk, variants=c(3, 4))
-j.classes.local.vs.cmat <- m_cross_range_jaccard(ranks.local.vs.cmat[[1]], 
-                                                 ranks.local.vs.cmat[[2]], 
-                                                 thresholds)
-colnames(j.classes.local.vs.cmat) <- classes
-j.classes.local.vs.cmat$classes <- classes
+# Variants 1 and 2
+ranks.V1.V2 <- rank_rasters(project.esmk, variants=c(3, 4))
+j.ranks.V1.V2 <- m_cross_range_jaccard(ranks.V1.V2[[1]], ranks.V1.V2[[2]], 
+                                       thresholds)
+colnames(j.ranks.V1.V2) <- classes
+j.ranks.V1.V2$classes <- classes
 
 
 # Plot heatmaps -----------------------------------------------------------
 
-m.j.classes.ranks.abf.pe.w <- melt(j.classes.ranks.abf.pe.w, 
-                                   id.vars=c("classes"))
-p1 <- ggplot(m.j.classes.ranks.abf.pe.w, aes(x=variable, y=classes))
-p1 <- p1 + geom_tile(aes(fill = value), colour = "white") + 
-  scale_fill_gradient(low = "white", high = "steelblue", limits=c(0,1)) +
-  ylab("Priority bin for variant 2") +
-  xlab("Priority bin for variant 9") +
-  ggtitle("Similarity of priority bins for abf_pe_w (All data vs MSNFI)")
+m.j.ranks.V1.V3 <- melt(j.ranks.V1.V3, id.vars=c("classes"))
+p1 <- ggplot(m.j.ranks.V1.V3, aes(x=variable, y=classes))
+p1 <- p1 + geom_tile(aes(fill = value)) + 
+  scale_fill_gradient(low = "white", high = "steelblue", limits=c(0, 0.3)) +
+  ylab("Priority bin for variant V1") +
+  xlab("Priority bin for variant V3") +
+  ggtitle("Similarity of priority bins for variants V1 and V3")
 
-m.j.classes.ranks.abf.pe.w.cmat <- melt(j.classes.ranks.abf.pe.w.cmat, 
-                                        id.vars=c("classes"))
-p2 <- ggplot(m.j.classes.ranks.abf.pe.w.cmat, aes(x=variable, y=classes))
+m.j.ranks.V2.V4 <- melt(j.ranks.V2.V4, id.vars=c("classes"))
+p2 <- ggplot(m.j.ranks.V2.V4, aes(x=variable, y=classes))
 p2 <- p2 + geom_tile(aes(fill = value), colour = "white") + 
-  scale_fill_gradient(low = "white", high = "steelblue", limits=c(0,1)) +
-  ylab("Priority bin for variant 4") +
-  xlab("Priority bin for variant 11") +
-  ggtitle("Similarity of priority bins for abf_pe_w_cmat (All data vs MSNFI)")
+  scale_fill_gradient(low = "white", high = "steelblue", limits=c(0, 0.3)) +
+  ylab("Priority bin for variant V2") +
+  xlab("Priority bin for variant V4") +
+  ggtitle("Similarity of priority bins for variants V2 and V4")
 
-m.j.classes.local.vs.cmat <- melt(j.classes.local.vs.cmat, id.vars=c("classes"))
-p3 <- ggplot(m.j.classes.local.vs.cmat, aes(x=variable, y=classes))
+m.j.ranks.V1.V2 <- melt(j.ranks.V1.V2, id.vars=c("classes"))
+p3 <- ggplot(m.j.ranks.V1.V2, aes(x=variable, y=classes))
 p3 <- p3 + geom_tile(aes(fill = value), colour = "white") + 
-  scale_fill_gradient(low = "white", high = "steelblue", limits=c(0,1)) +
+  scale_fill_gradient(low = "white", high = "steelblue", limits=c(0, 1)) +
   ylab("Priority bin for variant 3") +
   xlab("Priority bin for variant 4") +
   ggtitle("Similarity of priority bins for abf_pe_w vs abf_pe_w_cmat")
