@@ -19,60 +19,51 @@ common.data.dir <- file.path(root.data.dir, "common/60")
 message("  Reading in Zproject...")
 project.esmk <- create_zproject(root=zproject.dir, debug=FALSE)
 
-# Variants are:
+# Original variants are:
 #
 # ALL DATA - Using MSNFI data + more detailed data from stand-based inventory
 # databases. Also using division into separate feature layers based on 
 # soil fertility classification derived from more detailed databases and 
 # (pixel-base) MSNFI.
 #
-# 1 = 01_abf
-# 2 = 02_abf_pe
-# 3 = 03_abf_pe_w
-# 4 = 04_abf_pe_w_cmat
-# 5 = 05_abf_pe_w_cmat_cmete
-# 6 = 06_abf_pe_w_cmat_cmete_cres
-# 7 = 07_abf_pe_w_cmat_cmete_cres_mask
+# V1 = 03_abf_pe_w
+# V2 = 04_abf_pe_w_cmat
 # 
 # MSNFI DATA ONLY - Using division into separate feature layers based on 
 # soil fertility classification derived from (segmented) MSNFI.
 # 
-# 8 = 08_msnfi_abf
-# 9 = 09_msnfi_abf_pe
-# 10 = 10_msnfi_abf_pe_w
-# 11 = 11_msnfi_abf_pe_w_cmat
+# V3 = 10_msnfi_abf_pe_w
+# V4 = 11_msnfi_abf_pe_w_cmat
 #
 # MSNFI DATA ONLY - No division into separate feature layers based on 
 # soil fertility classification.
 #
-# 15 = 15_msnfi_abf_pe_nosfc
-# 16 = 16_msnfi_abf_pe_w_nosfc
-# 17 = 17_msnfi_abf_pe_w_cmat_nosfc
+# V5 = 16_msnfi_abf_pe_w_nosfc
+# V6 = 17_msnfi_abf_pe_w_cmat_nosfc
 
 # Actual variants ---------------------------------------------------------
 
-abf <- get_variant(project.esmk, 1)
-abf.pe <- get_variant(project.esmk, 2)
-abf.pe.w <- get_variant(project.esmk, 3)
-abf.pe.w.cmat <- get_variant(project.esmk, 4)
-abf.pe.w.cmat.cmete <- get_variant(project.esmk, 5)
-abf.pe.w.cmat.cmete.cres <- get_variant(project.esmk, 6)
-abf.pe.w.cmat.cmete.cres.mask <- get_variant(project.esmk, 7)
+V1 <- get_variant(project.esmk, 3)
+V2 <- get_variant(project.esmk, 4)
 
-msnfi.abf <- get_variant(project.esmk, 8)
-msnfi.abf.pe <- get_variant(project.esmk, 9)
-msnfi.abf.pe.w <- get_variant(project.esmk, 10)
-msnfi.abf.pe.w.cmat <- get_variant(project.esmk, 11)
+V3 <- get_variant(project.esmk, 10)
+V4 <- get_variant(project.esmk, 11)
 
-nosfc.msnfi.abf.pe <- get_variant(project.esmk, 15)
-nosfc.msnfi.abf.pe.w <- get_variant(project.esmk, 16)
-nosfc.msnfi.abf.pe.w.cmat <- get_variant(project.esmk, 17)
+V5 <- get_variant(project.esmk, 16)
+V6 <- get_variant(project.esmk, 17)
 
-msnfi.loaded.abf.pe.w <- get_variant(project.esmk, 18)
-msnfi.loaded.abf.pe.w.cmat <- get_variant(project.esmk, 19)
 
-nosfc.msnfi.loaded.abf.pe.w <- get_variant(project.esmk, 20)
-nosfc.msnfi.loaded.abf.pe.w.cmat <- get_variant(project.esmk, 21)
+# Pre-loaded variants -----------------------------------------------------
+
+# Use feature data from V1 but pre-load ranking from V3
+V1.load.V3 <- get_variant(project.esmk, 18)
+# Use feature data from V2 but pre-load ranking from V4
+V2.load.V4 <- get_variant(project.esmk, 19)
+
+# Use feature data from V1 but pre-load ranking from V5
+V1.load.V5 <- get_variant(project.esmk, 20)
+# Use feature data from V1 but pre-load ranking from V6
+V2.load.V6 <- get_variant(project.esmk, 21)
 
 # Re-grouping -------------------------------------------------------------
 
@@ -87,21 +78,21 @@ nosfc.msnfi.loaded.abf.pe.w.cmat <- get_variant(project.esmk, 21)
 # raster "esmk_hier_pas.img"
 pa.mask.file <- file.path(common.data.dir, "esmk_pas_nopeat.img")
 pa.mask <- raster(pa.mask.file)
-extent(pa.mask) <- extent(rank_raster(abf.pe.w))
+extent(pa.mask) <- extent(rank_raster(V1))
 
 # METSO mask contains location acquired to METSO 2011-2012. In practice,
 # they are private protected areas. Each location has a unique ID-number
 # which range [1, 75].
 metso.mask.file <- file.path(common.data.dir, "esmk_metso.img")
 metso.mask <- raster(metso.mask.file)
-extent(metso.mask) <- extent(rank_raster(abf.pe.w))
+extent(metso.mask) <- extent(rank_raster(V1))
 
 # Woodland key habitats (WKH) are small set-asides and a conservation instrument
 # provided by general forest management. Raster has 1 if pixel belongs to a 
 # WKH, otherwise NoData.
 wkh.mask.file <- file.path(common.data.dir, "esmk_wkh.img")
 wkh.mask <- raster(wkh.mask.file)
-extent(wkh.mask) <- extent(rank_raster(abf.pe.w))
+extent(wkh.mask) <- extent(rank_raster(V1))
 
 # Soil fertility class (SFC) raster has 5 classes in it:
 # 1 = Herb-rich (lehto)
