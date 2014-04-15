@@ -23,17 +23,15 @@ y.lim <- c(0, 150)
 
 png(file="figs/Figure2/levelplots/p%d.png", width=820, height=820)
 
-rankr.nosfc.msnfi.abf.pe.w <- rank_raster(nosfc.msnfi.abf.pe.w)
-rankr.nosfc.msnfi.abf.pe.w.cmat <- rank_raster(nosfc.msnfi.abf.pe.w.cmat)
+rankr.V1 <- rank_raster(V1)
+rankr.V2 <- rank_raster(V2)
 
-levelplot(rankr.nosfc.msnfi.abf.pe.w, FUN.margin=top.fraction, 
-          maxpixels=1e6, 
+levelplot(rankr.V1, FUN.margin=top.fraction, maxpixels=1e6, 
           par.settings=rasterTheme(region=z_colors_spectral$colors), 
           at=z_colors_spectral$values, colorkey=z_color_key,
           scales=list(draw=FALSE))
           #scales.margin=list(x=x.lim, y=y.lim))
-levelplot(rankr.nosfc.msnfi.abf.pe.w.cmat, FUN.margin=top.fraction, 
-          maxpixels=1e6,
+levelplot(rankr.V2, FUN.margin=top.fraction, maxpixels=1e6,
           par.settings=rasterTheme(region=z_colors_spectral$colors), 
           at=z_colors_spectral$values, colorkey=z_color_key,
           scales=list(draw=FALSE))
@@ -41,17 +39,15 @@ levelplot(rankr.nosfc.msnfi.abf.pe.w.cmat, FUN.margin=top.fraction,
 
 # MSNFI with sfc classes --------------------------------------------------
 
-rankr.msnfi.abf.pe.w <- rank_raster(msnfi.abf.pe.w)
-rankr.msnfi.abf.pe.w.cmat <- rank_raster(msnfi.abf.pe.w.cmat)
+rankr.V3 <- rank_raster(V3)
+rankr.V4 <- rank_raster(V4)
 
-levelplot(rankr.msnfi.abf.pe.w, FUN.margin=top.fraction, 
-          maxpixels=1e6, 
+levelplot(rankr.V3, FUN.margin=top.fraction, maxpixels=1e6, 
           par.settings=rasterTheme(region=z_colors_spectral$colors), 
           at=z_colors_spectral$values, colorkey=z_color_key,
           scales=list(draw=FALSE))
           #scales.margin=list(x=x.lim, y=y.lim))
-levelplot(rankr.msnfi.abf.pe.w.cmat, FUN.margin=top.fraction, 
-          maxpixels=1e6,
+levelplot(rankr.V4, FUN.margin=top.fraction, maxpixels=1e6,
           par.settings=rasterTheme(region=z_colors_spectral$colors), 
           at=z_colors_spectral$values, colorkey=z_color_key,
           scales=list(draw=FALSE),
@@ -59,17 +55,15 @@ levelplot(rankr.msnfi.abf.pe.w.cmat, FUN.margin=top.fraction,
 
 # All data ----------------------------------------------------------------
   
-rankr.abf.pe.w <- rank_raster(abf.pe.w)
-rankr.abf.pe.w.cmat <- rank_raster(abf.pe.w.cmat)
+rankr.V5 <- rank_raster(V5)
+rankr.V6 <- rank_raster(V6)
 
-levelplot(rankr.abf.pe.w, FUN.margin=top.fraction, 
-          maxpixels=1e6,
+levelplot(rankr.V5, FUN.margin=top.fraction, maxpixels=1e6,
           par.settings=rasterTheme(region=z_colors_spectral$colors), 
           at=z_colors_spectral$values, colorkey=z_color_key,
           scales=list(draw=FALSE))
           #scales.margin=list(x=x.lim, y=y.lim))
-levelplot(rankr.abf.pe.w.cmat, FUN.margin=top.fraction, 
-          maxpixels=1e6,
+levelplot(rankr.V6, FUN.margin=top.fraction, maxpixels=1e6,
           par.settings=rasterTheme(region=z_colors_spectral$colors), 
           at=z_colors_spectral$values, colorkey=z_color_key,
           scales=list(draw=FALSE))
