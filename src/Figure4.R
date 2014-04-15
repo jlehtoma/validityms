@@ -102,7 +102,13 @@ p6 <- plot(nocon.grpcur.V6, monochrome=FALSE, min=FALSE, max=FALSE,
            mean=FALSE, invert.x=TRUE) + ylim(0, 1)
 p6 <- p6  + ggtitle("Detailed data with classes and connectivity (V6)")
 
+png(file="figs/Figure4/Fig4A.png", width=1500, height=1200)
 grid.arrange(p1, p2, p3, p4, p5, p6, nrow=3)
+dev.off()
+
+svg(file="figs/Figure4/Fig4A.svg", width=1500, height=1200)
+grid.arrange(p1, p2, p3, p4, p5, p6, nrow=3)
+dev.off()
 
 # Performance differences -------------------------------------------------
 
@@ -142,9 +148,16 @@ dat <- do.call("rbind", list("A"=m.dd, "B"=m.loaded.msnfi.sfc,
 dat$variable <- gsub("^mean\\.", "", dat$variable)
 
 p7 <- ggplot(dat, aes(x=pr_lost, y=value, color=type)) 
-p7 + geom_line(size=1.25) + facet_wrap(~variable) +
+p7 <- p7 + geom_line(size=1.25) + facet_wrap(~variable) +
   ylab("Prop. of distributions remaining\n") +
   scale_x_continuous(breaks=seq(0, 1, 0.2), 
                      labels=c("1.0", "0.8", "0.6", "0.4", "0.2", "0.0")) + 
   xlab("Prop. of landscape under conservation")
 
+png(file="figs/Figure4/Fig4B.png", width=800, height=600)
+p7
+dev.off()
+
+svg(file="figs/Figure4/Fig4B.svg", width=800, height=600)
+p7
+dev.off()
