@@ -40,25 +40,25 @@ classes <- c("0-10", "10-20", "20_30", "30-40", "40-50", "50-60", "60-70",
 thresholds <- seq(0.1, 1, 0.1)
 
 # Variants 1 and 3
-ranks.V1.V3 <- rank_rasters(project.esmk, variants=c(3, 10))
+ranks.V1.V3 <- rank_rasters(project.esmk, variants=c(16, 10))
 j.ranks.V1.V3 <- m_cross_range_jaccard(ranks.V1.V3[[1]], ranks.V1.V3[[2]], 
                                        thresholds)
 colnames(j.ranks.V1.V3) <- classes
 j.ranks.V1.V3$classes <- classes
 
 # Variants 2 and 4
-ranks.V2.V4 <- rank_rasters(project.esmk, variants=c(4, 11))
+ranks.V2.V4 <- rank_rasters(project.esmk, variants=c(17, 11))
 j.ranks.V2.V4 <- m_cross_range_jaccard(ranks.V2.V4[[1]], ranks.V2.V4[[2]], 
                                        thresholds)
 colnames(j.ranks.V2.V4) <- classes
 j.ranks.V2.V4$classes <- classes
 
-# Variants 1 and 2
-ranks.V1.V2 <- rank_rasters(project.esmk, variants=c(3, 4))
-j.ranks.V1.V2 <- m_cross_range_jaccard(ranks.V1.V2[[1]], ranks.V1.V2[[2]], 
+# Variants 5 and 6
+ranks.V5.V6 <- rank_rasters(project.esmk, variants=c(3, 4))
+j.ranks.V5.V5 <- m_cross_range_jaccard(ranks.V5.V6[[1]], ranks.V5.V6[[2]], 
                                        thresholds)
-colnames(j.ranks.V1.V2) <- classes
-j.ranks.V1.V2$classes <- classes
+colnames(j.ranks.V5.V6) <- classes
+j.ranks.V5.V6$classes <- classes
 
 
 # Plot heatmaps -----------------------------------------------------------
@@ -87,6 +87,6 @@ p3 <- p3 + geom_tile(aes(fill = value), colour = "white") +
   xlab("Priority bin for variant 4") +
   ggtitle("Similarity of priority bins for abf_pe_w vs abf_pe_w_cmat")
 
-grid.arrange(p1, p2, p3, nrow=1)
+grid.arrange(p1, p2, p3, ncol=1)
 
 
