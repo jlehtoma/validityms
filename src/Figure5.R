@@ -13,12 +13,9 @@ load.project()
 # validation data is assumed to have on average higher conservation value than 
 # the surrounding managed forest. 
 
-# Variant 3
-rankr.abf.pe.w <- rank_raster(abf.pe.w)
-# Variant 10
-rankr.msnfi.abf.pe.w <- rank_raster(msnfi.abf.pe.w)
-# Variant 16
-rankr.nosfc.msnfi.abf.pe.w <- rank_raster(nosfc.msnfi.abf.pe.w)
+rankr.V1 <- rank_raster(V1)
+rankr.V3 <- rank_raster(V3)
+rankr.V5 <- rank_raster(V5)
 
 # ylimit is hard coded to ease the comparison of priority distributions.
 # Max-values from pairwise comparisons (manually from plots) are:
@@ -26,34 +23,34 @@ p1.p3.ylim <- 20000
 p4.p6.ylim <- 3500
 p7.p9.ylim <- 750
 
-p1 <- plot_hist(rankr.nosfc.msnfi.abf.pe.w, pa.mask, add.median=TRUE, 
+p1 <- plot_hist(rankr.V1, pa.mask, add.median=TRUE, 
                 add.mean=FALSE, binwidth=0.02, 
-                title="nosfc_msnfi_abf_pe_w for PAs") + ylim(0, p1.p3.ylim)
-p2 <- plot_hist(rankr.msnfi.abf.pe.w, pa.mask, add.median=TRUE, add.mean=FALSE,
-                binwidth=0.02, title="msnfi_abf_pe_w for PAs") + 
+                title="V1 for PAs") + ylim(0, p1.p3.ylim)
+p2 <- plot_hist(rankr.V3, pa.mask, add.median=TRUE, add.mean=FALSE,
+                binwidth=0.02, title="V3 for PAs") + 
   ylim(0, p1.p3.ylim)
-p3 <- plot_hist(rankr.abf.pe.w, pa.mask, add.median=TRUE, add.mean=FALSE,
-                binwidth=0.02, title="abf_pe_w for PAs") #+ ylim(0, p1.p3.ylim )
+p3 <- plot_hist(rankr.V5, pa.mask, add.median=TRUE, add.mean=FALSE,
+                binwidth=0.02, title="V5 for PAs") #+ ylim(0, p1.p3.ylim )
 
-p4 <- plot_hist(rankr.nosfc.msnfi.abf.pe.w, wkh.mask, add.median=TRUE, 
+p4 <- plot_hist(rankr.V1, wkh.mask, add.median=TRUE, 
                 add.mean=FALSE, binwidth=0.02, 
-                title="nosfc_msnfi_abf_pe_w for WKHs") + ylim(0, p4.p6.ylim)
-p5 <- plot_hist(rankr.msnfi.abf.pe.w, wkh.mask, add.median=TRUE, add.mean=FALSE,
-                binwidth=0.02, title="msnfi_abf_pe_w for WKHs") +
+                title="V1 for WKHs") + ylim(0, p4.p6.ylim)
+p5 <- plot_hist(rankr.V3, wkh.mask, add.median=TRUE, add.mean=FALSE,
+                binwidth=0.02, title="V3 for WKHs") +
   ylim(0, p4.p6.ylim)
-p6 <- plot_hist(rankr.abf.pe.w, wkh.mask, add.median=TRUE, add.mean=FALSE,
-                binwidth=0.02, title="abf_pe_w for WKHs") #+ ylim(0, p4.p6.ylim)
+p6 <- plot_hist(rankr.V5, wkh.mask, add.median=TRUE, add.mean=FALSE,
+                binwidth=0.02, title="V5 for WKHs") #+ ylim(0, p4.p6.ylim)
 
-p7 <- plot_hist(rankr.nosfc.msnfi.abf.pe.w, metso.mask, add.median=TRUE, 
+p7 <- plot_hist(rankr.V1, metso.mask, add.median=TRUE, 
                 add.mean=FALSE, binwidth=0.02, 
-                title="nosfc_msnfi_abf_pe_w for METSO-deals") +
+                title="V1 for METSO-deals") +
   ylim(0, p7.p9.ylim)
-p8 <- plot_hist(rankr.msnfi.abf.pe.w, metso.mask, add.median=TRUE, 
+p8 <- plot_hist(rankr.V3, metso.mask, add.median=TRUE, 
                 add.mean=FALSE, binwidth=0.02, 
-                title="msnfi_abf_pe_w for METSO-deals") +
+                title="V3 for METSO-deals") +
   ylim(0, p7.p9.ylim)
-p9 <- plot_hist(rankr.abf.pe.w, metso.mask, add.median=TRUE, add.mean=FALSE,
-                binwidth=0.02, title="abf_pe_w for METSO-deals") +
+p9 <- plot_hist(rankr.V5, metso.mask, add.median=TRUE, add.mean=FALSE,
+                binwidth=0.02, title="V5 for METSO-deals") +
   ylim(0, p7.p9.ylim)
 
 png(file="figs/Figure5/Fig5.png", width=1500, height=1200)
@@ -61,53 +58,3 @@ png(file="figs/Figure5/Fig5.png", width=1500, height=1200)
 grid.arrange(p1, p2, p3, p4, p5, p6, p7, p8, p9, nrow=3, ncol=3)
 
 dev.off()
-
-# With matrix connectivity ------------------------------------------------
-
-# For comparison, see what's the situation when matrix connectivity is 
-# accounted for.
-
-# Variant 4
-rankr.abf.pe.w.cmat <- rank_raster(abf.pe.w.cmat)
-# Variant 11
-rankr.msnfi.abf.pe.w.cmat <- rank_raster(msnfi.abf.pe.w.cmat)
-# Variant 17
-rankr.nosfc.msnfi.abf.pe.w.cmat <- rank_raster(nosfc.msnfi.abf.pe.w.cmat)
-
-p10 <- plot_hist(rankr.nosfc.msnfi.abf.pe.w.cmat, pa.mask, add.median=TRUE, 
-                add.mean=FALSE, binwidth=0.02, 
-                title="nosfc_msnfi_abf_pe_w_cmat for PAs") + ylim(0, p1p2.ylim)
-p11 <- plot_hist(rankr.msnfi.abf.pe.w.cmat, pa.mask, add.median=TRUE, 
-                 add.mean=FALSE, binwidth=0.02, 
-                 title="msnfi_abf_pe_w_cmat for PAs") + 
-  ylim(0, p1.p3.ylim)
-p12 <- plot_hist(rankr.abf.pe.w.cmat, pa.mask, add.median=TRUE, add.mean=FALSE,
-                binwidth=0.02, title="abf_pe_w _cmat for PAs") + 
-  ylim(0, p1.p3.ylim )
-
-p13 <- plot_hist(rankr.nosfc.msnfi.abf.pe.w.cmat, wkh.mask, add.median=TRUE, 
-                add.mean=FALSE, binwidth=0.02, 
-                title="nosfc_msnfi_abf_pe_w_cmat for WKHs") + 
-  ylim(0, p4.p6.ylim)
-p14 <- plot_hist(rankr.msnfi.abf.pe.w.cmat, wkh.mask, add.median=TRUE, 
-                 add.mean=FALSE, binwidth=0.02, 
-                 title="msnfi_abf_pe_w_cmat for WKHs") +
-  ylim(0, p4.p6.ylim)
-p15 <- plot_hist(rankr.abf.pe.w.cmat, wkh.mask, add.median=TRUE, add.mean=FALSE,
-                binwidth=0.02, title="abf_pe_w_cmat for WKHs") + 
-  ylim(0, p4.p6.ylim)
-
-p16 <- plot_hist(rankr.nosfc.msnfi.abf.pe.w.cmat, metso.mask, add.median=TRUE, 
-                add.mean=FALSE, binwidth=0.02, 
-                title="nosfc_msnfi_abf_pe_w_cmat for METSO-deals") +
-  ylim(0, p7.p9.ylim)
-p17 <- plot_hist(rankr.msnfi.abf.pe.w.cmat, metso.mask, add.median=TRUE, 
-                add.mean=FALSE, binwidth=0.02, 
-                title="msnfi_abf_pe_w_cmat for METSO-deals") +
-  ylim(0, p7.p9.ylim)
-p18 <- plot_hist(rankr.abf.pe.w.cmat, metso.mask, add.median=TRUE, 
-                 add.mean=FALSE, binwidth=0.02, 
-                 title="abf_pe_w_cmat for METSO-deals") +
-  ylim(0, p7.p9.ylim)
-
-grid.arrange(p10, p11, p12, p13, p14, p15, p16, p17, p18, nrow=3, ncol=3)
