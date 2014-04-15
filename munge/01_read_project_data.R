@@ -21,49 +21,48 @@ project.esmk <- create_zproject(root=zproject.dir, debug=FALSE)
 
 # Original variants are:
 #
-# ALL DATA - Using MSNFI data + more detailed data from stand-based inventory
-# databases. Also using division into separate feature layers based on 
-# soil fertility classification derived from more detailed databases and 
-# (pixel-base) MSNFI.
 #
-# V1 = 03_abf_pe_w
-# V2 = 04_abf_pe_w_cmat
-# 
+# MSNFI DATA ONLY - No division into separate feature layers based on 
+# soil fertility classification.
+#
+# V1 = 16_msnfi_abf_pe_w_nosfc
+# V2 = 17_msnfi_abf_pe_w_cmat_nosfc
+#
 # MSNFI DATA ONLY - Using division into separate feature layers based on 
 # soil fertility classification derived from (segmented) MSNFI.
 # 
 # V3 = 10_msnfi_abf_pe_w
 # V4 = 11_msnfi_abf_pe_w_cmat
 #
-# MSNFI DATA ONLY - No division into separate feature layers based on 
-# soil fertility classification.
+# ALL DATA - Using MSNFI data + more detailed data from stand-based inventory
+# databases. Also using division into separate feature layers based on 
+# soil fertility classification derived from more detailed databases and 
+# (pixel-base) MSNFI.
 #
-# V5 = 16_msnfi_abf_pe_w_nosfc
-# V6 = 17_msnfi_abf_pe_w_cmat_nosfc
+# V5 = 03_abf_pe_w
+# V6 = 04_abf_pe_w_cmat
+# 
 
-# Actual variants ---------------------------------------------------------
-
-V1 <- get_variant(project.esmk, 3)
-V2 <- get_variant(project.esmk, 4)
+V1 <- get_variant(project.esmk, 16)
+V2 <- get_variant(project.esmk, 17)
 
 V3 <- get_variant(project.esmk, 10)
 V4 <- get_variant(project.esmk, 11)
 
-V5 <- get_variant(project.esmk, 16)
-V6 <- get_variant(project.esmk, 17)
-
+V5 <- get_variant(project.esmk, 3)
+V6 <- get_variant(project.esmk, 4)
 
 # Pre-loaded variants -----------------------------------------------------
 
-# Use feature data from V1 but pre-load ranking from V3
-V1.load.V3 <- get_variant(project.esmk, 18)
-# Use feature data from V2 but pre-load ranking from V4
-V2.load.V4 <- get_variant(project.esmk, 19)
+# Use feature data from V5 but pre-load ranking from V3
+V5.load.V3 <- get_variant(project.esmk, 18)
+# Use feature data from V6 but pre-load ranking from V4
+V6.load.V4 <- get_variant(project.esmk, 19)
 
-# Use feature data from V1 but pre-load ranking from V5
-V1.load.V5 <- get_variant(project.esmk, 20)
-# Use feature data from V1 but pre-load ranking from V6
-V2.load.V6 <- get_variant(project.esmk, 21)
+# Use feature data from V5 but pre-load ranking from V1
+V5.load.V1 <- get_variant(project.esmk, 20)
+# Use feature data from V6 but pre-load ranking from V2
+V6.load.V2 <- get_variant(project.esmk, 21)
 
 # Re-grouping -------------------------------------------------------------
 
