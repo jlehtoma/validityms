@@ -154,10 +154,10 @@ p7 <- p7 + geom_line(size=1.25) + facet_wrap(~variable) +
                      labels=c("1.0", "0.8", "0.6", "0.4", "0.2", "0.0")) + 
   xlab("Prop. of landscape under conservation")
 
-png(file="figs/Figure4/Fig4B.png", width=800, height=600)
+png(file="figs/Figure4/Fig4B.png", width=1000, height=800)
 p7
 dev.off()
 
-svg(file="figs/Figure4/Fig4B.svg", width=800, height=600)
+svg(file="figs/Figure4/Fig4B.svg", width=1000, height=800)
 p7
 dev.off()
