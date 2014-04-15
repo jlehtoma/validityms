@@ -2,91 +2,153 @@ library(gridExtra)
 library(ProjectTemplate)
 load.project()
 
-cross_range_jaccard <- function(raster1, raster2, thresholds, ...) {
+# Compare the overlaps between different variants
+
+# Helper function that breaks the rown names into separate columns in a data
+# frame
+rowname2cols <- function(x) {
   
-  jaccards <- matrix(nrow=length(thresholds), ncol=length(thresholds))
-    
-  for (i in 1:length(thresholds)) {
-    for (j in 1:length(thresholds)) {
-    
-      # See the complement, if it's not NA then the pair has already been
-      # compared
-      if (is.na(jaccards[j, i])) {
-        i.min <- thresholds[i] - 0.1
-        j.min <- thresholds[j] - 0.1
-        i.max <- thresholds[i]
-        j.max <- thresholds[j]
-        message(paste0("Calculating Jaccard index between ", 
-                       names(raster1), "[", i.min, ", ", i.max, "] and ", 
-                       names(raster2), "[", j.min, ", ", j.max, "]"))
-        jaccards[i, j] <- jaccard(raster1, raster2, 
-                                  x.min=i.min, x.max=i.max,
-                                  y.min=j.min, y.max=j.max, ...)
-        #jaccards[i, j] <- rnorm(1)
-      } else {
-        jaccards[i, j]  <- jaccards[j, i]
-      }
-      
-    }
-    jaccards <- as.data.frame(jaccards)
+  thresholds <- c()
+  cols <- c()
+  tokens <- strsplit(x, "\\.")
+  for (token in tokens) {
+    thresholds <- c(thresholds, paste0(token[1], ".", token[2]))
+    cols <- c(cols, gsub("X", "", token[3]))
   }
-  return(jaccards)
+  df <- data.frame(threshold=thresholds, variant=cols)
+  return(df)
 }
 
-m_cross_range_jaccard <- addMemoization(cross_range_jaccard)
+# Helper function the restructure the jaccard data
+list2df <- function(x) {
+  # Transform lists of data frames into data frames.
+  
+  x <- do.call("rbind", x)
+  x <- cbind(rowname2cols(row.names(x)), x)
+  row.names(x) <- 1:nrow(x)
+  m.x <- melt(x, id.vars=c("threshold", "variant"))
+  # Get rid of the "X" in the former column headers
+  colnames(m.x) <- c("threshold", "variant1", "variant2", "value")
+  m.x$variant2 <- gsub("X", "", m.x$variant2)
+  return(m.x)
+}
 
-classes <- c("0-10", "10-20", "20_30", "30-40", "40-50", "50-60", "60-70", 
-             "70-80", "80-90", "90-100")
-thresholds <- seq(0.1, 1, 0.1)
+# Set the top-fractions used
+thresholds <- c(0.98, 0.95, 0.90, 0.80, 0.50)
 
-# Variants 1 and 3
-ranks.V1.V3 <- rank_rasters(project.esmk, variants=c(3, 10))
-j.ranks.V1.V3 <- m_cross_range_jaccard(ranks.V1.V3[[1]], ranks.V1.V3[[2]], 
-                                       thresholds)
-colnames(j.ranks.V1.V3) <- classes
-j.ranks.V1.V3$classes <- classes
+# jaccard() can take time, so use a memoized version of cross_jaccards provided
+# by R.cache.
+m_cross_jaccard <- addMemoization(cross_jaccard)
 
-# Variants 2 and 4
-ranks.V2.V4 <- rank_rasters(project.esmk, variants=c(4, 11))
-j.ranks.V2.V4 <- m_cross_range_jaccard(ranks.V2.V4[[1]], ranks.V2.V4[[2]], 
-                                       thresholds)
-colnames(j.ranks.V2.V4) <- classes
-j.ranks.V2.V4$classes <- classes
+# Between datasets - variants 3, 10, 16 -----------------------------------
 
-# Variants 1 and 2
-ranks.V1.V2 <- rank_rasters(project.esmk, variants=c(3, 4))
-j.ranks.V1.V2 <- m_cross_range_jaccard(ranks.V1.V2[[1]], ranks.V1.V2[[2]], 
-                                       thresholds)
-colnames(j.ranks.V1.V2) <- classes
-j.ranks.V1.V2$classes <- classes
-
-
-# Plot heatmaps -----------------------------------------------------------
-
-m.j.ranks.V1.V3 <- melt(j.ranks.V1.V3, id.vars=c("classes"))
-p1 <- ggplot(m.j.ranks.V1.V3, aes(x=variable, y=classes))
-p1 <- p1 + geom_tile(aes(fill = value)) + 
-  scale_fill_gradient(low = "white", high = "steelblue", limits=c(0, 0.3)) +
-  ylab("Priority bin for variant V1") +
-  xlab("Priority bin for variant V3") +
-  ggtitle("Similarity of priority bins for variants V1 and V3")
-
-m.j.ranks.V2.V4 <- melt(j.ranks.V2.V4, id.vars=c("classes"))
-p2 <- ggplot(m.j.ranks.V2.V4, aes(x=variable, y=classes))
-p2 <- p2 + geom_tile(aes(fill = value), colour = "white") + 
-  scale_fill_gradient(low = "white", high = "steelblue", limits=c(0, 0.3)) +
-  ylab("Priority bin for variant V2") +
-  xlab("Priority bin for variant V4") +
-  ggtitle("Similarity of priority bins for variants V2 and V4")
-
-m.j.ranks.V1.V2 <- melt(j.ranks.V1.V2, id.vars=c("classes"))
-p3 <- ggplot(m.j.ranks.V1.V2, aes(x=variable, y=classes))
-p3 <- p3 + geom_tile(aes(fill = value), colour = "white") + 
-  scale_fill_gradient(low = "white", high = "steelblue", limits=c(0, 1)) +
-  ylab("Priority bin for variant 3") +
-  xlab("Priority bin for variant 4") +
-  ggtitle("Similarity of priority bins for abf_pe_w vs abf_pe_w_cmat")
-
-grid.arrange(p1, p2, p3, nrow=1)
+# 3 = 03_abf_pe_w
+# 10 = 10_msnfi_abf_pe_w
+# 16 = 16_msnfi_abf_pe_w_nosfc
+ranks.abf.pe.w <- rank_rasters(project.esmk, variants=c(3, 10, 16))
+j.abf.pe.w <- m_cross_jaccard(ranks.abf.pe.w, thresholds, disable.checks=TRUE)
+j.abf.pe.w <- list2df(j.abf.pe.w)
+sub.j.abf.pe.w <- subset(j.abf.pe.w, value != 1.0) 
+sub.j.abf.pe.w <- sub.j.abf.pe.w[1:20,]
+sub.j.abf.pe.w <- sub.j.abf.pe.w[c(1:10, seq(12, 20, 2)),]
+sub.j.abf.pe.w$comparison <- paste(sub.j.abf.pe.w$variant2, "to", 
+                                   sub.j.abf.pe.w$variant1)
+sub.j.abf.pe.w$comparison <- gsub("03_abf_pe_w", "Full data", 
+                                  sub.j.abf.pe.w$comparison)
+sub.j.abf.pe.w$comparison <- gsub("10_msnfi_abf_pe_w", "MSNFI with categories", 
+                                  sub.j.abf.pe.w$comparison)
+sub.j.abf.pe.w$comparison <- gsub("16_msnfi_abf_pe_w_nosfc", "MSNFI without categories", 
+                                  sub.j.abf.pe.w$comparison)
 
 
+# Between datasets - variants 4, 11, 17 -----------------------------------
+
+# 4 = 04_abf_pe_w_cmat
+# 11 = 11_msnfi_abf_pe_w_cmat
+# 17 = 17_msnfi_abf_pe_w_cmat_nosfc
+ranks.abf.pe.w.cmat <- rank_rasters(project.esmk, variants=c(4, 11, 17))
+j.abf.pe.w.cmat <- cross_jaccard(ranks.abf.pe.w.cmat, thresholds, 
+                                 disable.checks=TRUE)
+j.abf.pe.w.cmat <- list2df(j.abf.pe.w.cmat)
+sub.j.abf.pe.w.cmat <- subset(j.abf.pe.w.cmat, value != 1.0) 
+sub.j.abf.pe.w.cmat <- sub.j.abf.pe.w.cmat[1:20,]
+sub.j.abf.pe.w.cmat <- sub.j.abf.pe.w.cmat[c(1:10, seq(12, 20, 2)),]
+sub.j.abf.pe.w.cmat$comparison <- paste(sub.j.abf.pe.w.cmat$variant2, "to", 
+                                   sub.j.abf.pe.w.cmat$variant1)
+sub.j.abf.pe.w.cmat$comparison <- gsub("04_abf_pe_w_cmat", "Full data", 
+                                  sub.j.abf.pe.w.cmat$comparison)
+sub.j.abf.pe.w.cmat$comparison <- gsub("11_msnfi_abf_pe_w_cmat", "MSNFI with categories", 
+                                  sub.j.abf.pe.w.cmat$comparison)
+sub.j.abf.pe.w.cmat$comparison <- gsub("17_msnfi_abf_pe_w_cmat_nosfc", "MSNFI without categories", 
+                                  sub.j.abf.pe.w.cmat$comparison)
+
+# Within the same data, between variants ----------------------------------
+
+ranks.abf.v2.v4 <- rank_rasters(project.esmk, variants=c(3, 4))
+ranks.msnfi.abf.v2.v4 <- rank_rasters(project.esmk, variants=c(10, 11))
+ranks.msnfi.nosfc.abf.v2.v4 <- rank_rasters(project.esmk, variants=c(16, 17))
+
+j.abf.v2tov4 <- m_cross_jaccard(ranks.abf.v2.v4, thresholds, 
+                                disable.checks=TRUE)
+j.msnfi.abf.v2tov4 <- m_cross_jaccard(ranks.msnfi.abf.v2.v4, thresholds, 
+                                      disable.checks=TRUE)
+j.msnfi.nosfc.abf.v2tov4 <- m_cross_jaccard(ranks.msnfi.nosfc.abf.v2.v4, thresholds, 
+                                            disable.checks=TRUE)
+
+between.variants <- function(x, name) {
+  x <- list2df(x)
+  x <- subset(x, value != 1.0) 
+  x <- x[1:5,]
+  x$comparison <- name
+  return(x)
+}
+
+j.abf.v2tov4 <- between.variants(j.abf.v2tov4, "Detailed data")
+
+j.msnfi.abf.v2tov4 <- between.variants(j.msnfi.abf.v2tov4, "MSNFI with SFC")
+j.msnfi.nosfc.abf.v2tov4  <- between.variants(j.msnfi.nosfc.abf.v2tov4,
+                                              "MSNFI without SFC")
+
+j.v2tov4 <- do.call("rbind", list("all"=j.abf.v2tov4,
+                                  "msnfi"=j.msnfi.abf.v2tov4,
+                                  "msnfi-nosfc"=j.msnfi.nosfc.abf.v2tov4))
+
+# Plot the results --------------------------------------------------------
+
+png(file="figs/Figure3/Fig3A.png", width=800, height=900)
+
+# Between the data sets
+p1 <- ggplot(sub.j.abf.pe.w, aes(x=threshold, y=value, group=comparison,
+                               color=comparison))
+p1 <- p1 + geom_line(size=1.0) + geom_point(size=3.0) + 
+        xlab("\nTop fraction of the landscape") +
+        ylab("Jaccard index\n") + ylim(0, 1) + 
+        scale_x_discrete(labels=c("50%", "20%", "10%", "5%", "2%")) + 
+        theme_bw() +
+        ggtitle("Spatial overlap between datasets for variants abf_pe_w")
+
+p2 <- ggplot(sub.j.abf.pe.w.cmat, aes(x=threshold, y=value, group=comparison,
+                                color=comparison))
+p2 <- p2 + geom_line(size=1.0) + geom_point(size=3.0) + 
+        xlab("\nTop fraction of the landscape") +
+        ylab("Jaccard index\n") + ylim(0, 1) + 
+        scale_x_discrete(labels=c("50%", "20%", "10%", "5%", "2%")) + 
+        theme_bw() +
+        ggtitle("Spatial overlap between datasets for variants abf_pe_w_cmat")
+
+grid.arrange(p1, p2, ncol=1)
+
+dev.off()
+
+png(file="figs/Figure3/Fig3B.png", width=800, height=600)
+
+# Between variants
+p3 <- ggplot(j.v2tov4, aes(x=threshold, y=value, group=comparison,
+                                  color=comparison))
+p3 + geom_line(size=1.0) + geom_point(size=3.0) + 
+        xlab("\nTop fraction of the landscape") +
+        ylab("Jaccard index\n") + ylim(0, 1) + 
+        scale_x_discrete(labels=c("50%", "20%", "10%", "5%", "2%")) + 
+        theme_bw() +
+        ggtitle("Spatial overlap between variants 2-4")
+dev.off()
