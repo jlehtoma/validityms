@@ -73,6 +73,20 @@ j.ranks.V4.V6 <- m_cross_range_jaccard(ranks.V4.V6[[1]], ranks.V4.V6[[2]],
 colnames(j.ranks.V4.V6) <- classes
 j.ranks.V4.V6$classes <- classes
 
+# Variants 1 and 2
+ranks.V1.V2 <- rank_rasters(project.esmk, variants=c(16, 17))
+j.ranks.V1.V2 <- m_cross_range_jaccard(ranks.V1.V2[[1]], ranks.V1.V2[[2]], 
+                                       thresholds)
+colnames(j.ranks.V1.V2) <- classes
+j.ranks.V1.V2$classes <- classes
+
+# Variants 3 and 4
+ranks.V3.V4 <- rank_rasters(project.esmk, variants=c(10, 11))
+j.ranks.V3.V4 <- m_cross_range_jaccard(ranks.V3.V4[[1]], ranks.V3.V4[[2]], 
+                                       thresholds)
+colnames(j.ranks.V3.V4) <- classes
+j.ranks.V3.V4$classes <- classes
+
 # Variants 5 and 6
 ranks.V5.V6 <- rank_rasters(project.esmk, variants=c(3, 4))
 j.ranks.V5.V6 <- m_cross_range_jaccard(ranks.V5.V6[[1]], ranks.V5.V6[[2]], 
