@@ -14,8 +14,11 @@ load.project()
 # the surrounding managed forest. 
 
 rankr.V1 <- rank_raster(V1)
+rankr.V2 <- rank_raster(V2)
 rankr.V3 <- rank_raster(V3)
+rankr.V4 <- rank_raster(V4)
 rankr.V5 <- rank_raster(V5)
+rankr.V6 <- rank_raster(V6)
 
 # ylimit is hard coded to ease the comparison of priority distributions.
 # Max-values from pairwise comparisons (manually from plots) are:
@@ -26,18 +29,22 @@ p7.p9.ylim <- 750
 p1 <- plot_hist(rankr.V1, pa.mask, add.median=TRUE, 
                 add.mean=FALSE, binwidth=0.02, 
                 title="V1 for PAs") + ylim(0, p1.p3.ylim)
+
 p2 <- plot_hist(rankr.V3, pa.mask, add.median=TRUE, add.mean=FALSE,
                 binwidth=0.02, title="V3 for PAs") + 
   ylim(0, p1.p3.ylim)
+
 p3 <- plot_hist(rankr.V5, pa.mask, add.median=TRUE, add.mean=FALSE,
                 binwidth=0.02, title="V5 for PAs") #+ ylim(0, p1.p3.ylim )
 
 p4 <- plot_hist(rankr.V1, wkh.mask, add.median=TRUE, 
                 add.mean=FALSE, binwidth=0.02, 
                 title="V1 for WKHs") + ylim(0, p4.p6.ylim)
+
 p5 <- plot_hist(rankr.V3, wkh.mask, add.median=TRUE, add.mean=FALSE,
                 binwidth=0.02, title="V3 for WKHs") +
   ylim(0, p4.p6.ylim)
+
 p6 <- plot_hist(rankr.V5, wkh.mask, add.median=TRUE, add.mean=FALSE,
                 binwidth=0.02, title="V5 for WKHs") #+ ylim(0, p4.p6.ylim)
 
@@ -45,10 +52,12 @@ p7 <- plot_hist(rankr.V1, metso.mask, add.median=TRUE,
                 add.mean=FALSE, binwidth=0.02, 
                 title="V1 for METSO-deals") +
   ylim(0, p7.p9.ylim)
+
 p8 <- plot_hist(rankr.V3, metso.mask, add.median=TRUE, 
                 add.mean=FALSE, binwidth=0.02, 
                 title="V3 for METSO-deals") +
   ylim(0, p7.p9.ylim)
+
 p9 <- plot_hist(rankr.V5, metso.mask, add.median=TRUE, add.mean=FALSE,
                 binwidth=0.02, title="V5 for METSO-deals") +
   ylim(0, p7.p9.ylim)

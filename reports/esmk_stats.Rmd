@@ -1,0 +1,29 @@
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+options(width=120)
+
+library(plyr)
+library(rgdal)
+library(xtable)
+
+library(ProjectTemplate)
+setwd('..')
+load.project()
+```
+
+### Fraction of the landscape covered by various data sources
+
+Reading from the actual data sources, fractions of the whole landscape covered 
+by different data sources are the following:
+
+```{r fractions, echo=FALSE, results='asis'}
+tot.cov <- table(getValues(ds.mask))
+
+covs <- data.frame("Source"=c("FFPS", "FFC", "MSNFI"),
+                   "Code"=names(tot.cov),
+                   "Cells"=as.vector(tot.cov),
+                   "Fraction"=round(as.vector(tot.cov) / sum(tot.cov) * 100, 2))
+print(xtable(covs), type='html')
+
+```
+
