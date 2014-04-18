@@ -16,7 +16,7 @@ load.project()
 Reading from the actual data sources, fractions of the whole landscape covered 
 by different data sources are the following:
 
-```{r fractions, echo=FALSE, results='asis'}
+```{r fractions-data, echo=FALSE, results='asis'}
 tot.cov <- table(getValues(ds.mask))
 
 covs <- data.frame("Source"=c("FFPS", "FFC", "MSNFI"),
@@ -27,3 +27,17 @@ print(xtable(covs), type='html')
 
 ```
 
+### Fraction of the landscape covered by various validation data sets
+
+```{r fractions-val-data, echo=FALSE, results='asis'}
+
+val.cells <- c(sum(!is.na(getValues(pa.mask))),
+               sum(!is.na(getValues(wkh.mask))),
+               sum(!is.na(getValues(metso.mask))))
+
+val.covs <- data.frame("Source"=c("PAs", "WKH", "MD"),
+                       "Cells"=val.cells,
+                       "Fraction"=round(val.cells / sum(tot.cov) * 100, 2))
+print(xtable(val.covs), type='html')
+
+```
