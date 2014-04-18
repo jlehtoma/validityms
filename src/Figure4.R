@@ -26,8 +26,13 @@ groupnames(V6) <- con.fert.labels
 ## MSNFI data
 
 # No groups used/available
-cur.V1 <- curves(V1)
-cur.V2 <- curves(V2)
+cur.V1 <- curves(V1, cols = 8:11)
+names(cur.V1) <- c("pr_lost","Birch", "Spruce", "Otherdecid", "Pine")
+# Get columns 5:8 -> these are NOT transformed by matrix connectivity so 
+# they describe local quality. cols can't be used in curves() when groups=TRUE,
+# so the group curves data frame has to be manually divided.
+cur.V2 <- curves(V2, cols = 12:15)
+names(cur.V2) <- c("pr_lost","Birch", "Spruce", "Otherdecid", "Pine")
 
 ## MSNFI with soil fertility classes data
 
