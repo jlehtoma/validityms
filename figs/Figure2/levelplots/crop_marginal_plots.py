@@ -37,5 +37,5 @@ for infile in glob.glob("p*.png"):
     
     # Save the cropped images
     im_noleg.save(prefix + ".png")
-    im_x_plot.save(os.path.join(output_folder, filename + "_xplot.png"))
-    im_y_plot.save(os.path.join(output_folder, filename + "_yplot.png"))
+    im_x_plot.save(os.path.join(output_folder, prefix + "_xplot.png"))
+    im_y_plot.save(os.path.join(output_folder, prefix + "_yplot.png"))
