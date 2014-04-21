@@ -94,10 +94,10 @@ j.ranks.V5.V6 <- m_cross_range_jaccard(ranks.V5.V6[[1]], ranks.V5.V6[[2]],
 colnames(j.ranks.V5.V6) <- classes
 j.ranks.V5.V6$classes <- classes
 
-# Plot heatmaps -----------------------------------------------------------
+# Plot between input data sets  ---------------------------------------------
 
-low.color <- "steelblue"
-high.color <- "orange"
+low.color <- "white"
+high.color <- "red"
 
 low.limit <- 0.0
 high.limit.A <- 0.6
@@ -114,60 +114,78 @@ p1 <- p1 + geom_tile(aes(fill = value), colour = "white") +
   xlab("Priority bin for variant V3") + axis.theme +
   ggtitle("Similarity of priority bins for variants V1 and V3")
 
-m.j.ranks.V2.V4 <- melt(j.ranks.V2.V4, id.vars=c("classes"))
-p2 <- ggplot(m.j.ranks.V2.V4, aes(x=variable, y=classes))
+m.j.ranks.V1.V5 <- melt(j.ranks.V1.V5, id.vars=c("classes"))
+p2 <- ggplot(m.j.ranks.V1.V5, aes(x=variable, y=classes))
 p2 <- p2 + geom_tile(aes(fill = value), colour = "white") + 
+  scale_fill_gradient(low = low.color, high = high.color, 
+                      limits=c(low.limit, high.limit.A)) +
+  ylab("Priority bin for variant V1") +
+  xlab("Priority bin for variant V5") + axis.theme +
+  ggtitle("Similarity of priority bins for variants V1 and V5")
+
+m.j.ranks.V3.V5 <- melt(j.ranks.V3.V5, id.vars=c("classes"))
+p3 <- ggplot(m.j.ranks.V3.V5, aes(x=variable, y=classes))
+p3 <- p3 + geom_tile(aes(fill = value), colour = "white") + 
+  scale_fill_gradient(low = low.color, high = high.color, 
+                      limits=c(low.limit, high.limit.A)) +
+  ylab("Priority bin for variant V3") +
+  xlab("Priority bin for variant V5") + axis.theme +
+  ggtitle("Similarity of priority bins for variants V3 and V5")
+
+m.j.ranks.V2.V4 <- melt(j.ranks.V2.V4, id.vars=c("classes"))
+p4 <- ggplot(m.j.ranks.V2.V4, aes(x=variable, y=classes))
+p4 <- p4 + geom_tile(aes(fill = value), colour = "white") + 
   scale_fill_gradient(low = low.color, high = high.color, 
                       limits=c(low.limit, high.limit.A)) +
   ylab("Priority bin for variant V2") +
   xlab("Priority bin for variant V4") + axis.theme +
   ggtitle("Similarity of priority bins for variants V2 and V4")
 
-m.j.ranks.V1.V5 <- melt(j.ranks.V1.V5, id.vars=c("classes"))
-p3 <- ggplot(m.j.ranks.V1.V5, aes(x=variable, y=classes))
-p3 <- p3 + geom_tile(aes(fill = value), colour = "white") + 
-  scale_fill_gradient(low = low.color, high = high.color, 
-                      limits=c(low.limit, high.limit.B)) +
-  ylab("Priority bin for variant V1") +
-  xlab("Priority bin for variant V5") + axis.theme +
-  ggtitle("Similarity of priority bins for variants V1 and V5")
-
-
 m.j.ranks.V2.V6 <- melt(j.ranks.V2.V6, id.vars=c("classes"))
-p4 <- ggplot(m.j.ranks.V2.V6, aes(x=variable, y=classes))
-p4 <- p4 + geom_tile(aes(fill = value), colour = "white") + 
+p5 <- ggplot(m.j.ranks.V2.V6, aes(x=variable, y=classes))
+p5 <- p5 + geom_tile(aes(fill = value), colour = "white") + 
   scale_fill_gradient(low = low.color, high = high.color, 
-                      limits=c(low.limit, high.limit.B)) +
+                      limits=c(low.limit, high.limit.A)) +
   ylab("Priority bin for variant V2") +
   xlab("Priority bin for variant V6") + axis.theme +
   ggtitle("Similarity of priority bins for variants V2 and V6")
-
-m.j.ranks.V3.V5 <- melt(j.ranks.V3.V5, id.vars=c("classes"))
-p5 <- ggplot(m.j.ranks.V3.V5, aes(x=variable, y=classes))
-p5 <- p5 + geom_tile(aes(fill = value), colour = "white") + 
-  scale_fill_gradient(low = low.color, high = high.color, 
-                      limits=c(low.limit, high.limit.B)) +
-  ylab("Priority bin for variant V3") +
-  xlab("Priority bin for variant V5") + axis.theme +
-  ggtitle("Similarity of priority bins for variants V3 and V5")
 
 m.j.ranks.V4.V6 <- melt(j.ranks.V4.V6, id.vars=c("classes"))
 p6 <- ggplot(m.j.ranks.V4.V6, aes(x=variable, y=classes))
 p6 <- p6 + geom_tile(aes(fill = value), colour = "white") + 
   scale_fill_gradient(low = low.color, high = high.color, 
-                      limits=c(low.limit, high.limit.B)) +
+                      limits=c(low.limit, high.limit.A)) +
   ylab("Priority bin for variant V4") +
   xlab("Priority bin for variant V6") + axis.theme +
   ggtitle("Similarity of priority bins for variants V4 and V6")
 
 grid.arrange(p1, p2, p3, p4, p5, p6, nrow=3, ncol=2)
 
+
+# Plot within input data sets ---------------------------------------------
+
+m.j.ranks.V1.V2 <- melt(j.ranks.V1.V2, id.vars=c("classes"))
+p7 <- ggplot(m.j.ranks.V1.V2, aes(x=variable, y=classes))
+p7 <- p7 + geom_tile(aes(fill = value), colour = "white") + 
+  scale_fill_gradient(low = low.color, high = high.color, limits=c(0, 1)) +
+  ylab("Priority bin for variant V1") +
+  xlab("Priority bin for variant V2") + axis.theme +
+  ggtitle("Similarity of priority bins for variants V1 and V2")
+
+m.j.ranks.V3.V4 <- melt(j.ranks.V3.V4, id.vars=c("classes"))
+p8 <- ggplot(m.j.ranks.V3.V4, aes(x=variable, y=classes))
+p8 <- p8 + geom_tile(aes(fill = value), colour = "white") + 
+  scale_fill_gradient(low = low.color, high = high.color, limits=c(0, 1)) +
+  ylab("Priority bin for variant V3") +
+  xlab("Priority bin for variant V4") + axis.theme +
+  ggtitle("Similarity of priority bins for variants V3 and V4")
+
 m.j.ranks.V5.V6 <- melt(j.ranks.V5.V6, id.vars=c("classes"))
-p5 <- ggplot(m.j.ranks.V5.V6, aes(x=variable, y=classes))
-p5 <- p5 + geom_tile(aes(fill = value), colour = "white") + 
-  scale_fill_gradient(low = "white", high = "steelblue", limits=c(0, 1)) +
-  ylab("Priority bin for variant 3") +
-  xlab("Priority bin for variant 4") +
-  ggtitle("Similarity of priority bins for abf_pe_w vs abf_pe_w_cmat")
+p9 <- ggplot(m.j.ranks.V5.V6, aes(x=variable, y=classes))
+p9 <- p9 + geom_tile(aes(fill = value), colour = "white") + 
+  scale_fill_gradient(low = low.color, high = high.color, limits=c(0, 1)) +
+  ylab("Priority bin for variant V5") +
+  xlab("Priority bin for variant V6") + axis.theme +
+  ggtitle("Similarity of priority bins for variants V5 and V6")
 
-
+grid.arrange(p1, p2, p3, p4, p5, p6,p7, p8, p9, nrow=3, ncol=3)
