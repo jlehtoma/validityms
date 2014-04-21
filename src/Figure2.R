@@ -21,7 +21,7 @@ y.lim <- c(0, 150)
 
 # MSNFI without sfc classes -----------------------------------------------
 
-png(file="figs/Figure2/levelplots/p%d.png", width=820, height=820)
+png(file="figs/Figure2/levelplots/p%d_with_leg.png", width=820, height=820)
 
 rankr.V1 <- rank_raster(V1)
 rankr.V2 <- rank_raster(V2)
