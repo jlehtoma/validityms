@@ -9,4 +9,8 @@ __Input data set__ = Data set in which a Zonation analysis is based. In this wor
 
 __Landscape__ = The study area, or the whole area for which the spatial conservation prioritization is done for.
 
+__Validation data sets__ = Three data sets that are used to validate and comparte the Zonation resulta: 1) Protected areas (PAs), 2) Woodland key-habitats (WKHs), and 3) METSO-deals (MD). 
+
+__Validation sites__ = Sites (spatially separate locations, polygons) included in the validation data sets. Each site can constitute of several polygons in the original data.
+
 __Variant__ = A Zonation analysis version with A) given input data set, and B) given Zonation analytical options (such as connectivity) enabled. In this study, we have Zonation analysis based on 3 different input data sets and for each we have 2 different Zonation setups: with and without connectivity. Hence, this study has 6 different variants (V1-V6).
