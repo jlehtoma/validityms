@@ -31,15 +31,33 @@ Validation of spatial conservation prioritization
 ## Abstract:
 
 
-Keywords: adaptive management; conservation planning; forest conservation management; spatial conservation prioritization; Zonation software
-
+Keywords: open data; adaptive management; conservation planning; forest conservation management; spatial conservation prioritization; Zonation software
+    
 ## 1. Introduction
 
 ## 2. Material and methods
 
-## 3.Results
+## 3. Results
 
-## 4. Discussion
+## 4. Discussion  
+
+Open data has a major role in the play in conservation planning and decision-making, because it enables equal access to best available data, it makes the supporting scientific analysis more transparent, and it enhances the repeatability of the whole process (__REF__). The last point is especially important for applied research supporting decision-making, because underlying may change objectives, data updates, and new information accumulates sometimes rapidly. Adaptivity and repeatability are crucial in translating regional planning into local action [@Pressey2013] which in the context of the current work implies that the conservation prioritization methods would become an integral part of operative forest management planning. 
+
+Here we have shown that Zonation analyses based on open forest inventory data can produce informative results, but only on particular scales and when particular planning objectives are met. We validated the results against the known locations of high conservation value with few key assumptions. First, if the index layers constructed from different input data sets truly reflect forest characteristics desirable for conservation purposes, then the sites in the validation data sets should receive high priority in the results. Second, we assume that the validation 
+
+Protected areas (PAs) did come out with relatively high priorities in variants based on MSNFI or MSNFI with classes (fig. 5A-5D). This is probably because PAs in South-Savo region - as in rest of the country - tend to have been set aside for a longer period of time resulting in quite mature forest structure, which is reflected in high values in the index layers (see XX) used as input. Sites acquired into METSO-programme had also relatively high median priorities potentially indicating that they contain similar features to the larger PAs. Technically, these site become PAs once admitted into METSO. Woodland key-habitats have the smallest average size per site out of the three validation data sets and they constitute perhaps also the most heterogeneous (__REF__) group. The fact that the classified version of MSNFI had slightly higher median priorities (fig. 5i-5j) is most probably explained by that many of the rarer soil fertility classes (such as herb-rich and xeric soils) may also more often be designated as woodland key-habitats.
+
+Variants based on the more detailed data (V5 and V6) clearly outperform all variants based solely on the MSNFI data  when compared against the validation data sets. Median priority is clearly higher for the variants based on the detailed data and furthermore, the priority rank distribution shows conspicuous peaks for the very highest priorities. Because of the more detailed and accurate data - also for the soil fertility classification - analysis are able to distinguish small-scale woodland key-habitats quite well. 
+
+The small effect of connectivity (V2, V4 and V6) has on the priority rank distributions of the validation data sets may feel slightly surprising. However, it is good to bear in mind that even combined the validation data sets cover only a small fraction of the total landscape (2.5%, see XX) and therefore the absolute amount of cells affected by connectivity transformation is low. Usually spatial conservation prioritization is concerned about the absolutely best part of the landscape, the defining what is the "best part" is a subjective decision. For example, METSO-programme has a defined objective for additional conservation in South-Savo, which correspond to ca. 5000 hectares or less than 0.5% of the total forest area (__CHECK__). On the other hand, if different conservation instruments are to employed over a significantly larger areas [@Hanski2011;@Moen2014], we must in fact be looking at top fractions significantly higher than few percent. Over larger areas, the role of connectivity also becomes more apparent (fig. 1) as regions with higher density of high quality sites are emphasized. Emphasizing connectivity will almost certainly happen at the expense of local habitat quantity and quality [@Hodgson2009]. Increasing the priority of medium-quality forests that are well-connected will lower the value of other similar quality sites and possibly even poorly connected high-quality sites (fig. 1). 
+
+Trade-offs introduced by taking into account connectivity will naturally depend on the implementation of a particular method (in or case Zonation), but the issues related to it are conceptually quite well understood [@Hodgson2009;@Arponen2012]. Trade-offs introduced by using less accurate data are more case-specific, but it can be estimated. Conservation scientists, foresters and other practitioners are often faced with tight deadlines and limited budgets, and thus have to decide whether it is worth the time and money to try to secure access to more detailed data if coarser but easily available data exists. We found that using coarser MSNFI-data can lead to series drop in the representation of particular biodiversity features...
+
+Given these results, it can be concluded that when using methodology we introduce in this paper here and the variations of it used before [@Lehtomaki2009;@Sirkia2012]  openly available MSNFI-data is best suited for situations where objective is to target regions with larger extents of mature forest. Therefore if the spatial prioritization includes objectives for detecting small scale biodiversity feature occurrences such as the WKHs, a more detailed input data set is clearly needed. 
+
+From conservation planning perspective it is crucial that forest inventory data sets collected contain a breadth of variables important for biodiversity also in the future.  
+
+Since the analysis based on MSNFI data do not perform as well as more detailed data... Should the more detailed data be opened?
 
 # References
 
