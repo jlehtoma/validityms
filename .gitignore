@@ -9,6 +9,7 @@ cache/*
 *.ods*
 *.odt*
 *.docx
+!pandoc/*.docx
 *.doc
 *tmp*
 data/130315
