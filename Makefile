@@ -79,6 +79,10 @@ pdf: latex
 	-o $(BUILDDIR)/$(FILENAME).pdf --latex-engine=xelatex
 
 latex: bibtex
+
+	@echo $(info Copying image files to build dir...)	
+	cp -r figs $(BUILDDIR)
+
 	@echo $(info Converting to latex...)
 	@$(PANDOC) $(FILENAME)_front_matter.md -o $(BUILDDIR)/$(FILENAME)_front_matter.tex --latex-engine=xelatex
 	@$(PANDOC) $(FILENAME)_abstract.md -o $(BUILDDIR)/$(FILENAME)_abstract.tex --latex-engine=xelatex
@@ -112,4 +116,4 @@ html: latex
 	--template $(HTML_TEMPLATE) --css $(HTML_CSS) --smart $(BIBARGS) -t html5
 
 clean:
-	@cd $(BUILDDIR); rm -f *.tex *.aux *.log *.out *.bbl *.blg *.bcf *.run.xml *.bak tmp.* *.tmp *.docx *.odt *.pdf *.html
+	@cd $(BUILDDIR); rm -f *.tex *.aux *.log *.out *.bbl *.blg *.bcf *.run.xml *.bak tmp.* *.tmp *.docx *.odt *.pdf *.html bibliography; rm -Rf figs
