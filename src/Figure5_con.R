@@ -5,14 +5,6 @@ load.project()
 # Some code migrated over from:
 # DataVault/Data/Metsakeskukset/Etela-Savo/Zonation/ESMK/results/R/result_stats_september.R
 
-# CAPTION: Figure 6. The average priority rank and the distribution of rank 
-# priorities of the landscape within the independent spatial validation data in 
-# rank priorities based on more detailed data (left column) and MSNFI-only data 
-# (right column). First row corresponds to protected areas, second to woodland 
-# key habitats, and the third one to made METSO-deals. Each of the spatial 
-# validation data is assumed to have on average higher conservation value than 
-# the surrounding managed forest. 
-
 rankr.V2 <- rank_raster(V2)
 rankr.V4 <- rank_raster(V4)
 rankr.V6 <- rank_raster(V6)
@@ -59,7 +51,7 @@ p9 <- plot_hist(rankr.V6, metso.mask, add.median=TRUE, add.mean=FALSE,
                 binwidth=0.02, title="V5 for METSO-deals") +
   ylim(0, p7.p9.ylim)
 
-png(file="figs/Figure6/Fig6_con.png", width=1500, height=1200)
+png(file="figs/Figure5/Fig5_con.png", width=1500, height=1200)
 
 grid.arrange(p1, p2, p3, p4, p5, p6, p7, p8, p9, nrow=3, ncol=3)
 
