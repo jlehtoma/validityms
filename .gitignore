@@ -5,14 +5,15 @@
 .Rprofile
 .directory
 cache/*
+# Exculde pandoc builds
+pandoc/build/
 *.html
 *.ods*
 *.odt*
 *.docx
-!pandoc/*.docx
+*.tex
 *.doc
 *tmp*
-data/130315
 *.sublime-*
 *.~lock*
 journals.md
