@@ -1,13 +1,15 @@
-TITLE = A sample paper
+TITLE = Assessing the suitability of forest inventories for basis of spatial conservation prioritization
 AUTHOR = Joona Lehtomäki
 GITHUB = https://github.com/jlehtoma/validityms
 FILENAME = validity_ms
 SOURCE = README.md
 
-BUILDDIR = $(CURDIR)/pandoc
-BIBLIOGRAPHY = $(BUILDDIR)/validity_ms.bib
+BUILDDIR = $(CURDIR)/pandoc/build
+TEMPLATEDIR = $(CURDIR)/pandoc/templates
+BIBLIOGRAPHYDIR = $(CURDIR)/pandoc/bibliography
+BIBLIOGRAPHY = $(BIBLIOGRAPHYDIR)/validity_ms.bib
 # CSL style for HTML
-CSL=$(BUILDDIR)/conservation-biology.csl
+CSL=$(BIBLIOGRAPHYDIR)/conservation-biology.csl
 # biblatex style for LaTeX
 BIBSTYLE=authoryear
 
@@ -68,11 +70,11 @@ all: pdf
 
 bibtex:
 	@echo $(info Copying BibTex file...)
-	@cp /home/jlehtoma/Dropbox/Documents/Mendeley/BibTex/validity_ms.bib $(BUILDDIR) 
+	@cp /home/jlehtoma/Dropbox/Documents/Mendeley/BibTex/validity_ms.bib $(BIBLIOGRAPHYDIR) 
 
 pdf: latex
 	@echo $(info Converting to pdf...)	
-	@$(PANDOC) -H $(BUILDDIR)/margins.sty \
+	@$(PANDOC) -H $(TEMPLATEDIR)/margins.sty \
 	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(BUILDDIR)/$(FILENAME).tex \
 	-o $(BUILDDIR)/$(FILENAME).pdf --latex-engine=xelatex
 
@@ -84,7 +86,7 @@ latex: bibtex
 	@$(PANDOC) $(FILENAME)_figures.md -o $(BUILDDIR)/$(FILENAME)_figures.tex --latex-engine=xelatex
 	@$(PANDOC) $(FILENAME)_suppl.md -o $(BUILDDIR)/$(FILENAME)_suppl.tex --latex-engine=xelatex
 
-	@$(PANDOC) -H $(BUILDDIR)/margins.sty --template $(BUILDDIR)/templates/default.tex \
+	@$(PANDOC) -H $(TEMPLATEDIR)/margins.sty --template $(TEMPLATEDIR)/default.tex \
 	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(FILENAME).md -o $(BUILDDIR)/$(FILENAME).tex \
 	--latex-engine=xelatex \
 	--include-before-body=$(BUILDDIR)/$(FILENAME)_front_matter.tex \
@@ -95,19 +97,19 @@ latex: bibtex
 
 odt: latex
 	@echo $(info Converting to odt...)
-	@$(PANDOC) -H $(BUILDDIR)/margins.sty --template $(BUILDDIR)/templates/default.tex \
+	@$(PANDOC) -H $(TEMPLATEDIR)/margins.sty --template $(TEMPLATEDIR)/default.tex \
 	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(BUILDDIR)/$(FILENAME).tex -o \
 	$(BUILDDIR)/$(FILENAME).odt --latex-engine=xelatex
 
 docx: latex
 	@echo $(info Converting to docx...)
-	@$(PANDOC) -H $(BUILDDIR)/margins.sty --template $(BUILDDIR)/templates/default.tex \
+	@$(PANDOC) -H $(TEMPLATEDIR)/margins.sty --template $(TEMPLATEDIR)/default.tex \
 	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(BUILDDIR)/$(FILENAME).tex \
 	-o $(BUILDDIR)/$(FILENAME).docx --latex-engine=xelatex
 
 html: latex
-	@$(PANDOC) $(BUILDDIR)/$(FILENAME).tex -o $(BUILDDIR)/$(FILENAME).html \
+	@$(PANDOC) $(TEMPLATEDIR)/$(FILENAME).tex -o $(BUILDDIR)/$(FILENAME).html \
 	--template $(HTML_TEMPLATE) --css $(HTML_CSS) --smart $(BIBARGS) -t html5
 
 clean:
-	@cd $(BUILDDIR); rm -f *.tex *.aux *.log *.out *.bbl *.blg *.bcf *.run.xml *.bak tmp.* *.tmp *.docx *.odt *.pdf
+	@cd $(BUILDDIR); rm -f *.tex *.aux *.log *.out *.bbl *.blg *.bcf *.run.xml *.bak tmp.* *.tmp *.docx *.odt *.pdf *.html
