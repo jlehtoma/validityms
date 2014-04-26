@@ -78,6 +78,8 @@ pdf: latex
 
 latex: bibtex
 	@echo $(info Converting to latex...)
+	@$(PANDOC) $(FILENAME)_front_matter.md -o $(BUILDDIR)/$(FILENAME)_front_matter.tex --latex-engine=xelatex
+	@$(PANDOC) $(FILENAME)_abstract.md -o $(BUILDDIR)/$(FILENAME)_abstract.tex --latex-engine=xelatex
 	@$(PANDOC) $(FILENAME)_tables.md -t latex+pipe_tables -o $(BUILDDIR)/$(FILENAME)_tables.tex 
 	@$(PANDOC) $(FILENAME)_figures.md -o $(BUILDDIR)/$(FILENAME)_figures.tex --latex-engine=xelatex
 	@$(PANDOC) $(FILENAME)_suppl.md -o $(BUILDDIR)/$(FILENAME)_suppl.tex --latex-engine=xelatex
@@ -85,6 +87,8 @@ latex: bibtex
 	@$(PANDOC) -H $(BUILDDIR)/margins.sty --template $(BUILDDIR)/templates/default.tex \
 	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(FILENAME).md -o $(BUILDDIR)/$(FILENAME).tex \
 	--latex-engine=xelatex \
+	--include-before-body=$(BUILDDIR)/$(FILENAME)_front_matter.tex \
+	--include-before-body=$(BUILDDIR)/$(FILENAME)_abstract.tex \
 	--include-after-body=$(BUILDDIR)/$(FILENAME)_tables.tex \
 	--include-after-body=$(BUILDDIR)/$(FILENAME)_figures.tex \
 	--include-after-body=$(BUILDDIR)/$(FILENAME)_suppl.tex
