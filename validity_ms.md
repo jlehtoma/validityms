@@ -1,10 +1,46 @@
 ## 1. Introduction
 
-## 2. Material and methods
+## 2. Material
 
-## 3. Results
+### 2.1 Study area
 
-## 4. Discussion  
+### 2.2 Data for conservation prioritization 
+
+#### 2.2.1 Multi-source National Forest Inventory data
+
+#### 2.2.2 Detailed stand-based data
+
+### 2.3 Data for validation
+
+
+
+## 3. Methods
+
+### 3.1 The ecological model for conservation value
+
+### 3.2 Spatial conservation prioritization
+
+#### 3.2.1 Zonation
+
+#### 3.2.2 Analysis variants
+    
+### 3.3 Interpretation of results
+
+#### 3.3.1 Comparison between analysis variants
+
+#### 3.3.2 Comparison to validation data
+    
+## 4. Results
+
+### 4.1 Spatial patterns of rank priorities
+
+### 4.2 Spatial overlap of priority fractions
+
+### 4.3 Feature representation
+
+### 4.4 Comparison to spatial validation data
+
+## 5. Discussion  
 
 Open data has a major role in the play in conservation planning and decision-making, because it enables equal access to best available data, it makes the supporting scientific analysis more transparent, and it enhances the repeatability of the whole process (__REF__). The last point is especially important for applied research supporting decision-making, because underlying may change objectives, data updates, and new information accumulates sometimes rapidly. Adaptivity and repeatability are crucial in translating regional planning into local action [@Pressey2013] which in the context of the current work implies that the conservation prioritization methods would become an integral part of operative forest management planning. 
 
