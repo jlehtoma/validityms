@@ -1,0 +1,17 @@
+*.Rproj
+.Rproj.user
+.Rhistory
+.RData
+.Rprofile
+.directory
+cache/*
+*.html
+*.ods*
+*.odt*
+*.docx
+*.tex
+*.doc
+*tmp*
+*.sublime-*
+*.~lock*
+journals.md
