@@ -1,4 +1,4 @@
-# Assessing the suitability of  forest inventories for basis of  spatial conservation prioritization
+# Assessing the suitability of forest inventories for spatial conservation prioritization
 
 Joona Lehtomäki^1,2*^ Sakari Tuominen^3^ and Antti Leinonen^4^
 

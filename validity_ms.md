@@ -3,7 +3,11 @@
 # 2. Material
 
 ### 2.1 Study area
-        
+
+The study area covers the region of South Savo located in South-Eastern part of Finland (fig. XX). The size of the region is ca. 13990 km^2^ and it is characterized by a large number of lakes and fragmented waterways which covers ca. 25% of the total area. Of the reminding land area, approximately 88 % or 12250 km^2^ is forestry land further divided into mineral soils (79%) and mires (21%). South boreal vegetation zone covers the whole region and forests are mostly dominated  by the Scots pine (_Pinus sylvestris_) and the Norway Spruce (_Pice abies_). Most of the forestry land is under silvicultural management of varying degree and 2.5% of the forestry land is currently strictly protected [@FinnishForestResearchInstitute2013].
+
+Forestry land ownership shares reflect the typical situation in Southern Finland: private forest owners 77.3%, private companies 11.5%, the state 6.2%, and other (municipalities, parishes and associations) 5.0% [@FinnishForestResearchInstitute2013]. 
+
 ### 2.2 Data for conservation prioritization 
 
 #### 2.2.1 Multi-source National Forest Inventory data
@@ -12,12 +16,10 @@
 
 ### 2.3 Data for validation
 
-
-
 # 3. Methods
 
 ## 3.1 The ecological model for conservation value
-    
+     
 ## 3.2 Spatial conservation prioritization
 
 ### 3.2.1 Zonation
