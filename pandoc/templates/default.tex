@@ -1,9 +1,11 @@
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$]{$documentclass$}
+\usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
 \usepackage{float} % provides the H option for float placement
 \usepackage{graphicx}
+\usepackage{longtable,booktabs}
 \ifxetex
   \usepackage{fontspec,xltxtra,xunicode}
   \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
@@ -80,7 +82,6 @@ $if(fancy-enums)$
 $endif$
 $if(tables)$
 \usepackage{ctable}
-
 $endif$
 $if(url)$
 \usepackage{url}
