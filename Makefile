@@ -9,7 +9,7 @@ TEMPLATEDIR = $(CURDIR)/pandoc/templates
 BIBLIOGRAPHYDIR = $(CURDIR)/pandoc/bibliography
 BIBLIOGRAPHY = $(BIBLIOGRAPHYDIR)/validity_ms.bib
 # CSL style for HTML
-CSL=$(BIBLIOGRAPHYDIR)/conservation-biology.csl
+CSL=$(BIBLIOGRAPHYDIR)/plos.csl
 # biblatex style for LaTeX
 BIBSTYLE=authoryear
 
