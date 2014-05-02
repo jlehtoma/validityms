@@ -1,7 +1,7 @@
 # Assessing the suitability of forest inventories for spatial conservation prioritization
 
-Joona Lehtomäki^1,2*^ Sakari Tuominen^3^ and Antti Leinonen^4^
-
+Joona Lehtomäki^1,2\*^ Sakari Tuominen^3^ and Antti Leinonen^4^
+    
 1 Department of Biosciences, P.O. Box 65 (Viikinkaari 1), FI-00014 University of Helsinki, Finland  
 2 Finnish Environment Institute, Natural Environment Centre, P.O. Box 140 (Mechelininkatu 34a), FI- 00251 Helsinki, Finland  
 3 Finnish Forest Research Institute (Metsäntutkimuslaitos), Vantaa, Finland  
