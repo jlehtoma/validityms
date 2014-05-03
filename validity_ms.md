@@ -1,71 +1,73 @@
 # 1. Introduction
 
-## 1.1 Operational conservation planning in the forest context (REF)
+## 1.1 Data availability and available data
 
-+ Boreal zone: Major ecoregion with very large geographic extent [@Elbakidze2013]
++ Reliable and extensive data on species occurrence is rarely available.
 
-+ Although among the least threatened of ecoregions (REF, IUCN?)
-    + Species have become threatened locally [@Rassi2010] 
-    + There is opportunity to set aside and/or manage relatively large areas of forest [@Elbakidze2013] 
-    + Significant role in carbon sequestration [@Bradshaw2009]
++ In most Fennoscandian countries (Finland included) there is a wealth of forest inventory data available and the data is relatively accurate
 
-+ Conservation planning as a part of forestry management: 
-    + Multi-citeria decision making (MCDM) [@Kangas2005]: Technically forest management planning, but can include components for biodiversity conservation as well. 
-    + TRIAD [@Cote2010]: Functional zoning in forest management planning, different "zones" produces different outcomes (e.g. conservation and timber) 
-    + New management regimes [@Kuuluvainen2012]: Natural disturbance emulation (or "continuous-cover forestry") another way of bringing "soft values" to operative forestry management.
-    + Spatiotemporal dynamics [@Leroux2013;@Monkkonen2014]: Important, but demanding to take into account. Many of the actual optimization methods cannot handle very large data.
-    + Need for change of how forest conservation is planned and implemented [@Hanski2011]:  A core network of protected areas surrounded by areas managed less intensively ("management landscapes").
++ Detailed inventory data is often in restricted use, but more and more publicly funded data are becoming openly available (e.g. Metla’s MSNFI data).
+    – open data policies have a huge potential for conservation planning
 
-+ Forest conservation planning needs to integrate closely with the existing land use planning and resource use planning [@Ferrier2009]
++ Using forest inventory data as a basis for conservation prioritization effectively surrogate use for the primary forest biodiversity data (species and habitats occurrence data): how well do inventory data work?
 
-+ Successful integration largely depends on whether existing data that are already part of forestry planning can be utilized in conservation planning (REF) and on whether the results of conservation prioritization can be used in tools already existing in different administrative and management institutions (REF)
-    + In Finland, the decision-making context is a mixture of top-down and bottom-up action and different governance processes [@Paloniemi2008]
-    + Introduction to METSO-programme in Finland: aims, schedule, used tools with emphasis in ESMK (REF)
++ Setting the reference for surrogacy is complicated, but we have a fairly good understanding what is valuable in boreal forests from conservation point of view
+
++ Open data and open methods play a crucial role especially in research that is aimed to provide decision-support information
 
 ## 1.2 Spatial conservation prioritization
 
-+ General description of background, methods, and worflows from [@Lehtomaki2013]
++ General description of background, methods, and worflows from [1]
 
-+ Has been done in also in the boreal forest context [@Lehtomaki2009;@Mikusinski2007;@Sirkia2012]⁠
++ Has been done in also in the boreal forest context [2–4]
 
-+ Associated uncertainties often high , performance and efficiency unknown [@Langford2011], need for (on-the-ground) validation
++ Associated uncertainties often high , performance and efficiency unknown [5], need for (on-the-ground) validation
 
-+ Objective of a spatial prioritization analysis can (and indeed often should) be not the _highest_ conservation priorities, but the _lowest_. These are areas most suitable for e.g. intensive forestry without being too harmful for biodiversity. 
++ Objective of a spatial prioritization analysis can (and indeed often should) be not the highest conservation priorities, but the lowest. These are areas most suitable for e.g. intensive forestry without being too harmful for biodiversity.
 
 + Usefulness of the results also depends on the sensitivity of the results. Particularly, if the informative part of the results (i.e. the best fraction of the landscape for e.g. conservation) is small relative to the overall size of the landscape then the results may very sensitive to various factors
 
-## 1.3 Data issues
++ Priorities given by scientific analyses often not verified but rather taken at face value → multitude of available forest inventory data also opens up possibilities to assess and validate prioritization results.
 
-+ Reliable and extensive data on species occurrence is rarely available, but not in the case of Finnish forest (REFS, check the flying squirrel / polypore papers): What to use as a surrogate?
+## 1.3 Conservation planning in boreal forests
 
-+ Using forest inventory data as a basis for conservation prioritization is effectively using surrogates for the primary forest biodiversity data (species and habitats occurrence data)
++ Boreal zone: Major ecoregion with very large geographic extent [6]
 
-+ Building the ecological model through expert elicitation is a widely used technique (REFS) 
++ Although among the least threatened of ecoregions (REF, IUCN?)
+    – Species have become threatened locally [7]
+    – There is opportunity to set aside and/or manage relatively large areas of forest [6]
+    – Significant role in carbon sequestration [8]
 
-+ Habitat Suitability Indexes (HSI) another widely adopted approach (something by Kouki et al.)
++ Much conservation research has been done in boreal forest context on various fields: most impact from implementation point of view on work done in general forest management planning
 
-## 1.4 Aims and scope of the paper
++ Regional conservation programmes (e.g. METSO) often must reconcile varying interests and objectives of forest owners, but again much of the general context is forestry management
 
-1. Investigate whether commonly available forestry data sets are a useful basis for spatial conservation prioritization
-    + The nature of the data (MSNFI vs. more detailed data).
-        + MSNFI is a continuous estimate that is more accurate and unbiased over larger extents [@Tomppo2006]
-        + Stand-based inventory data more accurate, but this will depend on the age of the data. Additionally there is an unknown quantity of variation caused by differences between practitioners.
-    + Technical usability of the data
-        + Usually well managed and relatively easy to work with
-        + MSNFI expandable beyond the standard products (i.e. segmentation provided by Sakari)
-        + Legal issues may restrict usability
-    + Adequacy of data in the construction of the ecological model
-        + What attributes of fores inventory data can be used for defining conservation value (largely based on expert views)?
++ Forestry is mostly driven by market economics and conservation has also been shifting into more
+voluntary-based models emphasizing the role multi-use and ecosystem services: need for fine-grained
+spatial planning.
 
-2. Investigate how well spatial conservation prioritization (using forest inventory data and Zonation) can inform conservation decision-making in operational forestry planning in Finland
-    + Comparison of the results to a set of independent data sets
-    + What are the advantages/disadvantages of different scales? 
-        + Being part of operational planning implies very fine-scale (maybe Kangas et al. 2014?)
-        + On the other hand, large scale will even out the potential errors [@Tomppo2006]
-        
-3. Suggest ways to improve use of spatial conservation prioritization methods in operational forestry planning (Not necessarily an aim in itself, will be part of the discussion anyway)
-    + Importance of monitoring which can also be done as a part of standard forestry operations
-    + How to improve data? How to improve analyses?
+## 1.4 Aims and scope
+
++ Selected region and scale,
+
++ Main questions of the work are:
+
+    1. Can conservation prioritization analysis based on forest inventory data capture conservation value in boreal managed forest landscapes?
+    2. How well does freely available multi-source forest inventory data perform compared to more
+    detailed commercial stand-based inventory data?
+    3. What are the requirements for data imposed by the conservation objectives (e.g inclusion of connectivity and complementarity)?
+
++ Additional the work presented aims at addressing the following practical issues:
+
+    1. Ways to integrate conservation planning into operative forestry management and planning
+    2. Making use of the available data considering the existing ownership restriction
+    3. Assessing what kind of (forestry) data would be useful for conservation planning
+
++ In this work, we approach the aforementioned questions by a case-study of conservation prioritization in the regional forest center of Southern Savonia, Finland.
+
++ Similar forest inventory data exists at least in other Fennoscandian countries with similar kinds of forest planning needs
+
++ We also demonstrate new ways of assessing the results especially from forest planning perspective
 
 # 2. Material
 
@@ -80,7 +82,7 @@ Forestry land ownership shares reflect the typical situation in Southern Finland
 
 
 #### 2.2.1 Multi-source National Forest Inventory data
-
+    
 #### 2.2.2 Detailed stand-based data
 
 ### 2.3 Data for validation
