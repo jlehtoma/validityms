@@ -7,7 +7,7 @@
 + In most Fennoscandian countries (Finland included) there is a wealth of forest inventory data available and the data is relatively accurate
 
 + Detailed inventory data is often in restricted use, but more and more publicly funded data are becoming openly available (e.g. Metla’s MSNFI data).
-    – open data policies have a huge potential for conservation planning
+    * open data policies have a huge potential for conservation planning
 
 + Using forest inventory data as a basis for conservation prioritization effectively surrogate use for the primary forest biodiversity data (species and habitats occurrence data): how well do inventory data work?
 
@@ -34,9 +34,9 @@
 + Boreal zone: Major ecoregion with very large geographic extent [@Elbakidze2013]
 
 + Although among the least threatened of ecoregions (REF, IUCN?)
-    – Species have become threatened locally [@Rassi2010]
-    – There is opportunity to set aside and/or manage relatively large areas of forest [@Elbakidze2013]
-    – Significant role in carbon sequestration [@Bradshaw2009]
+    * Species have become threatened locally [@Rassi2010]
+    * There is opportunity to set aside and/or manage relatively large areas of forest [@Elbakidze2013]
+    * Significant role in carbon sequestration [@Bradshaw2009]
 
 + Much conservation research has been done in boreal forest context on various fields: most impact from implementation point of view on work done in general forest management planning
 
@@ -102,7 +102,7 @@ much?).
 
 + Multi-source version includes digital maps products for features such as standing stock volume, tree average diameter and soil fertility type.
 
-+ Data has been previously been used also for large-scale conservation prioritization [???,??,12].
++ Data has been previously been used also for large-scale conservation prioritization [@Lehtomaki2009;@Arponen2012;@Sirkia2012].
 
 + MSNFI data was opened up by the FFRI in XXXX is freely available from (http://www.metla.fi/ohjelma/vmi/vmi-moni-en.htm)[http://www.metla.fi/ohjelma/vmi/vmi-moni-en.htm].
 
@@ -119,10 +119,20 @@ much?).
 + Metsähallitus does similar inventories on state-owned land. Natural Heritage Services is responsible for areas outside forestry operations - such as protected areas - and Metsähallitus Forestry takes care of the rest.
     * For this study it was not possible to get stand-based inventory data from the state-owned forestry areas.
 
-+ Stand-based data is generally available for research purposes and it has been used for conservation planning [@Lehtomaki2009;Monkkoen2013]. However, privacy laws protecting individual forest owners make it difficult to distribute data and results that can be linked to forest owners.
++ Stand-based data is generally available for research purposes and it has been used for conservation planning [@Lehtomaki2009;@Monkkonen2014]. However, privacy laws protecting individual forest owners make it difficult to distribute data and results that can be linked to forest owners.
 
 
 ### 2.3 Data for validation
+
++ Ideally, the results of a conservation prioritization analysis should be compared against the known occurrences of biodiversity, i.e. species or habitat occurrence data. If such data are lacking, the results can still be compared against spatial data on areas considered to be ecologically valuable.
+
++ Whether or not such areas (e.g. PAs) truly are highly valuable in the sense that they contain significant amounts of biodiversity or resources promoting biodiversity is a different thing (REF).
+
++ Setting the reference level to existing conservation instruments such as PAs has the added benefit that the priorities areas are going the align well with existing PAs.
+
++ In this study, the spatial validation data sets are used to examine if the priority analyses are able to distinguish between them and the rest of the landscape in the form of higher priorities.
+
++ We use only the location data in each of the validation data sets, i.e. spatial polygons.
 
 ### 2.3.1 Existing protected are network
 
@@ -132,13 +142,13 @@ The data was acquired from Metsähallitus Natural Heritage Services who is respo
 
 ### 2.3.2 Woodland key-habitats
 
-Woodland key-habitats (WKH) are a conservation instrument designed for maintaining landscape-level bio-diversity in production forests by delineating and preserving small habitat patches [@Timonen2011a]. The concept is in use in many Fennoscandian and Baltic countries and while their effectiveness as a conservation measure varies depending on the country and definition [@Aune2006;@Pykala2006;@Timonen2011a], on average WKHs seem to be hotspots for dead wood, species richness, and red-listed species [@Timonen2011a]. The average size of a Woodland key-habitat designation in Southern Savonia is XX ha, which is close to the national mean of 0.67 ha in Finland [@Timonen2010], and they cover 0.5% of the whole landscape (Table 1).
+Woodland key-habitats (WKH) are a conservation instrument designed for maintaining landscape-level bio-diversity in production forests by delineating and preserving small habitat patches [@Timonen2011a]. The concept is in use in many Fennoscandian and Baltic countries and while their effectiveness as a conservation measure varies depending on the country and definition [@Aune2005;@Pykala2006;@Timonen2011a], on average WKHs seem to be hotspots for dead wood, species richness, and red-listed species [@Timonen2011a]. The average size of a Woodland key-habitat designation in Southern Savonia is XX ha, which is close to the national mean of 0.67 ha in Finland [@Timonen2010], and they cover 0.5% of the whole landscape (Table 1).
 
 Because of potential privacy issues, the exact spatial location (i.e. on scales that can be linked to an individual forest owner) of the woodland key-habitats are not public information. It is possible, however, to gain access to the data when the purpose is scientific research.
 
 ### 2.3.3 Recently acquired protected areas
 
-The forest biodiversity conservation programme METSO is an ongoing effort to halt the decline of forest biodiversity by year 2016 [@METSO2010]. Individual forest owners can offer their forest into METSO and if the offered forest fulfills programme's scientific selection criteria, the offer is admitted into METSO and the forest owner is compensated based on the economic value of the growing stock and timber [@Korhonen2013]. The agreement can be either fixed-term (10 years) or permanent. Overall the relatively simple selection criteria seem to be working quite well both for habitat characteristics such as abundance of dead wood as well as the number of red-listed species [@Siitonen2012].
+The forest biodiversity conservation programme METSO is an ongoing effort to halt the decline of forest biodiversity by year 2016 [@METSO2008]. Individual forest owners can offer their forest into METSO and if the offered forest fulfills programme's scientific selection criteria, the offer is admitted into METSO and the forest owner is compensated based on the economic value of the growing stock and timber [@Korhonen2013]. The agreement can be either fixed-term (10 years) or permanent. Overall the relatively simple selection criteria seem to be working quite well both for habitat characteristics such as abundance of dead wood as well as the number of red-listed species [@Siitonen2012].
 
 Regional implementation of the METSO programme is managed by the Centre for Economic Development, Transport and the Environment which also collects implementation statistics and maintains a spatial database on the sites admitted into the programme. Data is not publicly available, but can be acquired for research purposes. We used only permanent the conservation contracts as the conservation effectiveness of temporary or fixed-term contracts is questionable [@Monkkonen2008].
 
