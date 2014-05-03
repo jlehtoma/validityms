@@ -14,7 +14,7 @@ sakari.tuominen@metla.fi
 antti.leinonen@metsakeskus.fi  
 
 **Journal:**  
-Scandinavian Journal of Forest Research  
+PLoS ONE  
 
 **Type of paper:**  
 Original research paper
