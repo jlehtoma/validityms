@@ -2,9 +2,7 @@
 
 ## 1.1 Data availability and available data
 
-+ Reliable and extensive data on species occurrence is rarely available.
-
-+ In most Fennoscandian countries (Finland included) there is a wealth of forest inventory data available and the data is relatively accurate
++ In many applied conservation planning situations spatially extensive high-resolution biodiversity data is not available, but various other data sources from natural resource management exist. For example, many countries having a large forestry sector have a wealth of inventory data available. 
 
 + Detailed inventory data is often in restricted use, but more and more publicly funded data are becoming openly available (e.g. Metla’s MSNFI data).
     * open data policies have a huge potential for conservation planning
@@ -73,12 +71,7 @@ spatial planning.
 
 ### 2.1 Study area
 
-The study area covers the region of South Savo located in South-Eastern part of Finland (Figure 1). The size of the region is ca. 13990 km^2^ and it is characterized by a large number of lakes and fragmented waterways which covers ca. 25% of the total area. Of the reminding land area, approximately 88 % or 12250 km^2^ is forestry land further divided into mineral soils (79%) and mires (21%). South boreal vegetation zone covers the whole region and forests are mostly dominated  by the Scots pine (_Pinus sylvestris_) and the Norway Spruce (_Picea abies_) with varying amounts of broadleaved trees. Most of the forestry land is under silvicultural management and the land ownership shares reflect the typical situation in Southern Finland: private forest owners 77.3%, private companies 11.5%, the state 6.2%, and other (municipalities, parishes
-and associations) 5.0% [@FinnishForestResearchInstitute2013].
-
-+ 2.5% of the forestry land is currently strictly protected in Southern Savonia [@FinnishForestResearchInstitute2013].
-    – National figure is 9.0%, average in Southern Finland 2.3%
-    – In addition to strictly protected areas, there are other designations that allow limited forestry operations.
+The study area covers the region of South Savo located in South-Eastern part of Finland (Figure 1). The size of the region is ca. 13990 km^2^ and it is characterized by a large number of lakes and fragmented waterways which covers ca. 25% of the total area. Of the reminding land area, approximately 88 % or 12250 km^2^ is forestry land further divided into mineral soils (79%) and mires (21%). South boreal vegetation zone covers the whole region and forests are mostly dominated  by the Scots pine (_Pinus sylvestris_) and the Norway Spruce (_Picea abies_) with varying amounts of broadleaved trees. Land ownership shares reflect the typical situation in Southern Finland: private forest owners 77.3%, private companies 11.5%, the state 6.2%, and other (municipalities, parishes and associations) 5.0% [@FinnishForestResearchInstitute2013]. Most of the forestry land is under silvicultural management with 2.5% strictly protected. This number closely reflects the average for forestry land in Southern Finland (2.5%).
 
 
 ### 2.2 Data for conservation prioritization 
@@ -154,7 +147,9 @@ Regional implementation of the METSO programme is managed by the Centre for Econ
 
 # 3. Methods
 
-## 3.1 The ecological model for conservation value
+## 3.1 Preprocessing of the data
+
++ Data from different sources brought together.
 
 ## 3.2 Spatial conservation prioritization
 
