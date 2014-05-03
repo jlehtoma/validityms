@@ -14,12 +14,12 @@ __Figure 6.__ The average priority rank and the distribution of rank priorities 
 
 ![Figure 1](figs/Figure1/Fig1.png)
 
-![Figure 2](figs/Figure1/Fig2_v1.png)
+![Figure 2](figs/Figure2/Fig2_v1.png)
 
-![Figure 3](figs/Figure2/Fig3.png)
+![Figure 3](figs/Figure3/Fig3.png)
 
-![Figure 4](figs/Figure3/Fig4.png)
+![Figure 4](figs/Figure4/Fig4.png)
 
-![Figure 5](figs/Figure4/Fig5.png)
+![Figure 5](figs/Figure5/Fig5.png)
 
 ![Figure 6](figs/Figure6/Fig6_combined.png)
