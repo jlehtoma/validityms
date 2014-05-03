@@ -17,26 +17,26 @@
 
 ## 1.2 Spatial conservation prioritization
 
-+ General description of background, methods, and worflows from [1]
++ General description of background, methods, and work flows from [@Lehtomaki2013]
 
-+ Has been done in also in the boreal forest context [2–4]
++ Has been done in also in the boreal forest context [@Lehtomaki2009;@Mikusinski2007;@Sirkia2012]
 
-+ Associated uncertainties often high , performance and efficiency unknown [5], need for (on-the-ground) validation
++ Associated uncertainties often high , performance and efficiency unknown [@Langford2011], need for (on-the-ground) validation
 
 + Objective of a spatial prioritization analysis can (and indeed often should) be not the highest conservation priorities, but the lowest. These are areas most suitable for e.g. intensive forestry without being too harmful for biodiversity.
 
 + Usefulness of the results also depends on the sensitivity of the results. Particularly, if the informative part of the results (i.e. the best fraction of the landscape for e.g. conservation) is small relative to the overall size of the landscape then the results may very sensitive to various factors
 
-+ Priorities given by scientific analyses often not verified but rather taken at face value → multitude of available forest inventory data also opens up possibilities to assess and validate prioritization results.
++ Priorities given by scientific analyses often not verified but rather taken at face value: multitude of available forest inventory data also opens up possibilities to assess and validate prioritization results.
 
 ## 1.3 Conservation planning in boreal forests
 
-+ Boreal zone: Major ecoregion with very large geographic extent [6]
++ Boreal zone: Major ecoregion with very large geographic extent [@Elbakidze2013]
 
 + Although among the least threatened of ecoregions (REF, IUCN?)
-    – Species have become threatened locally [7]
-    – There is opportunity to set aside and/or manage relatively large areas of forest [6]
-    – Significant role in carbon sequestration [8]
+    – Species have become threatened locally [@Rassi2010]
+    – There is opportunity to set aside and/or manage relatively large areas of forest [@Elbakidze2013]
+    – Significant role in carbon sequestration [@Bradshaw2009]
 
 + Much conservation research has been done in boreal forest context on various fields: most impact from implementation point of view on work done in general forest management planning
 
@@ -73,19 +73,74 @@ spatial planning.
 
 ### 2.1 Study area
 
-The study area covers the region of South Savo located in South-Eastern part of Finland (fig. XX). The size of the region is ca. 13990 km^2^ and it is characterized by a large number of lakes and fragmented waterways which covers ca. 25% of the total area. Of the reminding land area, approximately 88 % or 12250 km^2^ is forestry land further divided into mineral soils (79%) and mires (21%). South boreal vegetation zone covers the whole region and forests are mostly dominated  by the Scots pine (_Pinus sylvestris_) and the Norway Spruce (_Pice abies_) with varying amounts of broadleaved trees. Most of the forestry land is under silvicultural management of varying degree and 2.5% of the forestry land is currently strictly protected [@FinnishForestResearchInstitute2013].
+The study area covers the region of South Savo located in South-Eastern part of Finland (Figure 1). The size of the region is ca. 13990 km^2^ and it is characterized by a large number of lakes and fragmented waterways which covers ca. 25% of the total area. Of the reminding land area, approximately 88 % or 12250 km^2^ is forestry land further divided into mineral soils (79%) and mires (21%). South boreal vegetation zone covers the whole region and forests are mostly dominated  by the Scots pine (_Pinus sylvestris_) and the Norway Spruce (_Picea abies_) with varying amounts of broadleaved trees. Most of the forestry land is under silvicultural management and the land ownership shares reflect the typical situation in Southern Finland: private forest owners 77.3%, private companies 11.5%, the state 6.2%, and other (municipalities, parishes
+and associations) 5.0% [@FinnishForestResearchInstitute2013].
 
-Forestry land ownership shares reflect the typical situation in Southern Finland: private forest owners 77.3%, private companies 11.5%, the state 6.2%, and other (municipalities, parishes and associations) 5.0% [@FinnishForestResearchInstitute2013]. 
++ 2.5% of the forestry land is currently strictly protected in Southern Savonia [@FinnishForestResearchInstitute2013].
+    – National figure is 9.0%, average in Southern Finland 2.3%
+    – In addition to strictly protected areas, there are other designations that allow limited forestry operations.
+
 
 ### 2.2 Data for conservation prioritization 
 
++ Different operators inventory forests depending on the land tenure (Table 1).
 
++ Finnish Forest Conter (FC) does a significant amount of planning on private land (ANTTI: How
+much?).
+
++ Metsähallitus (Finnish Forest and Park Service, FPS) is responsible for managing state-owned land.
+
++ Finnish Forest Research Institute (FRI) manages the national forest inventory data set and the multi- source version of it.
+
++ In this study, we are interested only in forest land on mineral soils. The index of conservation value (see Section 3.1) is based on the characteristics of the standing tree stock and it does not account for important ecological characteristics of mires. Mires are still included in the analyses, but because mires on average have less forest than mineral soils, they systematically receive lower priorities.
 
 #### 2.2.1 Multi-source National Forest Inventory data
-    
+
++ Multi-sourcedata [@Tomppo2006] National ForestInventory (MSNFI) is a combination of field plots and remote sensing
+
++ Main purpose of NFI is to "produce produce reliable information on forest resources and growth, the health of forests, forest biodiversity, and future cutting possibilities at national and regional forest level." [@Tuominen2014]
+
++ Multi-source version includes digital maps products for features such as standing stock volume, tree average diameter and soil fertility type.
+
++ Data has been previously been used also for large-scale conservation prioritization [???,??,12].
+
++ MSNFI data was opened up by the FFRI in XXXX is freely available from (http://www.metla.fi/ohjelma/vmi/vmi-moni-en.htm)[http://www.metla.fi/ohjelma/vmi/vmi-moni-en.htm].
+
++ The standard MSNFI data contains estimate rasters in 20x20 meter resolution, but these pixel-based rasters do not have estimates for all features by tree species category. Volume (m3 /ha) estimates are available per tree species group, but similar estimates for e.g. average diameter are not part of standard products. This, a segmented version was created in the FRI to [...]
+
 #### 2.2.2 Detailed stand-based data
 
++ Based on visual inventories in stand/compartments and the purpose is to produce information for forest management planning [@Tuominen2014].
+
++ Finnish Forest Center typically inventories stands XX times every XX or whenever new operations are implemented.
+
++ Alongside with the forestry features (volume, average diameter etc.), other types of information relevant for biodiversity and conservation are gathered but not systematically.
+
++ Metsähallitus does similar inventories on state-owned land. Natural Heritage Services is responsible for areas outside forestry operations - such as protected areas - and Metsähallitus Forestry takes care of the rest.
+    * For this study it was not possible to get stand-based inventory data from the state-owned forestry areas.
+
++ Stand-based data is generally available for research purposes and it has been used for conservation planning [@Lehtomaki2009;Monkkoen2013]. However, privacy laws protecting individual forest owners make it difficult to distribute data and results that can be linked to forest owners.
+
+
 ### 2.3 Data for validation
+
+### 2.3.1 Existing protected are network
+
+Overall, protected areas cover 2.5% of the whole landscape in Southern Savonia [@FinnishForestResearchInstitute2013]. Part of this the protected areas cover mires and for the validation purposes, protected areas only on mineral soils (~1.9% of the whole landscape, Table 1) were included for the validation. The data include both state-owned protected areas as well as protected areas on private land. 
+
+The data was acquired from Metsähallitus Natural Heritage Services who is responsible for the maintenance of the database for protected areas, both public and private. The delineation of PAs is public information, but since the data requested contains other attribute data as well, it required separated research agreement.
+
+### 2.3.2 Woodland key-habitats
+
+Woodland key-habitats (WKH) are a conservation instrument designed for maintaining landscape-level bio-diversity in production forests by delineating and preserving small habitat patches [@Timonen2011a]. The concept is in use in many Fennoscandian and Baltic countries and while their effectiveness as a conservation measure varies depending on the country and definition [@Aune2006;@Pykala2006;@Timonen2011a], on average WKHs seem to be hotspots for dead wood, species richness, and red-listed species [@Timonen2011a]. The average size of a Woodland key-habitat designation in Southern Savonia is XX ha, which is close to the national mean of 0.67 ha in Finland [@Timonen2010], and they cover 0.5% of the whole landscape (Table 1).
+
+Because of potential privacy issues, the exact spatial location (i.e. on scales that can be linked to an individual forest owner) of the woodland key-habitats are not public information. It is possible, however, to gain access to the data when the purpose is scientific research.
+
+### 2.3.3 Recently acquired protected areas
+
+The forest biodiversity conservation programme METSO is an ongoing effort to halt the decline of forest biodiversity by year 2016 [@METSO2010]. Individual forest owners can offer their forest into METSO and if the offered forest fulfills programme's scientific selection criteria, the offer is admitted into METSO and the forest owner is compensated based on the economic value of the growing stock and timber [@Korhonen2013]. The agreement can be either fixed-term (10 years) or permanent. Overall the relatively simple selection criteria seem to be working quite well both for habitat characteristics such as abundance of dead wood as well as the number of red-listed species [@Siitonen2012].
+
+Regional implementation of the METSO programme is managed by the Centre for Economic Development, Transport and the Environment which also collects implementation statistics and maintains a spatial database on the sites admitted into the programme. Data is not publicly available, but can be acquired for research purposes. We used only permanent the conservation contracts as the conservation effectiveness of temporary or fixed-term contracts is questionable [@Monkkonen2008].
 
 # 3. Methods
 
