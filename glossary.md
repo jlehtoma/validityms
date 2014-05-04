@@ -12,6 +12,8 @@ __Input data set__ = Data set in which a Zonation analysis is based. In this wor
 
 __Landscape__ = The study area, or the whole area for which the spatial conservation prioritization is done for.
 
+__Site fertility class__ = One of "herb-rich", "herb-rich-like" (__CHECK__), "mesic", "semi-xeric", "xeric".
+
 __Tree species group__ = One of "pine", "spruce", "birch", or "other broadleafed". A categorization following the one used in MS-NFI. More detailed data is pooled into these groups according to... 
 
 __Validation data sets__ = Three data sets that are used to validate and comparte the Zonation resulta: 1) Protected areas (PAs), 2) Woodland key-habitats (WKHs), and 3) METSO-deals (MD). 
