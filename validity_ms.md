@@ -73,31 +73,21 @@ spatial planning.
 
 The study area covers the region of South Savo located in South-Eastern part of Finland (Figure 1). The size of the region is ca. 13990 km^2^ and it is characterized by a large number of lakes and fragmented waterways which covers ca. 25% of the total area. Of the reminding land area, approximately 88 % or 12250 km^2^ is forestry land further divided into mineral soils (79%) and mires (21%). South boreal vegetation zone covers the whole region and forests are mostly dominated  by the Scots pine (_Pinus sylvestris_) and the Norway Spruce (_Picea abies_) with varying amounts of broadleaved trees. Land ownership shares reflect the typical situation in Southern Finland: private forest owners 77.3%, private companies 11.5%, the state 6.2%, and other (municipalities, parishes and associations) 5.0% [@FinnishForestResearchInstitute2013]. Most of the forestry land is under silvicultural management with 2.5% strictly protected. This number closely reflects the average for forestry land in Southern Finland (2.5%).
 
-
 ### 2.2 Data for conservation prioritization 
 
-+ Different operators inventory forests depending on the land tenure (Table 1).
+Different forestry operators in the region collect inventory data in different parts of the region (Table 1) and for different purposes, but for the most part the motivation is to provide commercial services for forest owners such as forest management planning [@Tuominen2014]. To compare the suitability of different types of forest inventory data for conservation prioritization, we acquired all available inventory data from Southern Savonia. These data include both coarser data based on remote sensing and more detailed inventory data based on visual inspection of the forest stands. The former type of data comes from a single source (see 2.2.1)and the latter from two separate sources (see 2.2.2 and 2.2.3).
 
-+ Finnish Forest Conter (FC) does a significant amount of planning on private land (ANTTI: How
-much?).
-
-+ Metsähallitus (Finnish Forest and Park Service, FPS) is responsible for managing state-owned land.
-
-+ Finnish Forest Research Institute (FRI) manages the national forest inventory data set and the multi- source version of it.
-
-+ In this study, we are interested only in forest land on mineral soils. The index of conservation value (see Section 3.1) is based on the characteristics of the standing tree stock and it does not account for important ecological characteristics of mires. Mires are still included in the analyses, but because mires on average have less forest than mineral soils, they systematically receive lower priorities.
+In this study, we are interested only in forest land on mineral soils. The index of conservation value (see Section 3.1) is based on the characteristics of the growing stock and it does not account for important ecological characteristics of mires. Mires are still included in the analyses, but because mires on average have less forest than mineral soils, they systematically receive lower priorities.
 
 #### 2.2.1 Multi-source National Forest Inventory data
 
-+ Multi-sourcedata [@Tomppo2006] National ForestInventory (MSNFI) is a combination of field plots and remote sensing
-
-+ Main purpose of NFI is to "produce produce reliable information on forest resources and growth, the health of forests, forest biodiversity, and future cutting possibilities at national and regional forest level." [@Tuominen2014]
+National Forest Inventory (NFI) is sampling-based inventory system that covers all land classes and land tenure throughout the whole country [@Tomppo2006b;@Tomppo2008;@Tuominen2014]. Main purpose of NFI is to "produce produce reliable information on forest resources and growth, the health of forests, forest biodiversity, and future cutting possibilities at national and regional forest level." [@Tuominen2014]. We used the multi-source version of the NFI (MSNFI), which essentially combines the information from the field plots with satellite images, digital map data and statistical image analysis methods [@Tomppo2006a]. Based on this combination of data sources and methods it is possible to estimate the values of selected forest variables such as the average volume and average diameter of the growing stock and site fertility in high-resolution. In Finland, the MSNFI is being used mostly for regional level forestry planning and similar kind of systems are in operative use in XXX [#37]. 
 
 + Multi-source version includes digital maps products for features such as standing stock volume, tree average diameter and soil fertility type.
 
 + Data has been previously been used also for large-scale conservation prioritization [@Lehtomaki2009;@Arponen2012;@Sirkia2012].
 
-+ MSNFI data was opened up by the FFRI in XXXX is freely available from (http://www.metla.fi/ohjelma/vmi/vmi-moni-en.htm)[http://www.metla.fi/ohjelma/vmi/vmi-moni-en.htm].
++ MSNFI data was opened up by the FFRI in XXXX is freely available from [http://www.metla.fi/ohjelma/vmi/vmi-moni-en.htm](http://www.metla.fi/ohjelma/vmi/vmi-moni-en.htm).
 
 + The standard MSNFI data contains estimate rasters in 20x20 meter resolution, but these pixel-based rasters do not have estimates for all features by tree species category. Volume (m3 /ha) estimates are available per tree species group, but similar estimates for e.g. average diameter are not part of standard products. This, a segmented version was created in the FRI to [...]
 
