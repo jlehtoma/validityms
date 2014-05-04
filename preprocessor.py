@@ -1,14 +1,31 @@
 #!/usr/bin/env python
 
+import os
 import re
+from git import Repo
 
-INPUT_FILE = "validity_ms.md"
-TARGET_FILE = "pandoc/build/validity_ms_preprocessed.md"
+BUILD_DIR = "pandoc/build/"
+
+INPUT_FM_FILE = "validity_ms_front_matter.md"
+TARGET_FM_FILE = os.path.join(BUILD_DIR, "validity_ms_front_matter_prep.md")
+INPUT_MAIN_FILE = "validity_ms.md"
+TARGET_MAIN_FILE = os.path.join(BUILD_DIR, "validity_ms_prep.md")
 
 GH_ISSUE_URL = "https://github.com/jlehtoma/validityms/issues/"
 
+repo = Repo(".")
+current_tag = repo.tags[-1].name
 
-def preprocess_md(input_file, target_file):
+def preprocess_fm_file(input_file, target_file):
+
+    with open(target_file, 'w') as outfile, open(input_file, 'r') as infile:
+        for line in infile:
+            if "Version" in line:
+                line = "{0} {1}\n".format(line, current_tag)
+            
+            outfile.write(line)
+
+def preprocess_main_file(input_file, target_file):
     with open(target_file, 'w') as outfile, open(input_file, 'r') as infile:
         for line in infile:
             issues = re.findall(r'\[(#[^]]*)\]', line)
@@ -19,5 +36,6 @@ def preprocess_md(input_file, target_file):
 
             outfile.write(line)
 
-# input the name you want to check against    
-preprocess_md(INPUT_FILE, TARGET_FILE) 
+
+preprocess_fm_file(INPUT_FM_FILE, TARGET_FM_FILE)
+preprocess_main_file(INPUT_MAIN_FILE, TARGET_MAIN_FILE) 

@@ -50,19 +50,14 @@ endif
 
 ########################################################################
 
-REVHASH = $(shell git log -1 --format="%H" -- $(SOURCE))
-REVDATE = $(shell git log -1 --format="%ai" -- $(SOURCE))
-REVSHRT = $(shell git log -1 --format="%h" -- $(SOURCE))
+
+GIT_TAG = $(shell git describe --abbrev=0)
+TAG = $(strip $(subst .,_,$(GIT_TAG)))
+
 
 ifeq ($(DATE),)
 	DATE = $(REVDATE)
 endif
-
-ifneq ($(GITHUB),)
-	REVLINK = $(GITHUB)commit/$(REVHASH)
-	GIT_ATOM_FEED = $(GITHUB)commits/master.atom
-endif
-
 
 # which template to use
 TEMPLATE=default
@@ -84,7 +79,7 @@ bibtex:
 pdf: latex
 	@echo $(info Converting to pdf...)	
 	@$(PANDOC) -H $(TEMPLATEDIR)/margins.sty $(BUILDDIR)/$(FILENAME).tex \
-	-o $(BUILDDIR)/$(FILENAME).pdf --latex-engine=xelatex
+	-o $(BUILDDIR)/$(FILENAME)_$(TAG).pdf --latex-engine=xelatex
 
 latex: preprocess bibtex
 
@@ -92,7 +87,7 @@ latex: preprocess bibtex
 	@cp -r figs $(BUILDDIR)
 
 	@echo $(info Converting individual files to latex...)
-	@$(PANDOC) $(FILENAME)_front_matter.md \
+	@$(PANDOC) $(BUILDDIR)/$(FILENAME)_front_matter_prep.md \
 	-o $(BUILDDIR)/$(FILENAME)_front_matter.tex --latex-engine=xelatex
 	@$(PANDOC) $(FILENAME)_abstract.md -o $(BUILDDIR)/$(FILENAME)_abstract.tex \
 	--latex-engine=xelatex
@@ -103,7 +98,7 @@ latex: preprocess bibtex
 
 	@echo $(info Compiling final latex...)
 	@$(PANDOC) -H $(TEMPLATEDIR)/margins.sty --template $(TEMPLATEDIR)/default.tex \
-	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(BUILDDIR)/$(FILENAME)_preprocessed.md \
+	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(BUILDDIR)/$(FILENAME)_prep.md \
 	-o $(BUILDDIR)/$(FILENAME).tex \
 	--latex-engine=xelatex \
 	--include-before-body=$(BUILDDIR)/$(FILENAME)_front_matter.tex \
@@ -123,11 +118,11 @@ docx: latex
 	@echo $(info Converting to docx...)
 	@$(PANDOC) -H $(TEMPLATEDIR)/margins.sty --template $(TEMPLATEDIR)/default.tex \
 	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(BUILDDIR)/$(FILENAME).tex \
-	-o $(BUILDDIR)/$(FILENAME).docx --latex-engine=xelatex
+	-o $(BUILDDIR)/$(FILENAME)_$(TAG).docx --latex-engine=xelatex
 
 html: latex
 	@$(PANDOC) $(TEMPLATEDIR)/$(FILENAME).tex -o $(BUILDDIR)/$(FILENAME).html \
 	--template $(HTML_TEMPLATE) --css $(HTML_CSS) --smart $(BIBARGS) -t html5
 
 clean:
-	@cd $(BUILDDIR); rm -f *.tex *.aux *.log *.out *.bbl *.blg *.bcf *.run.xml *.bak tmp.* *.tmp *.docx *.odt *.pdf *.html bibliography; rm -Rf figs
+	@cd $(BUILDDIR); rm -f *.tex *.aux *.log *.out *.bbl *.blg *.bcf *.run.xml *.bak tmp.* *.tmp *.docx *.odt *.pdf *.html bibliography *.Mendeley; rm -Rf figs
