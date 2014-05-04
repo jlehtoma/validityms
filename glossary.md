@@ -2,6 +2,8 @@
 
 __Analysis feature/Biodiversity feature__ = Input data that Zonation uses, in this study equals the index rasters.  
 
+__Data source__ = One of the three data sources that are used to produce __input data sets__ (see below): MS-NFI (Finnish Forest Resarch Institute), stand-based data on public non-production land (Metsähallitus Natural Heritage Services), and  stand-based data on private land (Finnish Forest Centre).
+
 __Forest type__ = A class created by how the indices are built, i.e. a combination of tree species group (e.g. birch) and soil fertility class (e.g. herb-rich) creates a forest type of "birch-herb-rich".
 
 __Index raster__ = A raster with values of index describing the perceived conservation value of a given location (pixel). Index value determined by average diameter and volume of standing stock by tree species. There are 4 tree species groups (pine, spruce, birch, other deciduous) and thus there are 4 index rasters in the most basic situation. There 4 index rasters may be further divided into discrete classes based on soil fertility classes (n=5) in which case the number of index layers is 20.
