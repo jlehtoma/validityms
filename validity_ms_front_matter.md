@@ -22,6 +22,8 @@ Original research paper
 **Running title:**  
 Validation of spatial conservation prioritization
 
+**Version:**  
+
 **Manuscript statistics:**  
 * word count (total) = xxx  
 * figures = xxx of which xxx in color  
