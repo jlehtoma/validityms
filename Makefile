@@ -68,6 +68,10 @@ HTML_TEMPLATE = $(BUILDDIR)/templates/$(TEMPLATE).html
 
 all: pdf
 
+preprocess:
+	@echo $(info Preprocessing md file...)
+	python preprocessor.py
+
 bibtex:
 	@echo $(info Copying BibTex file...)
 	@cp /home/jlehtoma/Dropbox/Documents/Mendeley/BibTex/validity_ms.bib $(BIBLIOGRAPHYDIR) 
@@ -77,7 +81,7 @@ pdf: latex
 	@$(PANDOC) -H $(TEMPLATEDIR)/margins.sty $(BUILDDIR)/$(FILENAME).tex \
 	-o $(BUILDDIR)/$(FILENAME).pdf --latex-engine=xelatex
 
-latex: bibtex
+latex: preprocess bibtex
 
 	@echo $(info Copying image files to build dir...)	
 	cp -r figs $(BUILDDIR)
@@ -90,7 +94,7 @@ latex: bibtex
 	@$(PANDOC) $(FILENAME)_suppl.md -o $(BUILDDIR)/$(FILENAME)_suppl.tex --latex-engine=xelatex
 
 	@$(PANDOC) -H $(TEMPLATEDIR)/margins.sty --template $(TEMPLATEDIR)/default.tex \
-	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(FILENAME).md -o $(BUILDDIR)/$(FILENAME).tex \
+	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(BUILDDIR)/$(FILENAME)_preprocessed.md -o $(BUILDDIR)/$(FILENAME).tex \
 	--latex-engine=xelatex \
 	--include-before-body=$(BUILDDIR)/$(FILENAME)_front_matter.tex \
 	--include-before-body=$(BUILDDIR)/$(FILENAME)_abstract.tex \
