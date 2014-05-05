@@ -25,7 +25,8 @@ Validation of spatial conservation prioritization
 **Version:**  
 
 **Manuscript statistics:**  
-* word count (total) = xxx  
-* figures = xxx of which xxx in color  
-* tables = xxx  
-* references = xxx  
+Abstract length = xxx 
+Main text length = xxx  
+Figures = xxx  
+Tables = xxx  
+References = xxx  
