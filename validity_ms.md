@@ -69,6 +69,7 @@ spatial planning.
 
 # 2. Material and Methods
 
+## 2.X Study design
 ## 2.1 Study area
 
 The study area covers the region of South Savo located in South-Eastern part of Finland (Figure 1). The size of the region is ca. 13990 km^2^ and it is characterized by a large number of lakes and fragmented waterways which covers ca. 25% of the total area. Of the reminding land area, approximately 88 % or 12250 km^2^ is forestry land further divided into mineral soils (79%) and mires (21%). South boreal vegetation zone covers the whole region and forests are mostly dominated  by the Scots pine (_Pinus sylvestris_) and the Norway Spruce (_Picea abies_) with varying amounts of broadleaved trees. Land ownership shares reflect the typical situation in Southern Finland: private forest owners 77.3%, private companies 11.5%, the state 6.2%, and other (municipalities, parishes and associations) 5.0% [@FinnishForestResearchInstitute2013]. Most of the forestry land is under silvicultural management with 2.5% strictly protected. This number closely reflects the average for forestry land in Southern Finland (2.5%).
