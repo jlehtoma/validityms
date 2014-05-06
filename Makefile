@@ -63,8 +63,8 @@ endif
 TEMPLATE=default
 
 # create HTML paper
-HTML_CSS = $(BUILDDIR)/templates/$(TEMPLATE).css
-HTML_TEMPLATE = $(BUILDDIR)/templates/$(TEMPLATE).html
+HTML_CSS = $(TEMPLATEDIR)/$(TEMPLATE).css
+HTML_TEMPLATE = $(TEMPLATEDIR)/$(TEMPLATE).html
 
 all: pdf
 
@@ -121,8 +121,8 @@ docx: latex
 	-o $(BUILDDIR)/$(FILENAME)_$(TAG).docx --latex-engine=xelatex
 
 html: latex
-	@$(PANDOC) $(TEMPLATEDIR)/$(FILENAME).tex -o $(BUILDDIR)/$(FILENAME).html \
+	@$(PANDOC) $(BUILDDIR)/$(FILENAME).tex -o $(BUILDDIR)/$(FILENAME)_$(TAG).html \
 	--template $(HTML_TEMPLATE) --css $(HTML_CSS) --smart $(BIBARGS) -t html5
 
 clean:
-	@cd $(BUILDDIR); rm -f *.tex *.aux *.log *.out *.bbl *.blg *.bcf *.run.xml *.bak tmp.* *.tmp *.docx *.odt *.pdf *.html bibliography *.Mendeley; rm -Rf figs
+	@cd $(BUILDDIR); rm -f *.tex *.aux *.log *.out *.bbl *.blg *.bcf *.run.xml *.bak tmp.* *.tmp *.docx *.odt *.pdf *.html bibliography *.md; rm -Rf figs
