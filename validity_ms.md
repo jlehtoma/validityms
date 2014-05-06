@@ -71,6 +71,10 @@ spatial planning.
 
 ## 2.1 Study design
 
+Different forestry operators in the region collect inventory data in different parts of the region (Table 1) and for different purposes, but for the most part the motivation is to provide commercial services for forest owners such as forest management planning [@Tuominen2014]. To compare the suitability of different types of forest inventory data for conservation prioritization, we acquired all available inventory data from Southern Savonia. These data include both coarser data based on remote sensing and more detailed inventory data based on visual inspection of the forest stands. The former type of data comes from a single source (see 2.2.1)and the latter from two separate sources (see 2.2.2). 
+
+In this study, we are interested only in forest land on mineral soils. The index of conservation value (see Section 3.1) is based on the characteristics of the growing stock and it does not account for important ecological characteristics of mires. Mires are still included in the analyses, but because mires on average have less forest than mineral soils, they systematically receive lower priorities.
+
 + Ideally, the results of a conservation prioritization analysis should be compared against the known occurrences of biodiversity, i.e. species or habitat occurrence data. If such data are lacking, the results can still be compared against spatial data on areas considered to be ecologically valuable.
 
 + Whether or not such areas (e.g. PAs) truly are highly valuable in the sense that they contain significant amounts of biodiversity or resources promoting biodiversity is a different thing (REF).
@@ -80,7 +84,7 @@ spatial planning.
 + In this study, the spatial validation data sets are used to examine if the priority analyses are able to distinguish between them and the rest of the landscape in the form of higher priorities.
 
 + We use only the location data in each of the validation data sets, i.e. spatial polygons.
-
+    
 ## 2.2 Study area
 
 The study area covers the region of South Savo located in South-Eastern part of Finland (Figure 1). The size of the region is ca. 13990 km^2^ and it is characterized by a large number of lakes and fragmented waterways which covers ca. 25% of the total area. Of the reminding land area, approximately 88 % or 12250 km^2^ is forestry land further divided into mineral soils (79%) and mires (21%). South boreal vegetation zone covers the whole region and forests are mostly dominated  by the Scots pine (_Pinus sylvestris_) and the Norway Spruce (_Picea abies_) with varying amounts of broadleaved trees. Land ownership shares reflect the typical situation in Southern Finland: private forest owners 77.3%, private companies 11.5%, the state 6.2%, and other (municipalities, parishes and associations) 5.0% [@FinnishForestResearchInstitute2013]. Most of the forestry land is under silvicultural management with 2.5% strictly protected. This number closely reflects the average for forestry land in Southern Finland (2.5%).
@@ -88,10 +92,6 @@ The study area covers the region of South Savo located in South-Eastern part of 
 In the following sections, we outline the main input data sets (2.2) used to build the index layers (2.3) acting as the basis for the prioritization analyses. We then briefly describe the procedure of spatial conservation prioritization using Zonation (2.4). Finally, we introduce the different data sets used for the validation of the results (2.5) and other methods used for the interpretation of the results (2.6). 
 
 ## 2.3 Data for conservation prioritization 
-
-Different forestry operators in the region collect inventory data in different parts of the region (Table 1) and for different purposes, but for the most part the motivation is to provide commercial services for forest owners such as forest management planning [@Tuominen2014]. To compare the suitability of different types of forest inventory data for conservation prioritization, we acquired all available inventory data from Southern Savonia. These data include both coarser data based on remote sensing and more detailed inventory data based on visual inspection of the forest stands. The former type of data comes from a single source (see 2.2.1)and the latter from two separate sources (see 2.2.2). 
-
-In this study, we are interested only in forest land on mineral soils. The index of conservation value (see Section 3.1) is based on the characteristics of the growing stock and it does not account for important ecological characteristics of mires. Mires are still included in the analyses, but because mires on average have less forest than mineral soils, they systematically receive lower priorities.
 
 #### 2.2.1 Multi-source National Forest Inventory data
 
