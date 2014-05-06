@@ -71,9 +71,13 @@ spatial planning.
 
 ## 2.1 Study design
 
-Different forestry operators in the region collect inventory data in different parts of the region (Table 1) and for different purposes, but for the most part the motivation is to provide commercial services for forest owners such as forest management planning [@Tuominen2014]. To compare the suitability of different types of forest inventory data for conservation prioritization, we acquired all available inventory data from Southern Savonia. These data include both coarser data based on remote sensing and more detailed inventory data based on visual inspection of the forest stands. The former type of data comes from a single source (see 2.2.1)and the latter from two separate sources (see 2.2.2). 
+The main objectives of this work are to 1) study the relative performance of conservation prioritization based on forest inventory data with different precision and availability, and to 2) assess the overall performance of the prioritizations compared to validation data. The address the the former, we compare prioritization results based on coarser open data to those based on more detailed proprietary data. To answer to latter question, we compare all prioritization results to areas with known high conservation value.
 
-In this study, we are interested only in forest land on mineral soils. The index of conservation value (see Section 3.1) is based on the characteristics of the growing stock and it does not account for important ecological characteristics of mires. Mires are still included in the analyses, but because mires on average have less forest than mineral soils, they systematically receive lower priorities.
+Different forestry operators in the region collect inventory data in different parts of the region (Table 1) and for different purposes, but for the most part the motivation is to provide commercial services for forest owners such as forest management planning [@Tuominen2014]. To compare the suitability of different types of forest inventory data for conservation prioritization, we acquired all available inventory data from Southern Savonia. These data include both coarser data based on remote sensing and more detailed inventory data based on visual inspection of the forest stands. The former type of data comes from a single source (see 2.3.1)and the latter from two separate sources (see 2.3.2). We are interested only in forest land on mineral soils. The index of conservation value (see Section 3.1) is based on the characteristics of the growing stock and it does not account for important ecological characteristics of mires. Mires are still included in the analyses, but because mires on average have less forest than mineral soils, they systematically receive lower priorities.
+
+Since the extensive forest inventory data does not contain information on the occurrence of primary biodiversity features, such as species, we rely on available surrogate features. To derive an index of conservation value, we used knowledge elicited from experts to transform to inventory data into a index (see 2.5) of conservation value. Although the more detailed stand-based inventory data contains more information, the construction of the indexes was limited to information available in least information-rich data source to keep indexes from all data sources comparable. We hypothesize that the performance of the coarser data can be improved by further dividing the index features into site fertility classes that better correspond to actual forest habitats. After the data acquisition and pre-processing we use 3 different input data sets for the conservation prioritization analysis: 1) Coarse data, 2) coarse data with classes, and 3) detailed data with classes. The first two input data sets are completely based on open data whereas the third is partly based on proprietary data (see 2.5 for more details). 
+
+For the actual conservation prioritization we use Zonation software, which is capable to account for complex ecological phenomena such as connectivity. Since connectivity is an important feature of conservation planning both from the ecological (__REF__) and administrative (__REF__) perspective, we use two analysis variants for each input data set: One without and with connectivity (see 2.6 for more details). With the inclusion of connectivity we want to study if the potentially scale-dependent patterns in the input data sets produce notably different outcomes when the results are compared to the validation data.  
 
 + Ideally, the results of a conservation prioritization analysis should be compared against the known occurrences of biodiversity, i.e. species or habitat occurrence data. If such data are lacking, the results can still be compared against spatial data on areas considered to be ecologically valuable.
 
@@ -89,11 +93,9 @@ In this study, we are interested only in forest land on mineral soils. The index
 
 The study area covers the region of South Savo located in South-Eastern part of Finland (Figure 1). The size of the region is ca. 13990 km^2^ and it is characterized by a large number of lakes and fragmented waterways which covers ca. 25% of the total area. Of the reminding land area, approximately 88 % or 12250 km^2^ is forestry land further divided into mineral soils (79%) and mires (21%). South boreal vegetation zone covers the whole region and forests are mostly dominated  by the Scots pine (_Pinus sylvestris_) and the Norway Spruce (_Picea abies_) with varying amounts of broadleaved trees. Land ownership shares reflect the typical situation in Southern Finland: private forest owners 77.3%, private companies 11.5%, the state 6.2%, and other (municipalities, parishes and associations) 5.0% [@FinnishForestResearchInstitute2013]. Most of the forestry land is under silvicultural management with 2.5% strictly protected. This number closely reflects the average for forestry land in Southern Finland (2.5%).
 
-In the following sections, we outline the main input data sets (2.2) used to build the index layers (2.3) acting as the basis for the prioritization analyses. We then briefly describe the procedure of spatial conservation prioritization using Zonation (2.4). Finally, we introduce the different data sets used for the validation of the results (2.5) and other methods used for the interpretation of the results (2.6). 
-
 ## 2.3 Data for conservation prioritization 
 
-#### 2.2.1 Multi-source National Forest Inventory data
+#### 2.2.1 Coarse data
 
 National Forest Inventory (NFI) is sampling-based inventory system maintained by the Finnish Forest Research Institute (FRI) that covers all land classes and land tenure throughout the whole country [@Tomppo2006b;@Tomppo2008;@Tuominen2014]. Main purpose of NFI is to "produce reliable information on forest resources and growth, the health of forests, forest biodiversity, and future cutting possibilities at national and regional forest level." [@Tuominen2014]. We used the multi-source version of the NFI (MS-NFI), which essentially combines the information from the field plots with satellite images, digital map data and statistical image analysis methods [@Tomppo2006a]. Based on this combination of data sources and methods it is possible to estimate the values of selected forest variables such as the average volume and average diameter of the growing stock and site fertility in high-resolution thematic maps. In Finland, the MS-NFI is being used mostly for regional level forestry planning and similar kind of systems are in operative use in XXX [#37]. MS-NFI data has been previously been used also for large-scale conservation prioritization studies [@Lehtomaki2009;@Arponen2012;@Sirkia2012].
 
@@ -134,7 +136,7 @@ The forest biodiversity conservation programme METSO is an ongoing effort to hal
 
 Regional implementation of the METSO programme is managed by the Centre for Economic Development, Transport and the Environment which also collects implementation statistics and maintains a spatial database on the sites admitted into the programme. Data is not publicly available, but can be acquired for research purposes. We used only permanent the conservation contracts as the conservation effectiveness of temporary or fixed-term contracts is questionable [@Monkkonen2008].
 
-## 2.5 Index for conservation value
+## 2.5 Calculating index for conservation value
 
 + All data used from all three data sources were categorized into four tree species groups: Pine, spruce, birch, or other broadleaved (Table S1). More detailed data (see 2.2.2) contain finer classification into individual tree species, but the tree species were grouped into these 4 classes in order to correspond to classification of MS-NFI [#39]. 
 
@@ -148,17 +150,19 @@ Regional implementation of the METSO programme is managed by the Centre for Econ
 
 + To study how the prioritization based on publicly available data performs against more detailed, but proprietary data we constructed 3 input data sets (see also Table S1):
     
-    1. __MS-NFI__: The simplest input data set used, only has the 4 index layers based on tree species groups.
-    2. __MS-NFI with classes__: Same as MS-NFI but classified according to site fertility classes in MS-NFI.
+    1. __Coarse__: The simplest input data set used, only has the 4 index layers based on tree species groups.
+    2. __Coarse with classes__: Same as _Coarse_ but classified according to site fertility classes in MS-NFI.
     3. __Detailed with classes__: MS-NFI data combined with the more detailed data (where available) and classified according to site fertility classes in MS-NFI and in the more detailed data.
 
 + Note that _Detailed with classes_ is actually a combination of detailed data and MS-NFI as the detailed data only covers ~46% of the landscape (Table 1). Both _MS-NFI_ and _MS-NFI with classes_ are completely based on MS-NFI and thus publicly available data.
 
+Effective conservation prioritization needs to be able to account for complementarity and rarity of biodiversity features (__REF__). For example, if the objective is to prioritize for new protected areas, one should consider what is already protected (__REF__). Rarity is often associated on the risk of becoming more threatened or even extinct and thus the overall range size of a biodiversity feature should be considered. In their simplest form, our indexes are based on the occurrence of tree species groups alone. We hypothesize, that further subdivision of the spatial data into classes that correspond roughly to existing forest habitat types would improve the prioritization because especially many endangered species are associated with particular and often restricted habitats (__REF__). The more detailed inventory data has enough additional information in it to enable detailed habitat classification, but again we are constricted by the information content of the coarser data. All available data sets do have, however, information on site fertility class, which is often also associated with the formation and extent of particular forest habitats (__REF__). Therefore we further created two input data sets based on the coarse data: One with just the 4 index rasters ("Coarse"), one with the 4 index rasters each divided into 5 site fertility classes ("Coarse with classes", Figure 1). We also hypothesized that prioritzation based on the more detailed - and more precise - inventory data would outperform those based on the coarser data, we found it reasonable to use as detailed data as possible ("Detailed with classes").
+
 ## 2.6 Spatial conservation prioritization
 
-### 2.5.1 Zonation
+### 2.6.1 Zonation
 
-### 2.2.2 Analysis variants
+### 2.6.2 Analysis variants
 
 ## 2.7 Interpretation of results
 
