@@ -77,17 +77,9 @@ Different forestry operators in the region collect inventory data in different p
 
 Since the extensive forest inventory data does not contain information on the occurrence of primary biodiversity features, such as species, we rely on available surrogate features. To derive an index of conservation value, we used knowledge elicited from experts to transform to inventory data into a index (see 2.5) of conservation value. Although the more detailed stand-based inventory data contains more information, the construction of the indexes was limited to information available in least information-rich data source to keep indexes from all data sources comparable. We hypothesize that the performance of the coarser data can be improved by further dividing the index features into site fertility classes that better correspond to actual forest habitats. After the data acquisition and pre-processing we use 3 different input data sets for the conservation prioritization analysis: 1) Coarse data, 2) coarse data with classes, and 3) detailed data with classes. The first two input data sets are completely based on open data whereas the third is partly based on proprietary data (see 2.5 for more details). 
 
-For the actual conservation prioritization we use Zonation software, which is capable to account for complex ecological phenomena such as connectivity. Since connectivity is an important feature of conservation planning both from the ecological (__REF__) and administrative (__REF__) perspective, we use two analysis variants for each input data set: One without and with connectivity (see 2.6 for more details). With the inclusion of connectivity we want to study if the potentially scale-dependent patterns in the input data sets produce notably different outcomes when the results are compared to the validation data.  
+For the actual conservation prioritization we use Zonation software, which is capable to account for complex ecological phenomena such as connectivity. Since connectivity is an important feature of conservation planning both from the ecological (__REF__) and administrative (__REF__) perspective, we use two analysis variants for each input data set: One without and with connectivity (see 2.6 for more details). With the inclusion of connectivity we want to study if the potentially scale-dependent patterns in the input data sets produce notably different outcomes when the results are compared to the validation data. Thus we have 6 different Zonation runs (Figure 1). 
 
-+ Ideally, the results of a conservation prioritization analysis should be compared against the known occurrences of biodiversity, i.e. species or habitat occurrence data. If such data are lacking, the results can still be compared against spatial data on areas considered to be ecologically valuable.
-
-+ Whether or not such areas (e.g. PAs) truly are highly valuable in the sense that they contain significant amounts of biodiversity or resources promoting biodiversity is a different thing (REF).
-
-+ Setting the reference level to existing conservation instruments such as PAs has the added benefit that the priorities areas are going the align well with existing PAs.
-
-+ In this study, the spatial validation data sets are used to examine if the priority analyses are able to distinguish between them and the rest of the landscape in the form of higher priorities.
-
-+ We use only the location data in each of the validation data sets, i.e. spatial polygons.
+We analyze the six different result sets produced by Zonation in two main ways. First, we compare characterize the patterns of priorities within each run and compare particular fractions (e.g. the best and the worst part of the landscape) between the different runs. The expectation is that [...] Secondly, we examine the prioritization results in areas with known conservation value. If the forest inventory data sets and the index used truly capture features relevant for conservation, then we expect that these location will stand out with higher average priority than the surrounding landscape.
     
 ## 2.2 Study area
 
@@ -118,19 +110,30 @@ In the current work, detailed stand-based data means visual inventories of stand
 
 
 ## 2.4 Data for validation
-### 2.5.1 Existing protected are network
+
++ Ideally, the results of a conservation prioritization analysis should be compared against the known occurrences of biodiversity, i.e. species or habitat occurrence data. If such data are lacking, the results can still be compared against spatial data on areas considered to be ecologically valuable.
+
++ Whether or not such areas (e.g. PAs) truly are highly valuable in the sense that they contain significant amounts of biodiversity or resources promoting biodiversity is a different thing (REF).
+
++ Setting the reference level to existing conservation instruments such as PAs has the added benefit that the priorities areas are going the align well with existing PAs.
+
++ In this study, the spatial validation data sets are used to examine if the priority analyses are able to distinguish between them and the rest of the landscape in the form of higher priorities.
+
++ We use only the location data in each of the validation data sets, i.e. spatial polygons.
+
+### 2.4.1 Existing protected are network
 
 Overall, protected areas cover 2.5% of the whole landscape in Southern Savonia [@FinnishForestResearchInstitute2013]. Part of this the protected areas cover mires and for the validation purposes, protected areas only on mineral soils (~1.9% of the whole landscape, Table 1) were included for the validation. The data include both state-owned protected areas as well as protected areas on private land. 
 
 The data was acquired from Metsähallitus Natural Heritage Services who is responsible for the maintenance of the database for protected areas, both public and private. The delineation of PAs is public information, but since the data requested contains other attribute data as well, it required separated research agreement.
 
-### 2.5.2 Woodland key-habitats
+### 2.4.2 Woodland key-habitats
 
 Woodland key-habitats (WKH) are a conservation instrument designed for maintaining landscape-level bio-diversity in production forests by delineating and preserving small habitat patches [@Timonen2011a]. The concept is in use in many Fennoscandian and Baltic countries and while their effectiveness as a conservation measure varies depending on the country and definition [@Aune2005;@Pykala2006;@Timonen2011a], on average WKHs seem to be hotspots for dead wood, species richness, and red-listed species [@Timonen2011a]. The average size of a Woodland key-habitat designation in Southern Savonia is XX ha [#35], which is close to the national mean of 0.67 ha in Finland [@Timonen2010], and they cover 0.5% of the whole landscape (Table 1).
 
 Because of potential privacy issues, the exact spatial location (i.e. on scales that can be linked to an individual forest owner) of the woodland key-habitats are not public information. It is possible, however, to gain access to the data when the purpose is scientific research.
 
-### 2.5.3 Recently acquired protected areas
+### 2.4.3 Recently acquired protected areas
 
 The forest biodiversity conservation programme METSO is an ongoing effort to halt the decline of forest biodiversity by year 2016 [@METSO2008]. Individual forest owners can offer their forest into METSO and if the offered forest fulfills programme's scientific selection criteria, the offer is admitted into METSO and the forest owner is compensated based on the economic value of the growing stock and timber [@Korhonen2013]. The agreement can be either fixed-term (10 years) or permanent. Overall the relatively simple selection criteria seem to be working quite well both for habitat characteristics such as abundance of dead wood as well as the number of red-listed species [@Siitonen2012].
 
