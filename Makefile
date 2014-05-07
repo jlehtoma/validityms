@@ -51,7 +51,7 @@ endif
 ########################################################################
 
 
-GIT_TAG = $(shell git describe --abbrev=0)
+GIT_TAG = $(shell git describe --abbrev=1)
 TAG = $(strip $(subst .,_,$(GIT_TAG)))
 
 
