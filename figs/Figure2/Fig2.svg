@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="Fig2.svg"
-   inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure1/Fig1_v1_with_bg.png"
+   inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure2/Fig2_v1.png"
    inkscape:export-xdpi="120.95"
    inkscape:export-ydpi="120.95">
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="365.35718"
+     inkscape:zoom="1.9433016"
+     inkscape:cx="372.04724"
      inkscape:cy="613.7544"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
@@ -4117,7 +4117,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -7648,7 +7648,10 @@
     </g>
     <g
        id="g13992"
-       transform="translate(-0.11839601,43.133513)">
+       transform="translate(-0.11839601,43.133513)"
+       inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure2/Fig2_v1.png"
+       inkscape:export-xdpi="120.95"
+       inkscape:export-ydpi="120.95">
       <g
          transform="translate(-13.561898,-211.44276)"
          id="g36517"
