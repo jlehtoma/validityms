@@ -2,7 +2,7 @@
 
 import os
 import re
-from git import Repo
+import subprocess
 
 BUILD_DIR = "pandoc/build/"
 
@@ -17,9 +17,7 @@ TABLES = "validity_ms_tables.md"
 
 GH_ISSUE_URL = "https://github.com/jlehtoma/validityms/issues/"
 
-repo = Repo(".")
-current_tag = repo.tags[-1].name
-
+current_tag = subprocess.check_output(["git", "describe", "--abbrev=1"])
 
 def count_figures():
     figures = 0
