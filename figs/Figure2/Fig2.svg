@@ -26,11 +26,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.9433016"
-     inkscape:cx="372.04724"
-     inkscape:cy="613.7544"
+     inkscape:zoom="1.3741217"
+     inkscape:cx="326.64077"
+     inkscape:cy="577.03087"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer3"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1186"
@@ -7815,7 +7815,7 @@
            y="737.89587"
            x="249.04822"
            id="tspan36365-45"
-           sodipodi:role="line">V1</tspan></text>
+           sodipodi:role="line">R1</tspan></text>
     </g>
     <g
        style="display:inline"
@@ -7841,7 +7841,7 @@
            y="740.21521"
            x="307.60254"
            id="tspan36365-45-3"
-           sodipodi:role="line">V2</tspan></text>
+           sodipodi:role="line">R2</tspan></text>
     </g>
     <g
        style="display:inline"
@@ -7867,7 +7867,7 @@
            y="743.46521"
            x="385.85254"
            id="tspan36365-45-8"
-           sodipodi:role="line">V3</tspan></text>
+           sodipodi:role="line">R3</tspan></text>
     </g>
     <g
        style="display:inline"
@@ -7893,7 +7893,7 @@
            y="744.71521"
            x="424.60254"
            id="tspan36365-45-5"
-           sodipodi:role="line">V4</tspan></text>
+           sodipodi:role="line">R4</tspan></text>
     </g>
     <g
        style="display:inline"
@@ -7919,7 +7919,7 @@
            y="727.71521"
            x="503.85254"
            id="tspan36365-45-0"
-           sodipodi:role="line">V5</tspan></text>
+           sodipodi:role="line">R5</tspan></text>
     </g>
     <g
        style="display:inline"
@@ -7945,7 +7945,7 @@
            y="733.46521"
            x="543.85254"
            id="tspan36365-45-1"
-           sodipodi:role="line">V6</tspan></text>
+           sodipodi:role="line">R6</tspan></text>
     </g>
     <rect
        style="fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
@@ -8684,50 +8684,55 @@
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
-       x="135.06808"
+       x="140.67746"
        y="429.67584"
        id="text36327"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan36329"
-         x="135.06808"
+         x="140.67746"
          y="429.67584"
          style="font-size:10px">No. features</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
-       x="133.31027"
+       x="138.91965"
        y="523.24738"
        id="text36327-5"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan36329-9"
-         x="133.31027"
+         x="138.91965"
          y="523.24738"
          style="font-size:10px">Connectivity</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
-       x="146.97726"
+       x="182.97726"
        y="571.487"
        id="text36327-0"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan36329-8"
-         x="146.97726"
+         x="182.97726"
          y="571.487"
-         style="font-size:10px">Variant ID</tspan></text>
+         style="font-size:10px">Run</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
-       x="148.83273"
-       y="480.94626"
+       x="201.31711"
+       y="475.12433"
        id="text36327-5-0"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan36329-9-1"
-         x="148.83273"
-         y="480.94626"
-         style="font-size:10px">Condition</tspan></text>
+         x="204.5007"
+         y="475.12433"
+         style="font-size:10px;text-align:end;text-anchor:end">Forestry </tspan><tspan
+         sodipodi:role="line"
+         x="201.31711"
+         y="487.62433"
+         style="font-size:10px;text-align:end;text-anchor:end"
+         id="tspan4960">activities</tspan></text>
   </g>
 </svg>
