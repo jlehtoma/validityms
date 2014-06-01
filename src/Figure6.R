@@ -5,9 +5,9 @@ load.project()
 # Some code migrated over from:
 # DataVault/Data/Metsakeskukset/Etela-Savo/Zonation/ESMK/results/R/result_stats_september.R
 
-rankr.V2 <- rank_raster(V1)
-rankr.V4 <- rank_raster(V3)
-rankr.V6 <- rank_raster(V5)
+rankr.V1<- rank_raster(V1)
+rankr.V3 <- rank_raster(V3)
+rankr.V5 <- rank_raster(V5)
 
 # ylimit is hard coded to ease the comparison of priority distributions.
 # Max-values from pairwise comparisons (manually from plots) are:
@@ -56,3 +56,17 @@ png(file="figs/Figure5/Fig5.png", width=1500, height=1200)
 grid.arrange(p1, p2, p3, p4, p5, p6, p7, p8, p9, nrow=3, ncol=3)
 
 dev.off()
+
+# Median values -----------------------------------------------------------
+
+cellStats(mask(rankr.V1, pa.mask), stat=median)
+cellStats(mask(rankr.V3, pa.mask), stat=median)
+cellStats(mask(rankr.V5, pa.mask), stat=median)
+
+cellStats(mask(rankr.V1, wkh.mask), stat=median)
+cellStats(mask(rankr.V3, wkh.mask), stat=median)
+cellStats(mask(rankr.V5, wkh.mask), stat=median)
+
+cellStats(mask(rankr.V1, metso.mask), stat=median)
+cellStats(mask(rankr.V3, metso.mask), stat=median)
+cellStats(mask(rankr.V5, metso.mask), stat=median)

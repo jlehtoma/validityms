@@ -56,3 +56,17 @@ png(file="figs/Figure5/Fig5_con.png", width=1500, height=1200)
 grid.arrange(p1, p2, p3, p4, p5, p6, p7, p8, p9, nrow=3, ncol=3)
 
 dev.off()
+
+# Median values -----------------------------------------------------------
+
+cellStats(mask(rankr.V2, pa.mask), stat=median)
+cellStats(mask(rankr.V4, pa.mask), stat=median)
+cellStats(mask(rankr.V6, pa.mask), stat=median)
+
+cellStats(mask(rankr.V2, wkh.mask), stat=median)
+cellStats(mask(rankr.V4, wkh.mask), stat=median)
+cellStats(mask(rankr.V6, wkh.mask), stat=median)
+
+cellStats(mask(rankr.V2, metso.mask), stat=median)
+cellStats(mask(rankr.V4, metso.mask), stat=median)
+cellStats(mask(rankr.V6, metso.mask), stat=median)
