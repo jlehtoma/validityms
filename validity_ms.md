@@ -165,14 +165,16 @@ Visual examination of the rank priority maps should give an initial idea how wel
 It possible to load the rank order of a Zonation solution and run a prioritization using different input features or Zonation options using the removal order from the previous run and examine how much performance of the solution is lost [@Lehtomaki2013;@Moilanen2014]. We used this technique to see how much lower the representation levels are for the input features based on the detailed data when the rank order is taken from analyses based on the coarser data. Assuming that the detailed data is also more precise, we can then ask the question of how much feature representation do we risk losing by using the coarser data. 
   
 We examined how well the results of different runs were able to capture forest region with conservation value by simply examining the priority distributions within each of the validation data sets (see 2.4). 
-
+    
 # 3. Results
 
 ## 3.1 Spatial patterns of rank priorities
 
-## 3.2 Spatial overlap of priority fractions
+On the scale of the whole study area, the spatial pattern of priorities in non-spatial runs accounting for local quality only (R1, R3, R5) were located in roughly the same places (Figure 3A, 3C, and 3E). A major concentration of high-priority locations can be found in the southwestern corner of the study area. Classifying the coarse input dataset according to the site fertility classification (R3, see 2.1 and Figure 2) had a minor effect of distributing the top priorities more equally across the study area (Figure 3A and 3C). R5 which is based on the more detailed data, produced slightly different priority patterns (Figure 3E). Top priorities are yet more equally distributed over the study area (see the marginal plots in Figure 3E). Regions of high-concentrations of top-priority areas are sifted to the northeastern part of the study area.  
 
-It is not perhaps surprising given that the best parts of the landscape probably are best by a large margin and the worst parts probably do not have much forest at all. In none of the variant comparisons do the best and worst parts of landscape overlap much. From input data sets' perspective this can be considered a good thing, because such overlaps would imply serious risks of selecting poor sites if using the coarser data. Comparisons between the MS-NFI and MS-NFI with classes input data sets (V1 vs. V3 and V2 vs. V4) reveals interesting patterns caused by classification. (__EXPAND__)
+Runs including connectivity between forest types (R2, R4, R6) display very similar overall rank priority patterns as the their non-spatial counterparts with regions with high density of high-priority sites further emphasized (Figure 3B, 3C, and 3F). 
+
+## 3.2 Spatial overlap of priority fractions
 
 ## 3.3 Feature representation
 
