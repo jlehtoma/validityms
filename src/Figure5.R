@@ -49,8 +49,8 @@ grpcur.V6.load.V4 <- curves(V6.load.V4, groups=TRUE)
 dd <- grpcur.V5[,c(1, seq(4, ncol(grpcur.V5), 5))]
 m.dd <- melt(dd, id.vars=c("pr_lost"))
 # Get the average over everything
-dd.all <- data.frame(pr_lost=V1@results@curves$pr_lost, variable="mean.All",
-                     value=V1@results@curves$ave_pr)
+dd.all <- data.frame(pr_lost=V5@results@curves$pr_lost, variable="mean.All",
+                     value=V5@results@curves$ave_pr)
 m.dd <- rbind(m.dd, dd.all)
 m.dd$type <- "V5"
 
@@ -96,3 +96,28 @@ dev.off()
 svg(file="figs/Figure4/Fig4.svg", width=1000, height=800)
 p1
 dev.off()
+
+
+# Get performance levels in numbers ---------------------------------------
+
+pr_lost <- c(0.9)
+
+# We'll have to get the overall means from the curves (performance can't handle
+# this in zonator 0.3.9)
+
+cur.V5 <- curves(V5)
+V5.09 <- cur.V5[which(cur.V5$pr_lost >= pr_lost),][1,]$ave_pr
+
+cur.V5.V1 <- curves(V5.load.V1)
+V5.V1.09 <- cur.V5.V1[which(cur.V5.V1$pr_lost >= pr_lost),][1,]$ave_pr
+
+cur.V5.V3 <- curves(V5.load.V3)
+V5.V3.09 <- cur.V5.V3[which(cur.V5.V3$pr_lost >= pr_lost),][1,]$ave_pr
+
+# Group wise means are returned by the performance directly
+
+V1.09 <- performance(results(V5.load.V1), pr_lost, groups=TRUE)
+
+V3.09 <- performance(results(V5.load.V3), pr_lost, groups=TRUE)
+
+V5.09 <- performance(results(V5), pr_lost, groups=TRUE)
