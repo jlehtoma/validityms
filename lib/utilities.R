@@ -37,3 +37,13 @@ fix_feature_names <- function(x) {
   feature_names <- sapply(x, .clean_name, USE.NAMES=FALSE)
   return(feature_names)
 }
+
+#' Scale values between range [0, 1]
+#' 
+#' @param x numeric vector of values
+#' @return reranged numeric vector containing the re-ranged values
+#' 
+range01 <- function(x) {
+  reranged <- (x - min(x)) / (max(x) - min(x))
+  return(reranged)
+}

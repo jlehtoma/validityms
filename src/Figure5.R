@@ -81,8 +81,16 @@ dat$lt <- 1
 dat$lt[which(dat$type == "R1")] <- 2
 dat$lt[which(dat$type == "R3")] <- 3
 dat$lt <- factor(dat$lt)
+dat$variable <- factor(dat$variable)
 
-p1 <- ggplot(dat, aes(x=pr_lost, y=value, linetype=lt)) 
+# Note that the values don't start from 1.0 because of the condition layer. For
+# visualization purposes, scale values between 0 and 1. 
+dat.scaled <- ddply(dat, c("variable", "type"), summarize,
+                    pr_lost = pr_lost,
+                    value01 = range01(value),
+                    lt = lt)
+
+p1 <- ggplot(dat.scaled, aes(x=pr_lost, y=value01, linetype=lt)) 
 p1 <- p1 + geom_line(size=0.8) + facet_wrap(~variable) +
   ylab("Prop. of distributions remaining\n") +
   scale_x_continuous(breaks=seq(0, 1, 0.2), 
