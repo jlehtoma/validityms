@@ -10,8 +10,8 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="750"
+   height="880"
    id="svg17609"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -1329,8 +1329,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.83716425"
-     inkscape:cx="202.1374"
-     inkscape:cy="585.45834"
+     inkscape:cx="523.73778"
+     inkscape:cy="453.41795"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1338,7 +1338,7 @@
      inkscape:guide-bbox="true"
      inkscape:window-width="1680"
      inkscape:window-height="1036"
-     inkscape:window-x="1679"
+     inkscape:window-x="-1"
      inkscape:window-y="-4"
      inkscape:window-maximized="1">
     <sodipodi:guide
@@ -1370,14 +1370,15 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-172.36218)">
     <g
        id="g14515"
        style="fill:#000000;fill-opacity:1"
@@ -1543,19 +1544,9 @@
          x="45.734375"
          xlink:href="#glyph0-1" />
     </g>
-    <rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.82664555;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect34100"
-       width="734.48981"
-       height="853.7915"
-       x="2.7821496"
-       y="20.369051"
-       inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-       inkscape:export-xdpi="149.96599"
-       inkscape:export-ydpi="149.96599" />
     <g
        id="g37213"
-       transform="translate(-13.999997,0)"
+       transform="translate(-18.778032,168.42573)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -2662,7 +2653,7 @@
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599"
-       transform="translate(8.33e-4,0)">
+       transform="translate(-4.7772019,168.42573)">
       <path
          inkscape:connector-curvature="0"
          id="path744"
@@ -3462,83 +3453,8 @@
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="75.362297"
-       y="87.647903"
-       id="text22853"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-       inkscape:export-xdpi="149.96599"
-       inkscape:export-ydpi="149.96599"><tspan
-         sodipodi:role="line"
-         id="tspan22855"
-         x="75.362297"
-         y="87.647903"
-         style="font-size:8px;text-align:center;text-anchor:middle">1.00</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="75.62207"
-       y="141.233"
-       id="text22853-3"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-       inkscape:export-xdpi="149.96599"
-       inkscape:export-ydpi="149.96599"><tspan
-         sodipodi:role="line"
-         id="tspan22855-1"
-         x="75.62207"
-         y="141.233"
-         style="font-size:8px;text-align:center;text-anchor:middle">0.75</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="75.538094"
-       y="194.81825"
-       id="text22853-3-8"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-       inkscape:export-xdpi="149.96599"
-       inkscape:export-ydpi="149.96599"><tspan
-         sodipodi:role="line"
-         id="tspan22855-1-6"
-         x="75.538094"
-         y="194.81825"
-         style="font-size:8px;text-align:center;text-anchor:middle">0.50</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="75.62207"
-       y="248.40347"
-       id="text22853-3-86"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-       inkscape:export-xdpi="149.96599"
-       inkscape:export-ydpi="149.96599"><tspan
-         sodipodi:role="line"
-         id="tspan22855-1-2"
-         x="75.62207"
-         y="248.40347"
-         style="font-size:8px;text-align:center;text-anchor:middle">0.25</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="75.538094"
-       y="301.98859"
-       id="text22853-3-5"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-       inkscape:export-xdpi="149.96599"
-       inkscape:export-ydpi="149.96599"><tspan
-         sodipodi:role="line"
-         id="tspan22855-1-64"
-         x="75.538094"
-         y="301.98859"
-         style="font-size:8px;text-align:center;text-anchor:middle">0.00</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="137.10951"
-       y="58.948208"
+       x="132.33148"
+       y="227.37395"
        id="text27747"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
@@ -3546,14 +3462,14 @@
        inkscape:export-ydpi="149.96599"><tspan
          sodipodi:role="line"
          id="tspan27749"
-         x="137.10951"
-         y="58.948208"
-         style="text-align:center;text-anchor:middle">V1</tspan></text>
+         x="132.33148"
+         y="227.37395"
+         style="text-align:center;text-anchor:middle">R1</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="238.88043"
-       y="59.040493"
+       x="234.1024"
+       y="227.46623"
        id="text27747-2"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
@@ -3561,14 +3477,14 @@
        inkscape:export-ydpi="149.96599"><tspan
          sodipodi:role="line"
          id="tspan27749-9"
-         x="238.88043"
-         y="59.040493"
-         style="text-align:center;text-anchor:middle">V2</tspan></text>
+         x="234.1024"
+         y="227.46623"
+         style="text-align:center;text-anchor:middle">R2</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="-181.21724"
-       y="30.141495"
+       x="-349.64294"
+       y="25.363461"
        id="text27747-2-2"
        sodipodi:linespacing="125%"
        transform="matrix(0,-1,1,0,0,0)"
@@ -3577,8 +3493,8 @@
        inkscape:export-ydpi="149.96599"><tspan
          sodipodi:role="line"
          id="tspan27749-9-1"
-         x="-181.21724"
-         y="30.141495"
+         x="-349.64294"
+         y="25.363461"
          style="text-align:center;text-anchor:middle">Protected areas</tspan></text>
     <g
        id="g14891"
@@ -3747,7 +3663,7 @@
     </g>
     <g
        id="g30331"
-       transform="translate(1.409512,-3.8782384e-6)"
+       transform="translate(-3.3685229,168.42572)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -4867,7 +4783,7 @@
        transform="matrix(1.25,0,0,1.25,-14.200965,-3.8690056)" />
     <g
        id="g31488"
-       transform="translate(-16.324436,-0.37984706)"
+       transform="translate(-21.102471,168.04588)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -5742,8 +5658,8 @@
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="344.34085"
-       y="58.941372"
+       x="339.56281"
+       y="227.36711"
        id="text27747-1"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
@@ -5751,14 +5667,14 @@
        inkscape:export-ydpi="149.96599"><tspan
          sodipodi:role="line"
          id="tspan27749-8"
-         x="344.34085"
-         y="58.941372"
-         style="text-align:center;text-anchor:middle">V3</tspan></text>
+         x="339.56281"
+         y="227.36711"
+         style="text-align:center;text-anchor:middle">R3</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="444.11179"
-       y="58.948208"
+       x="439.33374"
+       y="227.37395"
        id="text27747-2-8"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
@@ -5766,9 +5682,9 @@
        inkscape:export-ydpi="149.96599"><tspan
          sodipodi:role="line"
          id="tspan27749-9-8"
-         x="444.11179"
-         y="58.948208"
-         style="text-align:center;text-anchor:middle">V4</tspan></text>
+         x="439.33374"
+         y="227.37395"
+         style="text-align:center;text-anchor:middle">R4</tspan></text>
     <g
        id="g15267"
        style="fill:#000000;fill-opacity:1"
@@ -5936,7 +5852,7 @@
     </g>
     <g
        id="g33156"
-       transform="matrix(0,-0.65147368,0.35019883,0,493.14663,730.77132)"
+       transform="matrix(0,-0.65147368,0.35019883,0,488.3686,899.19705)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -6948,7 +6864,7 @@
        transform="matrix(1.25,0,0,1.25,-271.21542,-34.602884)" />
     <g
        id="g33992"
-       transform="matrix(0,-0.65147521,-0.34937998,0,704.72966,796.9189)"
+       transform="matrix(0,-0.65147521,-0.34937998,0,699.95163,965.34463)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -7711,8 +7627,8 @@
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="551.43384"
-       y="60.64085"
+       x="546.65582"
+       y="229.06659"
        id="text27747-1-1"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
@@ -7720,14 +7636,14 @@
        inkscape:export-ydpi="149.96599"><tspan
          sodipodi:role="line"
          id="tspan27749-8-9"
-         x="551.43384"
-         y="60.64085"
-         style="text-align:center;text-anchor:middle">V5</tspan></text>
+         x="546.65582"
+         y="229.06659"
+         style="text-align:center;text-anchor:middle">R5</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="653.20477"
-       y="60.647686"
+       x="648.42676"
+       y="229.07343"
        id="text27747-2-8-4"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
@@ -7735,9 +7651,9 @@
        inkscape:export-ydpi="149.96599"><tspan
          sodipodi:role="line"
          id="tspan27749-9-8-9"
-         x="653.20477"
-         y="60.647686"
-         style="text-align:center;text-anchor:middle">V6</tspan></text>
+         x="648.42676"
+         y="229.07343"
+         style="text-align:center;text-anchor:middle">R6</tspan></text>
     <use
        transform="matrix(0,-0.80132558,-0.42024603,0,440.7877,623.21464)"
        style="fill:#000000;fill-opacity:1"
@@ -7857,7 +7773,7 @@
        height="900" />
     <g
        id="g36926"
-       transform="translate(-14,3.6540969e-6)"
+       transform="translate(-18.778035,168.42573)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -9154,7 +9070,8 @@
        id="g42741"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
-       inkscape:export-ydpi="149.96599">
+       inkscape:export-ydpi="149.96599"
+       transform="translate(-4.7780349,168.42573)">
       <g
          transform="translate(-14,0)"
          id="g36827">
@@ -9664,112 +9581,31 @@
         </g>
       </g>
     </g>
-    <g
-       id="g42724"
-       inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-       inkscape:export-xdpi="149.96599"
-       inkscape:export-ydpi="149.96599">
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 87.51241,564.76862 -1.827127,0"
-         id="path14575-2"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 87.51241,511.01485 -1.827127,0"
-         id="path14577-9"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 87.51241,457.26425 -1.827127,0"
-         id="path14579-5"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 87.51241,403.51048 -1.827127,0"
-         id="path14581-6"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 87.51241,349.75988 -1.827127,0"
-         id="path14583-7"
-         inkscape:connector-curvature="0" />
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-4"
-         y="352.73138"
-         x="74.311829"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="352.73138"
-           x="74.311829"
-           id="tspan22855-0"
-           sodipodi:role="line">1.00</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-7"
-         y="406.3165"
-         x="74.571602"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="406.3165"
-           x="74.571602"
-           id="tspan22855-1-9"
-           sodipodi:role="line">0.75</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-8-9"
-         y="459.90173"
-         x="74.487625"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="459.90173"
-           x="74.487625"
-           id="tspan22855-1-6-7"
-           sodipodi:role="line">0.50</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-86-6"
-         y="513.48694"
-         x="74.571602"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="513.48694"
-           x="74.571602"
-           id="tspan22855-1-2-5"
-           sodipodi:role="line">0.25</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-5-1"
-         y="567.07208"
-         x="74.487625"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="567.07208"
-           x="74.487625"
-           id="tspan22855-1-64-4"
-           sodipodi:role="line">0.00</tspan></text>
-    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path14575-2"
+       d="m 82.734375,733.19435 -1.827127,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14577-9"
+       d="m 82.734375,679.44058 -1.827127,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14579-5"
+       d="m 82.734375,625.68998 -1.827127,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14581-6"
+       d="m 82.734375,571.93621 -1.827127,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14583-7"
+       d="m 82.734375,518.18561 -1.827127,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
     <g
        id="g15995"
        style="fill:#000000;fill-opacity:1"
@@ -9883,7 +9719,7 @@
     </g>
     <g
        id="g39459"
-       transform="translate(-13.481701,-6.4983874e-7)"
+       transform="translate(-18.259736,168.42573)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -10850,7 +10686,7 @@
        transform="matrix(0,-0.80132295,-0.42097757,0,649.67393,924.00734)" />
     <g
        id="g39381"
-       transform="translate(-17.914436,-0.29726851)"
+       transform="translate(-22.692471,168.12846)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -11717,7 +11553,7 @@
     </g>
     <g
        id="g40526"
-       transform="translate(-11.600354,-1.1889659)"
+       transform="translate(-16.378389,167.23676)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -12673,7 +12509,7 @@
        transform="matrix(0,-0.80132285,-0.42097757,0,871.62505,1237.1399)" />
     <g
        id="g41322"
-       transform="translate(-30.82042,-12.933799)"
+       transform="translate(-35.598455,155.49193)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -13440,157 +13276,72 @@
        width="1125"
        height="900"
        transform="matrix(0,-0.80132285,-0.42097757,0,871.62505,1237.1399)" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14575-2-7"
+       d="m 698.1304,733.27061 -1.82713,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14577-9-3"
+       d="m 698.1304,679.51684 -1.82713,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14579-5-2"
+       d="m 698.1304,625.76624 -1.82713,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14581-6-2"
+       d="m 698.1304,572.01246 -1.82713,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14583-7-8"
+       d="m 698.1304,518.26186 -1.82713,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14575-2-7-1"
+       d="m 700.1304,468.18964 -1.82713,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14577-9-3-9"
+       d="m 700.1304,414.43587 -1.82713,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14579-5-2-6"
+       d="m 700.1304,360.68527 -1.82713,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14581-6-2-2"
+       d="m 700.1304,306.93149 -1.82713,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14583-7-8-7"
+       d="m 700.1304,253.18089 -1.82713,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
     <g
-       id="g41667"
-       transform="translate(-57.335189,-11.64646)"
-       inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-       inkscape:export-xdpi="149.96599"
-       inkscape:export-ydpi="149.96599">
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 760.24362,576.49134 -1.82713,0"
-         id="path14575-2-7"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 760.24362,522.73757 -1.82713,0"
-         id="path14577-9-3"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 760.24362,468.98697 -1.82713,0"
-         id="path14579-5-2"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 760.24362,415.23319 -1.82713,0"
-         id="path14581-6-2"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 760.24362,361.48259 -1.82713,0"
-         id="path14583-7-8"
-         inkscape:connector-curvature="0" />
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-4-4"
-         y="364.4541"
-         x="771.04303"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="364.4541"
-           x="771.04303"
-           id="tspan22855-0-3"
-           sodipodi:role="line">1.00</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-7-4"
-         y="418.03922"
-         x="771.3028"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="418.03922"
-           x="771.3028"
-           id="tspan22855-1-9-5"
-           sodipodi:role="line">0.75</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-8-9-8"
-         y="471.62445"
-         x="771.21881"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="471.62445"
-           x="771.21881"
-           id="tspan22855-1-6-7-9"
-           sodipodi:role="line">0.50</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-86-6-4"
-         y="525.20966"
-         x="771.3028"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="525.20966"
-           x="771.3028"
-           id="tspan22855-1-2-5-3"
-           sodipodi:role="line">0.25</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-5-1-3"
-         y="578.7948"
-         x="771.21881"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="578.7948"
-           x="771.21881"
-           id="tspan22855-1-64-4-8"
-           sodipodi:role="line">0.00</tspan></text>
-    </g>
-    <g
-       id="g41667-7"
-       transform="translate(-55.335189,-276.72743)"
-       inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-       inkscape:export-xdpi="149.96599"
-       inkscape:export-ydpi="149.96599">
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 760.24362,576.49134 -1.82713,0"
-         id="path14575-2-7-1"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 760.24362,522.73757 -1.82713,0"
-         id="path14577-9-3-9"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 760.24362,468.98697 -1.82713,0"
-         id="path14579-5-2-6"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 760.24362,415.23319 -1.82713,0"
-         id="path14581-6-2-2"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 760.24362,361.48259 -1.82713,0"
-         id="path14583-7-8-7"
-         inkscape:connector-curvature="0" />
+       id="g6346"
+       transform="translate(-6.7780349,168.42573)">
       <text
          inkscape:export-ydpi="200.09015"
          inkscape:export-xdpi="200.09015"
          inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
          sodipodi:linespacing="125%"
          id="text22853-4-4-0"
-         y="364.4541"
-         x="771.04303"
+         y="90.260605"
+         x="724.82397"
          style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="364.4541"
-           x="771.04303"
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="90.260605"
+           x="724.82397"
            id="tspan22855-0-3-1"
            sodipodi:role="line">1.00</tspan></text>
       <text
@@ -13599,13 +13350,13 @@
          inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
          sodipodi:linespacing="125%"
          id="text22853-3-7-4-2"
-         y="418.03922"
-         x="771.3028"
+         y="143.66324"
+         x="725.43921"
          style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="418.03922"
-           x="771.3028"
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="143.66324"
+           x="725.43921"
            id="tspan22855-1-9-5-2"
            sodipodi:role="line">0.75</tspan></text>
       <text
@@ -13614,13 +13365,13 @@
          inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
          sodipodi:linespacing="125%"
          id="text22853-3-8-9-8-3"
-         y="471.62445"
-         x="771.21881"
+         y="197.06592"
+         x="725.43921"
          style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="471.62445"
-           x="771.21881"
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="197.06592"
+           x="725.43921"
            id="tspan22855-1-6-7-9-0"
            sodipodi:role="line">0.50</tspan></text>
       <text
@@ -13629,13 +13380,13 @@
          inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
          sodipodi:linespacing="125%"
          id="text22853-3-86-6-4-6"
-         y="525.20966"
-         x="771.3028"
+         y="250.46855"
+         x="725.43921"
          style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="525.20966"
-           x="771.3028"
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="250.46855"
+           x="725.43921"
            id="tspan22855-1-2-5-3-1"
            sodipodi:role="line">0.25</tspan></text>
       <text
@@ -13644,21 +13395,21 @@
          inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
          sodipodi:linespacing="125%"
          id="text22853-3-5-1-3-8"
-         y="578.7948"
-         x="771.21881"
+         y="303.87122"
+         x="725.43921"
          style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="578.7948"
-           x="771.21881"
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="303.87122"
+           x="725.43921"
            id="tspan22855-1-64-4-8-5"
            sodipodi:role="line">0.00</tspan></text>
     </g>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="-454.02548"
-       y="28.784561"
+       x="-622.45123"
+       y="24.006527"
        id="text27747-2-2-8"
        sodipodi:linespacing="125%"
        transform="matrix(0,-1,1,0,0,0)"
@@ -13667,8 +13418,8 @@
        inkscape:export-ydpi="149.96599"><tspan
          sodipodi:role="line"
          id="tspan27749-9-1-1"
-         x="-454.02548"
-         y="28.784561"
+         x="-622.45123"
+         y="24.006527"
          style="text-align:center;text-anchor:middle">Woodland key-habitats</tspan></text>
     <g
        transform="matrix(0,-0.78866726,0.42974607,0,-185.38376,880.86599)"
@@ -13762,7 +13513,7 @@
     </g>
     <g
        id="g44284"
-       transform="translate(0,0.00578419)"
+       transform="translate(-4.7780349,168.43151)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -14699,113 +14450,31 @@
          x="263.2334"
          xlink:href="#glyph3-9" />
     </g>
-    <g
-       transform="translate(-0.93694863,262.15563)"
-       id="g42724-7"
-       inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-       inkscape:export-xdpi="149.96599"
-       inkscape:export-ydpi="149.96599">
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 87.51241,564.76862 -1.827127,0"
-         id="path14575-2-0"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 87.51241,511.01485 -1.827127,0"
-         id="path14577-9-1"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 87.51241,457.26425 -1.827127,0"
-         id="path14579-5-3"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 87.51241,403.51048 -1.827127,0"
-         id="path14581-6-3"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 87.51241,349.75988 -1.827127,0"
-         id="path14583-7-5"
-         inkscape:connector-curvature="0" />
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-4-1"
-         y="352.73138"
-         x="74.311829"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="352.73138"
-           x="74.311829"
-           id="tspan22855-0-36"
-           sodipodi:role="line">1.00</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-7-7"
-         y="406.3165"
-         x="74.571602"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="406.3165"
-           x="74.571602"
-           id="tspan22855-1-9-8"
-           sodipodi:role="line">0.75</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-8-9-0"
-         y="459.90173"
-         x="74.487625"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="459.90173"
-           x="74.487625"
-           id="tspan22855-1-6-7-6"
-           sodipodi:role="line">0.50</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-86-6-8"
-         y="513.48694"
-         x="74.571602"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="513.48694"
-           x="74.571602"
-           id="tspan22855-1-2-5-1"
-           sodipodi:role="line">0.25</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-5-1-7"
-         y="567.07208"
-         x="74.487625"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="567.07208"
-           x="74.487625"
-           id="tspan22855-1-64-4-4"
-           sodipodi:role="line">0.00</tspan></text>
-    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path14575-2-0"
+       d="m 81.797426,995.35001 -1.827127,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14577-9-1"
+       d="m 81.797426,941.59621 -1.827127,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14579-5-3"
+       d="m 81.797426,887.84561 -1.827127,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14581-6-3"
+       d="m 81.797426,834.09184 -1.827127,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14583-7-5"
+       d="m 81.797426,780.34124 -1.827127,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
     <use
        style="fill:#000000;fill-opacity:1"
        xlink:href="#glyph0-1"
@@ -14898,7 +14567,7 @@
        transform="matrix(1.25,0,0,1.25,265.75702,-85.318734)" />
     <g
        id="g44382"
-       transform="matrix(0,-0.63092378,-0.3365572,0,524.49247,1048.5364)"
+       transform="matrix(0,-0.63092378,-0.3365572,0,519.71444,1216.9621)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -15987,7 +15656,7 @@
     </g>
     <g
        id="g45516"
-       transform="matrix(0,-0.6309223,0.3376376,0,108.16583,1096.7563)"
+       transform="matrix(0,-0.6309223,0.3376376,0,103.3878,1265.182)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -17304,7 +16973,7 @@
        transform="matrix(1.25,0,0,1.25,-188.73606,-41.397182)" />
     <g
        id="g48405"
-       transform="matrix(0,-0.63094588,-0.33713418,0,744.42497,1057.5478)"
+       transform="matrix(0,-0.63094588,-0.33713418,0,739.64694,1225.9735)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -17970,7 +17639,7 @@
     </g>
     <g
        id="g49518"
-       transform="matrix(0,-0.63094436,0.33792436,0,299.15063,1174.7492)"
+       transform="matrix(0,-0.63094436,0.33792436,0,294.3726,1343.1749)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -18999,7 +18668,7 @@
        transform="matrix(1.25,0,0,1.25,-474.26333,-191.78537)" />
     <g
        id="g50356"
-       transform="matrix(0,-0.6309458,-0.33713421,0,902.76912,1173.1514)"
+       transform="matrix(0,-0.6309458,-0.33713421,0,897.99109,1341.5771)"
        inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
        inkscape:export-xdpi="149.96599"
        inkscape:export-ydpi="149.96599">
@@ -19861,118 +19530,36 @@
        width="1125"
        height="900"
        transform="matrix(1.25,0,0,1.25,-474.26333,-191.78537)" />
-    <g
-       id="g41667-5"
-       transform="translate(-57.335189,250.63133)"
-       inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-       inkscape:export-xdpi="149.96599"
-       inkscape:export-ydpi="149.96599">
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 760.24362,576.49134 -1.82713,0"
-         id="path14575-2-7-6"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 760.24362,522.73757 -1.82713,0"
-         id="path14577-9-3-5"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 760.24362,468.98697 -1.82713,0"
-         id="path14579-5-2-0"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 760.24362,415.23319 -1.82713,0"
-         id="path14581-6-2-3"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-         d="m 760.24362,361.48259 -1.82713,0"
-         id="path14583-7-8-5"
-         inkscape:connector-curvature="0" />
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-4-4-05"
-         y="364.4541"
-         x="771.04303"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="364.4541"
-           x="771.04303"
-           id="tspan22855-0-3-3"
-           sodipodi:role="line">1.00</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-7-4-4"
-         y="418.03922"
-         x="771.3028"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="418.03922"
-           x="771.3028"
-           id="tspan22855-1-9-5-1"
-           sodipodi:role="line">0.75</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-8-9-8-5"
-         y="471.62445"
-         x="771.21881"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="471.62445"
-           x="771.21881"
-           id="tspan22855-1-6-7-9-6"
-           sodipodi:role="line">0.50</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-86-6-4-4"
-         y="525.20966"
-         x="771.3028"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="525.20966"
-           x="771.3028"
-           id="tspan22855-1-2-5-3-4"
-           sodipodi:role="line">0.25</tspan></text>
-      <text
-         inkscape:export-ydpi="200.09015"
-         inkscape:export-xdpi="200.09015"
-         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
-         sodipodi:linespacing="125%"
-         id="text22853-3-5-1-3-9"
-         y="578.7948"
-         x="771.21881"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:8px;text-align:center;text-anchor:middle"
-           y="578.7948"
-           x="771.21881"
-           id="tspan22855-1-64-4-8-4"
-           sodipodi:role="line">0.00</tspan></text>
-    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path14575-2-7-6"
+       d="m 698.1304,995.54841 -1.82713,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14577-9-3-5"
+       d="m 698.1304,941.79463 -1.82713,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14579-5-2-0"
+       d="m 698.1304,888.04403 -1.82713,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14581-6-2-3"
+       d="m 698.1304,834.29025 -1.82713,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14583-7-8-5"
+       d="m 698.1304,780.53965 -1.82713,0"
+       style="fill:none;stroke:#000000;stroke-width:0.62860292;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="-698.70227"
-       y="30.141495"
+       x="-867.12805"
+       y="25.363461"
        id="text27747-2-2-8-3"
        sodipodi:linespacing="125%"
        transform="matrix(0,-1,1,0,0,0)"
@@ -19981,8 +19568,403 @@
        inkscape:export-ydpi="149.96599"><tspan
          sodipodi:role="line"
          id="tspan27749-9-1-1-2"
-         x="-698.70227"
-         y="30.141495"
+         x="-867.12805"
+         y="25.363461"
          style="text-align:center;text-anchor:middle">METSO-deals</tspan></text>
+    <g
+       id="g6346-3"
+       transform="translate(-6.7780349,432.921)">
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-4-4-0-1"
+         y="90.260605"
+         x="724.82397"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="90.260605"
+           x="724.82397"
+           id="tspan22855-0-3-1-0"
+           sodipodi:role="line">1.00</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-7-4-2-8"
+         y="143.66324"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="143.66324"
+           x="725.43921"
+           id="tspan22855-1-9-5-2-9"
+           sodipodi:role="line">0.75</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-8-9-8-3-5"
+         y="197.06592"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="197.06592"
+           x="725.43921"
+           id="tspan22855-1-6-7-9-0-8"
+           sodipodi:role="line">0.50</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-86-6-4-6-7"
+         y="250.46855"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="250.46855"
+           x="725.43921"
+           id="tspan22855-1-2-5-3-1-9"
+           sodipodi:role="line">0.25</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-5-1-3-8-1"
+         y="303.87122"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="303.87122"
+           x="725.43921"
+           id="tspan22855-1-64-4-8-5-6"
+           sodipodi:role="line">0.00</tspan></text>
+    </g>
+    <g
+       id="g6346-9"
+       transform="translate(-6.7780349,695.60566)">
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-4-4-0-3"
+         y="90.260605"
+         x="724.82397"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="90.260605"
+           x="724.82397"
+           id="tspan22855-0-3-1-5"
+           sodipodi:role="line">1.00</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-7-4-2-2"
+         y="143.66324"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="143.66324"
+           x="725.43921"
+           id="tspan22855-1-9-5-2-5"
+           sodipodi:role="line">0.75</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-8-9-8-3-2"
+         y="197.06592"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="197.06592"
+           x="725.43921"
+           id="tspan22855-1-6-7-9-0-80"
+           sodipodi:role="line">0.50</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-86-6-4-6-0"
+         y="250.46855"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="250.46855"
+           x="725.43921"
+           id="tspan22855-1-2-5-3-1-6"
+           sodipodi:role="line">0.25</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-5-1-3-8-12"
+         y="303.87122"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="303.87122"
+           x="725.43921"
+           id="tspan22855-1-64-4-8-5-4"
+           sodipodi:role="line">0.00</tspan></text>
+    </g>
+    <g
+       id="g6346-4"
+       transform="translate(-661.82479,166.77936)">
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-4-4-0-17"
+         y="90.260605"
+         x="724.82397"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="90.260605"
+           x="724.82397"
+           id="tspan22855-0-3-1-9"
+           sodipodi:role="line">1.00</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-7-4-2-3"
+         y="143.66324"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="143.66324"
+           x="725.43921"
+           id="tspan22855-1-9-5-2-50"
+           sodipodi:role="line">0.75</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-8-9-8-3-8"
+         y="197.06592"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="197.06592"
+           x="725.43921"
+           id="tspan22855-1-6-7-9-0-82"
+           sodipodi:role="line">0.50</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-86-6-4-6-79"
+         y="250.46855"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="250.46855"
+           x="725.43921"
+           id="tspan22855-1-2-5-3-1-0"
+           sodipodi:role="line">0.25</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-5-1-3-8-5"
+         y="303.87122"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="303.87122"
+           x="725.43921"
+           id="tspan22855-1-64-4-8-5-9"
+           sodipodi:role="line">0.00</tspan></text>
+    </g>
+    <g
+       id="g6346-3-9"
+       transform="translate(-661.82479,431.27463)">
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-4-4-0-1-8"
+         y="90.260605"
+         x="724.82397"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="90.260605"
+           x="724.82397"
+           id="tspan22855-0-3-1-0-5"
+           sodipodi:role="line">1.00</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-7-4-2-8-8"
+         y="143.66324"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="143.66324"
+           x="725.43921"
+           id="tspan22855-1-9-5-2-9-1"
+           sodipodi:role="line">0.75</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-8-9-8-3-5-1"
+         y="197.06592"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="197.06592"
+           x="725.43921"
+           id="tspan22855-1-6-7-9-0-8-2"
+           sodipodi:role="line">0.50</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-86-6-4-6-7-6"
+         y="250.46855"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="250.46855"
+           x="725.43921"
+           id="tspan22855-1-2-5-3-1-9-5"
+           sodipodi:role="line">0.25</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-5-1-3-8-1-1"
+         y="303.87122"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="303.87122"
+           x="725.43921"
+           id="tspan22855-1-64-4-8-5-6-9"
+           sodipodi:role="line">0.00</tspan></text>
+    </g>
+    <g
+       id="g6346-9-7"
+       transform="translate(-661.82479,693.95929)">
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-4-4-0-3-7"
+         y="90.260605"
+         x="724.82397"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="90.260605"
+           x="724.82397"
+           id="tspan22855-0-3-1-5-0"
+           sodipodi:role="line">1.00</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-7-4-2-2-9"
+         y="143.66324"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="143.66324"
+           x="725.43921"
+           id="tspan22855-1-9-5-2-5-3"
+           sodipodi:role="line">0.75</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-8-9-8-3-2-6"
+         y="197.06592"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="197.06592"
+           x="725.43921"
+           id="tspan22855-1-6-7-9-0-80-3"
+           sodipodi:role="line">0.50</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-86-6-4-6-0-1"
+         y="250.46855"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="250.46855"
+           x="725.43921"
+           id="tspan22855-1-2-5-3-1-6-5"
+           sodipodi:role="line">0.25</tspan></text>
+      <text
+         inkscape:export-ydpi="200.09015"
+         inkscape:export-xdpi="200.09015"
+         inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure6/Fig6_combined.png"
+         sodipodi:linespacing="125%"
+         id="text22853-3-5-1-3-8-12-6"
+         y="303.87122"
+         x="725.43921"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="303.87122"
+           x="725.43921"
+           id="tspan22855-1-64-4-8-5-4-8"
+           sodipodi:role="line">0.00</tspan></text>
+    </g>
   </g>
 </svg>
