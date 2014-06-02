@@ -1,6 +1,8 @@
 library(ProjectTemplate)
 load.project()
 
+library(grid)
+
 # Re-name groups ----------------------------------------------------------
 
 # Local quality
@@ -86,16 +88,18 @@ p1 <- p1 + geom_line(size=0.8) + facet_wrap(~variable) +
   scale_x_continuous(breaks=seq(0, 1, 0.2), 
                      labels=c("1.0", "0.8", "0.6", "0.4", "0.2", "0.0")) + 
   xlab("\nProp. of landscape under conservation") + 
-  scale_linetype_discrete(name="Ranking\nfrom",
+  scale_linetype_discrete(name="Run",
                           breaks=c("2", "3", "1"),
                           labels=c("R1", "R3", "R5")) + theme_bw() + 
   theme(strip.text.x = element_text(size = 14),
         axis.text.x = element_text(size=14),
         axis.text.y = element_text(size=14),
-        axis.title.x = element_text(size=16),
-        axis.title.y = element_text(size=16),
-        legend.title = element_text(size=12),
-        legend.text = element_text(size=12))
+        axis.title.x = element_text(size=20),
+        axis.title.y = element_text(size=20),
+        legend.title = element_text(size=18),
+        legend.text = element_text(size=14),
+        legend.key.width = unit(1.5, "cm"),
+        legend.key = element_blank())
 
 png(file="figs/Figure4/Fig4.png", width=1000, height=800)
 p1
