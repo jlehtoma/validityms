@@ -14,10 +14,14 @@
    version="1.1"
    id="svg2"
    inkscape:version="0.48.4 r9939"
+<<<<<<< HEAD
    sodipodi:docname="Fig4.svg"
    inkscape:export-filename="/home/jlehtoma/GitHub/validityms/figs/Figure4/Fig4.png"
    inkscape:export-xdpi="107.14"
    inkscape:export-ydpi="107.14">
+=======
+   sodipodi:docname="Fig4.svg">
+>>>>>>> c99bcc4e15dff755fabc5250f13abc556fbdc2ad
   <metadata
      id="metadata8295">
     <rdf:RDF>
@@ -26,7 +30,10 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+<<<<<<< HEAD
         <dc:title></dc:title>
+=======
+>>>>>>> c99bcc4e15dff755fabc5250f13abc556fbdc2ad
       </cc:Work>
     </rdf:RDF>
   </metadata>
