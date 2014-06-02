@@ -1,8 +1,8 @@
 # Figures
 
-__Figure 1.__ Location of Southern Savonia in Finland and Northern Europe.
+__Figure 1.__ Location of Southern Savonia in Finland and Northern Europe. Map in ETRS89 / ETRS-LAEA coordinate reference system.
 
-__Figure 2.__ Schematics of the prioritization analysis and how the results are analyzed. Figure is divided in three different section: First describes how the index rasters (see XXX for description) from different input data sets were combined. Second sections describes the main characteristics of the spatial conservation prioritization analysis with Zonation. The third section summarizes how the results were analyzed in order to answer the main questions.
+__Figure 2.__ Schematics of the prioritization analysis and how the results are analyzed. Figure is divided in three different sections: First describes how the index rasters (see 2.5 for description) were combined to produce the input datasets used in the prioritization analysis. Second describes the main characteristics of the spatial conservation prioritization analysis using Zonation. The third section summarizes how the results produced by six different Zonation runs were analyzed.
 
 __Figure 3.__ Rank priority maps showing the distribution of different priority classes over the landscape for runs (Figure2) R1 (A), R2 (B), R3 (C), R4 (D), R5 (E), and R6 (F). The marginal plots on top and on the left side of each rank priority map show the count of cells in the top 10% of the overall landscape (i.e. the best 10% of the landscape) along both latitudinal and longitudinal gradient (or rows and columns).Note that the y-scale in each marginal plot (i.e. count) is different. Smaller insets show the priority pattern on a more local scale.
 
