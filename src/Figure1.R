@@ -4,7 +4,6 @@ library(raster)
 library(rgdal)
 library(rworldmap)
 
-
 # Define LAEA projection for Europe
 crs.laea <- CRS("+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defs")  # Lambert Azimuthal Equal Area
 
@@ -22,9 +21,11 @@ ssavonia.laea <- subset(fin.laea, NAME_2 == "Southern Savonia")
 world.laea@data$border <- "darkgrey"
 world.laea@data[which(world.laea@data$ne_10m_adm == "FIN"),]$border = "black"
 
-plot(world.laea, xlim = c(4000000, 5700000), 
-                 ylim = c(3100000, 5350000), border=world.laea@data$border)
+plot(world.laea, xlim = c(4000000, 5700000), ylim = c(3100000, 5350000), 
+     border=world.laea@data$border, axes=T)
 plot(ssavonia.laea, add=T, col="olivedrab", border="olivedrab", lwd=0.1)
 box()
 
-mar<-(adm[adm$NAME_1=="Marinduque",])plot(mar, bg="dodgerblue", axes=T)
+data(coastsCoarse)
+globe.laea <- spTransform(coastsCoarse, crs.laea)
+plot(globe.laea)
