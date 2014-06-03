@@ -112,7 +112,7 @@ odt: latex
 	@echo $(info Converting to odt...)
 	@$(PANDOC) -H $(TEMPLATEDIR)/margins.sty --template $(TEMPLATEDIR)/default.tex \
 	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(BUILDDIR)/$(FILENAME).tex -o \
-	$(BUILDDIR)/$(FILENAME).odt --latex-engine=xelatex
+	$(BUILDDIR)/$(FILENAME)_$(TAG).odt --latex-engine=xelatex
 
 docx: latex
 	@echo $(info Converting to docx...)
