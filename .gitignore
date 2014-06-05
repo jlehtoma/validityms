@@ -7,7 +7,7 @@
 cache/*
 *.html
 *.ods*
-*.odt*
+reports/*.odt
 *.docx
 *.tex
 *.doc
