@@ -1,4 +1,4 @@
-# Assessing the suitability of forest inventories for spatial conservation prioritization
+# Operational forest conservation needs more open data: A comparison between coarse open and detailed proprietary forest inventory data in Finland.
 
 Joona Lehtomäki^1,2\*^ Sakari Tuominen^3^ and Antti Leinonen^4^
     
@@ -19,13 +19,14 @@ PLoS ONE
 **Type of paper:**  
 Original research paper
 
-**Running title:**  
-Validation of spatial conservation prioritization
+**Short title:**  
+Open vs proprietary data in forest conservation
 
 **Version:**  
 
 **Manuscript statistics:**  
-* word count (total) = xxx  
-* figures = xxx of which xxx in color  
-* tables = xxx  
-* references = xxx  
+Abstract length = xxx 
+Main text length = xxx  
+Figures = xxx  
+Tables = xxx  
+References = xxx  

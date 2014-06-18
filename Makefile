@@ -51,7 +51,7 @@ endif
 ########################################################################
 
 
-GIT_TAG = $(shell git describe --abbrev=0)
+GIT_TAG = $(shell git describe --abbrev=1)
 TAG = $(strip $(subst .,_,$(GIT_TAG)))
 
 
@@ -63,8 +63,8 @@ endif
 TEMPLATE=default
 
 # create HTML paper
-HTML_CSS = $(BUILDDIR)/templates/$(TEMPLATE).css
-HTML_TEMPLATE = $(BUILDDIR)/templates/$(TEMPLATE).html
+HTML_CSS = $(TEMPLATEDIR)/$(TEMPLATE).css
+HTML_TEMPLATE = $(TEMPLATEDIR)/$(TEMPLATE).html
 
 all: pdf
 
@@ -112,7 +112,7 @@ odt: latex
 	@echo $(info Converting to odt...)
 	@$(PANDOC) -H $(TEMPLATEDIR)/margins.sty --template $(TEMPLATEDIR)/default.tex \
 	--bibliography $(BIBLIOGRAPHY) --csl $(CSL) $(BUILDDIR)/$(FILENAME).tex -o \
-	$(BUILDDIR)/$(FILENAME).odt --latex-engine=xelatex
+	$(BUILDDIR)/$(FILENAME)_$(TAG).odt --latex-engine=xelatex
 
 docx: latex
 	@echo $(info Converting to docx...)
@@ -121,8 +121,8 @@ docx: latex
 	-o $(BUILDDIR)/$(FILENAME)_$(TAG).docx --latex-engine=xelatex
 
 html: latex
-	@$(PANDOC) $(TEMPLATEDIR)/$(FILENAME).tex -o $(BUILDDIR)/$(FILENAME).html \
+	@$(PANDOC) $(BUILDDIR)/$(FILENAME).tex -o $(BUILDDIR)/$(FILENAME)_$(TAG).html \
 	--template $(HTML_TEMPLATE) --css $(HTML_CSS) --smart $(BIBARGS) -t html5
 
 clean:
-	@cd $(BUILDDIR); rm -f *.tex *.aux *.log *.out *.bbl *.blg *.bcf *.run.xml *.bak tmp.* *.tmp *.docx *.odt *.pdf *.html bibliography *.Mendeley; rm -Rf figs
+	@cd $(BUILDDIR); rm -f *.tex *.aux *.log *.out *.bbl *.blg *.bcf *.run.xml *.bak tmp.* *.tmp *.docx *.odt *.pdf *.html bibliography *.md; rm -Rf figs
