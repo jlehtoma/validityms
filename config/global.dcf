@@ -1,9 +1,11 @@
-data_loading: off
-cache_loading: off
-munging: on
-logging: on
-load_libraries: on
+data_loading: FALSE
+cache_loading: FALSE
+munging: TRUE
+logging: TRUE
+load_libraries: TRUE
 libraries: reshape2, plyr, ggplot2, stringr, lubridate, raster, rgdal, zonator, R.cache
-as_factors: on
-data_tables: off
-recursive_loading: off
+as_factors: TRUE
+data_tables: FALSE
+recursive_loading: FALSE
+version: 0.6
+attach_internal_libraries: TRUE
