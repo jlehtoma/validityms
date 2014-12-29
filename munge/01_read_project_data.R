@@ -9,7 +9,7 @@ library(raster)
 # located, but the default assumption is that they share the same root
 # folder
 
-zproject.dir <- "../zsetup-esmk"
+zproject.dir <- "/home/jlehtoma/GitHub/zsetup-esmk/"
 zsetup.dir <- file.path(zproject.dir, "zsetup")
 root.data.dir <- file.path(zproject.dir, "data")
 common.data.dir <- file.path(root.data.dir, "common/60")
