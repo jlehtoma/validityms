@@ -1,6 +1,7 @@
 library(ProjectTemplate)
 load.project()
 
+library(dplyr)
 library(grid)
 
 # Re-name groups ----------------------------------------------------------
@@ -117,6 +118,35 @@ svg(file="figs/Figure5/Fig5.svg", width=1000, height=800)
 p1
 dev.off()
 
+
+# Special plotting for lectio ---------------------------------------------
+
+# Get R3 and R5
+dat_sub <- dplyr::filter(dat.scaled, lt == 1 | lt == 3)
+dat_sub <- dplyr::filter(dat_sub, variable == "All")
+
+p1 <- ggplot(dat_sub, aes(x=1-pr_lost, y=value01, color=lt)) 
+p1 <- p1 + geom_line(size=1) +
+  ylab("Proportion of distribution covered (%)\n") +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), 
+                     labels=c("0", "20", "40", "60", "80", "100")) +
+  scale_x_continuous(breaks=seq(1, 0, -0.2), 
+                     labels=c("0", "20", "40", "60", "80", "100")) + 
+  xlab("\nProportion of landscape under conservation (%)") + 
+  scale_color_discrete(name="Run",
+                          breaks=c("3", "1"),
+                          labels=c("Coarse", "Detailed")) + theme_bw() + 
+  theme(strip.text.x = element_text(size = 14),
+        axis.text.x = element_text(size=14),
+        axis.text.y = element_text(size=14),
+        axis.title.x = element_text(size=20),
+        axis.title.y = element_text(size=20),
+        legend.title = element_text(size=18),
+        legend.text = element_text(size=14),
+        legend.key.width = unit(1.5, "cm"),
+        legend.key = element_blank())
+
+p1
 
 # Get performance levels in numbers ---------------------------------------
 
