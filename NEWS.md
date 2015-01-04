@@ -1,3 +1,11 @@
+## 0.6.0
+
++ Muotoilu korjattu PLoS ONE:n mukaiseksi
+	* Otsikkonumeroinnit pois (täytyy vielä poistaa tekstistä)
+	* Kuvat poist dokumentista + kuvatekstit oikeille paikoilleen
+	* ^Sama taulukoille
++ Kuvat käänetty TIFfeiksi ja siirretty uuteen kansioon `submission`
+
 ## 0.5.2
 
 + Saatu kommentit takaisin Tuulilta, lähetetty Sakarille.
