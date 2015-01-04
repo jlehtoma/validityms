@@ -1,3 +1,9 @@
+## 0.6.1
+
++ Läpiluku ja tekstinkorjaukset (Track changes)
++ Kaikki numerointiin perustuvat ristiviitteet poistettu
++ Kuvien 5 ja 6 järjestystä vaihdettu
+
 ## 0.6.0
 
 + Muotoilu korjattu PLoS ONE:n mukaiseksi
