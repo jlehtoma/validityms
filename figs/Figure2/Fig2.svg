@@ -16,9 +16,9 @@
    version="1.1"
    inkscape:version="0.48.2 r9819"
    sodipodi:docname="Fig2.svg"
-   inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\Figure2\Fig2_600dpi.png"
-   inkscape:export-xdpi="600"
-   inkscape:export-ydpi="600">
+   inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\Figure2\Fig2.png"
+   inkscape:export-xdpi="500"
+   inkscape:export-ydpi="500">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,15 +26,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.3741217"
-     inkscape:cx="267.97981"
-     inkscape:cy="331.95905"
+     inkscape:zoom="2.447619"
+     inkscape:cx="315"
+     inkscape:cy="302.84955"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer6"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1178"
-     inkscape:window-x="1358"
+     inkscape:window-width="1680"
+     inkscape:window-height="1028"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      showguides="false"
@@ -4326,12 +4326,12 @@
          id="tspan34892"
          x="-346.95898"
          y="41.140133"
-         style="text-align:center;text-anchor:middle">Construct input datasets </tspan><tspan
+         style="text-align:center;text-anchor:middle;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Construct input datasets </tspan><tspan
          sodipodi:role="line"
          x="-348.90039"
          y="58.640133"
          id="tspan11801"
-         style="text-align:center;text-anchor:middle">from index rasters</tspan></text>
+         style="text-align:center;text-anchor:middle;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">from index rasters</tspan></text>
     <rect
        style="fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
        id="rect33380-4-1-5"
@@ -4351,11 +4351,11 @@
          x="-581.51477"
          y="39.783199"
          id="tspan36301"
-         style="text-align:center;text-anchor:middle">Prioritize landscape</tspan><tspan
+         style="text-align:center;text-anchor:middle;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Prioritize landscape</tspan><tspan
          sodipodi:role="line"
          x="-581.51477"
          y="57.283199"
-         style="text-align:center;text-anchor:middle"
+         style="text-align:center;text-anchor:middle;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          id="tspan15047">using Zonation</tspan></text>
     <rect
        style="fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
@@ -4376,11 +4376,11 @@
          x="-852.66864"
          y="41.140133"
          id="tspan36301-5"
-         style="text-align:center;text-anchor:middle">Compare analysis variants to each other</tspan><tspan
+         style="text-align:center;text-anchor:middle;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Compare analysis variants to each other</tspan><tspan
          sodipodi:role="line"
          x="-852.66864"
          y="58.640133"
-         style="text-align:center;text-anchor:middle"
+         style="text-align:center;text-anchor:middle;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          id="tspan15154">and to validation datasets</tspan></text>
     <g
        id="g11783"
@@ -4399,27 +4399,27 @@
          x="83.040398"
          style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
-           style="font-size:12px;fill:#ffffff"
+           style="font-size:12px;fill:#ffffff;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
            id="tspan81375"
            y="1042.4456"
            x="83.040398"
            sodipodi:role="line">Objectives to define:</tspan><tspan
-           style="font-size:12px;fill:#ffffff"
+           style="font-size:12px;fill:#ffffff;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
            y="1057.4456"
            x="83.040398"
            sodipodi:role="line"
            id="tspan4963">- Whether conservation prioritization analysis based on forest inventory data can </tspan><tspan
-           style="font-size:12px;fill:#ffffff"
+           style="font-size:12px;fill:#ffffff;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
            id="tspan81377"
            y="1072.4456"
            x="83.040398"
            sodipodi:role="line">capture conservation value in boreal managed forest landscapes</tspan><tspan
-           style="font-size:12px;fill:#ffffff"
+           style="font-size:12px;fill:#ffffff;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
            y="1087.4456"
            x="83.040398"
            sodipodi:role="line"
            id="tspan4971">- How well does the freely available multi-source forest inventory data (MS-NFI) </tspan><tspan
-           style="font-size:12px;fill:#ffffff"
+           style="font-size:12px;fill:#ffffff;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
            id="tspan81379"
            y="1102.4456"
            x="83.040398"
@@ -4458,12 +4458,12 @@
          sodipodi:role="line"
          x="76.183899"
          y="699.33307"
-         style="font-size:10px"
+         style="font-size:10px;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          id="tspan15156">How are the priorities distributed over the </tspan><tspan
          sodipodi:role="line"
          x="76.183899"
          y="711.83307"
-         style="font-size:10px"
+         style="font-size:10px;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          id="tspan15160">whole study area? See Figure 3.</tspan></text>
     <rect
        style="fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
@@ -4925,7 +4925,8 @@
            y="872.36218"
            x="409"
            id="tspan79570"
-           sodipodi:role="line">PA</tspan></text>
+           sodipodi:role="line"
+           style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">PA</tspan></text>
     </g>
     <g
        id="g79619"
@@ -4947,7 +4948,8 @@
            y="920.46521"
            x="401.87012"
            id="tspan79570-5"
-           sodipodi:role="line">WKH</tspan></text>
+           sodipodi:role="line"
+           style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">WKH</tspan></text>
     </g>
     <g
        id="g79614"
@@ -4969,7 +4971,8 @@
            y="969.19293"
            x="394.67273"
            id="tspan79570-5-8"
-           sodipodi:role="line">METSO</tspan></text>
+           sodipodi:role="line"
+           style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">METSO</tspan></text>
     </g>
     <g
        id="g80370"
@@ -5282,7 +5285,7 @@
          sodipodi:role="line"
          x="341.82968"
          y="699.33307"
-         style="font-size:10px"
+         style="font-size:10px;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          id="tspan15160-0">How much do the priorities overlap? See Figure 4.</tspan></text>
     <text
        xml:space="preserve"
@@ -5294,12 +5297,12 @@
          sodipodi:role="line"
          x="75.661446"
          y="863.33307"
-         style="font-size:10px"
+         style="font-size:10px;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          id="tspan15160-3">How much can be lost/gained by using different</tspan><tspan
          sodipodi:role="line"
          x="75.661446"
          y="875.83307"
-         style="font-size:10px"
+         style="font-size:10px;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          id="tspan15218">input datasets? See Figure 5.</tspan></text>
     <text
        xml:space="preserve"
@@ -5311,12 +5314,12 @@
          sodipodi:role="line"
          x="341.86874"
          y="863.33307"
-         style="font-size:10px"
+         style="font-size:10px;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          id="tspan15218-9">Do regions with high conservation value show up</tspan><tspan
          sodipodi:role="line"
          x="341.86874"
          y="875.83307"
-         style="font-size:10px"
+         style="font-size:10px;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          id="tspan15246">in the prioritization analyses? See Figure 6.</tspan></text>
   </g>
   <g
@@ -6893,7 +6896,8 @@
            y="470.30963"
            x="289.95102"
            id="tspan36365"
-           sodipodi:role="line">4</tspan></text>
+           sodipodi:role="line"
+           style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">4</tspan></text>
     </g>
     <g
        id="g5288"
@@ -6910,12 +6914,13 @@
          id="text36363-1"
          y="470.3028"
          x="414.00839"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans;font-stretch:normal;font-variant:normal"
          xml:space="preserve"><tspan
            y="470.3028"
            x="414.00839"
            id="tspan36365-4"
-           sodipodi:role="line">20</tspan></text>
+           sodipodi:role="line"
+           style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">20</tspan></text>
     </g>
     <g
        id="g5293"
@@ -6937,7 +6942,8 @@
            y="470.3028"
            x="542.62201"
            id="tspan36365-4-3"
-           sodipodi:role="line">20</tspan></text>
+           sodipodi:role="line"
+           style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">20</tspan></text>
     </g>
     <g
        id="g13992"
@@ -6958,7 +6964,7 @@
            y="677.11639" />
         <text
            xml:space="preserve"
-           style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+           style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans;font-stretch:normal;font-variant:normal"
            x="256.52005"
            y="694.71942"
            id="text36363-8"
@@ -6966,7 +6972,8 @@
              sodipodi:role="line"
              id="tspan36365-6"
              x="256.52005"
-             y="694.71942">N</tspan></text>
+             y="694.71942"
+             style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">N</tspan></text>
       </g>
       <g
          transform="translate(-28.110512,-221.18855)"
@@ -6989,7 +6996,8 @@
              sodipodi:role="line"
              id="tspan36365-6-9"
              x="328.59766"
-             y="704.46521">Y</tspan></text>
+             y="704.46521"
+             style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Y</tspan></text>
       </g>
       <g
          transform="translate(245.23919,-211.35437)"
@@ -7012,7 +7020,8 @@
              sodipodi:role="line"
              id="tspan36365-6-95"
              x="256.52005"
-             y="694.71942">N</tspan></text>
+             y="694.71942"
+             style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">N</tspan></text>
       </g>
       <g
          transform="translate(229.89336,-221.10016)"
@@ -7035,7 +7044,8 @@
              sodipodi:role="line"
              id="tspan36365-6-9-0"
              x="328.59766"
-             y="704.46521">Y</tspan></text>
+             y="704.46521"
+             style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Y</tspan></text>
       </g>
       <g
          transform="translate(108.76758,-211.35437)"
@@ -7058,7 +7068,8 @@
              sodipodi:role="line"
              id="tspan36365-6-95-1"
              x="256.52005"
-             y="694.71942">N</tspan></text>
+             y="694.71942"
+             style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">N</tspan></text>
       </g>
       <g
          transform="translate(94.218963,-221.10016)"
@@ -7081,7 +7092,8 @@
              sodipodi:role="line"
              id="tspan36365-6-9-0-9"
              x="328.59766"
-             y="704.46521">Y</tspan></text>
+             y="704.46521"
+             style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Y</tspan></text>
       </g>
     </g>
     <g
@@ -7108,7 +7120,8 @@
            y="737.89587"
            x="249.04822"
            id="tspan36365-45"
-           sodipodi:role="line">R1</tspan></text>
+           sodipodi:role="line"
+           style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">R1</tspan></text>
     </g>
     <g
        style="display:inline"
@@ -7134,7 +7147,8 @@
            y="740.21521"
            x="307.60254"
            id="tspan36365-45-3"
-           sodipodi:role="line">R2</tspan></text>
+           sodipodi:role="line"
+           style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">R2</tspan></text>
     </g>
     <g
        style="display:inline"
@@ -7160,7 +7174,8 @@
            y="743.46521"
            x="385.85254"
            id="tspan36365-45-8"
-           sodipodi:role="line">R3</tspan></text>
+           sodipodi:role="line"
+           style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">R3</tspan></text>
     </g>
     <g
        style="display:inline"
@@ -7186,7 +7201,8 @@
            y="744.71521"
            x="424.60254"
            id="tspan36365-45-5"
-           sodipodi:role="line">R4</tspan></text>
+           sodipodi:role="line"
+           style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">R4</tspan></text>
     </g>
     <g
        style="display:inline"
@@ -7212,7 +7228,8 @@
            y="727.71521"
            x="503.85254"
            id="tspan36365-45-0"
-           sodipodi:role="line">R5</tspan></text>
+           sodipodi:role="line"
+           style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">R5</tspan></text>
     </g>
     <g
        style="display:inline"
@@ -7238,7 +7255,8 @@
            y="733.46521"
            x="543.85254"
            id="tspan36365-45-1"
-           sodipodi:role="line">R6</tspan></text>
+           sodipodi:role="line"
+           style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">R6</tspan></text>
     </g>
     <rect
        style="fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
@@ -7254,7 +7272,7 @@
        y="465.61407"
        id="text33039-7-2-5"
        sodipodi:linespacing="125%"><tspan
-         style="font-size:12px"
+         style="font-size:12px;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          sodipodi:role="line"
          id="tspan33041-2-7-6"
          x="206.81288"
@@ -7273,12 +7291,12 @@
        y="458.21954"
        id="text33039-7-2-5-3"
        sodipodi:linespacing="125%"><tspan
-         style="font-size:12px;text-align:center;text-anchor:middle"
+         style="font-size:12px;text-align:center;text-anchor:middle;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          sodipodi:role="line"
          id="tspan33041-2-7-6-6"
          x="349.43298"
          y="458.21954">Coarse with </tspan><tspan
-         style="font-size:12px;text-align:center;text-anchor:middle"
+         style="font-size:12px;text-align:center;text-anchor:middle;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          sodipodi:role="line"
          x="347.52283"
          y="473.21954"
@@ -7297,13 +7315,13 @@
        y="458.21954"
        id="text33039-7-2-5-8"
        sodipodi:linespacing="125%"><tspan
-         style="font-size:12px;text-align:center;text-anchor:middle"
+         style="font-size:12px;text-align:center;text-anchor:middle;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          sodipodi:role="line"
          id="tspan33041-2-7-6-0"
          x="486.97641"
          y="458.21954">Detailed with </tspan><tspan
          id="tspan5822"
-         style="font-size:12px;text-align:center;text-anchor:middle"
+         style="font-size:12px;text-align:center;text-anchor:middle;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          sodipodi:role="line"
          x="485.06625"
          y="473.21954">classes</tspan></text>
@@ -7503,7 +7521,7 @@
          x="291.01105"
          style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
          xml:space="preserve"><tspan
-           style="font-size:12px"
+           style="font-size:12px;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
            y="150.2612"
            x="291.01105"
            id="tspan33041-2-7-6-1"
@@ -7526,7 +7544,7 @@
          x="430.38129"
          style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
          xml:space="preserve"><tspan
-           style="font-size:12px"
+           style="font-size:12px;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
            y="150.94739"
            x="430.38129"
            id="tspan33041-2-7-6-1-5"
@@ -7543,7 +7561,7 @@
          id="tspan11909"
          x="372.16803"
          y="254.97633"
-         style="font-size:10px;text-align:center;text-anchor:middle">index rasters</tspan></text>
+         style="font-size:10px;text-align:center;text-anchor:middle;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">index rasters</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
@@ -7555,7 +7573,7 @@
          id="tspan11909-5"
          x="372.55133"
          y="266.8465"
-         style="font-size:10px;text-align:center;text-anchor:middle">site fertility classification</tspan></text>
+         style="font-size:10px;text-align:center;text-anchor:middle;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">site fertility classification</tspan></text>
     <g
        id="g13966"
        transform="translate(-48.384234,39.475017)">
@@ -7580,7 +7598,8 @@
              sodipodi:role="line"
              id="tspan36365-6-0"
              x="256.52005"
-             y="694.71942">N</tspan></text>
+             y="694.71942"
+             style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">N</tspan></text>
       </g>
       <g
          transform="translate(43.006645,-168.41273)"
@@ -7603,7 +7622,8 @@
              sodipodi:role="line"
              id="tspan36365-6-0-2"
              x="256.52005"
-             y="694.71942">N</tspan></text>
+             y="694.71942"
+             style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">N</tspan></text>
       </g>
       <g
          transform="translate(108.76758,-168.41273)"
@@ -7626,7 +7646,8 @@
              sodipodi:role="line"
              id="tspan36365-6-0-8"
              x="256.52005"
-             y="694.71942">N</tspan></text>
+             y="694.71942"
+             style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">N</tspan></text>
       </g>
       <g
          transform="translate(165.33612,-168.41273)"
@@ -7649,7 +7670,8 @@
              sodipodi:role="line"
              id="tspan36365-6-0-2-8"
              x="256.52005"
-             y="694.71942">N</tspan></text>
+             y="694.71942"
+             style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">N</tspan></text>
       </g>
       <g
          transform="translate(174.12203,-178.15852)"
@@ -7672,7 +7694,8 @@
              sodipodi:role="line"
              id="tspan36365-6-9-0-3"
              x="328.59766"
-             y="704.46521">Y</tspan></text>
+             y="704.46521"
+             style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Y</tspan></text>
       </g>
       <g
          transform="translate(229.89336,-178.15852)"
@@ -7695,7 +7718,8 @@
              sodipodi:role="line"
              id="tspan36365-6-9-0-32"
              x="328.59766"
-             y="704.46521">Y</tspan></text>
+             y="704.46521"
+             style="-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Y</tspan></text>
       </g>
     </g>
     <path
@@ -7947,11 +7971,11 @@
          id="tspan36329"
          x="153.63831"
          y="508.27151"
-         style="font-size:10px;text-align:end;text-anchor:end">Number of </tspan><tspan
+         style="font-size:10px;text-align:end;text-anchor:end;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Number of </tspan><tspan
          sodipodi:role="line"
          x="150.45471"
          y="520.77148"
-         style="font-size:10px;text-align:end;text-anchor:end"
+         style="font-size:10px;text-align:end;text-anchor:end;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          id="tspan4961">features</tspan></text>
     <text
        xml:space="preserve"
@@ -7964,7 +7988,7 @@
          id="tspan36329-9"
          x="88.252571"
          y="606.93988"
-         style="font-size:10px">Connectivity</tspan></text>
+         style="font-size:10px;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Connectivity</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
@@ -7976,7 +8000,7 @@
          id="tspan36329-8"
          x="118.20863"
          y="652.4491"
-         style="font-size:10px">Run ID</tspan></text>
+         style="font-size:10px;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Run ID</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
@@ -7988,11 +8012,11 @@
          id="tspan36329-9-1"
          x="153.83362"
          y="557.84222"
-         style="font-size:10px;text-align:end;text-anchor:end">Forestry </tspan><tspan
+         style="font-size:10px;text-align:end;text-anchor:end;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Forestry </tspan><tspan
          sodipodi:role="line"
          x="150.65002"
          y="570.34222"
-         style="font-size:10px;text-align:end;text-anchor:end"
+         style="font-size:10px;text-align:end;text-anchor:end;-inkscape-font-specification:Liberation Sans;font-family:Liberation Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          id="tspan4960">operations</tspan></text>
   </g>
 </svg>

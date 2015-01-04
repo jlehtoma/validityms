@@ -15,9 +15,9 @@
    id="svg2"
    inkscape:version="0.48.2 r9819"
    sodipodi:docname="Fig4.svg"
-   inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\Figure4\Fig4_600dpi.png"
-   inkscape:export-xdpi="600.03192"
-   inkscape:export-ydpi="600.03192">
+   inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\Figure4\Fig4.png"
+   inkscape:export-xdpi="500"
+   inkscape:export-ydpi="500">
   <metadata
      id="metadata8295">
     <rdf:RDF>
@@ -39,17 +39,17 @@
      guidetolerance="10"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1178"
+     inkscape:window-width="1680"
+     inkscape:window-height="1028"
      id="namedview8293"
      showgrid="false"
-     inkscape:zoom="1.0485437"
-     inkscape:cx="326.03757"
-     inkscape:cy="253.3736"
-     inkscape:window-x="1358"
+     inkscape:zoom="0.74143236"
+     inkscape:cx="905.53148"
+     inkscape:cy="452.69319"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showguides="true"
      inkscape:guide-bbox="true">
     <sodipodi:guide
@@ -15359,7 +15359,7 @@
          id="tspan15230"
          x="173.50569"
          y="31.954519"
-         style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">Spatial overlap of priority ranges between runs</tspan></text>
+         style="font-size:19.20000076000000200px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">Spatial overlap of priority ranges between runs</tspan></text>
     <g
        id="g2937-9"
        style="fill:#000000;fill-opacity:1"
@@ -15408,10 +15408,10 @@
          id="tspan24707"
          x="110.62963"
          y="85.170364"
-         style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">A</tspan></text>
+         style="font-size:22.39999961999999911px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">A</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:13.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       style="font-size:13.60000038000000089px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
        x="309"
        y="85.170364"
        id="text24705-7"
@@ -15420,7 +15420,7 @@
          id="tspan24707-3"
          x="309"
          y="85.170364"
-         style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">B</tspan></text>
+         style="font-size:22.39999961999999911px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">B</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -15434,7 +15434,7 @@
          id="tspan24707-1"
          x="511.18518"
          y="85.170364"
-         style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">C</tspan></text>
+         style="font-size:22.39999961999999911px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">C</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -15446,7 +15446,7 @@
          id="tspan24707-6"
          x="110.62963"
          y="292.69629"
-         style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">D</tspan></text>
+         style="font-size:22.39999961999999911px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">D</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -15458,7 +15458,7 @@
          id="tspan24707-63"
          x="309"
          y="292.69629"
-         style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">E</tspan></text>
+         style="font-size:22.39999961999999911px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">E</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -15470,7 +15470,7 @@
          id="tspan24707-0"
          x="511.18518"
          y="292.69629"
-         style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">F</tspan></text>
+         style="font-size:22.39999961999999911px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">F</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -15482,7 +15482,7 @@
          id="tspan24707-9"
          x="110.62963"
          y="503.27408"
-         style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">G</tspan></text>
+         style="font-size:22.39999961999999911px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">G</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -15494,7 +15494,7 @@
          id="tspan24707-99"
          x="309"
          y="503.27408"
-         style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">H</tspan></text>
+         style="font-size:22.39999961999999911px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">H</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -15506,6 +15506,6 @@
          id="tspan24707-67"
          x="511.18518"
          y="503.27408"
-         style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">I</tspan></text>
+         style="font-size:22.39999961999999911px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">I</tspan></text>
   </g>
 </svg>
