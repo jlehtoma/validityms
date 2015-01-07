@@ -9,7 +9,14 @@ library(raster)
 # located, but the default assumption is that they share the same root
 # folder
 
-zproject.dir <- "/home/jlehtoma/GitHub/zsetup-esmk/"
+if (Sys.info()["sysname"] == "Linux") {
+  zproject.dir <- "/home/jlehtoma/GitHub/zsetup-esmk/"
+} else if (Sys.info()["sysname"] == "Windows") {
+  zproject.dir <- "C:/Data/zsetup-esmk"
+} else {
+  stop("Operating system not supported")
+}
+
 zsetup.dir <- file.path(zproject.dir, "zsetup")
 root.data.dir <- file.path(zproject.dir, "data")
 common.data.dir <- file.path(root.data.dir, "common/60")
