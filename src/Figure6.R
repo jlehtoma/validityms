@@ -110,11 +110,11 @@ p1 <- p1 + geom_line(size=0.8) + facet_wrap(~variable) +
         legend.key.width = unit(1.5, "cm"),
         legend.key = element_blank())
 
-png(file="figs/Figure5/Fig5.png", width=1000, height=800)
+png(file="figs/Figure6/Fig6.png", width=1000, height=800)
 p1
 dev.off()
 
-svg(file="figs/Figure5/Fig5.svg", width=1000, height=800)
+svg(file="figs/Figure6/Fig6.svg", width=1000, height=800)
 p1
 dev.off()
 
