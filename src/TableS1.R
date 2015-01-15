@@ -16,7 +16,14 @@ V3_weights <- sppdata(V3)[,c("name", "weight")]
 V5_weights <- sppdata(V5)[,c("name", "weight")]
 
 # Construct "without classes" table
-wo_classes <- data.frame(tree_spp=tree_spp, weights=V1_weights$weight)
+wo_classes <- data.frame(tree_spp=tree_spp, soil_fert=NA,
+                         weights=V1_weights$weight)
 
 # Construct "with classes" table (weights for V3 and V5 are the same!)
 w_classes <- cbind(tree_x_fert, weights=V3_weights$weight[1:20])
+
+# Bind the tables and write
+table_S1 <- rbind(wo_classes, w_classes)
+colnames(table_S1) <- c("Tree species group", "Soil fertility", "Weight")
+
+write.table(table_S1, "tables/S1Table.csv", sep=";", row.name=FALSE)
