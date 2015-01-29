@@ -1,3 +1,16 @@
+## 1.0.1
+
++ Remove unnecessary files
+
+
+
+## 0.6.2
+
++ Edellisen version muutokset hyväksytty
++ Added Soranno et al. 2015 
++ "Acknoweldgements" sisältää lähinnä rahoittajatietoa. Otettu pois, koska tieto tulee submittaussysteemin kautta.
++ Kirjoitettu uusi Acknowledgements
+
 ## 0.6.1
 
 + Läpiluku ja tekstinkorjaukset (Track changes)
