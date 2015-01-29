@@ -1,0 +1,25 @@
+Tree species group;Soil fertility;Weight;;
+Birch;NA;1.3;;
+Spruce;NA;1;;
+Other deciduous;NA;2.6;;
+Pine;NA;1;;
+Birch;Herb-rich;4;;
+Birch;Herb-rich like;2;;
+Birch;Mesic;1;;
+Birch;Semi-xeric;1;;
+Birch;Xeric;1.5;;s
+Spruce;Herb-rich;3;;
+Spruce;Herb-rich like;1.5;;
+Spruce;Mesic;1;;
+Spruce;Semi-xeric;1;;
+Spruce;Xeric;1;;
+Other deciduous;Herb-rich;7;;
+Other deciduous;Herb-rich like;4;;
+Other deciduous;Mesic;3;;
+Other deciduous;Semi-xeric;2;;
+Other deciduous;Xeric;2.5;;
+Pine;Herb-rich;3;;
+Pine;Herb-rich like;1;;
+Pine;Mesic;1;;
+Pine;Semi-xeric;1;;
+Pine;Xeric;1;;
