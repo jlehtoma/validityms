@@ -1,8 +1,16 @@
+## 1.0.2
+
++ Kuvien alfa-kanavat poistettu
++ Kuvien 1 ja S1 resoluutiota nostettu 500 dpi
++ Pieniä viilauksia kässäriin ja cover letteriin
+
 ## 1.0.1
 
 + Remove unnecessary files
 
+## 1.0.0
 
++ Ready for prime time
 
 ## 0.6.2
 
