@@ -16,3 +16,5 @@ reports/*.odt
 journals.md
 comments.md
 reports/commented/
+submission/PONE-S*
+submission/*cover_letter*
