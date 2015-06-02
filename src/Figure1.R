@@ -1,31 +1,57 @@
 # Load required packages
 library(maptools)
 library(raster)
+library(rasterVis)
 library(rgdal)
 library(rworldmap)
+library(RColorBrewer)
+library(ProjectTemplate)
+load.project()
 
-# Define LAEA projection for Europe
-crs.laea <- CRS("+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defs")  # Lambert Azimuthal Equal Area
+fin.0.wgs84 <- getData('GADM', country='FIN', level=0, path="cache")
+fin.0.kkj <- spTransform(fin.0.wgs84, "+init=epsg:2393")
 
-# Grab the whole world, NOTE that you will also need package rworldextra
-world.wgs84 <- getMap(resolution = "high")
-world.laea <- spTransform(world.wgs84, crs.laea)
-
-# Download data from gadm.org for Finland
-fin.wgs84 <- getData('GADM', country='FIN', level=2, path="cache")
-fin.laea <- spTransform(fin.wgs84, crs.laea)
+fin.2.wgs84 <- getData('GADM', country='FIN', level=2, path="cache")
+fin.2.kkj <- spTransform(fin.wgs84, "+init=epsg:2393")
 
 # Grab just Southern Savonia
-ssavonia.laea <- subset(fin.laea, NAME_2 == "Southern Savonia") 
+ssavonia.kkj <- subset(fin.2.kkj, NAME_2 == "Southern Savonia") 
 
-world.laea@data$border <- "darkgrey"
-world.laea@data[which(world.laea@data$ne_10m_adm == "FIN"),]$border = "black"
 
-plot(world.laea, xlim = c(4000000, 5700000), ylim = c(3100000, 5350000), 
-     border=world.laea@data$border, axes=T)
-plot(ssavonia.laea, add=T, col="olivedrab", border="olivedrab", lwd=0.1)
-box()
+# Data source -------------------------------------------------------------
 
-data(coastsCoarse)
-globe.laea <- spTransform(coastsCoarse, crs.laea)
-plot(globe.laea)
+## Add a landcover column to the Raster Attribute Table
+ds.mask <- as.factor(ds.mask)
+ds_rat <- levels(ds.mask)[[1]]
+ds_rat[["data_source"]] <- c("FPS", "FFC", "MS-NFI")
+levels(ds.mask) <- ds_rat
+
+ds_cols <- brewer.pal(3, "Set2")
+levelplot(ds.mask, col.regions=ds_cols, xlab="", ylab="", maxpixels=1e6)
+
+
+# Masks -------------------------------------------------------------------
+
+# For the various masks, use the following coding:
+# PAs = 1
+# WKHs = 2
+# METSO = 3
+#
+# Reclass and merge the masks
+
+wkh.mask.reclassed <- wkh.mask
+wkh.mask.reclassed[wkh.mask.reclassed == 1] <- 2
+
+# METSO-deals still have their ID assigned
+metso.mask.reclassed <- metso.mask
+metso.mask.reclassed[metso.mask.reclassed > 0] <- 3
+
+masks <- merge(pa.mask, wkh.mask.reclassed, metso.mask.reclassed)
+
+masks <- as.factor(masks)
+masks_rat <- levels(masks)[[1]]
+masks_rat[["type"]] <- c("PA", "WKH", "METSO")
+levels(masks) <- masks_rat
+
+masks_cols <- brewer.pal(3, "Set2")
+levelplot(masks, col.regions=ds_cols, xlab="", ylab="", maxpixels=1e6)
