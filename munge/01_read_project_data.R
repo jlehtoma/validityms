@@ -2,6 +2,7 @@
 # Viikki
 library(zonator)
 library(raster)
+library(maptools)
 
 # Data setup --------------------------------------------------------------
 
@@ -20,6 +21,7 @@ if (Sys.info()["sysname"] == "Linux") {
 zsetup.dir <- file.path(zproject.dir, "zsetup")
 root.data.dir <- file.path(zproject.dir, "data")
 common.data.dir <- file.path(root.data.dir, "common/60")
+common.vector.dir <- file.path(root.data.dir, "common/vector")
 
 # Project and variants ----------------------------------------------------
 
@@ -78,6 +80,15 @@ V6.load.V2 <- get_variant(project.esmk, 21)
 # These data sets are part of Zonation analyses or then they are used in
 # analyzing the results.
 
+# Vector data
+# Regional borders
+esmk.mask.file <- file.path(common.vector.dir, "esmk_borders.shp")
+esmk.mask <- readShapePoly(esmk.mask.file,
+                           proj4string=CRS("+init=epsg:3067"))
+# Project to KKJ
+# TODO: everything should be in EUREF TM35FIN
+esmk.mask <- spTransform(esmk.mask, "+init=epsg:2393")
+
 # Protected areas raster that has open peatlands ("avosuo", as defined in 
 # MSNFI raster "päätyyppi") removed from it. Raster has 1 if pixel belongs to a 
 # PA, otherwise NoData. NOTE: if you need all PAs (including open peatlands) use
@@ -107,11 +118,28 @@ extent(wkh.mask) <- extent(rank_raster(V1))
 # 4 = Semi-xeric (Kuivahko)
 # 5 = Xeric (includes rocky outcrops) (kuiva, karukkokankaat, kalliot)
 sfc.mask.file <- file.path(common.data.dir, "esmk_soil_fertility.img")
-sfc.mask <- raster(sfc.mask.file)
+sfc.mask <- raster(sfc.mask.file, crs="+init=epsg:2393")
+# !!!NOTE!!! This masking operation will take a while, so once it was done
+# (2015-06-02), the resulta was written over the original data. The actual
+# Zonation analysis is masked already to only to the study area.
+# 
+sfc.mask <- mask(sfc.mask, esmk.mask)
+writeRaster(sfc.mask, sfc.mask.file, overwrite=TRUE, datatype="INT1U",
+            options=c("COMPRESSED=YES"))
 
 # Data source raster defined from which data source data is derived:
 # 1 = Finnish Forest and Park Service Natural Heritage (FFP, MHLP)
 # 2 = Finnish Forest Center (FFC, MKMV)
 # 3 = Finnish Forest Research Institute (FFR, MLVMI)
 ds.mask.file <- file.path(common.data.dir, "esmk_data_source.img")
-ds.mask <- raster(ds.mask.file)
+ds.mask <- raster(ds.mask.file, crs="+init=epsg:2393")
+# !!!NOTE!!! This masking operation will take a while, so once it was done
+# (2015-06-02), the resulta was written over the original data. The actual
+# Zonation analysis is masked already to only to the study area.
+# 
+#ds.mask <- mask(ds.mask, esmk.mask)
+#writeRaster(ds.mask, ds.mask.file, overwrite=TRUE, datatype="INT1U",
+#            options=c("COMPRESSED=YES"))
+
+ 
+
