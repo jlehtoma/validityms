@@ -1,10 +1,15 @@
+---
+output: 
+  html_document: 
+    theme: cerulean
+---
 
 ```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
 options(width=120)
 
 library(plyr)
 library(rgdal)
-library(xtable)
+library(knitr)
 
 library(ProjectTemplate)
 setwd('..')
@@ -19,11 +24,12 @@ by different data sources are the following:
 ```{r fractions-data, echo=FALSE, results='asis'}
 tot.cov <- table(getValues(ds.mask))
 
-covs <- data.frame("Source"=c("FFPS", "FFC", "MSNFI"),
+covs <- data.frame("Dataset"=c("Detailed (NHS)", "Detailed (FFC)", 
+                               "Coarse (FRI)"),
                    "Code"=names(tot.cov),
                    "Cells"=as.vector(tot.cov),
-                   "Fraction"=round(as.vector(tot.cov) / sum(tot.cov) * 100, 2))
-print(xtable(covs), type='html')
+                   "Percent"=round(as.vector(tot.cov) / sum(tot.cov) * 100, 2))
+kable(covs)
 
 ```
 
@@ -35,9 +41,9 @@ val.cells <- c(sum(!is.na(getValues(pa.mask))),
                sum(!is.na(getValues(wkh.mask))),
                sum(!is.na(getValues(metso.mask))))
 
-val.covs <- data.frame("Source"=c("PAs", "WKH", "MD"),
+val.covs <- data.frame("Dataset"=c("PAs", "WKH", "METSO"),
                        "Cells"=val.cells,
                        "Fraction"=round(val.cells / sum(tot.cov) * 100, 2))
-print(xtable(val.covs), type='html')
+kable(val.covs)
 
 ```
