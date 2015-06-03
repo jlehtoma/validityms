@@ -1,4 +1,5 @@
 # Load required packages
+library(gridExtra)
 library(maptools)
 library(raster)
 library(rasterVis)
@@ -14,6 +15,17 @@ fin.0.kkj <- spTransform(fin.0.wgs84, "+init=epsg:2393")
 fin.2.wgs84 <- getData('GADM', country='FIN', level=2, path="cache")
 fin.2.kkj <- spTransform(fin.2.wgs84, "+init=epsg:2393")
 
+
+# Graphic settings --------------------------------------------------------
+
+p.strip <- list(cex=1.5, lines=2, fontface='bold')
+ckey <- list(labels=list(cex=1.5), height=0.5)
+x.scale <- list(cex=1, alternating=1)
+y.scale.left <- list(cex=1, alternating=1)
+y.scale.right <- list(cex=0, alternating=1)
+img_width <- 960
+img_height <- 960
+
 # Data source -------------------------------------------------------------
 
 ## Add a landcover column to the Raster Attribute Table
@@ -24,32 +36,35 @@ levels(ds.mask) <- ds_rat
 
 ds_cols <- brewer.pal(3, "Dark2")
 
-png(file="figs/Figure1/levelplots/Fig1_data_sources.png", width=950, 
-    height=950)
+#png(file="figs/Figure1/levelplots/Fig1_data_sources.png", width=img_width, 
+#    height=img_height)
 
-levelplot(ds.mask, col.regions=ds_cols, xlab="", ylab="", maxpixels=1e6) +
+ds_plot <- levelplot(ds.mask, col.regions=ds_cols, xlab="", ylab="", maxpixels=1e6,
+                     colorkey=ckey, par.strip.text=p.strip, 
+                     scales=list(x=x.scale, y=y.scale.right)) + 
   latticeExtra::layer(sp.polygons(esmk.mask))
 
-dev.off()
-
+#dev.off()
 
 # Soil fertility ----------------------------------------------------------
 
 sfc.mask <- as.factor(sfc.mask)
 sfc_rat <- levels(sfc.mask)[[1]]
-sfc_rat[["soil_fertility_class"]] <- c("herb-rich", "herb-rich like", "mesic", 
-                                       "semi-xeric", "xeric")
+sfc_rat[["soil_fertility_class"]] <- c("Herb-rich", "Herb-rich like", "Mesic", 
+                                       "Semi-xeric", "Xeric")
 levels(sfc.mask) <- sfc_rat
 
 sfc_cols <- rev(brewer.pal(5, "BrBG"))
 
-png(file="figs/Figure1/levelplots/Fig1_soil_fertility_class.png", width=950, 
-    height=950)
+#png(file="figs/Figure1/levelplots/Fig1_soil_fertility_class.png", width=img_width, 
+#    height=img_height)
 
-levelplot(sfc.mask, col.regions=sfc_cols, xlab="", ylab="", maxpixels=1e6) +
+sfc_plot <- levelplot(sfc.mask, col.regions=sfc_cols, xlab="", ylab="", 
+                      maxpixels=1e6, colorkey=ckey, par.strip.text=p.strip, 
+                      scales=list(x=x.scale, y=y.scale)) + 
   latticeExtra::layer(sp.polygons(esmk.mask))
 
-dev.off()
+#dev.off()
 
 # Masks -------------------------------------------------------------------
 
@@ -76,10 +91,18 @@ levels(masks) <- masks_rat
 
 masks_cols <- brewer.pal(3, "Dark2")
 
-png(file="figs/Figure1/levelplots/Fig1_validation_data.png", width=950, 
-    height=950)
+#png(file="figs/Figure1/levelplots/Fig1_validation_data.png", width=img_width, 
+#    height=img_height)
 
-levelplot(masks, col.regions=masks_cols, xlab="", ylab="", maxpixels=1e6) +
+masks_plot <- levelplot(masks, col.regions=masks_cols, xlab="", ylab="", 
+                        maxpixels=1e6, colorkey=ckey, par.strip.text=p.strip, 
+                        scales=list(x=x.scale, y=y.scale.left)) + 
   latticeExtra::layer(sp.polygons(esmk.mask))
+
+#dev.off()
+
+png(file="figs/Figure1/Fig1.png", width=1000, height=555)
+
+grid.arrange(ds_plot, masks_plot, ncol=2)
 
 dev.off()
