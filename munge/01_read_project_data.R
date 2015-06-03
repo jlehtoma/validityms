@@ -123,9 +123,9 @@ sfc.mask <- raster(sfc.mask.file, crs="+init=epsg:2393")
 # (2015-06-02), the resulta was written over the original data. The actual
 # Zonation analysis is masked already to only to the study area.
 # 
-sfc.mask <- mask(sfc.mask, esmk.mask)
-writeRaster(sfc.mask, sfc.mask.file, overwrite=TRUE, datatype="INT1U",
-            options=c("COMPRESSED=YES"))
+#sfc.mask <- mask(sfc.mask, esmk.mask)
+#writeRaster(sfc.mask, sfc.mask.file, overwrite=TRUE, datatype="INT1U",
+#            options=c("COMPRESSED=YES"))
 
 # Data source raster defined from which data source data is derived:
 # 1 = Finnish Forest and Park Service Natural Heritage (FFP, MHLP)
