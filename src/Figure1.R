@@ -31,7 +31,8 @@ img_height <- 960
 ## Add a landcover column to the Raster Attribute Table
 ds.mask <- as.factor(ds.mask)
 ds_rat <- levels(ds.mask)[[1]]
-ds_rat[["data_source"]] <- c("FPS", "FFC", "MS-NFI")
+ds_rat[["data_source"]] <- c("Detailed\n(NHS)", "Detailed\n(FFC)", 
+                             "Coarse\n(FRI)")
 levels(ds.mask) <- ds_rat
 
 ds_cols <- brewer.pal(3, "Dark2")
@@ -89,20 +90,24 @@ masks_rat <- levels(masks)[[1]]
 masks_rat[["type"]] <- c("PA", "WKH", "METSO")
 levels(masks) <- masks_rat
 
-masks_cols <- brewer.pal(3, "Dark2")
+#masks_cols <- rev(brewer.pal(3, "Paired"))
+# This is rev(brewer.pal(3, "Paired")) manually darkened by 30%
+# http://www.hexcolortool.com/
+masks_cols <- c("#66933E", "#B04116", "#002C68")
 
 #png(file="figs/Figure1/levelplots/Fig1_validation_data.png", width=img_width, 
 #    height=img_height)
 
 masks_plot <- levelplot(masks, col.regions=masks_cols, xlab="", ylab="", 
                         maxpixels=1e6, colorkey=ckey, par.strip.text=p.strip, 
-                        scales=list(x=x.scale, y=y.scale.left)) + 
+                        scales=list(x=x.scale, y=y.scale.right)) + 
   latticeExtra::layer(sp.polygons(esmk.mask))
 
 #dev.off()
 
-png(file="figs/Figure1/Fig1.png", width=1000, height=555)
+png(file="figs/Figure1/Fig1_maps.png", width=1000, height=555)
 
 grid.arrange(ds_plot, masks_plot, ncol=2)
 
 dev.off()
+
