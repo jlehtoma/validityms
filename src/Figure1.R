@@ -18,11 +18,12 @@ fin.2.kkj <- spTransform(fin.2.wgs84, "+init=epsg:2393")
 
 # Graphic settings --------------------------------------------------------
 
-p.strip <- list(cex=1.5, lines=2, fontface='bold')
+p.strip <- list(cex=1.5, lines=1, fontface='bold')
 ckey <- list(labels=list(cex=1.5), height=0.5)
 x.scale <- list(cex=1, alternating=1)
-y.scale.left <- list(cex=1, alternating=1)
-y.scale.right <- list(cex=0, alternating=1)
+x.scale.none <- list(cex=0, alternating=1)
+y.scale <- list(cex=1, alternating=1)
+y.scale.none <- list(cex=0, alternating=1)
 img_width <- 960
 img_height <- 960
 
@@ -42,7 +43,7 @@ ds_cols <- brewer.pal(3, "Dark2")
 
 ds_plot <- levelplot(ds.mask, col.regions=ds_cols, xlab="", ylab="", maxpixels=1e6,
                      colorkey=ckey, par.strip.text=p.strip, 
-                     scales=list(x=x.scale, y=y.scale.right)) + 
+                     scales=list(x=x.scale.none, y=y.scale.none)) + 
   latticeExtra::layer(sp.polygons(esmk.mask))
 
 #dev.off()
@@ -62,7 +63,7 @@ sfc_cols <- rev(brewer.pal(5, "BrBG"))
 
 sfc_plot <- levelplot(sfc.mask, col.regions=sfc_cols, xlab="", ylab="", 
                       maxpixels=1e6, colorkey=ckey, par.strip.text=p.strip, 
-                      scales=list(x=x.scale, y=y.scale)) + 
+                      scales=list(x=x.scale.none, y=y.scale.none)) + 
   latticeExtra::layer(sp.polygons(esmk.mask))
 
 #dev.off()
@@ -100,14 +101,14 @@ masks_cols <- c("#66933E", "#B04116", "#002C68")
 
 masks_plot <- levelplot(masks, col.regions=masks_cols, xlab="", ylab="", 
                         maxpixels=1e6, colorkey=ckey, par.strip.text=p.strip, 
-                        scales=list(x=x.scale, y=y.scale.right)) + 
+                        scales=list(x=x.scale.none, y=y.scale.none)) + 
   latticeExtra::layer(sp.polygons(esmk.mask))
 
 #dev.off()
 
-png(file="figs/Figure1/Fig1_maps.png", width=1000, height=555)
+png(file="figs/Figure1/Fig1_maps.png", width=580, height=1050)
 
-grid.arrange(ds_plot, masks_plot, ncol=2)
+grid.arrange(ds_plot, sfc_plot, masks_plot, ncol=1)
 
 dev.off()
 
