@@ -33,17 +33,17 @@ csfc_rat <- levels(csfc.mask)[[1]]
 csfc_rat[["soil_fertility_class"]] <- sfc_classes
 levels(csfc.mask) <- csfc_rat
 
-
+  
 # Plot data ---------------------------------------------------------------
 
 # Stack the different classifications together
 sfc_plot_stack <- stack(csfc.mask, dsfc.mask)
 
-sfc_plot <- levelplot(sfc_plot_stack, col.regions=sfc_cols, xlab="", ylab="", 
-                      maxpixels=1e6, colorkey=ckey, par.strip.text=p.strip, 
-                      scales=list(x=x.scale.none, y=y.scale.none),
-                      names.attr=c("", "")) + 
+png(file="figs/Figure3/Fig3_maps.png", width=1200, height=550)
+
+levelplot(sfc_plot_stack, col.regions=sfc_cols, xlab="", ylab="", 
+          maxpixels=1e6, colorkey=ckey, par.strip.text=p.strip, 
+          scales=list(x=x.scale.none, y=y.scale.none), names.attr=c("", "")) + 
   latticeExtra::layer(sp.polygons(esmk.mask))
 
-
-#dev.off()
+dev.off()
