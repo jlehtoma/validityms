@@ -1,20 +1,9 @@
 # Load required packages
 library(gridExtra)
-library(maptools)
 library(raster)
 library(rasterVis)
-library(rgdal)
-library(rworldmap)
-library(RColorBrewer)
 library(ProjectTemplate)
 load.project()
-
-fin.0.wgs84 <- getData('GADM', country='FIN', level=0, path="cache")
-fin.0.kkj <- spTransform(fin.0.wgs84, "+init=epsg:2393")
-
-fin.2.wgs84 <- getData('GADM', country='FIN', level=2, path="cache")
-fin.2.kkj <- spTransform(fin.2.wgs84, "+init=epsg:2393")
-
 
 # Graphic settings --------------------------------------------------------
 
@@ -86,9 +75,9 @@ masks_plot <- levelplot(masks, col.regions=masks_cols, xlab="", ylab="",
 
 #dev.off()
 
-png(file="figs/Figure2/Fig2_maps.png", width=580, height=1050)
+png(file="figs/Figure2/Fig2_maps.png", width=1280, height=550)
 
-grid.arrange(ds_plot, sfc_plot, masks_plot, ncol=1)
+grid.arrange(ds_plot, masks_plot, nrow=1)
 
 dev.off()
 
