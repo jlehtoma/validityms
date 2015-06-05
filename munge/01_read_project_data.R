@@ -21,6 +21,7 @@ if (Sys.info()["sysname"] == "Linux") {
 zsetup.dir <- file.path(zproject.dir, "zsetup")
 root.data.dir <- file.path(zproject.dir, "data")
 common.data.dir <- file.path(root.data.dir, "common/60")
+msnfi.data.dir <- file.path(root.data.dir, "msnfi/segment/full/60/")
 common.vector.dir <- file.path(root.data.dir, "common/vector")
 
 # Project and variants ----------------------------------------------------
@@ -111,14 +112,15 @@ wkh.mask.file <- file.path(common.data.dir, "esmk_wkh.img")
 wkh.mask <- raster(wkh.mask.file)
 extent(wkh.mask) <- extent(rank_raster(V1))
 
-# Soil fertility class (SFC) raster has 5 classes in it:
+# Detailed soil fertility class (DSFC) raster has 5 classes in it:
 # 1 = Herb-rich (lehto)
 # 2 = Herb-rich-like (lehtomainen)
 # 3 = Moist/fresh (tuore)
 # 4 = Semi-xeric (Kuivahko)
 # 5 = Xeric (includes rocky outcrops) (kuiva, karukkokankaat, kalliot)
-sfc.mask.file <- file.path(common.data.dir, "esmk_soil_fertility.img")
-sfc.mask <- raster(sfc.mask.file, crs="+init=epsg:2393")
+dsfc.mask.file <- file.path(common.data.dir, "esmk_soil_fertility.tif")
+dsfc.mask <- raster(dsfc.mask.file, crs="+init=epsg:2393")
+extent(dsfc.mask) <- extent(rank_raster(V1))
 # !!!NOTE!!! This masking operation will take a while, so once it was done
 # (2015-06-02), the resulta was written over the original data. The actual
 # Zonation analysis is masked already to only to the study area.
@@ -126,6 +128,11 @@ sfc.mask <- raster(sfc.mask.file, crs="+init=epsg:2393")
 #sfc.mask <- mask(sfc.mask, esmk.mask)
 #writeRaster(sfc.mask, sfc.mask.file, overwrite=TRUE, datatype="INT1U",
 #            options=c("COMPRESSED=YES"))
+
+# Coarse soil fertility class (CSFC) raster has the same classes as above.
+csfc.mask.file <- file.path(msnfi.data.dir, "segment_soil_fertility.tif")
+csfc.mask <- raster(csfc.mask.file, crs="+init=epsg:2393") 
+extent(csfc.mask) <- extent(rank_raster(V1))
 
 # Data source raster defined from which data source data is derived:
 # 1 = Finnish Forest and Park Service Natural Heritage (FFP, MHLP)
