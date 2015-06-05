@@ -6,6 +6,7 @@
 .directory
 cache/*
 *.html
+!reports/*.html
 *.ods*
 reports/*.odt
 *.tex
