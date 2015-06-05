@@ -48,26 +48,6 @@ ds_plot <- levelplot(ds.mask, col.regions=ds_cols, xlab="", ylab="", maxpixels=1
 
 #dev.off()
 
-# Soil fertility ----------------------------------------------------------
-
-sfc.mask <- as.factor(sfc.mask)
-sfc_rat <- levels(sfc.mask)[[1]]
-sfc_rat[["soil_fertility_class"]] <- c("Herb-rich", "Herb-rich like", "Mesic", 
-                                       "Semi-xeric", "Xeric")
-levels(sfc.mask) <- sfc_rat
-
-sfc_cols <- rev(brewer.pal(5, "BrBG"))
-
-#png(file="figs/Figure2/levelplots/Fig2_soil_fertility_class.png", width=img_width, 
-#    height=img_height)
-
-sfc_plot <- levelplot(sfc.mask, col.regions=sfc_cols, xlab="", ylab="", 
-                      maxpixels=1e6, colorkey=ckey, par.strip.text=p.strip, 
-                      scales=list(x=x.scale.none, y=y.scale.none)) + 
-  latticeExtra::layer(sp.polygons(esmk.mask))
-
-#dev.off()
-
 # Masks -------------------------------------------------------------------
 
 # For the various masks, use the following coding:
