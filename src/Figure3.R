@@ -8,7 +8,7 @@ load.project()
 # Graphics parameters -----------------------------------------------------
 
 p.strip <- list(cex=1.5, lines=1, fontface='bold')
-ckey <- list(labels=list(cex=1.5), height=0.5)
+ckey <- list(labels=list(cex=1.9), height=0.5)
 x.scale <- list(cex=1, alternating=1)
 x.scale.none <- list(cex=0, alternating=1)
 y.scale <- list(cex=1, alternating=1)
