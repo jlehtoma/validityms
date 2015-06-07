@@ -74,8 +74,6 @@ V5.load.V1 <- get_variant(project.esmk, 20)
 # Use feature data from V6 but pre-load ranking from V2
 V6.load.V2 <- get_variant(project.esmk, 21)
 
-# Re-grouping -------------------------------------------------------------
-
 # Auxillary data ----------------------------------------------------------
 
 # These data sets are part of Zonation analyses or then they are used in
