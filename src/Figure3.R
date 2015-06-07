@@ -1,72 +1,49 @@
-library(rasterVis)
 library(gridExtra)
+library(raster)
+library(rasterVis)
 library(ProjectTemplate)
 load.project()
 
-# Set the colors used to spectral divergent
-z_colors_spectral <- zlegend('spectral')
-# Construct a suitable color key for levelplots
-z_color_key <- list(at=c(z_colors_spectral$values),
-                    labels=list(labels=z_colors_spectral$labels,
-                                at=z_colors_spectral$values))
 
-# Custom function for calculating to row and col stats for levelplots
-top.fraction <- function(x, fraction=0.9) {
-  return(sum(x[x >= fraction]))
-}
+# Graphics parameters -----------------------------------------------------
 
-# Limits for x and y marginal plot, through trial and error
-x.lim <- c(0, 150)
-y.lim <- c(0, 150)
+p.strip <- list(cex=1.5, lines=1, fontface='bold')
+ckey <- list(labels=list(cex=1.9), height=0.5)
+x.scale <- list(cex=1, alternating=1)
+x.scale.none <- list(cex=0, alternating=1)
+y.scale <- list(cex=1, alternating=1)
+y.scale.none <- list(cex=0, alternating=1)
 
-# MSNFI without sfc classes -----------------------------------------------
+# Define color scheme
+sfc_cols <- rev(brewer.pal(5, "BrBG"))
 
-png(file="figs/Figure2/levelplots/p%d_with_leg.png", width=820, height=820)
+sfc_classes <- c("Herb-rich", "Herb-rich like", "Mesic", "Semi-xeric", "Xeric")
 
-rankr.V1 <- rank_raster(V1)
-rankr.V2 <- rank_raster(V2)
+# Soil fertility DETAILED --------------------------------------------------
 
-levelplot(rankr.V1, FUN.margin=top.fraction, maxpixels=1e6, 
-          par.settings=rasterTheme(region=z_colors_spectral$colors), 
-          at=z_colors_spectral$values, colorkey=z_color_key,
-          scales=list(draw=FALSE))
-          #scales.margin=list(x=x.lim, y=y.lim))
-levelplot(rankr.V2, FUN.margin=top.fraction, maxpixels=1e6,
-          par.settings=rasterTheme(region=z_colors_spectral$colors), 
-          at=z_colors_spectral$values, colorkey=z_color_key,
-          scales=list(draw=FALSE))
-          #scales.margin=list(x=x.lim, y=y.lim))
+dsfc.mask <- as.factor(dsfc.mask)
+dsfc_rat <- levels(dsfc.mask)[[1]]
+dsfc_rat[["soil_fertility_class"]] <- sfc_classes
+levels(dsfc.mask) <- dsfc_rat
 
-# MSNFI with sfc classes --------------------------------------------------
+# Soil fertility COARSE ----------------------------------------------------
 
-rankr.V3 <- rank_raster(V3)
-rankr.V4 <- rank_raster(V4)
+csfc.mask <- as.factor(csfc.mask)
+csfc_rat <- levels(csfc.mask)[[1]]
+csfc_rat[["soil_fertility_class"]] <- sfc_classes
+levels(csfc.mask) <- csfc_rat
 
-levelplot(rankr.V3, FUN.margin=top.fraction, maxpixels=1e6, 
-          par.settings=rasterTheme(region=z_colors_spectral$colors), 
-          at=z_colors_spectral$values, colorkey=z_color_key,
-          scales=list(draw=FALSE))
-          #scales.margin=list(x=x.lim, y=y.lim))
-levelplot(rankr.V4, FUN.margin=top.fraction, maxpixels=1e6,
-          par.settings=rasterTheme(region=z_colors_spectral$colors), 
-          at=z_colors_spectral$values, colorkey=z_color_key,
-          scales=list(draw=FALSE),
-          scales.margin=list(x=x.lim, y=y.lim))
-
-# All data ----------------------------------------------------------------
   
-rankr.V5 <- rank_raster(V5)
-rankr.V6 <- rank_raster(V6)
+# Plot data ---------------------------------------------------------------
 
-levelplot(rankr.V5, FUN.margin=top.fraction, maxpixels=1e6,
-          par.settings=rasterTheme(region=z_colors_spectral$colors), 
-          at=z_colors_spectral$values, colorkey=z_color_key,
-          scales=list(draw=FALSE))
-          #scales.margin=list(x=x.lim, y=y.lim))
-levelplot(rankr.V6, FUN.margin=top.fraction, maxpixels=1e6,
-          par.settings=rasterTheme(region=z_colors_spectral$colors), 
-          at=z_colors_spectral$values, colorkey=z_color_key,
-          scales=list(draw=FALSE))
-          #scales.margin=list(x=x.lim, y=y.lim))
+# Stack the different classifications together
+sfc_plot_stack <- stack(csfc.mask, dsfc.mask)
+
+png(file="figs/Figure3/Fig3_maps.png", width=1200, height=550)
+
+levelplot(sfc_plot_stack, col.regions=sfc_cols, xlab="", ylab="", 
+          maxpixels=1e6, colorkey=ckey, par.strip.text=p.strip, 
+          scales=list(x=x.scale.none, y=y.scale.none), names.attr=c("", "")) + 
+  latticeExtra::layer(sp.polygons(esmk.mask))
 
 dev.off()

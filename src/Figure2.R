@@ -1,20 +1,9 @@
 # Load required packages
 library(gridExtra)
-library(maptools)
 library(raster)
 library(rasterVis)
-library(rgdal)
-library(rworldmap)
-library(RColorBrewer)
 library(ProjectTemplate)
 load.project()
-
-fin.0.wgs84 <- getData('GADM', country='FIN', level=0, path="cache")
-fin.0.kkj <- spTransform(fin.0.wgs84, "+init=epsg:2393")
-
-fin.2.wgs84 <- getData('GADM', country='FIN', level=2, path="cache")
-fin.2.kkj <- spTransform(fin.2.wgs84, "+init=epsg:2393")
-
 
 # Graphic settings --------------------------------------------------------
 
@@ -44,26 +33,6 @@ ds_cols <- brewer.pal(3, "Dark2")
 ds_plot <- levelplot(ds.mask, col.regions=ds_cols, xlab="", ylab="", maxpixels=1e6,
                      colorkey=ckey, par.strip.text=p.strip, 
                      scales=list(x=x.scale.none, y=y.scale.none)) + 
-  latticeExtra::layer(sp.polygons(esmk.mask))
-
-#dev.off()
-
-# Soil fertility ----------------------------------------------------------
-
-sfc.mask <- as.factor(sfc.mask)
-sfc_rat <- levels(sfc.mask)[[1]]
-sfc_rat[["soil_fertility_class"]] <- c("Herb-rich", "Herb-rich like", "Mesic", 
-                                       "Semi-xeric", "Xeric")
-levels(sfc.mask) <- sfc_rat
-
-sfc_cols <- rev(brewer.pal(5, "BrBG"))
-
-#png(file="figs/Figure2/levelplots/Fig2_soil_fertility_class.png", width=img_width, 
-#    height=img_height)
-
-sfc_plot <- levelplot(sfc.mask, col.regions=sfc_cols, xlab="", ylab="", 
-                      maxpixels=1e6, colorkey=ckey, par.strip.text=p.strip, 
-                      scales=list(x=x.scale.none, y=y.scale.none)) + 
   latticeExtra::layer(sp.polygons(esmk.mask))
 
 #dev.off()
@@ -106,9 +75,9 @@ masks_plot <- levelplot(masks, col.regions=masks_cols, xlab="", ylab="",
 
 #dev.off()
 
-png(file="figs/Figure2/Fig2_maps.png", width=580, height=1050)
+png(file="figs/Figure2/Fig2_maps.png", width=1280, height=550)
 
-grid.arrange(ds_plot, sfc_plot, masks_plot, ncol=1)
+grid.arrange(ds_plot, masks_plot, nrow=1)
 
 dev.off()
 

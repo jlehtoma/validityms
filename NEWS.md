@@ -1,3 +1,11 @@
+## 1.1.0 
+
++ Revision 1
++ Rivi- ja sivunumerot lisätty
++ Fig 1 tehty uusiksi
++ Alkuperäiset Fig1 ja Fig2 vaihtaneet paikkaa
++ Uusi Fig3, kaikki vanhat Fig >= 3 nyt i + 1
+
 ## 1.0.2
 
 + Kuvien alfa-kanavat poistettu
