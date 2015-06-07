@@ -15,9 +15,9 @@
    viewBox="0 0 1300 0"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.48.2 r9819"
    sodipodi:docname="Fig3.svg"
-   inkscape:export-filename="/home/jlehtoma/Dropbox/Collaborations/validityms/figs/Figure3/Fig3.png"
+   inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\Figure3\Fig3.png"
    inkscape:export-xdpi="499.99893"
    inkscape:export-ydpi="499.99893">
   <defs
@@ -60,7 +60,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
