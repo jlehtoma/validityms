@@ -13,9 +13,9 @@
    viewBox="0 0 576 432"
    version="1.1"
    id="svg2"
-   inkscape:version="0.48.2 r9819"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="S1_Fig.svg"
-   inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\S1_Fig.png"
+   inkscape:export-filename="/home/jlehtoma/Dropbox/Collaborations/validityms/figs/FigureS1/S1_Fig.png"
    inkscape:export-xdpi="500"
    inkscape:export-ydpi="500">
   <metadata
@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -44,7 +44,7 @@
      id="namedview658"
      showgrid="false"
      inkscape:zoom="1.1030394"
-     inkscape:cx="270.99426"
+     inkscape:cx="97.383054"
      inkscape:cy="257.20164"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
@@ -1575,16 +1575,16 @@
          style="font-size:16px">Average diameter</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9.60000038px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="-236.50777"
-       y="21.27022"
+       style="font-style:normal;font-weight:normal;font-size:9.60000038px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="-346.02335"
+       y="29.248177"
        id="text3642-8-2"
        sodipodi:linespacing="125%"
        transform="matrix(0,-1,1,0,0,0)"><tspan
          sodipodi:role="line"
          id="tspan3644-8-4"
-         x="-236.50777"
-         y="21.27022"
-         style="font-size:16px">Value</tspan></text>
+         x="-346.02335"
+         y="29.248177"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'">Expert-derived conservation value</tspan></text>
   </g>
 </svg>
