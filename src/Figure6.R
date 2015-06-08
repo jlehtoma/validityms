@@ -51,7 +51,7 @@ p9 <- plot_hist(rankr.V5, metso.mask, add.median=TRUE, add.mean=FALSE,
                 binwidth=0.02, title="V5 for METSO-deals") +
   ylim(0, p7.p9.ylim)
 
-png(file="figs/Figure5/Fig5.png", width=1500, height=1200)
+png(file="figs/Figure6/Fig6.png", width=1500, height=1200)
 
 grid.arrange(p1, p2, p3, p4, p5, p6, p7, p8, p9, nrow=3, ncol=3)
 
