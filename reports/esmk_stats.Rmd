@@ -10,10 +10,20 @@ options(width=120)
 library(plyr)
 library(rgdal)
 library(knitr)
+library(maptools)
 
 library(ProjectTemplate)
 setwd('..')
 load.project()
+
+# Read in some additional vector data. NOTE that these shapefiles are vectorized
+# from the raster files used in the analysis and therefore can slightly 
+# differ from the original vector files.
+data_dir <- "/home/jlehtoma/GitHub/zsetup-esmk/data/common/vector"
+pa_vector <- readShapePoly(file.path(data_dir, "esmk_pas_nopeat.shp"))
+wkh_vector <- readShapePoly(file.path(data_dir, "esmk_wkh.shp"))
+metso_vector <- readShapePoly(file.path(data_dir, "esmk_metso.shp"))
+
 ```
 
 ### Fraction of the landscape covered by various data sources
@@ -41,9 +51,13 @@ val.cells <- c(sum(!is.na(getValues(pa.mask))),
                sum(!is.na(getValues(wkh.mask))),
                sum(!is.na(getValues(metso.mask))))
 
-val.covs <- data.frame("Dataset"=c("PAs", "WKH", "METSO"),
-                       "Cells"=val.cells,
-                       "Fraction"=round(val.cells / sum(tot.cov) * 100, 2))
+val.covs <- data.frame("Dataset" = c("PAs", "WKH", "METSO"),
+                       "Cells" = val.cells,
+                       "Fraction" = round(val.cells / sum(tot.cov) * 100, 2),
+                       "Mean_poly_area_ha" = round(c(mean(pa_vector$area_ha),
+                                                     mean(wkh_vector$area_ha),
+                                                     mean(metso_vector$area_ha)), 
+                                                   2))
 kable(val.covs)
 
 ```
