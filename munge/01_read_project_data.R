@@ -81,7 +81,7 @@ V6.load.V2 <- get_variant(project.esmk, 21)
 
 # Vector data
 # Regional borders
-esmk.mask.file <- file.path(common.vector.dir, "esmk_borders.shp")
+esmk.mask.file <- file.path(common.vector.dir, "esmk_borders_euref.shp")
 esmk.mask <- readShapePoly(esmk.mask.file,
                            proj4string=CRS("+init=epsg:3067"))
 # Project to KKJ
