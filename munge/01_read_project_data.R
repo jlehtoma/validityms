@@ -35,22 +35,22 @@ project.esmk <- create_zproject(root=zproject.dir, debug=FALSE)
 # MSNFI DATA ONLY - No division into separate feature layers based on 
 # soil fertility classification.
 #
-# V1 = 16_msnfi_abf_pe_w_nosfc
-# V2 = 17_msnfi_abf_pe_w_cmat_nosfc
+# V1 ("coarse") = 16_msnfi_abf_pe_w_nosfc
+# V2 ("coarseCon") = 17_msnfi_abf_pe_w_cmat_nosfc
 #
 # MSNFI DATA ONLY - Using division into separate feature layers based on 
 # soil fertility classification derived from (segmented) MSNFI.
 # 
-# V3 = 10_msnfi_abf_pe_w
-# V4 = 11_msnfi_abf_pe_w_cmat
+# V3 ("coarseClass") = 10_msnfi_abf_pe_w
+# V4 ("coarseClassCon") = 11_msnfi_abf_pe_w_cmat
 #
 # ALL DATA - Using MSNFI data + more detailed data from stand-based inventory
 # databases. Also using division into separate feature layers based on 
 # soil fertility classification derived from more detailed databases and 
 # (pixel-base) MSNFI.
 #
-# V5 = 03_abf_pe_w
-# V6 = 04_abf_pe_w_cmat
+# V5 ("detailClass") = 03_abf_pe_w
+# V6 ("detailClassCon") = 04_abf_pe_w_cmat
 # 
 
 V1 <- get_variant(project.esmk, 16)
