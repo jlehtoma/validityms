@@ -13,11 +13,11 @@
    viewBox="0 0 576 432"
    version="1.1"
    id="svg2"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.48.2 r9819"
    sodipodi:docname="S1_Fig.svg"
-   inkscape:export-filename="/home/jlehtoma/Dropbox/Collaborations/validityms/figs/FigureS1/S1_Fig.png"
-   inkscape:export-xdpi="500"
-   inkscape:export-ydpi="500">
+   inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+   inkscape:export-xdpi="599.94806"
+   inkscape:export-ydpi="599.94806">
   <metadata
      id="metadata660">
     <rdf:RDF>
@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,14 +39,14 @@
      guidetolerance="10"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:window-width="1680"
-     inkscape:window-height="1028"
+     inkscape:window-width="1920"
+     inkscape:window-height="1148"
      id="namedview658"
      showgrid="false"
      inkscape:zoom="1.1030394"
      inkscape:cx="97.383054"
      inkscape:cy="257.20164"
-     inkscape:window-x="-8"
+     inkscape:window-x="1358"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="surface1085" />
@@ -467,46 +467,73 @@
        style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 77.021993,178.64215 4.257813,-0.0156 4.261719,-0.0234 4.257816,-0.0312 4.25781,-0.0469 4.261716,-0.0625 4.257813,-0.0859 4.25781,-0.125 4.26172,-0.17187 4.25781,-0.23829 4.26172,-0.33593 4.25781,-0.46094 4.25782,-0.64453 4.26172,-0.88672 4.25781,-1.21484 4.25781,-1.64844 4.26172,-2.21875 4.25781,-2.92969 4.25781,-3.79297 4.26172,-4.78125 4.25782,-5.82422 4.25781,-6.8125 4.26172,-7.59765 4.25781,-8.03516 4.26172,-11.97266 4.25781,-6.43359 4.25781,-6.05078 4.26172,-5.53906 4.25781,-4.933601 4.25782,-4.29687 4.26172,-3.671876 4.25781,-3.078125 4.25781,-2.542969 4.26172,-2.082031 4.25781,-1.683594 4.25781,-1.351563 4.26172,-1.078124 4.25782,-0.855469 4.26171,-0.675781 4.25782,-0.53125 4.25781,-0.417969 4.26172,-0.328125 4.25781,-0.257813 4.25781,-0.203125 4.26172,-0.15625 4.25781,-0.121094 4.25782,-0.09766 4.26172,-0.07422 4.25781,-0.05859 4.26172,-0.04297"
        id="path134"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 72.764181,182.89996 212.960939,0"
        id="path136"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 72.764181,182.89996 0,5.97656"
        id="path138"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 115.35402,182.89996 0,5.97656"
        id="path140"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 157.94777,182.89996 0,5.97656"
        id="path142"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 200.53762,182.89996 0,5.97656"
        id="path144"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 243.13137,182.89996 0,5.97656"
        id="path146"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 285.72512,182.89996 0,5.97656"
        id="path148"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <g
        style="fill:#000000;fill-opacity:1"
        id="g150"
-       transform="translate(19.670431,18.856988)">
+       transform="translate(19.670431,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-1"
          x="49.09375"
@@ -518,7 +545,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g154"
-       transform="translate(19.670431,18.856988)">
+       transform="translate(19.670431,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-2"
          x="88.183594"
@@ -537,7 +567,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g160"
-       transform="translate(19.670431,18.856988)">
+       transform="translate(19.670431,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-3"
          x="130.77734"
@@ -556,7 +589,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g166"
-       transform="translate(19.670431,18.856988)">
+       transform="translate(19.670431,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-4"
          x="173.36719"
@@ -575,7 +611,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g172"
-       transform="translate(19.670431,18.856988)">
+       transform="translate(19.670431,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-5"
          x="215.96094"
@@ -594,7 +633,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g178"
-       transform="translate(19.670431,18.856988)">
+       transform="translate(19.670431,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-6"
          x="258.55469"
@@ -614,41 +656,65 @@
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,178.68121 0,-106.718752"
        id="path184"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,178.68121 -5.976562,0"
        id="path186"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,157.33746 -5.976562,0"
        id="path188"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,135.99371 -5.976562,0"
        id="path190"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,114.64996 -5.976562,0"
        id="path192"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,93.306209 -5.976562,0"
        id="path194"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,71.962458 -5.976562,0"
        id="path196"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <g
        style="fill:#000000;fill-opacity:1"
        id="g198"
-       transform="translate(19.670431,18.856988)">
+       transform="translate(19.670431,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph1-1"
          x="33.90625"
@@ -674,7 +740,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g206"
-       transform="translate(19.670431,18.856988)">
+       transform="translate(19.670431,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph1-1"
          x="33.90625"
@@ -700,7 +769,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g214"
-       transform="translate(19.670431,18.856988)">
+       transform="translate(19.670431,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph1-1"
          x="33.90625"
@@ -727,51 +799,81 @@
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,182.89996 225.398433,0 0,-115.039065 -225.398433,0 0,115.039065"
        id="path222"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 77.021993,362.04215 4.257813,-0.0469 4.261719,-0.0625 4.257816,-0.0781 4.25781,-0.10547 4.261716,-0.13282 4.257813,-0.16796 4.25781,-0.22266 4.26172,-0.28516 4.25781,-0.36328 4.26172,-0.47265 4.25782,-0.60157 4.25781,-0.76953 4.26172,-0.97656 4.25781,-1.23828 4.25781,-1.5586 4.26172,-1.94531 4.25781,-2.40625 4.25781,-2.9375 4.26172,-3.53125 4.25782,-4.17969 4.25781,-4.83593 4.26172,-5.46875 4.25781,-6.01172 4.26172,-6.41406 4.25781,-6.62891 4.25781,-7.23047 4.26172,-4.45703 4.25781,-4.33203 4.25782,-4.16016 4.26172,-3.94531 4.25781,-3.69141 4.25781,-3.42187 4.26172,-3.13281 4.25781,-2.84375 4.25781,-2.5586 4.26172,-2.28515 4.25782,-2.02735 4.26171,-1.78125 4.25782,-1.5625 4.25781,-1.36328 4.26172,-1.18359 4.25781,-1.02344 4.25781,-0.88281 4.26172,-0.75782 4.25781,-0.65234 4.25782,-0.55469 4.26172,-0.47656 4.25781,-0.41016 4.26172,-0.34375"
        id="path266"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 72.764181,366.29996 212.960939,0"
        id="path268"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 72.764181,366.29996 0,5.97656"
        id="path270"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 115.35402,366.29996 0,5.97656"
        id="path272"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 157.94777,366.29996 0,5.97656"
        id="path274"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 200.53762,366.29996 0,5.97656"
        id="path276"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 243.13137,366.29996 0,5.97656"
        id="path278"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 285.72512,366.29996 0,5.97656"
        id="path280"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <g
        style="fill:#000000;fill-opacity:1"
        id="g282"
-       transform="translate(19.670431,-22.743011)">
+       transform="translate(19.670431,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-1"
          x="49.09375"
@@ -783,7 +885,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g286"
-       transform="translate(19.670431,-22.743011)">
+       transform="translate(19.670431,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-2"
          x="88.183594"
@@ -802,7 +907,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g292"
-       transform="translate(19.670431,-22.743011)">
+       transform="translate(19.670431,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-3"
          x="130.77734"
@@ -821,7 +929,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g298"
-       transform="translate(19.670431,-22.743011)">
+       transform="translate(19.670431,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-4"
          x="173.36719"
@@ -840,7 +951,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g304"
-       transform="translate(19.670431,-22.743011)">
+       transform="translate(19.670431,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-5"
          x="215.96094"
@@ -859,7 +973,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g310"
-       transform="translate(19.670431,-22.743011)">
+       transform="translate(19.670431,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-6"
          x="258.55469"
@@ -879,41 +996,65 @@
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,362.2023 0,-108.63672"
        id="path316"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,362.2023 -5.976562,0"
        id="path318"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,340.47574 -5.976562,0"
        id="path320"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,318.74918 -5.976562,0"
        id="path322"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,297.02261 -5.976562,0"
        id="path324"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,275.29215 -5.976562,0"
        id="path326"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,253.56558 -5.976562,0"
        id="path328"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <g
        style="fill:#000000;fill-opacity:1"
        id="g330"
-       transform="translate(19.670431,-22.743011)">
+       transform="translate(19.670431,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph1-1"
          x="33.90625"
@@ -939,7 +1080,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g338"
-       transform="translate(19.670431,-22.743011)">
+       transform="translate(19.670431,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph1-1"
          x="33.90625"
@@ -965,7 +1109,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g346"
-       transform="translate(19.670431,-22.743011)">
+       transform="translate(19.670431,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph1-1"
          x="33.90625"
@@ -992,51 +1139,81 @@
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 68.674337,366.29996 225.398433,0 0,-115.03906 -225.398433,0 0,115.03906"
        id="path354"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 344.522,178.64215 4.25781,-0.0859 4.26172,-0.10938 4.25781,-0.13281 4.25781,-0.16016 4.26172,-0.19921 4.25781,-0.25 4.25782,-0.30079 4.26171,-0.375 4.25782,-0.45703 4.26172,-0.5625 4.25781,-0.68359 4.25781,-0.83594 4.26172,-1.01953 4.25781,-1.23047 4.25781,-1.48437 4.26172,-1.78125 4.25782,-2.11719 4.25781,-2.50781 4.26172,-2.92969 4.25781,-3.39063 4.25781,-3.8789 4.26172,-4.36719 4.25781,-4.84375 4.26172,-5.26953 4.25781,-5.62891 4.25782,-5.8789 4.26172,-6.01172 4.25781,-3.55078 4.25781,-3.52344 4.26172,-3.46484 4.25781,-3.39063 4.25781,-3.28516 4.26172,-3.16406 4.25782,-3.023441 4.25781,-2.875 4.26172,-2.71484 4.25781,-2.54297 4.26172,-2.374998 4.25781,-2.207031 4.25781,-2.035156 4.26172,-1.875 4.25781,-1.714844 4.25782,-1.5625 4.26172,-1.425781 4.25781,-1.289062 4.25781,-1.164063 4.26172,-1.050781 4.25781,-0.945313 4.26172,-0.847656"
        id="path398"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 340.26418,182.89996 212.96094,0"
        id="path400"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 340.26418,182.89996 0,5.97656"
        id="path402"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 382.85403,182.89996 0,5.97656"
        id="path404"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 425.44778,182.89996 0,5.97656"
        id="path406"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 468.03762,182.89996 0,5.97656"
        id="path408"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 510.63137,182.89996 0,5.97656"
        id="path410"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 553.22512,182.89996 0,5.97656"
        id="path412"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <g
        style="fill:#000000;fill-opacity:1"
        id="g414"
-       transform="translate(-12.329569,18.856988)">
+       transform="translate(-12.329569,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-1"
          x="348.59375"
@@ -1048,7 +1225,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g418"
-       transform="translate(-12.329569,18.856988)">
+       transform="translate(-12.329569,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-2"
          x="387.68359"
@@ -1067,7 +1247,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g424"
-       transform="translate(-12.329569,18.856988)">
+       transform="translate(-12.329569,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-3"
          x="430.27734"
@@ -1086,7 +1269,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g430"
-       transform="translate(-12.329569,18.856988)">
+       transform="translate(-12.329569,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-4"
          x="472.86719"
@@ -1105,7 +1291,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g436"
-       transform="translate(-12.329569,18.856988)">
+       transform="translate(-12.329569,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-5"
          x="515.46094"
@@ -1124,7 +1313,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g442"
-       transform="translate(-12.329569,18.856988)">
+       transform="translate(-12.329569,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-6"
          x="558.05469"
@@ -1144,36 +1336,57 @@
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 336.17434,179.00933 0,-90.97656"
        id="path448"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 336.17434,179.00933 -5.97656,0"
        id="path450"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 336.17434,156.26324 -5.97656,0"
        id="path452"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 336.17434,133.52105 -5.97656,0"
        id="path454"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 336.17434,110.77496 -5.97656,0"
        id="path456"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 336.17434,88.03277 -5.97656,0"
        id="path458"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <g
        style="fill:#000000;fill-opacity:1"
        id="g460"
-       transform="translate(-12.329569,18.856988)">
+       transform="translate(-12.329569,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph1-1"
          x="333.40625"
@@ -1199,7 +1412,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g468"
-       transform="translate(-12.329569,18.856988)">
+       transform="translate(-12.329569,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph1-1"
          x="333.40625"
@@ -1225,7 +1441,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g476"
-       transform="translate(-12.329569,18.856988)">
+       transform="translate(-12.329569,18.856988)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph1-1"
          x="333.40625"
@@ -1252,51 +1471,81 @@
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 336.17434,182.89996 225.39844,0 0,-115.039065 -225.39844,0 0,115.039065"
        id="path484"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 344.52199,362.04215 4.25781,-1.78907 4.26172,-2.20703 4.25782,-2.70703 4.25781,-3.26562 4.26172,-3.89844 4.25781,-4.5625 4.25781,-5.24219 4.26172,-5.87891 4.25781,-6.42968 4.26172,-6.83203 8.51563,-14.09375 4.26172,-6.83204 4.25781,-6.42968 4.25781,-5.87891 4.26172,-5.24219 4.25781,-4.5664 4.25781,-3.89453 4.26172,-3.26954 4.25782,-2.70312 4.25781,-2.21094 4.26172,-1.78515 4.25781,-1.4375 4.26172,-1.14454 4.25781,-0.90625 4.25781,-0.71875 4.26172,-0.5664 4.25781,-0.44531 4.25782,-0.34766 4.26172,-0.27344 4.25781,-0.21094 4.25781,-0.16796 4.26172,-0.12891 4.25781,-0.10547 4.25781,-0.0781 4.26172,-0.0625 4.25782,-0.0469 4.26171,-0.0391 4.25782,-0.0274 4.25781,-0.0234 4.26172,-0.0195 8.51562,-0.0234 4.26172,-0.008 4.25781,-0.008 4.25782,-0.004 4.26172,-0.004 4.25781,-0.004 4.26172,0"
        id="path530"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 340.26418,366.29996 212.96094,0"
        id="path532"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 340.26418,366.29996 0,5.97656"
        id="path534"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 382.85402,366.29996 0,5.97656"
        id="path536"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 425.44777,366.29996 0,5.97656"
        id="path538"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 468.03762,366.29996 0,5.97656"
        id="path540"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 510.63137,366.29996 0,5.97656"
        id="path542"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 553.22512,366.29996 0,5.97656"
        id="path544"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <g
        style="fill:#000000;fill-opacity:1"
        id="g546"
-       transform="translate(-12.329569,-22.743011)">
+       transform="translate(-12.329569,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-1"
          x="348.59375"
@@ -1308,7 +1557,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g550"
-       transform="translate(-12.329569,-22.743011)">
+       transform="translate(-12.329569,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-2"
          x="387.68359"
@@ -1327,7 +1579,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g556"
-       transform="translate(-12.329569,-22.743011)">
+       transform="translate(-12.329569,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-3"
          x="430.27734"
@@ -1346,7 +1601,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g562"
-       transform="translate(-12.329569,-22.743011)">
+       transform="translate(-12.329569,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-4"
          x="472.86719"
@@ -1365,7 +1623,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g568"
-       transform="translate(-12.329569,-22.743011)">
+       transform="translate(-12.329569,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-5"
          x="515.46094"
@@ -1384,7 +1645,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g574"
-       transform="translate(-12.329569,-22.743011)">
+       transform="translate(-12.329569,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph0-6"
          x="558.05469"
@@ -1404,36 +1668,57 @@
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 336.17434,346.18277 0,-90.67187"
        id="path580"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 336.17434,346.18277 -5.97657,0"
        id="path582"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 336.17434,323.5148 -5.97657,0"
        id="path584"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 336.17434,300.84683 -5.97657,0"
        id="path586"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 336.17434,278.17886 -5.97657,0"
        id="path588"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 336.17434,255.5109 -5.97657,0"
        id="path590"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <g
        style="fill:#000000;fill-opacity:1"
        id="g592"
-       transform="translate(-12.329569,-22.743011)">
+       transform="translate(-12.329569,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph1-1"
          x="333.40625"
@@ -1459,7 +1744,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g600"
-       transform="translate(-12.329569,-22.743011)">
+       transform="translate(-12.329569,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph1-1"
          x="333.40625"
@@ -1485,7 +1773,10 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g608"
-       transform="translate(-12.329569,-22.743011)">
+       transform="translate(-12.329569,-22.743011)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <use
          xlink:href="#glyph1-11"
          x="333.40625"
@@ -1512,14 +1803,20 @@
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
        d="m 336.17434,366.29996 225.39843,0 0,-115.03906 -225.39843,0 0,115.03906"
        id="path616"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
     <text
        xml:space="preserve"
        style="font-size:9.60000038px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="153.1261"
        y="56.527428"
        id="text3642"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500"><tspan
          sodipodi:role="line"
          id="tspan3644"
          x="153.1261"
@@ -1531,7 +1828,10 @@
        x="434.48459"
        y="56.527428"
        id="text3642-1"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500"><tspan
          sodipodi:role="line"
          id="tspan3644-7"
          x="434.48459"
@@ -1543,7 +1843,10 @@
        x="146.01671"
        y="232.92743"
        id="text3642-4"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500"><tspan
          sodipodi:role="line"
          id="tspan3644-0"
          x="146.01671"
@@ -1555,7 +1858,10 @@
        x="391.98459"
        y="234.42352"
        id="text3642-9"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500"><tspan
          sodipodi:role="line"
          id="tspan3644-4"
          x="391.98459"
@@ -1564,15 +1870,18 @@
     <text
        xml:space="preserve"
        style="font-size:9.60000038px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="257.31305"
+       x="234.91296"
        y="420.81992"
        id="text3642-8"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500"><tspan
          sodipodi:role="line"
          id="tspan3644-8"
-         x="257.31305"
+         x="234.91296"
          y="420.81992"
-         style="font-size:16px">Average diameter</tspan></text>
+         style="font-size:16px">Average diameter (cm)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:9.60000038px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -1580,7 +1889,10 @@
        y="29.248177"
        id="text3642-8-2"
        sodipodi:linespacing="125%"
-       transform="matrix(0,-1,1,0,0,0)"><tspan
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="C:\Users\localadmin_jlehtoma\Dropbox\Collaborations\validityms\figs\FigureS1\S1_Fig.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500"><tspan
          sodipodi:role="line"
          id="tspan3644-8-4"
          x="-346.02335"
