@@ -12,13 +12,12 @@ Leinonen (4)_
 4 The Finnish Forest Centre (Suomen Metsäkeskus)  
 
 __Corresponding author:__ Joona Lehtomäki <joona.lehtomaki@helsinki.fi>  
-__Status:__ Manuscript in preparation.  
-__Data and code sharing:__ Data used in this particular analysis and the results 
-produced *cannot be openly shared* because of the terms of use of the Finnish 
-Forest Centre (data manager). Data (including input data and Zonation results) 
-is, however, available for scientific research use upon a request from the 
-Finnish Forest Centre. For the actual Zonation setup files, see 
-[this repo](https://github.com/jlehtoma/zsetup-esmk)
 
-## Attribution
-* Makefile for this manuscript borrows a lot from [makedoc](https://github.com/jakobib/makedoc) and [Karthik Ram](https://github.com/karthikram/smb_git).
+__Status:__ Published in PLoS ONE, [DOI: 10.1371/journal.pone.0135926](http://dx.doi.org/10.1371/journal.pone.0135926)  
+__Data and code sharing:__ All data used in this particular analysis and the results 
+produced *cannot be shared* because of the terms of use of the Finnish 
+Forest Centre (data manager). Please see the data availability statement accompanying
+the [publication](http://dx.doi.org/10.1371/journal.pone.0135926). The data that *can*
+be shared has been deposited in [Dryad](http://dx.doi.org/10.5061/dryad.d9p4v).
+Zonation configuration files as usedin the publication are available in 
+[Zenodo](http://dx.doi.org/10.5281/zenodo.27240).
