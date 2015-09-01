@@ -1,5 +1,4 @@
-[![DOI](https://zenodo.org/badge/4782/jlehtoma/validityms.svg)](http://dx.doi.org/10.5281/zenodo.14676)  
-[![Stories in Ready](https://badge.waffle.io/jlehtoma/validityms.png)](http://waffle.io/jlehtoma/validityms)  
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.30072.svg)](http://dx.doi.org/10.5281/zenodo.30072)
 
 ## What data to use for forest conservation planning? A comparison of coarse open and detailed proprietary forest inventory data in Finland
 
