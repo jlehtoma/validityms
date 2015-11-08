@@ -19,4 +19,4 @@ Forest Centre (data manager). Please see the data availability statement accompa
 the [publication](http://dx.doi.org/10.1371/journal.pone.0135926). The data that *can*
 be shared has been deposited in [Dryad](http://dx.doi.org/10.5061/dryad.d9p4v).
 Zonation configuration files as usedin the publication are available in 
-[Zenodo](http://dx.doi.org/10.5281/zenodo.27240).
+[Zenodo](http://dx.doi.org/10.5281/zenodo.27240) and in [GitHub](https://github.com/jlehtoma/zsetup-esmk).
